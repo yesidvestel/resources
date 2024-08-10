@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.overlayCont{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.overlayBody {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    background: rgba(0, 0, 0, 0.486);
+    box-shadow: -2px 0px 46px -9px rgba(0, 0, 0, 0.644) inset, 0px 4px 8px rgba(0, 0, 0, 0.418);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.RecordInfo{
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+.recordBox{
+    margin-top: 10px;
+    margin-right: 2rem;
+    font-family: "Play", sans-serif;
+    background: rgba(0, 0, 0, 0.486);
+    box-shadow: -2px 0px 46px -9px rgba(161, 2, 2, 0.644) inset, 0px 4px 8px rgba(0, 0, 0, 0.418);
+    color: white;
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.bodyInfobox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.overlayBody img{
+    width: 66px;
+    height: auto;
+}
+.bodyNum , .bodyCallsign {
+    font-family: "Play", sans-serif;
+}
+.bodyIcon{
+    margin-right: 15px;
+    color: rgb(173, 8, 8);
+}
+.bodyDate{
+    font-size: 17px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+}
+.AddonIcons{    
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 9px;
+    left: 20px;
+    font-size: 15px;
+}
+.currWatchCont{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.watchInText{
+    margin-left: 10px;
+}
+.watchIcon{
+    font-size: 15px;
+}
+.userLaber {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Play", sans-serif;
+    font-size: 20px;
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 10px;
+    color: white;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.397);
+    box-shadow: -2px 0px 46px -9px rgba(0, 0, 0, 0.57) inset,0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.backInText{
+    background: rgb(27, 27, 27);
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.backIcon{
+    font-size: 15px;
+}
+.backLabel {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Play", sans-serif;
+    font-size: 20px;
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 10px;
+    color: white;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.397);
+    box-shadow: -2px 0px 46px -9px rgba(0, 0, 0, 0.57) inset,0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+.popIn {
+    animation: popIn 0.5s forwards;
+}
+
+.popOut {
+    animation: popOut 0.5s forwards;
+}

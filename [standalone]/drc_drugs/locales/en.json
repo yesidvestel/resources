@@ -1,0 +1,149 @@
+{
+    "error" : "Error", 
+    "success" : "Success", 
+    "info" : "Info", 
+    "fail" : "You Failed", 
+
+    "RequiredItems" : "You do not have required items!", 
+    "RequiredCops" : "Not enought Cops in the city",
+    "RequiredTrowel" : "You do not have trowel to dig up this plant!",
+    "RequiredCard" : "You do not have required access card!",
+    "IvalidAmount" : "Invalid Amount!",
+    "HasBought" : "Has bought %sx %s for $%s ",
+    "HasSold" : "Has Sold %sx %s for $%s ",
+
+    "enter" : "Enter", 
+    "entering" : "Entering...", 
+    "leave" : "Leave", 
+    "leaving" : "Leaving...", 
+
+    "turnonelt" : "Turn on electricity", 
+    "turnoffelt" : "Turn off electricity", 
+    "turnonel" : "Turning on electricity...", 
+    "turnoffel" : "Turning off electricity...", 
+    "turnonact" : "Turn on AC", 
+    "turnoffact" : "Turn off AC", 
+    "turnonac" : "Turning on air conditioner...", 
+    "turnoffac" : "Turning off air conditioner...", 
+    "needac" : "You Need to turn on air conditioner", 
+
+    "Oven" : "Oven", 
+    "table" : "Table", 
+    "pickup" : "Pick Up", 
+    "pickingup" : "Picking Up...", 
+
+    "shop" : "Shop", 
+    "Buying" : "Buying...", 
+    "Amount" : "Amount ? ", 
+    "Range" : "Range: ", 
+    "Pricefor" : "Price for 1x: $", 
+    "BreakFigure" : "Breaking the figure in half...", 
+    "LocatingDealer" : "Trying to locate drug dealer", 
+    "LocationInGPS" : "Location was set to your GPS", 
+
+    "Pharmacist" : "Pharmacist", 
+    "PharmacistBreak" : "I have a break right now if you need anything come here between 18 pm and 23 pm",
+
+    "Gerald" : "Gerald", 
+    "Listening" : "Listening if anyone is inside", 
+    "LocateDealer" : "Try to locate a Dealer", 
+    "GeraldNotHome" : "It looks like Gerald is not at home right now, try it again later", 
+
+    "Madrazo" : "Mr. Madrazo", 
+    "MadrazoNotHome" : "It looks like mr. Madrazo is not at home right now, try it again later",
+
+    "Coke" : "Coke", 
+
+    "CokeClean" : "Clean Raw Coke", 
+    "CokeCleaning" : "Cleaning Coke", 
+
+    "CokePack" : "Pack Coke", 
+    "CokePacking" : "Packing Coke", 
+
+    "CokeBox" : "Pour Coke Powder", 
+    "CokeBoxProg" : "Pouring Coke Powder", 
+
+    "CokeProcess" : "Pour Coke into the box", 
+    "CokeProcessing" : "Pouring Coke into the box", 
+
+    "CokeFigure" : "Action Figure",
+    "CokeCarryFigure" : "Carry/Uncarry Figure", 
+    "CokeBreakigure" : "Break Figure", 
+    "CokeRepairFigure" : "Repair Action Figure",
+    "RepairingFigure" : "Repairing Action Figure",
+    "CokeRepairFigureDesc" : "Requirements: glue",
+
+    "WeedPack" : "Pack Weed", 
+    "WeedPacking" : "Packing Weed", 
+    "WeedColecting" : "Collecting weed bud", 
+    "WeedClean" : "Clean Weed bud", 
+    "WeedCleaning" : "Cleaning Weed bud", 
+    "WeedColectedAlready" : "You have collected this plant before", 
+
+    "BluntWraps" : "Blunt Wraps", 
+    "BluntRoll" : "Roll a Blunt", 
+    "BluntRolling" : "Rolling a Blunt", 
+    "BluntDesc" : "1x Bag of weed, 1x Weed Wraps", 
+
+    "JointPapers" : "Weed papers", 
+    "JointRoll" : "Roll a Joint", 
+    "JointRolling" : "Rolling a Joint", 
+    "JointDesc" : "1x Bag of weed, 1x Weed papers", 
+
+    "PrepairingSyringe" : "prepairing syringe", 
+    "UnpackingXanax" : "Unpacking xanax", 
+
+    "MakeCrack" : "Make Crack",
+    "CrackMaking" : "Making Crack",
+
+    "HeroinProcess" : "Process Poppy Plants!",
+    "HeroinProcessing" : "Processing Poppy Plants!",
+
+    "Meth" : "Meth", 
+    "MethHeat" : "Heat up", 
+    "MethHeating" : "Heating up", 
+    "MethHeated" : "Heated up Successfully", 
+    "MethAlready" : "You Had Already Heated up this", 
+    "MethNeedHeat" : "You need to heat up oven", 
+
+    "MethGoFinish" : "Go finish this Batch", 
+    "MethFinish" : "Finish  Batch", 
+    "MethFinishing" : "Finishing Batch", 
+    "MethNeedFinish" : "You need to finish this Batch", 
+    "MethStartCook" : "You need to start cooking", 
+    "MethCook" : "Start Cooking", 
+    "MethCooking" : "Cooking batch", 
+
+    "MethPack" : "Pack Meth", 
+    "MethPacking" : "Packing Meth", 
+
+    "MethRefuel" : "Refuel Can", 
+    "MethRefueling" : "Refueling Can", 
+
+    "MethBreaking" : "Breaking Meth", 
+    "MethBreak" : "Break Meth",
+
+    "Syringe" : "Syringe", 
+    "InsertHeroin" : "Insert Heroin",
+    "InsertHeroinDesc" : "Ingredients: 1x Heroin",
+    "InsertMeth" : "Insert Meth",
+    "InsertMethDesc" : "Ingredients: 1x Meth",
+    "Inserting" : "Inserting...",
+
+    "SellCooldown" : "You must wait a moment",
+    "StartSell" : "Start selling drugs",
+    "ChooseSell" : "Choose Drug to sell!",
+    "SellPrice" : "Price: From $%s to $%s",
+    "SellDrugs" : "Drug Selling",
+    "SellCancelDeal" : "Cancel Deal",
+    "SellCancelingDeal" : "Canceling Deal",
+    "ClientFinding" : "Finding clients",
+    "Client" : "Client",
+    "ClientGPS" : "Client has sent you a GPS",
+    "ClientOffer" : "Client Offers $%s for %s %s",
+    "ClientDeclined" : "Client has declined your offer",
+    "Sell" : "Sell",
+    "Cancel" : "Cancel",
+    "Negotiate" : "Negotiate",
+    "Negotiating" : "Negotiating..."
+}
