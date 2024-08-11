@@ -1,0 +1,1202 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Barlow";
+}
+
+.all-paintball {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/bg.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: opacity 0.15s forwards;
+}
+
+.top-side {
+  position: relative;
+  width: 80%;
+  height: 14%;
+  margin-top: 6%;
+  margin-left: 10%;
+  display: flex;
+}
+
+.center-side {
+  position: absolute;
+  width: 80%;
+  height: 67.5%;
+  top: 13.8vw;
+  margin-left: 10%;
+  display: flex;
+}
+
+.title {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8vw;
+  letter-spacing: 0.03em;
+  background: radial-gradient(
+    84.55% 84.55% at 50% 50%,
+    #80ff00 0%,
+    #152900 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0vw 0vw 2.5vw rgba(115, 229, 1, 0.28);
+}
+
+.title h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vw;
+  margin-top: -0.5vw;
+  background: radial-gradient(
+    84.55% 84.55% at 50% 50%,
+    #ffffff 0%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.top-line {
+  width: 0.11vw;
+  height: 4.6vw;
+  margin-top: 0.8vw;
+  margin-left: 7vw;
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.paintball-info {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4vw;
+  margin-left: 3.25vw;
+  margin-top: 0.5vw;
+  color: #ffffff;
+}
+
+.paintball-info h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.07vw;
+  width: 30vw;
+  height: 3vw;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.exit-side {
+  position: absolute;
+  width: 5vw;
+  height: 3vw;
+  margin-top: 0.7vw;
+  right: 0;
+  transition: 0.5s;
+  display: flex;
+}
+
+.exit-text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  margin-top: 0.27vw;
+  color: #ffffff;
+}
+
+.exit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.41vw;
+  height: 2.4vw;
+  margin-left: 0.5vw;
+  background: radial-gradient(
+    107.29% 107.29% at 50% 50%,
+    #d12929 0%,
+    rgba(209, 41, 41, 0) 100%
+  );
+  border-radius: 0.18vw;
+}
+
+.fa-xmark {
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.center-info {
+  width: 33%;
+  height: 100%;
+}
+
+.center-line {
+  background: rgba(255, 255, 255, 0.03);
+  width: 0.2vw;
+  height: 37.94vw;
+  margin-left: 4vw;
+}
+
+.center-all {
+  width: 56.7%;
+  margin-left: 5%;
+  height: 100%;
+}
+
+.center-map-all {
+  width: 100%;
+  height: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    89.58% 89.58% at 50% 50%,
+    rgba(9, 9, 13, 0.6) 0%,
+    rgba(9, 9, 13, 0) 100%
+  );
+  border-radius: 0.35vw;
+  border: 0.2vw solid #2d2d38;
+}
+
+.center-mapdetail {
+  width: 90%;
+  height: 90%;
+  border-radius: 0.5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 13, 0.77) 0%,
+      rgba(9, 9, 13, 0) 100%
+    ),
+    url("https://as01.epimg.net/meristation/imagenes/2020/04/02/noticias/1585856588_952344_1585856855_sumario_normal.jpg");
+}
+
+.center-map-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.55vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  color: #ffffff;
+}
+
+.center-map-dec {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  margin-left: 1vw;
+  width: 14vw;
+  height: 3vw;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.map-information {
+  width: 90%;
+  margin-left: 5%;
+  height: 12.5vw;
+  margin-top: 1.35vw;
+}
+
+.minutes-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8vw;
+  background: radial-gradient(
+    89.58% 89.58% at 50% 50%,
+    rgba(9, 9, 13, 0.6) 0%,
+    rgba(9, 9, 13, 0) 100%
+  );
+  border: 0.2vw solid #2d2d386c;
+  border-radius: 0.3vw;
+}
+
+.minutes-all2 {
+  width: 90%;
+  height: 90%;
+}
+
+.minutes-item {
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
+  width: 7.2vw;
+  height: 2.6vw;
+  float: left;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0.15vw;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  line-height: 2.5vw;
+  transition: 0.15s;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.map-details {
+  width: 100%;
+  height: 4vw;
+}
+
+.map-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+  height: 3vw;
+  background: radial-gradient(
+    96.08% 96.08% at 50% 50%,
+    #7ffd01 0%,
+    rgba(127, 253, 1, 0) 100%
+  );
+  border-radius: 0.3vw;
+}
+
+.fa-map {
+  font-size: 1.3vw;
+  color: rgba(0, 0, 0, 0.59);
+}
+
+.map-title {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.05vw;
+  margin-left: 3.6vw;
+  margin-top: -2.8vw;
+  color: #7cf602;
+}
+
+.map-title-max {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25vw;
+  margin-left: 3.6vw;
+  color: #ffffff;
+}
+
+.map-info {
+  width: 2.15vw;
+  height: 2.15vw;
+  margin-top: -0.7vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+  background-image: url(./img/info.png);
+}
+
+.map-i {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.map-iy {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.47);
+}
+
+.next {
+  width: 48%;
+  height: 2.25vw;
+  background: radial-gradient(
+    89.58% 89.58% at 50% 50%,
+    rgba(9, 9, 13, 0.6) 0%,
+    rgba(9, 9, 13, 0) 100%
+  );
+  margin-top: 1.35vw;
+  border: 0.1vw solid #2d2d38;
+  border-radius: 0.25vw;
+  font-family: "Barlow", "FontAwesome";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  transition: 0.5s;
+  line-height: 2vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.previous {
+  width: 48%;
+  height: 2.25vw;
+  margin-top: -2.3vw;
+  margin-left: 12.4vw;
+  font-family: "Barlow", "FontAwesome";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  line-height: 2vw;
+  text-align: center;
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.2);
+  background: radial-gradient(
+    89.58% 89.58% at 50% 50%,
+    rgba(9, 9, 13, 0.6) 0%,
+    rgba(9, 9, 13, 0) 100%
+  );
+  border: 0.1vw solid #2d2d38;
+  border-radius: 0.25vw;
+}
+
+.lobbys {
+  width: 45.3vw;
+  height: 37.94vw;
+  overflow: hidden;
+  background: radial-gradient(
+      73.99% 95.61% at 50.05% 100%,
+      rgba(67, 118, 17, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      89.58% 89.58% at 50% 50%,
+      rgba(9, 9, 13, 0.6) 0%,
+      rgba(9, 9, 13, 0) 100%
+    );
+  border: 0.15vw solid rgba(96, 187, 5, 0.04);
+  border-radius: 0.3vw;
+}
+
+.lobbys-particle {
+  display: flex;
+  position: absolute;
+  width: 4 0%;
+  height: 50%;
+  margin-left: 4vw;
+  margin-top: 8vw;
+  background-image: url(./img/box-particle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lobbys-top {
+  height: 10.5%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5%;
+}
+
+.create-lobby {
+  width: 8vw;
+  height: 2.8vw;
+  transition: 0.5;
+}
+
+.create-lobby-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(96, 187, 6, 0.87) 0%,
+    rgba(86, 167, 6, 0.87) 142.97%,
+    rgba(119, 50, 208, 0.87) 150%
+  );
+  border: 0.2vw solid rgba(0, 0, 0, 0.09);
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+}
+
+.fa-plus {
+  color: #000000;
+  font-size: 1.4vw;
+}
+
+.create-lobby-text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  letter-spacing: 0.05em;
+  margin-top: -2.05vw;
+  margin-left: 2.25vw;
+  color: #60bc07;
+}
+
+.create-lobby-text h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9vw;
+  letter-spacing: 0.05em;
+  color: #4f920c;
+}
+
+.total-lobby {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  float: right;
+  margin-top: -3vw;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.info-listening {
+  width: 100%;
+  height: 19.5%;
+}
+
+.info-item {
+  font-family: "Barlow", "FontAwesome";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.95vw;
+  color: #ffffff;
+  margin-left: 3.9vw;
+  float: left;
+}
+
+.info-item:nth-child(1) {
+  margin-left: 0vw;
+}
+
+.info-item:nth-child(3) {
+  margin-left: 3.25vw;
+}
+
+.info-item:nth-child(4) {
+  margin-left: 3.6vw;
+}
+
+.lobbys-itemall {
+  width: 90%;
+  margin-left: 5%;
+  height: 82%;
+}
+
+.lobbys-item {
+  width: 100%;
+  height: 2.1vw;
+  margin-top: 1vw;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.0283) 0%,
+    rgba(255, 255, 255, 0.0166) 100%
+  );
+  border: 0.18vw solid rgba(45, 45, 56, 0.22);
+  border-radius: 0.15vw;
+}
+
+.lobbys-item:nth-child(1) {
+  margin-top: 0.75vw;
+}
+
+.lobbys-l-item {
+  float: left;
+  width: 7vw;
+  margin-left: 0.5vw;
+  height: 1.8vw;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 1.8vw;
+  color: rgba(255, 255, 255, 0.44);
+}
+
+.lobbys-l-item:nth-child(1) {
+  margin-left: 0vw;
+}
+
+.lobbys-l-join {
+  width: 5vw;
+  height: 1.25vw;
+  margin-top: -1.45vw;
+  margin-right: 0.25vw;
+  float: right;
+  background: rgba(12, 99, 36, 0.05);
+  border: 0.1vw solid #60bb05;
+  border-radius: 0.22vw;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  text-align: center;
+  color: #60bb05;
+  transition: 0.5s;
+}
+
+.lobbys-l-join:hover {
+  cursor: pointer;
+  background: #60bb05;
+  border: 0.1vw solid #427e07;
+  font-weight: 700;
+  color: #0d1603;
+}
+
+.create-lobby:hover {
+  cursor: pointer;
+}
+
+.exit-side:hover {
+  cursor: pointer;
+  scale: 1.07;
+}
+
+.minutes-item:hover {
+  background: radial-gradient(
+    117.44% 117.44% at 50% 50%,
+    #7cf602 0%,
+    rgba(124, 246, 2, 0) 100%
+  );
+  color: #000000;
+  cursor: pointer;
+}
+
+.previous:hover,
+.next:hover {
+  scale: 0.98;
+}
+
+.center-all-2 {
+  width: 56.7%;
+  margin-left: 5%;
+  height: 100%;
+}
+
+.red-team {
+  width: 100%;
+  height: 13.5vw;
+
+  border: 0.1vw solid #26262678;
+  background: radial-gradient(
+      73.99% 95.61% at 50.05% 100%,
+      rgba(218, 68, 68, 0.108) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      89.58% 89.58% at 50% 50%,
+      rgba(9, 9, 13, 0.6) 0%,
+      rgba(9, 9, 13, 0) 100%
+    );
+  border-radius: 0.4vw;
+}
+
+.starter {
+  width: 100%;
+  height: 6vw;
+  margin-top: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-team {
+  width: 100%;
+  height: 13.5vw;
+  margin-top: 2.5vw;
+  border: 0.1vw solid #26262678;
+  background: radial-gradient(
+      73.99% 95.61% at 50.05% 100%,
+      rgba(47, 98, 231, 0.108) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      89.58% 89.58% at 50% 50%,
+      rgba(9, 9, 13, 0.6) 0%,
+      rgba(9, 9, 13, 0) 100%
+    );
+  border-radius: 0.4vw;
+}
+
+.disabled {
+  width: 18%;
+  height: 47%;
+  font-family: "Barlow", "FontAwesome";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.05vw;
+  line-height: 2.5vw;
+  text-align: center;
+  color: #cb4040;
+  transition: 0.5s;
+  background: radial-gradient(
+    108.77% 108.77% at 50% 50%,
+    rgba(198, 50, 50, 0.5) 0%,
+    rgba(198, 50, 50, 0) 100%
+  );
+  border: 0.17vw solid #cb4040;
+  border-radius: 0.1vw;
+}
+
+.start {
+  width: 37%;
+  height: 47%;
+  background: rgba(123, 245, 2, 0.1);
+  border: 0.15vw solid #7bf502;
+  border-radius: 0.1vw;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.22vw;
+  margin-left: 1vw;
+  transition: 0.5s;
+  line-height: 2.55vw;
+  text-align: center;
+  color: #7bf502;
+}
+
+.disabled:hover,
+.start:hover {
+  cursor: pointer;
+  scale: 1.02;
+}
+
+.team-top {
+  width: 92.5%;
+  margin-left: 3.75%;
+  height: 27.5%;
+}
+
+.team-top-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.29vw;
+  line-height: 90%;
+  display: flex;
+  line-height: 5.5vw;
+  color: #da4444;
+}
+
+.team-top-text span {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  margin-left: 1vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.26);
+}
+
+.team-top-text-total {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.05vw;
+  margin-top: -3.8vw;
+  float: right;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.blue-particle {
+  display: flex;
+  position: absolute;
+  width: 44.95vw;
+  height: 13.5vw;
+  background-image: url(./img/b-blue-particle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.red-particle {
+  display: flex;
+  position: absolute;
+  width: 44.95vw;
+  height: 13.5vw;
+  background-image: url(./img/b-red-particle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.team-players {
+  width: 92.5%;
+  margin-left: 3.75%;
+  height: 58.25%;
+  margin-top: 1%;
+}
+
+.team-player {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  margin-top: -1.15vw;
+  float: left;
+}
+
+.profilePhotoImg {
+  position: relative;
+  width: 4.192vw;
+  height: 4.1792vw;
+  margin-left: 1.8vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4.7vw;
+}
+
+.profilePhotoImg::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  top: -0.3385vw;
+  left: -0.3385vw;
+  right: -0.3385vw;
+  bottom: -0.3385vw;
+  border: 0.0521vw solid #2f62e7;
+  border-radius: 10vw;
+  box-sizing: border-box;
+}
+
+#red .profilePhotoImg::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  top: -0.3385vw;
+  left: -0.3385vw;
+  right: -0.3385vw;
+  bottom: -0.3385vw;
+  border: 0.0521vw solid #d24a4a;
+  border-radius: 10vw;
+  box-sizing: border-box;
+}
+
+.team-name {
+  width: 100%;
+  height: 1vw;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.7vw;
+  margin-top: 0.5vw;
+  margin-left: -0.18vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.team-id {
+  width: 100%;
+  height: 1vw;
+  overflow: hidden;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.85vw;
+  margin-left: -0.18vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.team-line {
+  position: absolute;
+  float: right;
+  width: 0.1vw;
+  margin-left: 8.15vw;
+  margin-top: 0.65vw;
+  height: 6.8vw;
+  background-color: rgba(128, 128, 128, 0.209);
+}
+
+#team-line-blue-2 {
+  position: absolute;
+  float: right;
+  width: 0.1vw;
+  margin-top: 0vw;
+  height: 6.8vw;
+  background-color: rgba(128, 128, 128, 0.209);
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(
+    42.02% 33.43% at 50% 50%,
+    #09090d 0%,
+    rgba(9, 9, 13, 0) 100%
+  );
+}
+
+.win-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9vw;
+  letter-spacing: 0.12em;
+  background: radial-gradient(
+    92.55% 92.55% at 50% 50%,
+    #00ff85 0%,
+    #003114 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.lose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(
+    42.02% 33.43% at 50% 50%,
+    #09090d 0%,
+    rgba(9, 9, 13, 0) 100%
+  );
+}
+
+.lose-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9vw;
+  letter-spacing: 0.12em;
+  background: radial-gradient(
+    92.55% 92.55% at 50% 50%,
+    #d24a4a 0%,
+    #250303 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(
+    42.02% 33.43% at 50% 50%,
+    #09090d 0%,
+    rgba(9, 9, 13, 0) 100%
+  );
+}
+
+.time-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9vw;
+  letter-spacing: 0.12em;
+  background: radial-gradient(
+    92.55% 92.55% at 50% 50%,
+    #d24a4a 0%,
+    #250303 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.CrLobby {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.753);
+}
+
+.Lobby-Main {
+  position: relative;
+  z-index: 99999;
+  width: 20vw;
+  height: 13vw;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 34, 10, 0.9) 0%,
+    rgba(12, 63, 30, 0.493) 118.88%
+  );
+  border: 1px solid rgba(56, 56, 56, 0.45);
+  border-radius: 0.3vw;
+}
+
+.lobby-c-text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.75vw;
+  text-align: center;
+  color: #56ab01;
+  line-height: 4vw;
+}
+
+.Create-Password {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.2vw;
+  height: 3.25vw;
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.95vw;
+  text-align: center;
+  line-height: 0.65vw;
+  border-radius: 0.3vw;
+  border: 0px solid #f00;
+  color: rgba(255, 255, 255, 0.24);
+}
+
+.create-lobby-dec {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.65vw;
+  line-height: 1.15vw;
+  text-align: center;
+  color: #929291c9;
+}
+
+.create-button {
+  width: 80%;
+  margin-left: 10%;
+  height: 3.25vw;
+  margin-top: 0.3vw;
+  background: linear-gradient(180deg, #7bf502 0%, #050a01 142.86%);
+  box-shadow: 0px 0px 16px rgba(69, 187, 95, 0.35);
+  border-radius: 0.2vw;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.8vw;
+  line-height: 3.2vw;
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.create-button:hover {
+  scale: 0.96;
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+.close-button {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.41vw;
+  height: 2.4vw;
+  margin-left: 0.5vw;
+}
+
+.close-button .fa-xmark {
+  font-size: 1.5vw;
+  transition: 0.3s;
+  color: rgba(180, 180, 180, 0.63);
+}
+
+.close-button .fa-xmark:hover {
+  font-size: 1.5vw;
+  cursor: pointer;
+  color: rgba(138, 10, 10, 0.63);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.team-player:hover {
+  scale: 0.95;
+  cursor: pointer;
+}
+
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(
+      34.67% 21.85% at 50% 0%,
+      #111115 0%,
+      rgba(17, 17, 21, 0) 100%
+    ),
+    radial-gradient(
+      34.67% 21.85% at 50% 0%,
+      #111115 0%,
+      rgba(17, 17, 21, 0) 100%
+    );
+}
+
+.scoreboard-list {
+  width: 29%;
+  height: 13%;
+  margin-top: 1%;
+}
+
+.red-team-bar {
+  height: 100%;
+  width: 32.1%;
+  float: right;
+  background: radial-gradient(
+      73.99% 95.61% at 50.05% 100%,
+      rgba(218, 68, 68, 0.108) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      89.58% 89.58% at 50% 50%,
+      rgba(9, 9, 13, 0.6) 0%,
+      rgba(9, 9, 13, 0) 100%
+    ),
+    rgba(9, 9, 13, 0.81);
+  border: 0.15vw solid rgba(191, 83, 83, 0.37);
+  border-radius: 0.25vw;
+}
+
+.time-bar {
+  height: 100%;
+  width: 32.1%;
+  float: right;
+  margin-right: 0.5vw;
+}
+
+.blue-team-bar {
+  height: 100%;
+  width: 32.1%;
+  float: right;
+  background: radial-gradient(
+      73.99% 95.61% at 50.05% 100%,
+      rgba(47, 98, 231, 0.108) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      89.58% 89.58% at 50% 50%,
+      rgba(9, 9, 13, 0.6) 0%,
+      rgba(9, 9, 13, 0) 100%
+    ),
+    rgba(9, 9, 13, 0.81);
+  border: 0.15vw solid rgba(47, 98, 231, 0.33);
+  border-radius: 0.25vw;
+  margin-right: 0.5vw;
+}
+
+.teaming {
+  width: 100%;
+  height: 1vw;
+  margin-top: 0.9vw;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2vw;
+  text-align: center;
+  color: #da4444;
+}
+
+.score-status {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.1vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.teaming-blue {
+  width: 100%;
+  height: 1vw;
+  margin-top: 0.9vw;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2vw;
+  text-align: center;
+  color: #2f62e7;
+}
+
+.timer-bar {
+  width: 90%;
+  margin-left: 5%;
+  height: 38%;
+  background: radial-gradient(
+      89.58% 89.58% at 50% 50%,
+      rgba(9, 9, 13, 0.6) 0%,
+      rgba(9, 9, 13, 0) 100%
+    ),
+    rgba(9, 9, 13, 0.81);
+  border: 0.1vw solid rgba(45, 45, 56, 0.6);
+  border-radius: 0.15vw;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 2.5vw;
+  text-align: center;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+}
+
+.time-text2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  text-align: center;
+  margin-top: 12.5%;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.41);
+}

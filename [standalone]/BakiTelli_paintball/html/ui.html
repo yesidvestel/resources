@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body style="display: flex;">
+    <div class="CrLobby" style="display: none;">
+      <div class="Lobby-Main">
+        <div class="close-button" onclick="closeCreateLobby()"><i class="fa-solid fa-xmark"></i></div>
+        <div class="lobby-c-text"></div>
+        <input type="number" placeholder="Contraseña (solo número)" class="Create-Password">
+        <div class="create-lobby-dec">Deje en blanco si desea abrir sin contraseña.</div>
+        <div class="create-button" onclick="CreateLobby()">CREAR LOBBY</div>
+      </div>
+    </div>
+    <div class="scoreboard" style="display: none;">
+      <div class="scoreboard-list">
+        <div class="red-team-bar">
+          <div class="teaming">EQUIPO ROJO</div>
+          <div class="score-status" id="red-s">00</div>
+        </div>
+        <div class="time-bar">
+          <div class="time-text2">TIEMPO</div>
+          <div class="timer-bar">01:15</div>
+        </div>
+        <div class="blue-team-bar">
+          <div class="teaming-blue">EQUIPO AZUL</div>
+          <div class="score-status" id="blue-s">00</div>
+        </div>
+      </div>
+    </div>
+    <div class="win" style="display: none;">
+      <div class="win-text">Ganaste</div>
+    </div>
+    <div class="lose" style="display: none;">
+      <div class="lose-text">Perdiste</div>
+    </div>
+    <div class="time" style="display: none;">
+      <div class="time-text">3</div>
+    </div>
+    <div class="all-paintball" style="display: none;">
+    <div class="top-side">
+      <div class="title">
+        PAINTBALL
+        <h2>ARENA</h3>
+      </div>
+      <div class="top-line"></div>
+      <div class="paintball-info">INFORMACIÓN DE PAINTBALL
+        <h2>Crea una lobby o unete a una ya hecha.</h2>
+      </div>
+      <div class="exit-side" onclick="CloseMenu()">
+        <div class="exit-text">Salir</div>
+        <div class="exit-button"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    </div>
+    <div class="center-side">
+      <div class="center-info">
+        <div class="center-map-all">
+          <div class="center-mapdetail">
+            <div class="center-map-title">NOMBRE DE LA UBICACIÓN DE GTA 5</div>
+            <div class="center-map-dec">NOMBRE DE LA UBICACIÓN DE GTA 5</div>
+          </div>
+        </div>
+        <div class="map-information">
+          <div class="map-details">
+            <div class="map-icon"><i class="fa-solid fa-map"></i></div>
+            <div class="map-title">Nombre del mapa</div>
+            <dic class="map-title-max">NOMBRE DE LA UBICACIÓN DE GTA 5</dic>
+            <div class="map-info"></div>
+          </div>
+          <div class="map-i">Información del mapa</div>
+          <div class="map-iy">¿Quién es ese sino algunos en Internet en los mauris?.</div>
+          <div class="next" onclick="Previous()">&#xf177; Atras</div>
+          <div class="previous" onclick="Next()">Siguiente &#xf178;</div>
+        </div>
+        <div class="minutes-all">
+          <div class="minutes-all2">
+            <div class="minutes-item bes" onclick="Time(5)">5 Minutos</div>
+            <div class="minutes-item on" onclick="Time(10)">10 Minutos</div>
+            <div class="minutes-item onbes" onclick="Time(15)">15 Minutos</div>
+            <div class="minutes-item yirmi" onclick="Time(20)">20 Minutos</div>
+            <div class="minutes-item yirmibes" onclick="Time(25)" style="background: radial-gradient(117.44% 117.44% at 50% 50%, #7CF602 0%, rgba(124, 246, 2, 0) 100%); color: #000000;">25 Minutes</div>
+            <div class="minutes-item otuz" onclick="Time(30)">30 Minutos</div>
+          </div>
+        </div>
+      </div>
+      <div class="center-line"></div>
+      <div class="center-all-2" style="display: none;">
+        <div class="red-team">
+          <div class="red-particle"></div>
+          <div class="team-top">
+            <div class="team-top-text">EQUIPO ROJO <span></span></div>
+            <div class="team-top-text-total" id="red-total">JUGADORES 5</div>
+          </div>
+          <div class="team-players" id="red">
+            <div class="team-line"></div>
+            <div class="team-player" id="red1" onclick="LoginTeam(`red`, 1)">
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="red2" onclick="LoginTeam(`red`, 2)">
+            <div class="team-line" id="team-line-blue-2"></div>
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="red3" onclick="LoginTeam(`red`, 3)">
+              <div class="team-line"  id="team-line-blue-2"></div>
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="red4" onclick="LoginTeam(`red`, 4)">
+              <div class="team-line"  id="team-line-blue-2"></div>
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="red5" onclick="LoginTeam(`red`, 5)">
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+          </div>
+        </div>
+        <div class="starter">
+          <div class="disabled" onclick="Disband()">&#xf00d; Cancelar</div>
+          <div class="start" onclick="Start()">COMENZAR</div>
+        </div>
+        <div class="blue-team">
+          <div class="blue-particle"></div>
+          <div class="team-top">
+            <div class="team-top-text" style="color: #2F62E7;">EQUIPO AZUL <span></span></div>
+            <div class="team-top-text-total" id="blue-total">MAXIMO JUGADORES 5</div>
+          </div>
+          <div class="team-players">
+            <div class="team-line"></div>
+            <div class="team-player" id="blue1" onclick="LoginTeam(`blue`, 1)">
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="blue2" onclick="LoginTeam(`blue`, 2)">
+            <div class="team-line" id="team-line-blue-2"></div>
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="blue3" onclick="LoginTeam(`blue`, 3)">
+              <div class="team-line" id="team-line-blue-2"></div>
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="blue4" onclick="LoginTeam(`blue`, 4)">
+              <div class="team-line"  id="team-line-blue-2"></div>
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+            <div class="team-player" id="blue5" onclick="LoginTeam(`blue`, 5)">
+              <div
+              class="profilePhotoImg"
+              style="
+                background-image: url(./img/add.png);
+              "
+            ></div>
+            <div class="team-name">Unirse al equipo</div>
+            <div class="team-id">Ninguno</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center-all" style="display: none;">
+        <div class="lobbys">
+          <div class="lobbys-particle"></div>
+          <div class="lobbys-top">
+            <div class="create-lobby" onclick="openCreateLobby()">
+              <div class="create-lobby-body"><i class="fa-solid fa-plus"></i></div>
+              <div class="create-lobby-text">NUEVA <h2>LOBBY</h2></div>
+            </div>
+            <div class="total-lobby">TOTAL LOBBY 0</div>
+            <div class="info-listening">
+              <div class="info-item">L. NOMBRE &#xf078;</div>
+              <div class="info-item">Nombre del mapa &#xf078;</div>
+              <div class="info-item">Tiempo &#xf078;</div>
+              <div class="info-item">Jugadores &#xf078;</div>
+            </div>
+          </div>
+        <div class="lobbys-itemall">
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/saferInnerHTML@1/dist/saferInnerHTML.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js.js"></script>
+</html>

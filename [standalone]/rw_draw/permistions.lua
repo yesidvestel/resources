@@ -2,8 +2,7 @@ PERMS = {}
 PERMS.type = "license" ---[PERMISION FILE]
 PERMS.data = {
     ['license'] = {
-       ['dkslakfasdasd'] = true,
-       ['1aaspujepikemfwer141e4dpo1'] = true,
+       ['141d890765d2711fc128d4e2f06baf32c7faa8c7'] = true,
     },
 }
 ---------------------------------------------------
