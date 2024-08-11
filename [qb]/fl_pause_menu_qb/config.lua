@@ -15,18 +15,18 @@ config = {
             text = 'Si el cliente es muy inteligente podrá conseguir el resultado deseado. Ni placer para ser rechazado.'
         }, -- News Section
 
-        Updates = {
+        /*Updates = {
             title = 'Actualizaciones', 
             text = 'Si el cliente es muy inteligente podrá conseguir el resultado deseado. Ni placer para ser rechazado.'
-        }, -- Updates Section
+        },*/ -- Updates Section
 
         CharacterInfo = {
             title = 'Información del personaje', 
         }, -- Charachter Information Section
         
-        Rules = {
+        /*Rules = {
             title = 'Normas', 
-        }, -- Rules Section
+        },*/ -- Rules Section
 
         Report = {
             title = 'Informe', 
@@ -43,10 +43,10 @@ config = {
             text = 'Enviar informe a la discord!'
         }, -- Submit Section
 
-        CustomSection = {
+        /*CustomSection = {
             title = 'Sección personalizada', 
             text = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque voluptas at recusandae.'
-        }, -- Submit Section
+        },*/ -- Submit Section
 
     },
 
