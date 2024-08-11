@@ -1,11 +1,11 @@
 config = {
-    discordLink = "https://discord.gg/56zt87zcgB", -- Set discrod link
-    discord_Webhook = "https://discord.com/api/webhooks/1242584310100525147/q4Oiyffc6lhLbM_5rtnJhBZw9u69OZW1ajSZb_A1tzLBASXDQeropt28FzzOji70rp0x",
+    discordLink = "https://discord.gg/M6BCbHBW3t", -- Set discrod link
+    discord_Webhook = "https://discord.com/api/webhooks/1272204307491721298/NclUisg4f_gQnvyGQ9-W1uU1y_BJHE1iepRWvUGOj-M2MMYQ_TZXYlsP50qiZMJN24ds",
     discord_footer_message = "Reported by ",
     discord_WebhookColor = 16753920, -- Only decimal color
     discord_error_message = "Invalid form!",
 
-    ServerName = 'ComunaRp', -- Server Name
+    ServerName = 'Comuna RP', -- Server Name
     server_language = 'en', -- en or hu
 
     -- Section Names and text
@@ -71,7 +71,7 @@ config = {
         },
     },
 
-    -- Set rules
+    /*-- Set rules
     rules = {
         -- First Rule
         {
@@ -90,7 +90,7 @@ config = {
             title = 'Regla 3',
             text = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid perspiciatis quo error magni ad unde expedita possimus minima, itaque aspernatur dolores corporis, eius labore, laborum placeat voluptatibus id vitae nesciunt?'
         },
-    },
+    },*/
 
     -- Set placeholder text
     placeHolders = {
