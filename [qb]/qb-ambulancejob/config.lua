@@ -53,30 +53,30 @@ Config.Locations = {                -- Edit the various interaction points for p
         [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
     },
     ['armory'] = {
-        [1] = vector3(309.93, -602.94, 43.29),
+        [1] = vector3(321.89, -584.14, 43.27),
         [2] = vector3(-245.13, 6315.71, 32.82),
     },
     ['roof'] = {
         [1] = vector4(338.5, -583.85, 74.16, 245.5),
     },
 	['vestier'] = {
-        [1] = vector3(308.99, -585.92, 38.33),
+        [1] = vector3(308.53, -587.54, 38.33),
     },
     ['main'] = {
-        [1] = vector3(308.17, -566.67, 43.27),
+        [1] = vector3(317.1, -576.62, 43.28),
     },
     ['stash'] = {
-        [1] = vector3(309.78, -596.6, 43.29),
+        [1] = vector3(306.31, -590.89, 38.33),
     },
     ['beds'] = {
-        { coords = vector4(353.1, -584.6, 43.11, 152.08),    taken = false, model = 1631638868 },
-        { coords = vector4(356.79, -585.86, 43.11, 152.08),  taken = false, model = 1631638868 },
-        { coords = vector4(354.12, -593.12, 43.1, 336.32),   taken = false, model = 2117668672 },
-        { coords = vector4(350.79, -591.8, 43.1, 336.32),    taken = false, model = 2117668672 },
-        { coords = vector4(346.99, -590.48, 43.1, 336.32),   taken = false, model = 2117668672 },
-        { coords = vector4(360.32, -587.19, 43.02, 152.08),  taken = false, model = -1091386327 },
-        { coords = vector4(349.82, -583.33, 43.02, 152.08),  taken = false, model = -1091386327 },
-        { coords = vector4(326.98, -576.17, 43.02, 152.08),  taken = false, model = -1091386327 },
+        { coords = vector4(311.5, -587.43, 43.27, 332.06),    taken = false, model = 1631638868 },
+        { coords = vector4(321.09, -600.62, 43.26, 63.76),  taken = false, model = 1631638868 },
+        { coords = vector4(328.63, -589.23, 48.21, 237.67),   taken = false, model = 2117668672 },
+        { coords = vector4(316.59, -575.33, 48.21, 240.07),    taken = false, model = 2117668672 },
+        { coords = vector4(321.2, -577.13, 48.21, 62.68),   taken = false, model = 2117668672 },
+        { coords = vector4(317.52, -571.67, 48.21, 232.4),  taken = false, model = -1091386327 },
+        { coords = vector4(314.34, -570.53, 48.21, 242.79),  taken = false, model = -1091386327 },
+        { coords = vector4(317.4, -566.62, 48.21, 60.79),  taken = false, model = -1091386327 },
         --- paleto
         { coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672 },
         { coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672 },

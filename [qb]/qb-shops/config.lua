@@ -461,8 +461,8 @@ Config.Locations = {
     },
 	-- drogueria
 	['drogueria'] = {
-        ['label'] = 'Tienda tecnoligia',
-        ['coords'] = vector4(316.49, -587.2, 43.29, 179.64),
+        ['label'] = 'Farmacia Hospital',
+        ['coords'] = vector4(324.72, -583.63, 43.27, 164.83),
         ['ped'] = 's_f_y_scrubs_01',
         ['scenario'] = 'WORLD_HUMAN_CLIPBOARD',
         ['radius'] = 1.5,
