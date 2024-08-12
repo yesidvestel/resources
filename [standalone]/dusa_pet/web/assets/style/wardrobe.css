@@ -1,0 +1,214 @@
+.wardrobe {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 4rem 0 4rem;
+}
+
+.pet-dressing {
+    width: 29.5vw;
+    height: 27.833vw;
+    border-radius: 0.80031rem;
+    padding: 1rem;
+    border: 1px solid #707070;
+    background: linear-gradient(129deg, #000103 0%, #010104 100%);
+}
+
+.dressing {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dressing-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dressing-img img {
+    width: 13vw;
+}
+
+.dressing-cloth {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.cloth-slot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 6vw;
+    border-radius: 0.30788rem;
+    background-image: url("../img/wardrobe/slot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slot-active-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 6vw;
+    color: white;
+}
+
+.slot-active-item img{
+    width: 7vw;
+}
+
+.list-group{
+    width: 12vw;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slot-border{
+    position: absolute;
+    top: -7%;
+    width: 13vw;
+    pointer-events: none;
+}
+
+.pet-clothing {
+    width: 33.333vw;
+    height: 36.667vw;
+    border-radius: 0.97488rem;
+    border: 1px solid #707070;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(129deg, #000103 0%, #010104 100%);
+}
+
+.clothing-header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.clothing-header span {
+    color: white;
+    margin-top: 3.5rem;
+    margin-left: 5.3rem;
+    position: absolute;
+    color: #464646;
+    font-size: 13.45px;
+    font-weight: 500;
+}
+
+.clothing-main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+}
+
+.cloth-card {
+    width: 8.958vw;
+    height: 9.844vw;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.30788rem;
+    border: 0.985px solid #242226;
+    position: relative; 
+    background: radial-gradient(70.12% 70.12% at 50.00% 50.00%, rgba(255, 255, 255, 0.00) 0%, rgba(11, 10, 14, 0.10) 100%);
+}
+
+.c-card-header {
+    width: 100%;
+    height: 15%;
+    border-radius: 0.3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-card-header.cat {
+    background: rgba(158, 127, 234, 0.21);
+}
+
+.c-card-header.dog {
+    background: rgb(221, 172, 98, 0.21);
+}
+
+.c-card-img {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-card-img img {
+    width: 6vw;
+}
+
+.c-card-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.125rem;
+    background: rgba(217, 217, 217, 0.13);
+    height: 20%;
+    text-align: center;
+    color: #BABABA;
+    font-size: 0.652vw;
+    font-weight: 800;
+}
+
+.dressing-notify{
+    width: 100%;
+    height: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.notify-cont{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.20525rem;
+    background: rgba(217, 217, 217, 0.02);
+}
+
+.notify-cont h1{
+    color: #DDAC62;
+    font-size: 1.30569rem;
+    font-weight: 700;
+}
+
+.notify-cont p{
+    color: rgba(255, 255, 255, 0.46);
+    font-size: 0.93425rem;
+    font-weight: 500;
+}
+
+.clothes-dragging{
+    opacity: 0.5;
+}

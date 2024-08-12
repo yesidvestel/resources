@@ -1,0 +1,469 @@
+-- ox inv
+['rose'] = {
+    label = 'Rose',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['controller'] = {
+    label = 'Controller',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['hat'] = {
+    label = 'hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['hat2'] = {
+    label = 'hat2',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['teddybear'] = {
+    label = 'teddybear',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['glasses'] = {
+    label = 'glasses',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['glasses2'] = {
+    label = 'glasses2',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['tennisball'] = {
+    label = 'Ball',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+['petbowl'] = {
+    label = 'Pet Feed Bowl',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['petbed'] = {
+    label = 'Pet Bed',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['petbed2'] = {
+    label = 'Pet Bed',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['nametag'] = {
+    label = 'Name Tag',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['coolglasses'] = {
+    label = 'Cool Glasses',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['collar'] = {
+    label = 'Pet Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['collar2'] = {
+    label = 'Pet Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['collar3'] = {
+    label = 'Pet Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['collar4'] = {
+    label = 'Pet Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['collar5'] = {
+    label = 'Pet Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['collar6'] = {
+    label = 'Pet Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['collar7'] = {
+    label = 'Pet Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['bluebandana'] = {
+    label = 'Blue Bandana',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn2'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn3'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn4'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn5'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn6'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn7'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn8'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['unihorn9'] = {
+    label = 'Unicorn Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat2'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat3'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat4'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat5'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat6'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat7'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat8'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat9'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['tinyhat10'] = {
+    label = 'Tiny Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['beewings'] = {
+    label = 'Bee Wings',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['batmanvest'] = {
+    label = 'Batman Vest',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['redvest'] = {
+    label = 'Red Vest',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['elytecollar'] = {
+    label = 'Elyte Collar',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['blackvest'] = {
+    label = 'Black Vest',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['bowtie'] = {
+    label = 'Bowtie',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['daisyvest'] = {
+    label = 'Daisy Vest',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['petchef'] = {
+    label = 'Chef Hat',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['daisycrown'] = {
+    label = 'Daisy Crown',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['petdeer'] = {
+    label = 'Deer Horn',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['petchain'] = {
+    label = 'Pet Chain',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['partyglasses'] = {
+    label = 'Party Glasses',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['beetail'] = {
+    label = 'Bee Tail',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['beadnecklace'] = {
+    label = 'Bead Necklace',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['pinksweater'] = {
+    label = 'Pink Sweater',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['xmasvest'] = {
+    label = 'XMas Vest',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['brownshoes'] = {
+    label = 'Brown Shoes',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['fairyvest'] = {
+    label = 'Fairy Vest',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['k9vest'] = {
+    label = 'K9 Vest',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+
+-- Treat items
+['treatmentkit'] = {
+    label = 'Treatment Kit',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['revivekit'] = {
+    label = 'Revive Kit',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['treatmentpills'] = {
+    label = 'Treatment Pills',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+
+-- Leashes (Update v1.5)
+['leash'] = {
+    label = 'Pet Leash',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['leash2'] = {
+    label = 'Pet Leash',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},
+['leash3'] = {
+    label = 'Pet Leash',
+    weight = 1,
+    stack = true,
+    close = true,
+    description = nil
+},

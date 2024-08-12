@@ -1,0 +1,99 @@
+.pets-shop {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+.petshop-cont {
+    width: 70vw;
+    height: 35vw;
+    padding: 2rem;
+    border-radius: 15.598px;
+    background: linear-gradient(129deg, #000103 0%, #010104 100%);
+}
+
+.petshop-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 15.602px;
+    border: 1.559px solid #424242;
+    background: rgba(216, 31, 31, 0);
+}
+
+.pets-button-add.active{
+    pointer-events: none;
+    color: #ffffff;
+}
+
+.deletecard-pet{
+    color: black;
+    font-size: 0.7vw;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 90%;
+    height: 100%;
+    background-color: #DDAC62;
+    border-radius: 0.12456rem;
+}
+
+.focuspet{
+    width: 100%;
+    position: relative;
+    top: 5%;
+    padding-right: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.focuspet svg{
+    width: 1.3vw;
+    height: 1.3vw;
+}
+
+.back-button-petshop{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3vw;
+    opacity: 0;
+}
+
+.back-button-petshop img{
+    width: 4vw;
+    cursor: pointer;
+}
+
+.vignette {
+    position: absolute;
+    opacity: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 6vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.vignette p{
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: #ffffff;
+}

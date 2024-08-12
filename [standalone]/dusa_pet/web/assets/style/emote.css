@@ -1,0 +1,344 @@
+.emote {
+    width: 100%;
+    height: 100vh;
+    padding-left: 3vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+.emote-cont {
+    width: 25vw;
+    height: 35vw;
+    padding: 0.5vw;
+    border-radius: 1.5625rem;
+    border: 3px solid #7C654F;
+}
+
+.emote-inner {
+    width: 100%;
+    height: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5625rem;
+    background-image: url("../img/emote/background.svg");
+    background-size: cover;
+}
+
+.emote-header {
+    width: 100%;
+    height: 10vw;
+    position: relative;
+    display: flex;
+    border-radius: 0.97513rem;
+    border: 1.559px solid #876544;
+    background: linear-gradient(177deg, #0C0C0C 25.14%, #876544 309.3%);
+}
+
+.emote-header-petname {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.emote-header-petname div {
+    width: 40%;
+    height: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0rem 1rem 0rem 0.97513rem;
+    color: #FFF;
+    font-size: 0.4vw;
+    font-weight: 900;
+    background: #AA723C;
+}
+
+.emote-header-img {
+    width: 50%;
+    height: 100%;
+}
+
+.emote-header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.97513rem;
+}
+
+.emote-header-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 0.97513rem;
+}
+
+.circle-status {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.circle-status .status-text {
+    font-size: 0.45vw;
+    font-weight: 800;
+}
+
+.circle-status .status-text#energyT {
+    color: #F27601;
+    font-size: 0.45vw;
+    text-transform: uppercase;
+}
+
+.circle-status .status-text#healthT {
+    color: #9FC849;
+}
+
+.circle-status .status-text#hungerT {
+    color: #C84949;
+}
+
+.progress {
+    width: 2.5vw;
+    height: 2.5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress>.inner {
+    position: absolute;
+    font-size: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #d9d9d962;
+}
+
+.progress .inner svg path {
+    opacity: 1 !important;
+}
+
+.progress .inner svg {
+    width: 1.1vw;
+    height: 1.1vw;
+}
+
+
+.progress>svg {
+    display: block;
+}
+
+.progress svg path:nth-child(1) {
+    opacity: 0.1;
+}
+
+.emote-main {
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw;
+    border-radius: 0.97513rem;
+    border: 1.559px solid #424242;
+    background: rgba(217, 217, 217, 0.00);
+}
+
+.emote-main-button {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.emote-main-button .emote-icon {
+    width: 15%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    border: #5B5B5B 0.7px solid;
+    justify-content: center;
+    background: linear-gradient(230deg, rgba(91, 91, 91, 0.20) 17.78%, rgba(91, 91, 91, 0.00) 86.99%);
+    transition: 0.3s ease-in-out;
+}
+
+.emote-icon.active {
+    background: linear-gradient(230deg, rgba(143, 109, 76, 0.20) 17.78%, rgba(135, 101, 68, 0.00) 86.99%);
+    border: #876544 0.7px solid;
+}
+
+.emote-icon.active svg path {
+    fill: #876544;
+}
+
+.emote-icon svg {
+    width: 50%;
+    height: 50%;
+}
+
+.emote-icon svg path {
+    transition: 0.3s ease-in-out;
+}
+
+.emote-button {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5B5B5B;
+    background: rgba(91, 91, 91, 0.04);
+    border: #5B5B5B 1.413px solid;
+    font-size: 0.5vw;
+    pointer-events: all;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.emote-button.active {
+    color: #876544;
+    border: #876544 1.413px solid;
+    background: rgba(135, 101, 68, 0.04);
+    pointer-events: none;
+}
+
+.emotes-main {
+    width: 100%;
+    height: 70%;
+}
+
+.emotes-main-text {
+    width: 100%;
+    color: #8B8B8B;
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+
+.emotes-list {
+    width: 100%;
+    height: 99%;
+    margin-top: 3%;
+    padding-right: 0.3vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.emotes-list-item {
+    width: 100%;
+    margin-bottom: 0.4vw;
+    height: 2.5vw;
+    display: flex;
+    padding: 0.3vw;
+    gap: 0.3vw;
+    pointer-events: all;
+    cursor: pointer;
+    border-radius: 0.19394rem;
+    border: 1.034px solid #353535;
+    background: rgba(53, 53, 53, 0.17);
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item .emotes-list-img {
+    border-radius: 0.06463rem;
+    background: rgba(217, 217, 217, 0.08);
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item .emotes-list-img svg {
+    width: 50%;
+    height: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item .emotes-list-text{
+    width: 75%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item .emotes-list-text h2{
+    color: #8B8B8B;
+    font-size: 0.6vw;
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item .emotes-list-text p{
+    color: #6B6B6B;
+    font-size: 0.5vw;
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item .emotes-list-button{
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(217, 217, 217, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item .emotes-list-button svg{
+    width: 50%;
+    height: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.action-img{
+    width: 50%;
+    height: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.emotes-list-item.active {
+    border: 1.034px solid #876544;
+}
+
+.emotes-list-item.active .emotes-list-img{
+    background: rgba(135, 101, 68, 0.08);
+}
+
+.emotes-list-item.active .emotes-list-img svg path{
+    fill: #876544;
+}
+
+.emotes-list-item.active .emotes-list-button{
+    background: rgba(135, 101, 68, 0.08);
+}
+
+.emotes-list-item.active .emotes-list-button svg path{
+    fill: #876544;
+}
+
+.action-main {
+    width: 100%;
+    height: 70%;
+    display: none;
+}

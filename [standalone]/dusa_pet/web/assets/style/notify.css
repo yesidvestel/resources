@@ -1,0 +1,92 @@
+/* Notify */
+
+.notify{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    padding: 2vw;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.notfiyC{
+    width: 16vw;
+    position: relative;
+    transition: 0.5 ease-in-out;
+    left: -20vw;
+    height: 7vw;
+}
+
+.notfiyC .cont{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding-left: 1vw;
+}
+
+.notfiyC .cont .icon{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfiyC .cont .icon svg{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.notfiyC .cont .text{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.notfiyC .cont .text h1{
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.notfiyC .cont .text p{
+    font-size: 0.6vw;
+    font-weight: 500;
+    color: #A4A4A4;
+}
+
+.notfiyC svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.success h1{
+    color: #62DD9B;
+}
+
+.error h1{
+    color: #DD6262;
+}
+
+.info h1{
+    color: #D3DD62;
+}
+
+.hunger h1{
+    color: #DD62D8;
+}
+
+.quest h1{
+    color: D2D2D2;
+}

@@ -1,0 +1,27 @@
+.hud{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    align-items: center;
+    padding: 3vw;
+    overflow: hidden;
+    transform: translateY(-5vw);
+}
+
+.hudC{
+    width: 12vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    border-radius: 0.45194rem;
+    background: linear-gradient(118deg, #000103 4.7%, #010104 100.47%);
+}
+
+.hudC .circle-status{
+    width: 2vw !important;
+    height: 2vw !important;
+}
