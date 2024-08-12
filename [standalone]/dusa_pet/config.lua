@@ -1962,69 +1962,68 @@ Config.Pets = {
 Config.Emotes = {
     ["emotes"] = {
         [1] = {
-            name = 'Throw Ball',
-            description = 'The ball you throw will be brought back by your pet',
+            name = 'Lanzar pelota',
+            description = 'La pelota que lances será traída de vuelta por tu mascota',
             emote_code = 'ball'
         },
         [2] = {
-            name = 'Sit',
-            description = 'Command your pet to sit',
+            name = 'Sentarse',
+            description = 'Ordena a tu mascota que se siente',
             emote_code = 'sit'
         },
         [3] = {
-            name = 'Pet',
-            description = 'Caress your pet\'s head',
+            name = 'Acariciar',
+            description = 'Acaricia la cabeza de tu mascota',
             emote_code = 'pet'
         },
         [4] = {
-            name = 'Lay',
-            description = 'Command your pet to lay down',
+            name = 'Acostarse',
+            description = 'Ordena a tu mascota que se acueste',
             emote_code = 'lay'
         },
         [5] = {
-            name = 'Bark',
-            description = 'Command your dog to bark',
+            name = 'Ladrar',
+            description = 'Ordena a tu perro que ladre',
             emote_code = 'bark'
         },
         [6] = {
-            name = 'Paw',
-            description = 'Your pet will paw',
+            name = 'Pata',
+            description = 'Tu mascota moverá la pata',
             emote_code = 'paw'
         },
         [7] = {
-            name = 'Dance',
-            description = 'See your pet\'s dance performances',
+            name = 'Bailar',
+            description = 'Observa las actuaciones de baile de tu mascota',
             emote_code = 'dance'
         }
     },
     ["actions"] = {
         [1] = {
-            name = 'Follow',
-            description = 'Command your pet to follow you',
+            name = 'Seguir',
+            description = 'Ordena a tu mascota que te siga',
             action_code = 'follow',
             icon = 'ball.svg'
         },
         [2] = {
-            name = 'Go To',
-            description = 'Command your pet to go to desired location',
+            name = 'Ir a',
+            description = 'Ordena a tu mascota que vaya a la ubicación deseada',
             action_code = 'goto',
             icon = 'ball.svg'
         },
         [3] = {
-            name = 'Attack',
-            description = 'Have your pet attack the pointed person',
+            name = 'Atacar',
+            description = 'Haz que tu mascota ataque a la persona señalada',
             action_code = 'attack',
             icon = 'ball.svg'
         },
         [4] = {
-            name = 'Get In / Out',
-            description = 'Command your pet to get into / out the vehicle',
+            name = 'Subir / Bajar',
+            description = 'Ordena a tu mascota que suba o baje del vehículo',
             action_code = 'getin',
             icon = 'ball.svg'
         }
-    }
+    }    
 }
-
 ------------------------PLACABLE OBJECTS-----------------------
 ---------------------------------------------------------------
 
@@ -2258,49 +2257,49 @@ Config.Translations = {
         notifyError = '¡Error!',
         notifySuccess = '¡Éxito!',
         notifyInfo = 'Información',
-        notifyHunger = '¡Yummy!',
-    
+        notifyHunger = '¡Delicioso!',
+        
         -- Interacciones
-        e_interact = 'E - Abrir Tienda',
-        keymap_description = 'Interacciones de la Tienda de Mascotas',
-
+        e_interact = 'E - Abrir tienda',
+        keymap_description = 'Interacciones de la tienda de mascotas',
+        
         -- Tienda de Mascotas
         store_header = '¡Compra algunas cosas para tus mascotas!',
         store_addcart = 'Agregar',
-        store_paycard = 'PAGAR CON TARJETA',
-        store_paycash = 'PAGAR EN EFECTIVO',
-    
+        store_paycard = 'Pagar con tarjeta',
+        store_paycash = 'Pagar en efectivo',
+        
         -- Armario
         wardrobe_header = '¡Viste a tus mascotas!',
-        wardrobe_info = '¡INFORMACIÓN!',
+        wardrobe_info = '¡Información!',
         wardrobe_infop = 'Arrastra y suelta para vestir a la mascota',
-    
+        
         -- Menú de Emotes
-        emote_emotes = 'EMOTES',
-        emote_actions = 'ACCIONES',
-        emote_health = 'SALUD',
-        emote_hunger = 'HAMBRE',
-        emote_healthy = 'SANO',
-    
+        emote_emotes = 'Emotes',
+        emote_actions = 'Acciones',
+        emote_health = 'Salud',
+        emote_hunger = 'Hambre',
+        emote_healthy = 'Sano',
+        
         -- Menú de Mascotas
-        petmenu_pets = 'MASCOTAS',
-        petmenu_call = 'LLAMAR',
-        petmenu_sleep = 'IR A DORMIR',
-        petmenu_delete = 'LIBERAR',
-    
+        petmenu_pets = 'Mascotas',
+        petmenu_call = 'Llamar',
+        petmenu_sleep = 'Ir a dormir',
+        petmenu_delete = 'Liberar',
+        
         -- Menú de Liberación de Mascotas
         release_title = '¿Estás seguro?',
-        release_yes = 'SÍ',
-        release_no = 'NO',
-    
+        release_yes = 'Sí',
+        release_no = 'No',
+        
         -- Tienda de Mascotas
         petshop_header = '¡Adopta una nueva y linda mascota!',
         petshop_addcart = 'Agregar',
-        petshop_paycard = 'PAGAR CON TARJETA',
-        petshop_paycash = 'PAGAR EN EFECTIVO',
-        petshop_added = 'AGREGADO',
-        petshop_delete = 'ELIMINAR',
-        petshop_rotate = 'PRESIONA A-D PARA GIRAR'
+        petshop_paycard = 'Pagar con tarjeta',
+        petshop_paycash = 'Pagar en efectivo',
+        petshop_added = 'Agregado',
+        petshop_delete = 'Eliminar',
+        petshop_rotate = 'Presiona A-D para girar'
     },
     ["it"] = {
         notifyError = 'Errore!',
@@ -2594,7 +2593,7 @@ Config.Notifications = {
         pet_renamed_to = 'Has cambiado el nombre de tu mascota a',
         call_to_rename = 'No puedes cambiar el nombre de tu mascota antes de llamarla.',
         petisinbed = 'La mascota ya está en la cama, no puedes realizar esta acción.',
-
+    
         -- target
         t_sleep = 'Dormir',
         t_sit = 'Sentarse',
@@ -2612,7 +2611,7 @@ Config.Notifications = {
         attack_info = 'Elige a quién atacará tu mascota. (Presiona X para cancelar)',
     
         -- texto UI
-        finalize_attack = '[E] - Finalizar Ataque',
+        finalize_attack = '[E] - Finalizar ataque',
         attack_canceled = 'Ataque cancelado',
         determine_location = '[E] - Determinar ubicación',
     
@@ -2637,7 +2636,7 @@ Config.Notifications = {
         bought_pet = '¡Compraste con éxito una mascota!',
         not_enough_cash = '¡No tienes suficiente dinero en efectivo!',
         not_enough_bank = '¡No tienes suficiente dinero en tu banco!',
-    },
+    },    
     ["fr"] = {
         callpetfirst = "Vous devez d'abord appeler votre animal de compagnie pour ouvrir ce menu !",
         willsniff = 'va renifler', -- "L'animal de compagnie va renifler", le nom de l'animal de compagnie est placé au début de la phrase
