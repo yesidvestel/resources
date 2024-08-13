@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CPedModelInfo__InitDataList>
+	<InitDatas>
+    <Item>
+      <Name>A_C_Chop</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>CREATURES@ROTTWEILER@MOVE</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName />
+      <ExpressionDictionaryName>A_C_Rottweiler</ExpressionDictionaryName>
+      <ExpressionName>A_C_Rottweiler</ExpressionName>
+      <Pedtype>ANIMAL</Pedtype>
+      <MovementClipSet>rottweiler@move</MovementClipSet>
+      <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+      <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>creatures@rottweiler@step</SidestepClipSet>
+      <PoseMatcherName>Rottweiler</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>NMBS_ROTTWEILER_GETUPS</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>DOG</DecisionMakerName>
+      <MotionTaskDataSetName>Rottweiler</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>ANIMAL</DefaultTaskDataSetName>
+      <PedCapsuleName>chop</PedCapsuleName>
+      <PedLayoutName />
+      <PedComponentSetName />
+      <PedComponentClothName />
+      <PedIKSettingsName>STANDARD_DOG_IK</PedIKSettingsName>
+      <TaskDataName>DOG</TaskDataName>
+      <IsStreamedGfx value="false" />
+      <AmbulanceShouldRespondTo value="false" />
+      <CanRideBikeWithNoHelmet value="false" />
+      <CanSpawnInCar value="true" />
+      <IsHeadBlendPed value="false" />
+      <bOnlyBulkyItemVariations value="false" />
+      <RelationshipGroup>CIVMALE</RelationshipGroup>
+      <NavCapabilitiesName>STANDARD_QUADRUPED</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>BS_DOG</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>WEAPON_ANIMAL</DefaultUnarmedWeapon>
+      <Personality>Animal</Personality>
+      <CombatInfo>CHOP</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_DOG_CAT_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_PUNK</Radio1>
+      <Radio2>RADIO_GENRE_JAZZ</Radio2>
+      <FUpOffset value="0.000000" />
+      <RUpOffset value="0.000000" />
+      <FFrontOffset value="0.000000" />
+      <RFrontOffset value="0.147000" />
+      <MinActivationImpulse value="20.000000" />
+      <Stubble value="0.000000" />
+      <HDDist value="6.000000" />
+      <TargetingThreatModifier value="1.000000" />
+      <KilledPerceptionRangeModifer value="-1.000000" />
+      <Sexiness />
+      <Age value="0" />
+      <MaxPassengersInCar value="0" />
+      <ExternallyDrivenDOFs />
+      <PedVoiceGroup>MALE_BRAVE_PVG</PedVoiceGroup>
+      <AnimalAudioObject>ANIMAL_PARAMS_DOG_ROTTWEILER</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.000000" />
+      <AllowCloseSpawning value="false" />
+    </Item>
+  <Item>
+   <Name>A_C_Husky_2</Name>
+   <PropsName>null</PropsName>
+   <ClipDictionaryName>creatures@retriever@move</ClipDictionaryName>
+   <BlendShapeFileName>null</BlendShapeFileName>
+   <ExpressionSetName />
+   <ExpressionDictionaryName>a_c_retriever</ExpressionDictionaryName>
+   <ExpressionName>a_c_retriever</ExpressionName>
+   <Pedtype>animal</Pedtype>
+   <MovementClipSet>husky@move</MovementClipSet>
+   <MovementClipSets />
+   <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+   <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+   <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+   <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+   <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+   <DefaultGestureClipSet>anim_group_gesture_m_generic</DefaultGestureClipSet>
+   <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+   <DefaultVisemeClipSet>anim_group_visemes_m_lo</DefaultVisemeClipSet>
+   <SidestepClipSet>creatures@retriever@step</SidestepClipSet>
+   <PoseMatcherName>retriever</PoseMatcherName>
+   <PoseMatcherProneName>null</PoseMatcherProneName>
+   <GetupSetHash>hash_D843E224</GetupSetHash>
+   <CreatureMetadataName>null</CreatureMetadataName>
+   <DecisionMakerName>hash_8B09733B</DecisionMakerName>
+   <MotionTaskDataSetName>retriever</MotionTaskDataSetName>
+   <DefaultTaskDataSetName>animal</DefaultTaskDataSetName>
+   <PedCapsuleName>retriever</PedCapsuleName>
+   <PedLayoutName />
+   <PedComponentSetName />
+   <PedComponentClothName />
+   <PedIKSettingsName>NO_IK</PedIKSettingsName>
+   <TaskDataName>animal</TaskDataName>
+   <IsStreamedGfx value="true" />
+   <AmbulanceShouldRespondTo value="false" />
+   <CanRideBikeWithNoHelmet value="false" />
+   <CanSpawnInCar value="true" />
+   <IsHeadBlendPed value="false" />
+   <bOnlyBulkyItemVariations value="false" />
+   <RelationshipGroup>civmale</RelationshipGroup>
+   <NavCapabilitiesName>hash_AA2B639B</NavCapabilitiesName>
+   <PerceptionInfo>default_perception</PerceptionInfo>
+   <DefaultBrawlingStyle>hash_5A4155C4</DefaultBrawlingStyle>
+   <DefaultUnarmedWeapon>hash_F9FBAEBE</DefaultUnarmedWeapon>
+   <Personality>animal</Personality>
+   <CombatInfo>default</CombatInfo>
+   <VfxInfoName>hash_677DF8BE</VfxInfoName>
+   <AmbientClipsForFlee>flee</AmbientClipsForFlee>
+   <Radio1>RADIO_GENRE_PUNK</Radio1>
+   <Radio2>RADIO_GENRE_JAZZ</Radio2>
+   <FUpOffset value="0" />
+   <RUpOffset value="0" />
+   <FFrontOffset value="0" />
+   <RFrontOffset value="0.147" />
+   <MinActivationImpulse value="20" />
+   <Stubble value="0" />
+   <HDDist value="6" />
+   <TargetingThreatModifier value="1" />
+   <KilledPerceptionRangeModifer value="-1" />
+   <Sexiness />
+   <Age value="0" />
+   <MaxPassengersInCar value="0" />
+   <ExternallyDrivenDOFs />
+   <PedVoiceGroup>hash_087D1FC0</PedVoiceGroup>
+   <AnimalAudioObject>hash_4B6C9FCB</AnimalAudioObject>
+   <AbilityType>SAT_NONE</AbilityType>
+   <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+   <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+   <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+   <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+   <DefaultRemoveRangeMultiplier value="1" />
+   <AllowCloseSpawning value="false" />
+  </Item>
+
+  <Item>
+   <Name>A_C_Retriever_2</Name>
+   <PropsName>null</PropsName>
+   <ClipDictionaryName>creatures@retriever@move</ClipDictionaryName>
+   <BlendShapeFileName>null</BlendShapeFileName>
+   <ExpressionSetName />
+   <ExpressionDictionaryName>a_c_retriever</ExpressionDictionaryName>
+   <ExpressionName>a_c_retriever</ExpressionName>
+   <Pedtype>animal</Pedtype>
+   <MovementClipSet>retriever@move</MovementClipSet>
+   <MovementClipSets />
+   <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+   <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+   <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+   <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+   <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+   <DefaultGestureClipSet>anim_group_gesture_m_generic</DefaultGestureClipSet>
+   <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+   <DefaultVisemeClipSet>anim_group_visemes_m_lo</DefaultVisemeClipSet>
+   <SidestepClipSet>creatures@retriever@step</SidestepClipSet>
+   <PoseMatcherName>retriever</PoseMatcherName>
+   <PoseMatcherProneName>null</PoseMatcherProneName>
+   <GetupSetHash>hash_D843E224</GetupSetHash>
+   <CreatureMetadataName>null</CreatureMetadataName>
+   <DecisionMakerName>hash_8B09733B</DecisionMakerName>
+   <MotionTaskDataSetName>retriever</MotionTaskDataSetName>
+   <DefaultTaskDataSetName>animal</DefaultTaskDataSetName>
+   <PedCapsuleName>retriever</PedCapsuleName>
+   <PedLayoutName />
+   <PedComponentSetName />
+   <PedComponentClothName />
+   <PedIKSettingsName>hash_E9881514</PedIKSettingsName>
+   <TaskDataName>hash_8B09733B</TaskDataName>
+   <IsStreamedGfx value="true" />
+   <AmbulanceShouldRespondTo value="false" />
+   <CanRideBikeWithNoHelmet value="false" />
+   <CanSpawnInCar value="true" />
+   <IsHeadBlendPed value="false" />
+   <bOnlyBulkyItemVariations value="false" />
+   <RelationshipGroup>hash_522B964A</RelationshipGroup>
+   <NavCapabilitiesName>hash_025767B0</NavCapabilitiesName>
+   <PerceptionInfo>default_perception</PerceptionInfo>
+   <DefaultBrawlingStyle>hash_1A1009AE</DefaultBrawlingStyle>
+   <DefaultUnarmedWeapon>hash_E5B7DE7A</DefaultUnarmedWeapon>
+   <Personality>retriever</Personality>
+   <CombatInfo>rottweiler</CombatInfo>
+   <VfxInfoName>hash_677DF8BE</VfxInfoName>
+   <AmbientClipsForFlee>flee</AmbientClipsForFlee>
+   <Radio1>RADIO_GENRE_PUNK</Radio1>
+   <Radio2>RADIO_GENRE_JAZZ</Radio2>
+   <FUpOffset value="0" />
+   <RUpOffset value="0" />
+   <FFrontOffset value="0" />
+   <RFrontOffset value="0.147" />
+   <MinActivationImpulse value="20" />
+   <Stubble value="0" />
+   <HDDist value="6" />
+   <TargetingThreatModifier value="1" />
+   <KilledPerceptionRangeModifer value="-1" />
+   <Sexiness />
+   <Age value="0" />
+   <MaxPassengersInCar value="0" />
+   <ExternallyDrivenDOFs />
+   <PedVoiceGroup>hash_087D1FC0</PedVoiceGroup>
+   <AnimalAudioObject>hash_9C03FC16</AnimalAudioObject>
+   <AbilityType>SAT_NONE</AbilityType>
+   <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+   <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+   <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+   <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+   <DefaultRemoveRangeMultiplier value="1" />
+   <AllowCloseSpawning value="false" />
+  </Item>
+
+  <Item>
+   <Name>A_C_shepherd_2</Name>
+   <PropsName>null</PropsName>
+   <ClipDictionaryName>creatures@rottweiler@move</ClipDictionaryName>
+   <BlendShapeFileName>null</BlendShapeFileName>
+   <ExpressionSetName />
+   <ExpressionDictionaryName>a_c_rottweiler</ExpressionDictionaryName>
+   <ExpressionName>a_c_rottweiler</ExpressionName>
+   <Pedtype>animal</Pedtype>
+   <MovementClipSet>rottweiler@move</MovementClipSet>
+   <MovementClipSets />
+   <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+   <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+   <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+   <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+   <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+   <DefaultGestureClipSet>anim_group_gesture_m_generic</DefaultGestureClipSet>
+   <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+   <DefaultVisemeClipSet>anim_group_visemes_m_lo</DefaultVisemeClipSet>
+   <SidestepClipSet>creatures@rottweiler@step</SidestepClipSet>
+   <PoseMatcherName>rottweiler</PoseMatcherName>
+   <PoseMatcherProneName>null</PoseMatcherProneName>
+   <GetupSetHash>hash_8C5BD81F</GetupSetHash>
+   <CreatureMetadataName>null</CreatureMetadataName>
+   <DecisionMakerName>hash_8B09733B</DecisionMakerName>
+   <MotionTaskDataSetName>rottweiler</MotionTaskDataSetName>
+   <DefaultTaskDataSetName>animal</DefaultTaskDataSetName>
+   <PedCapsuleName>shepherd</PedCapsuleName>
+   <PedLayoutName />
+   <PedComponentSetName />
+   <PedComponentClothName />
+   <PedIKSettingsName>NO_IK</PedIKSettingsName>
+   <TaskDataName>hash_8B09733B</TaskDataName>
+   <IsStreamedGfx value="true" />
+   <AmbulanceShouldRespondTo value="false" />
+   <CanRideBikeWithNoHelmet value="false" />
+   <CanSpawnInCar value="true" />
+   <IsHeadBlendPed value="false" />
+   <bOnlyBulkyItemVariations value="false" />
+   <RelationshipGroup>hash_522B964A</RelationshipGroup>
+   <NavCapabilitiesName>hash_025767B0</NavCapabilitiesName>
+   <PerceptionInfo>default_perception</PerceptionInfo>
+   <DefaultBrawlingStyle>hash_5A4155C4</DefaultBrawlingStyle>
+   <DefaultUnarmedWeapon>hash_F9FBAEBE</DefaultUnarmedWeapon>
+   <Personality>shepherd</Personality>
+   <CombatInfo>rottweiler</CombatInfo>
+   <VfxInfoName>hash_677DF8BE</VfxInfoName>
+   <AmbientClipsForFlee>flee</AmbientClipsForFlee>
+   <Radio1>RADIO_GENRE_PUNK</Radio1>
+   <Radio2>RADIO_GENRE_JAZZ</Radio2>
+   <FUpOffset value="0" />
+   <RUpOffset value="0" />
+   <FFrontOffset value="0" />
+   <RFrontOffset value="0.147" />
+   <MinActivationImpulse value="20" />
+   <Stubble value="0" />
+   <HDDist value="6" />
+   <TargetingThreatModifier value="1" />
+   <KilledPerceptionRangeModifer value="-1" />
+   <Sexiness />
+   <Age value="0" />
+   <MaxPassengersInCar value="0" />
+   <ExternallyDrivenDOFs />
+   <PedVoiceGroup>hash_087D1FC0</PedVoiceGroup>
+   <AnimalAudioObject>hash_83D31A86</AnimalAudioObject>
+   <AbilityType>SAT_NONE</AbilityType>
+   <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+   <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+   <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+   <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+   <DefaultRemoveRangeMultiplier value="1" />
+   <AllowCloseSpawning value="false" />
+  </Item>
+
+    <Item>
+      <Name>dusa_doberman</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>CREATURES@ROTTWEILER@MOVE</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName />
+      <ExpressionDictionaryName>A_C_Rottweiler</ExpressionDictionaryName>
+      <ExpressionName>A_C_Rottweiler</ExpressionName>
+      <Pedtype>ANIMAL</Pedtype>
+      <MovementClipSet>rottweiler@move</MovementClipSet>
+      <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+      <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>creatures@rottweiler@step</SidestepClipSet>
+      <PoseMatcherName>Rottweiler</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>NMBS_ROTTWEILER_GETUPS</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>DOG</DecisionMakerName>
+      <MotionTaskDataSetName>Rottweiler</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>ANIMAL</DefaultTaskDataSetName>
+      <PedCapsuleName>chop</PedCapsuleName>
+      <PedLayoutName />
+      <PedComponentSetName />
+      <PedComponentClothName />
+      <PedIKSettingsName>STANDARD_DOG_IK</PedIKSettingsName>
+      <TaskDataName>DOG</TaskDataName>
+      <IsStreamedGfx value="true" />
+      <AmbulanceShouldRespondTo value="false" />
+      <CanRideBikeWithNoHelmet value="false" />
+      <CanSpawnInCar value="true" />
+      <IsHeadBlendPed value="false" />
+      <bOnlyBulkyItemVariations value="false" />
+      <RelationshipGroup>CIVMALE</RelationshipGroup>
+      <NavCapabilitiesName>STANDARD_QUADRUPED</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>BS_DOG</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>WEAPON_ANIMAL</DefaultUnarmedWeapon>
+      <Personality>Animal</Personality>
+      <CombatInfo>CHOP</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_DOG_CAT_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_PUNK</Radio1>
+      <Radio2>RADIO_GENRE_JAZZ</Radio2>
+      <FUpOffset value="0.000000" />
+      <RUpOffset value="0.000000" />
+      <FFrontOffset value="0.000000" />
+      <RFrontOffset value="0.147000" />
+      <MinActivationImpulse value="20.000000" />
+      <Stubble value="0.000000" />
+      <HDDist value="6.000000" />
+      <TargetingThreatModifier value="1.000000" />
+      <KilledPerceptionRangeModifer value="-1.000000" />
+      <Sexiness />
+      <Age value="0" />
+      <MaxPassengersInCar value="0" />
+      <ExternallyDrivenDOFs />
+      <PedVoiceGroup>MALE_BRAVE_PVG</PedVoiceGroup>
+      <AnimalAudioObject>ANIMAL_PARAMS_DOG_ROTTWEILER</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.000000" />
+      <AllowCloseSpawning value="false" />
+    </Item>
+   <Item>
+      <Name>a_c_westy_2</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>creatures@pug@move</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName />
+      <ExpressionDictionaryName>A_C_Pug</ExpressionDictionaryName>
+      <ExpressionName>A_C_Pug</ExpressionName>
+      <Pedtype>ANIMAL</Pedtype>
+      <MovementClipSet>creatures@pug@move</MovementClipSet>
+      <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+      <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>creatures@pug@step</SidestepClipSet>
+      <PoseMatcherName>pug</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>NMBS_PUG_GETUPS</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>SmallAnimal</DecisionMakerName>
+      <MotionTaskDataSetName>Retriever</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>ANIMAL</DefaultTaskDataSetName>
+      <PedCapsuleName>pug</PedCapsuleName>
+      <PedLayoutName />
+      <PedComponentSetName />
+      <PedComponentClothName />
+      <PedIKSettingsName>STANDARD_DOG_IK</PedIKSettingsName>
+      <TaskDataName>DOG</TaskDataName>
+      <IsStreamedGfx value="true" />
+      <AmbulanceShouldRespondTo value="false" />
+      <CanRideBikeWithNoHelmet value="false" />
+      <CanSpawnInCar value="true" />
+      <IsHeadBlendPed value="false" />
+      <bOnlyBulkyItemVariations value="false" />
+      <RelationshipGroup>DOMESTIC_ANIMAL</RelationshipGroup>
+      <NavCapabilitiesName>STANDARD_QUADRUPED</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>BS_DOG_SMALL</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>WEAPON_SMALL_DOG</DefaultUnarmedWeapon>
+      <Personality>SMALL_DOG</Personality>
+      <CombatInfo>SCARED_ANIMAL</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_DOG_CAT_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_PUNK</Radio1>
+      <Radio2>RADIO_GENRE_JAZZ</Radio2>
+      <FUpOffset value="0.000000" />
+      <RUpOffset value="0.000000" />
+      <FFrontOffset value="0.000000" />
+      <RFrontOffset value="0.147000" />
+      <MinActivationImpulse value="20.000000" />
+      <Stubble value="0.000000" />
+      <HDDist value="6.000000" />
+      <TargetingThreatModifier value="0.050000" />
+      <KilledPerceptionRangeModifer value="-1.000000" />
+      <Sexiness />
+      <Age value="0" />
+      <MaxPassengersInCar value="0" />
+      <ExternallyDrivenDOFs />
+      <PedVoiceGroup>MALE_BRAVE_PVG</PedVoiceGroup>
+      <AnimalAudioObject>ANIMAL_PARAMS_SMALLDOG</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.000000" />
+      <AllowCloseSpawning value="false" />
+    </Item>
+   <Item>
+      <Name>a_c_poodle_2</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>creatures@pug@move</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName />
+      <ExpressionDictionaryName>A_C_Pug</ExpressionDictionaryName>
+      <ExpressionName>A_C_Pug</ExpressionName>
+      <Pedtype>ANIMAL</Pedtype>
+      <MovementClipSet>creatures@pug@move</MovementClipSet>
+      <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+      <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>creatures@pug@step</SidestepClipSet>
+      <PoseMatcherName>pug</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>NMBS_PUG_GETUPS</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>SmallAnimal</DecisionMakerName>
+      <MotionTaskDataSetName>Retriever</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>ANIMAL</DefaultTaskDataSetName>
+      <PedCapsuleName>pug</PedCapsuleName>
+      <PedLayoutName />
+      <PedComponentSetName />
+      <PedComponentClothName />
+      <PedIKSettingsName>STANDARD_DOG_IK</PedIKSettingsName>
+      <TaskDataName>DOG</TaskDataName>
+      <IsStreamedGfx value="true" />
+      <AmbulanceShouldRespondTo value="false" />
+      <CanRideBikeWithNoHelmet value="false" />
+      <CanSpawnInCar value="true" />
+      <IsHeadBlendPed value="false" />
+      <bOnlyBulkyItemVariations value="false" />
+      <RelationshipGroup>DOMESTIC_ANIMAL</RelationshipGroup>
+      <NavCapabilitiesName>STANDARD_QUADRUPED</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>BS_DOG_SMALL</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>WEAPON_SMALL_DOG</DefaultUnarmedWeapon>
+      <Personality>SMALL_DOG</Personality>
+      <CombatInfo>SCARED_ANIMAL</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_DOG_CAT_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_PUNK</Radio1>
+      <Radio2>RADIO_GENRE_JAZZ</Radio2>
+      <FUpOffset value="0.000000" />
+      <RUpOffset value="0.000000" />
+      <FFrontOffset value="0.000000" />
+      <RFrontOffset value="0.147000" />
+      <MinActivationImpulse value="20.000000" />
+      <Stubble value="0.000000" />
+      <HDDist value="6.000000" />
+      <TargetingThreatModifier value="0.050000" />
+      <KilledPerceptionRangeModifer value="-1.000000" />
+      <Sexiness />
+      <Age value="0" />
+      <MaxPassengersInCar value="0" />
+      <ExternallyDrivenDOFs />
+      <PedVoiceGroup>MALE_BRAVE_PVG</PedVoiceGroup>
+      <AnimalAudioObject>ANIMAL_PARAMS_SMALLDOG</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.000000" />
+      <AllowCloseSpawning value="false" />
+    </Item>
+
+    <Item>
+      <Name>dusa_sphynx</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>creatures@cat@move</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName />
+      <ExpressionDictionaryName>a_c_cat_01</ExpressionDictionaryName>
+      <ExpressionName>a_c_cat_01</ExpressionName>
+      <Pedtype>ANIMAL</Pedtype>
+      <MovementClipSet>cat</MovementClipSet>
+      <MovementClipSets />
+      <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+      <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>creatures@cat@step</SidestepClipSet>
+      <PoseMatcherName>cat</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>hash_7BA2930D</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>cat</DecisionMakerName>
+      <MotionTaskDataSetName>cat</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>ANIMAL</DefaultTaskDataSetName>
+      <PedCapsuleName>cat</PedCapsuleName>
+      <PedLayoutName />
+      <PedComponentSetName />
+      <PedComponentClothName />
+      <PedIKSettingsName>NO_IK</PedIKSettingsName>
+      <TaskDataName>cat</TaskDataName>
+      <IsStreamedGfx value="true" />
+      <AmbulanceShouldRespondTo value="false" />
+      <CanRideBikeWithNoHelmet value="false" />
+      <CanSpawnInCar value="true" />
+      <IsHeadBlendPed value="false" />
+      <bOnlyBulkyItemVariations value="false" />
+      <RelationshipGroup>cat</RelationshipGroup>
+      <NavCapabilitiesName>hash_025767B0</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>hash_2D441BAD</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>hash_E274FF96</DefaultUnarmedWeapon>
+      <Personality>cat</Personality>
+      <CombatInfo>SCARED_ANIMAL</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_DOG_CAT_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_PUNK</Radio1>
+      <Radio2>RADIO_GENRE_JAZZ</Radio2>
+      <FUpOffset value="0.000000" />
+      <RUpOffset value="0.000000" />
+      <FFrontOffset value="0.000000" />
+      <RFrontOffset value="0.147000" />
+      <MinActivationImpulse value="20.000000" />
+      <Stubble value="0.000000" />
+      <HDDist value="6.000000" />
+      <TargetingThreatModifier value="0.050000" />
+      <KilledPerceptionRangeModifer value="-1.000000" />
+      <Sexiness />
+      <Age value="0" />
+      <MaxPassengersInCar value="0" />
+      <ExternallyDrivenDOFs />
+      <PedVoiceGroup>hash_087D1FC0</PedVoiceGroup>
+      <AnimalAudioObject>hash_BFEF6623</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.000000" />
+      <AllowCloseSpawning value="false" />
+    </Item>
+
+    <Item>
+      <Name>dusa_cane</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>CREATURES@ROTTWEILER@MOVE</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName />
+      <ExpressionDictionaryName>A_C_Rottweiler</ExpressionDictionaryName>
+      <ExpressionName>A_C_Rottweiler</ExpressionName>
+      <Pedtype>ANIMAL</Pedtype>
+      <MovementClipSet>rottweiler@move</MovementClipSet>
+      <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+      <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>creatures@rottweiler@step</SidestepClipSet>
+      <PoseMatcherName>Rottweiler</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>NMBS_ROTTWEILER_GETUPS</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>DOG</DecisionMakerName>
+      <MotionTaskDataSetName>Rottweiler</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>ANIMAL</DefaultTaskDataSetName>
+      <PedCapsuleName>chop</PedCapsuleName>
+      <PedLayoutName />
+      <PedComponentSetName />
+      <PedComponentClothName />
+      <PedIKSettingsName>STANDARD_DOG_IK</PedIKSettingsName>
+      <TaskDataName>DOG</TaskDataName>
+      <IsStreamedGfx value="true" />
+      <AmbulanceShouldRespondTo value="false" />
+      <CanRideBikeWithNoHelmet value="false" />
+      <CanSpawnInCar value="true" />
+      <IsHeadBlendPed value="false" />
+      <bOnlyBulkyItemVariations value="false" />
+      <RelationshipGroup>CIVMALE</RelationshipGroup>
+      <NavCapabilitiesName>STANDARD_QUADRUPED</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>BS_DOG</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>WEAPON_ANIMAL</DefaultUnarmedWeapon>
+      <Personality>Animal</Personality>
+      <CombatInfo>CHOP</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_DOG_CAT_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_PUNK</Radio1>
+      <Radio2>RADIO_GENRE_JAZZ</Radio2>
+      <FUpOffset value="0.000000" />
+      <RUpOffset value="0.000000" />
+      <FFrontOffset value="0.000000" />
+      <RFrontOffset value="0.147000" />
+      <MinActivationImpulse value="20.000000" />
+      <Stubble value="0.000000" />
+      <HDDist value="6.000000" />
+      <TargetingThreatModifier value="1.000000" />
+      <KilledPerceptionRangeModifer value="-1.000000" />
+      <Sexiness />
+      <Age value="0" />
+      <MaxPassengersInCar value="0" />
+      <ExternallyDrivenDOFs />
+      <PedVoiceGroup>MALE_BRAVE_PVG</PedVoiceGroup>
+      <AnimalAudioObject>ANIMAL_PARAMS_DOG_ROTTWEILER</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.000000" />
+      <AllowCloseSpawning value="false" />
+    </Item>
+    
+    <Item>
+      <Name>dusa_englishbulldog</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>CREATURES@ROTTWEILER@MOVE</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName />
+      <ExpressionDictionaryName>A_C_Rottweiler</ExpressionDictionaryName>
+      <ExpressionName>A_C_Rottweiler</ExpressionName>
+      <Pedtype>ANIMAL</Pedtype>
+      <MovementClipSet>rottweiler@move</MovementClipSet>
+      <StrafeClipSet>move_ped_strafing</StrafeClipSet>
+      <MovementToStrafeClipSet>move_ped_to_strafe</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>move_strafe_injured</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>dam_ko</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>dam_ad</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>facial_clipset_group_gen_male</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>creatures@rottweiler@step</SidestepClipSet>
+      <PoseMatcherName>Rottweiler</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>NMBS_ROTTWEILER_GETUPS</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>DOG</DecisionMakerName>
+      <MotionTaskDataSetName>Rottweiler</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>ANIMAL</DefaultTaskDataSetName>
+      <PedCapsuleName>chop</PedCapsuleName>
+      <PedLayoutName />
+      <PedComponentSetName />
+      <PedComponentClothName />
+      <PedIKSettingsName>STANDARD_DOG_IK</PedIKSettingsName>
+      <TaskDataName>DOG</TaskDataName>
+      <IsStreamedGfx value="true" />
+      <AmbulanceShouldRespondTo value="false" />
+      <CanRideBikeWithNoHelmet value="false" />
+      <CanSpawnInCar value="true" />
+      <IsHeadBlendPed value="false" />
+      <bOnlyBulkyItemVariations value="false" />
+      <RelationshipGroup>CIVMALE</RelationshipGroup>
+      <NavCapabilitiesName>STANDARD_QUADRUPED</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>BS_DOG</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>WEAPON_ANIMAL</DefaultUnarmedWeapon>
+      <Personality>Animal</Personality>
+      <CombatInfo>CHOP</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_DOG_CAT_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_PUNK</Radio1>
+      <Radio2>RADIO_GENRE_JAZZ</Radio2>
+      <FUpOffset value="0.000000" />
+      <RUpOffset value="0.000000" />
+      <FFrontOffset value="0.000000" />
+      <RFrontOffset value="0.147000" />
+      <MinActivationImpulse value="20.000000" />
+      <Stubble value="0.000000" />
+      <HDDist value="6.000000" />
+      <TargetingThreatModifier value="1.000000" />
+      <KilledPerceptionRangeModifer value="-1.000000" />
+      <Sexiness />
+      <Age value="0" />
+      <MaxPassengersInCar value="0" />
+      <ExternallyDrivenDOFs />
+      <PedVoiceGroup>MALE_BRAVE_PVG</PedVoiceGroup>
+      <AnimalAudioObject>ANIMAL_PARAMS_DOG_ROTTWEILER</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.000000" />
+      <AllowCloseSpawning value="false" />
+    </Item>
+
+    </InitDatas>
+</CPedModelInfo__InitDataList>
