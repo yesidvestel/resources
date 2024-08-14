@@ -1,0 +1,90 @@
+{
+    "RequestVehicle": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0],
+            "spawn": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "ModifyVehicle": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "SaveVehicle": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "RequestBoat": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0],
+            "spawn": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "SaveBoat": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "SaveHelicopter": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "RequestHelicopter": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0],
+            "spawn": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "DressingRoom": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "Inventory/Armoury": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "EvidenceReport": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "Duty": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "Finger": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "CriminalClothes": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "Pertenences": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "ConfiscatedVehicles": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "BillsNPC": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "SpawnConfiscatedVehicles": [
+        {
+            "coords": [0.0, 0.0, 0.0, 0.0]
+        }
+    ]
+}

@@ -322,3 +322,5 @@ function handleRadioAndCallInit()
 		end
 	end
 end
+exports('playerTargets', addVoiceTargets)
+exports('toggleVoice', toggleVoice)
