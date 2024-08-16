@@ -5,11 +5,11 @@ Config.MySQLSystem = "oxmysql" -- icmysql, oxmysql
 Config.DatabaseStructureCheck = true -- If you want the script to check the tables structure to check if you're missing some columns
 Config.CustomNotify = false -- If you want to use your own notify system set this to true and edit the code in origen_police/custom/client/client.lua
 Config.Language = "es" -- core(take the language of the core configured in the server.cfg) | en | es | fr | it
-Config.autoSetItems = false -- To add items automaticly via exports ['qb-core']:AddItems
+Config.autoSetItems = true -- To add items automaticly via exports ['qb-core']:AddItems
 Config.VoiceSystem = "pma-voice" -- pma-voice, saltychat(IN DEVELOPMENT, ISSUES ARE EXPECTED, NO SUPPORT FOR THIS YET)
 Config.fixQS = false -- false to use the framework metadata system only availabel for ESX 
 Config.Inventory = "auto" -- auto(detect the resource) | origen_inventory | qb-inventory | new-qb-inventory | qs-inventory | ox_inventory | ls-inventory | codem-inventory | core_inventory
-Config.OxLibMenu = false -- Use ox_lib context menu
+Config.OxLibMenu = true -- Use ox_lib context menu
 Config.RecieveAlwaysAlerts = true -- if it is false, the alert first will be send to the dispatch if it's open, if it's closed the alert will be send to the mini dispatch, if it's true the alert will be send to the dispatch and mini dispatch at the same time
 Config.DispatchRedirect = false -- If it's true the alerts first will be send to the dispatch, then the dispatch manager will redirect the alert to other units, if it's false the alerts will be send directly to all the units
 Config.Debug = true -- Enable or disable debug mode, this include the prints that you are going to see in F8 and Server Consolle
@@ -27,7 +27,7 @@ Config.ChangeMinimapSize = true -- Allows resizing of the minimap
 Config.HeatMapAlerts = true -- Enable or disable the heat map alerts in the dispatch
 Config.CheckVersions = true -- Check if there's a new version of the script
 
--- DONT TOUCH ABOVE;
+-- NO TOQUES ARRIBA;
 
 exports("GetConfig", function(key)
     return Config[key]
