@@ -33,7 +33,7 @@ Config.Shops = {
         },
         ['Job'] = 'none',                                            -- Name of job or none
         ['ShopLabel'] = 'Premium Deluxe Motorsport',                 -- Blip name
-        ['showBlip'] = true,                                         -- true or false
+        ['showBlip'] = false,                                         -- true or false
         ['blipSprite'] = 326,                                        -- Blip sprite
         ['blipColor'] = 3,                                           -- Blip color
         ['TestDriveTimeLimit'] = 0.5,                                -- Time in minutes until the vehicle gets deleted
@@ -48,37 +48,37 @@ Config.Shops = {
                 defaultVehicle = 'ardent',                       -- Default display vehicle
                 chosenVehicle = 'ardent',                        -- Same as default but is dynamically changed when swapping vehicles
             },
-            [2] = {
+            --[[[2] = {
                 coords = vector4(-48.27, -1101.86, 25.44, 294.5),
                 defaultVehicle = 'schafter2',
                 chosenVehicle = 'schafter2'
-            },
-            [3] = {
+            },]]--
+            [2] = {
                 coords = vector4(-39.6, -1096.01, 25.44, 66.5),
                 defaultVehicle = 'coquette',
                 chosenVehicle = 'coquette'
             },
-            [4] = {
+            --[[[4] = {
                 coords = vector4(-51.21, -1096.77, 25.44, 254.5),
                 defaultVehicle = 'vigero',
                 chosenVehicle = 'vigero'
-            },
-            [5] = {
+            },]]--
+            [3] = {
                 coords = vector4(-40.18, -1104.13, 25.44, 338.5),
                 defaultVehicle = 'rhapsody',
                 chosenVehicle = 'rhapsody'
             },
-            [6] = {
+            --[[6] = {
                 coords = vector4(-43.31, -1099.02, 25.44, 52.5),
                 defaultVehicle = 'bati',
                 chosenVehicle = 'bati'
-            },
-            [7] = {
+            },]]--
+            [4] = {
                 coords = vector4(-50.66, -1093.05, 25.44, 222.5),
                 defaultVehicle = 'bati',
                 chosenVehicle = 'bati'
             },
-            [8] = {
+            [5] = {
                 coords = vector4(-44.28, -1102.47, 25.44, 298.5),
                 defaultVehicle = 'bati',
                 chosenVehicle = 'bati'

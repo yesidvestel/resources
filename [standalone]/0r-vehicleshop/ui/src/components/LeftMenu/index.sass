@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Roboto:wght@100;300;400;500;700&display=swap')
+
+@mixin transition($transition...)
+    -moz-transition: $transition
+    -o-transition: $transition
+    -webkit-transition: $transition
+    transition: $transition
+
+.g_header
+    font-family: Microgramma D Extended
+    font-size: 28px
+    font-weight: 700
+    line-height: normal
+    text-align: left
+    text-transform: uppercase
+    color: #D8DCE5
+
+.g_header_buttons
+    button
+        padding-left: 8px
+        padding-right: 8px
+        min-width: 123px
+        height: 37px
+        background: linear-gradient(80deg, #0B0C10 0%, #23232F 100%)
+        @include transition(background-color .2s, height .2s)
+
+        &:hover:not(.active)
+            height: 47px
+        span
+            @include transition(font-size .1s)
+            color: #5F6064
+            font-family: Microgramma D Extended
+            font-size: 21px
+            font-weight: 700
+            text-transform: uppercase
+
+    button.active
+        height: 47px
+        background: #FFF
+
+        span
+            color: #000
+            font-family: Microgramma D Extended
+            font-size: 30px
+            font-style: normal
+            font-weight: 700
+            text-transform: uppercase
+
+.choosing-rental-day
+    border-radius: 0.15rem
+    width: 276px
+    height: 241px
+    background: linear-gradient(79deg, #14151A 0%, #23232F 100%)
+    .title
+        .stick
+            width: 84px
+            height: 3px
+            background: #898FA5
+        .text
+            color: #898FA5
+            font-family: Microgramma D Extended
+            font-size: 15px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+    .dots
+        div
+            width: 4px
+            height: 4px
+            background: #898FA5
+            border-radius: 0.25rem
+    .days
+        .day
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 26px
+            height: 24px
+            color: #898FA5
+            background: #2C2D39
+            font-family: Microgramma D Extended
+            font-size: 15px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            &.little
+                font-size: 9.808px
+            &.active
+                background: #898FA5
+                color: #3D4049

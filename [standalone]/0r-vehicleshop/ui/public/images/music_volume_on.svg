@@ -1,0 +1,23 @@
+<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="music volume">
+<mask id="mask0_49_104" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="27">
+<g id="Group 61">
+<rect id="Rectangle 353" x="6.10352e-05" y="9.89105" width="2.67327" height="7.21782" rx="1.06931" fill="#D9D9D9"/>
+<rect id="Rectangle 354" x="4.00989" y="9.35645" width="2.67327" height="8.28713" rx="1.06931" fill="#D9D9D9"/>
+<rect id="Rectangle 355" x="8.01978" y="5.07916" width="2.67327" height="16.8416" rx="1.06931" fill="#D9D9D9"/>
+<rect id="Rectangle 356" x="12.0298" width="2.67327" height="27" rx="1.06931" fill="#D9D9D9"/>
+<rect id="Rectangle 357" x="16.0396" y="5.34656" width="2.67327" height="16.3069" rx="1.06931" fill="#D9D9D9"/>
+<rect id="Rectangle 358" x="20.0495" y="9.08911" width="2.67327" height="9.08911" rx="1.06931" fill="#D9D9D9"/>
+</g>
+</mask>
+<g mask="url(#mask0_49_104)">
+<rect id="Rectangle 359" x="-1.06927" y="-1.33661" width="28.0693" height="30.4752" fill="url(#paint0_linear_49_104)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_49_104" x1="16.5" y1="-0.999969" x2="7" y2="24.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#424354"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 84">
+<g id="Rectangle 24" filter="url(#filter0_b_69_932)">
+<rect width="47" height="47" fill="#FF6363"/>
+</g>
+<g id="Vector">
+<path d="M20.3043 8L11 16.752L20.3043 25.504L23.7174 22.2935L20.2826 19.0627H31.6522V14.5026H20.2174L23.7174 11.2104L20.3043 8Z" fill="#3A3A3A"/>
+<path d="M26.6957 21.496L36 30.248L26.6957 39L23.2826 35.7896L26.7174 32.5587H15.3478V27.9987H26.7826L23.2826 24.7065L26.6957 21.496Z" fill="#3A3A3A"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_69_932" x="-50" y="-50" width="147" height="147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_69_932"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_69_932" result="shape"/>
+</filter>
+</defs>
+</svg>
