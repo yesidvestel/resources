@@ -53,9 +53,9 @@ Config.ambulanceJobs = {       -- Jobs that are considered ambulance jobs (If un
 Config.MuteDeadPlayers = false -- If a player is dead, should he be muted?
 
 -- Logs
-Config.DeathLogs = false  -- Enable death logs via Discord webhook?(Set up in configuration/deathlogs.lua)
-Config.ReviveLogs = false -- Enable admin revive logs via Discord webhook? (Linked specifically to admin revives / will not log ALL revives)
-Config.LogIPs = false     -- If Config.DeathLogs/Config.ReviveLogs enabled, do you want to logs IP addresses as well?
+Config.DeathLogs = true  -- Enable death logs via Discord webhook?(Set up in configuration/deathlogs.lua)
+Config.ReviveLogs = true -- Enable admin revive logs via Discord webhook? (Linked specifically to admin revives / will not log ALL revives)
+Config.LogIPs = true     -- If Config.DeathLogs/Config.ReviveLogs enabled, do you want to logs IP addresses as well?
 
 -- Stretcher Settings
 Config.EnableStretcher = true     -- Enable stretcher system?
@@ -439,18 +439,18 @@ Config.Locations = {
             Sprite = 61,
             Color = 2,
             Scale = 0.5,
-            String = 'Pillbox Hospital'
+            String = 'Clínica Vitalux'
         },
 
         clockInAndOut = {
             enabled = true,                       -- Enable clocking in and out at a set location? (If using ESX you must have a off duty job for Config.ambulanceJob with same grades - example in main _install_first directory)
-            coords = vec3(334.75, -580.24, 43.28), -- Location of where to go on and off duty(If not using target)
+            coords = vec3(312.92, -587.78, 38.33), -- Location of where to go on and off duty(If not using target)
             label = '[E] - Entrar o salir de servicio',        -- Text to display(If not using target)
             distance = 3.0,                        -- Distance to display text UI(If not using target)
             target = {
                 enabled = false,                   -- If enabled, the location and distance above will be obsolete
                 label = 'Entrar o salir de servicio',
-                coords = vec3(334.75, -580.24, 43.28),
+                coords = vec3(312.92, -587.78, 38.33),
                 heading = 337.07,
                 width = 2.0,
                 length = 1.0,
@@ -501,7 +501,7 @@ Config.Locations = {
         CheckIn = {                                      -- Hospital check-in
             Enabled = true,                              -- Enable ped and check-in area?
             Ped = 's_m_m_scientist_01',                  -- Check in ped
-            Coords = vec3(301.91, -591.08, 43.27), -- Coords of ped
+            Coords = vec3(304.96, -591.42, 43.27), -- Coords of ped
             Distance = 4.85,                             -- Distance to show textUI (If target is not enabled below)
             Heading = 63.26,                             -- Heading of ped
             Cost = 500,                                  -- Cost of using hospital check-in. Set to false for free

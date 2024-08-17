@@ -108,7 +108,7 @@ Config.Keybinds = {
     },
     ["petmenu"] = {
         command = "petmenu",
-        key = "",
+        key = "F12",
         description = "Pet Menu",
         func = function()
             OpenPetMenu()
@@ -123,7 +123,7 @@ Config.Keybinds = {
     -- Shortcuts for police k9 actions
     ["k9attack"] = {
         command = "k9attack",
-        key = "",
+        key = "F9",
         description = "K9 Attack Key",
         func = function()
             -- k9Attack()

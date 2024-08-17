@@ -7,14 +7,14 @@ ServerConfig.UseIdentifiers = true
 -- Where YOUR_API_TOKEN is the token that you get from fivemanage page
 
 ServerConfig.Logs = {
-    DispatchAlerts = 'YOUR_DISCORD_WEBHOOK',
-    Shapes = 'YOUR_DISCORD_WEBHOOK',
-    Notes = 'YOUR_DISCORD_WEBHOOK',
-    DutyClock = 'YOUR_DISCORD_WEBHOOK',
-    Management = 'YOUR_DISCORD_WEBHOOK',
-    Camera = 'YOUR_DISCORD_WEBHOOK',
-    Federal = 'YOUR_DISCORD_WEBHOOK',
-    Bills = 'YOUR_DISCORD_WEBHOOK',
-    Cams = 'YOUR_DISCORD_WEBHOOK',
-    Mugshots = 'YOUR_DISCORD_WEBHOOK'
+    DispatchAlerts = '1274262181835309116',
+    Shapes = '1274262349326585907',
+    Notes = '1274262384646553640',
+    DutyClock = '1274262425553600523',
+    Management = '1274262463306797066',
+    Camera = '1274262570781642783',
+    Federal = '1274262612044939356',
+    Bills = '1274262644899188818',
+    Cams = '1274262667703353417',
+    Mugshots = '1274262691833446412'
 }
