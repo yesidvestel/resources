@@ -749,7 +749,7 @@ Config.Locations = {
         ['products'] = Config.Products['leisureshop'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.5,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },

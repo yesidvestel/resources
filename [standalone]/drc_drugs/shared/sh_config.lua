@@ -27,7 +27,7 @@ Config.Blips = {
         BlipCoords = vec3(307.91, -1286.48, 29.53), -- Blip coords
         Sprite = 40, -- Blip Icon
         Display = 4, -- keep 4
-        Scale = 0.6, -- Size of blip
+        Scale = 0.5, -- Size of blip
         Colour = 69, -- colour
         Name = "Flower Shop" -- Blip name
     },
@@ -35,7 +35,7 @@ Config.Blips = {
         BlipCoords = vec3(-143.52, 229.53, 93.94),
         Sprite = 280,
         Display = 4,
-        Scale = 0.8,
+        Scale = 0.5,
         Colour = 50,
         Name = "Comic Shop"
     },

@@ -285,7 +285,7 @@ Config.MythicHospital = false       -- If you use that old injury script by myth
 Config.AdvancedParking = false      -- If you use AdvancedParking (Deletes vehicles with their exports)
 Config.FuelSystem = false           -- 'legacy' (LegacyFuel) / 'ox' (ox_fuel) / 'default'
 
-Config.jobMenu = 'F6'               -- Default job menu key
+Config.jobMenu = 'F5'               -- Default job menu key
 Config.billingSystem = false        -- Current options: 'esx' (For esx_billing) / 'qb' (For qbcore users) 'okok' (For okokBilling) / 'pefcl' (For NPWD billing system) (Easy to add more in editable client - SET TO false IF UNDESIRED) or of course false to disable
 Config.targetSystem = true          -- Target system for targetting players, medbags, and stretcher(If disabled with replace with menus/3D text) (Compatible out of the box with qTarget, qb-target, and ox_target)
 
@@ -312,8 +312,8 @@ Config.AntiCombatLog = { --  When enabled will kill player who logged out while 
     enabled = true,      --  enabled?
     notification = {
         enabled = true,  -- enabled notify of wrong-doings??
-        title = 'Logged While Dead',
-        desc = 'You last left dead and now have returned dead'
+        title = 'Registrado mientras está muerto',
+        desc = 'La última vez que te fuiste estaba muerto, ahora has regresado muerto.'
     }
 }
 
@@ -383,8 +383,8 @@ Config.lowHealthAlert = {
     enabled = false,
     health = 140, -- Notify when at HP (200 full health / 100 is death)
     notification = {
-        title = 'ATTENTION',
-        description = 'You are in bad health. You should see a doctor soon!'
+        title = 'ATENCIÓN',
+        description = 'Tienes mala salud. ¡Deberías ver a un médico pronto!'
     }
 }
 
@@ -438,18 +438,18 @@ Config.Locations = {
             Coords = vec3(324.15, -583.14, 44.20),
             Sprite = 61,
             Color = 2,
-            Scale = 1.0,
+            Scale = 0.5,
             String = 'Pillbox Hospital'
         },
 
         clockInAndOut = {
-            enabled = false,                       -- Enable clocking in and out at a set location? (If using ESX you must have a off duty job for Config.ambulanceJob with same grades - example in main _install_first directory)
+            enabled = true,                       -- Enable clocking in and out at a set location? (If using ESX you must have a off duty job for Config.ambulanceJob with same grades - example in main _install_first directory)
             coords = vec3(334.75, -580.24, 43.28), -- Location of where to go on and off duty(If not using target)
-            label = '[E] - Go On/Off Duty',        -- Text to display(If not using target)
+            label = '[E] - Entrar o salir de servicio',        -- Text to display(If not using target)
             distance = 3.0,                        -- Distance to display text UI(If not using target)
             target = {
                 enabled = false,                   -- If enabled, the location and distance above will be obsolete
-                label = 'Go On/Off Duty',
+                label = 'Entrar o salir de servicio',
                 coords = vec3(334.75, -580.24, 43.28),
                 heading = 337.07,
                 width = 2.0,
@@ -464,13 +464,13 @@ Config.Locations = {
             enabled = false,                        -- Enable personal locker(stash)
             jobLock = 'ambulance',                  -- Job lock?
             coords = vec(298.61, -598.28, 43.28),   -- Location of where to access personal locker (If target is disabled)
-            label = '[E] - Access Personal Locker', -- Text to display(If not using target)
+            label = '[E] - Acceso a casillero personal', -- Text to display(If not using target)
             maxWeight = 5000,                       -- Total Weight of the personalLocker
             slots = 30,                             -- Number of slots available in the Personal Locker
             distance = 2.0,                         -- Distance to display text UI(If not using target)
             target = {
                 enabled = false,                    -- If enabled, the location and distance above will be obsolete
-                label = 'Access Locker',
+                label = 'Acceso a casillero personal',
                 coords = vector3(283.27, -615.33, 43.38),
                 heading = 70.18,
                 width = 2.0,
@@ -484,11 +484,11 @@ Config.Locations = {
         BossMenu = {
             Enabled = true,                        -- Enabled boss menu?
             Coords = vec3(310.72, -569.84, 43.31), -- Location of boss menu (If not using target)
-            Label = '[E] - Access Boss Menu',      -- Text UI label string (If not using target)
+            Label = '[E] - Menú de acceso al jefe',      -- Text UI label string (If not using target)
             Distance = 2.5,                        -- Distance to allow access/prompt with text UI (If not using target)
             Target = {
                 enabled = false,                   -- Enable Target? (Can be customized in wasabi_bridge/customize/cl_customize.lua the target system)
-                label = 'Access Boss Menu',
+                label = 'Menú de acceso al jefe',
                 coords = vec3(310.72, -569.84, 43.31),
                 heading = 160.0,
                 width = 2.0,
@@ -501,7 +501,7 @@ Config.Locations = {
         CheckIn = {                                      -- Hospital check-in
             Enabled = true,                              -- Enable ped and check-in area?
             Ped = 's_m_m_scientist_01',                  -- Check in ped
-            Coords = vec3(308.58, -595.31, 43.28 - 0.9), -- Coords of ped
+            Coords = vec3(301.91, -591.08, 43.27), -- Coords of ped
             Distance = 4.85,                             -- Distance to show textUI (If target is not enabled below)
             Heading = 63.26,                             -- Heading of ped
             Cost = 500,                                  -- Cost of using hospital check-in. Set to false for free
@@ -552,8 +552,8 @@ Config.Locations = {
 
         Cloakroom = {
             Enabled = true,
-            Coords = vec3(300.6, -597.7, 42.1), -- Coords of cloakroom
-            Label = '[E] - Change Clothes',     -- String of text ui of cloakroom
+            Coords = vec3(308.97, -586.25, 38.33), -- Coords of cloakroom
+            Label = '[E] - Cambiarse de ropa',     -- String of text ui of cloakroom
             HotKey = 38,                        -- Default: 38 (E)
             Range = 1.5,                        -- Range away from coords you can use.
             Uniforms = {                        -- Uniform choices
@@ -659,8 +659,8 @@ Config.Locations = {
             Zone = {
                 coords = vec3(298.54, -606.79, 43.27), -- Area to prompt vehicle garage
                 range = 5.5,                           -- Range it will prompt from coords above
-                label = '[E] - Access Garage',
-                return_label = '[E] - Return Vehicle'
+                label = '[E] - Acceso al garaje',
+                return_label = '[E] - Devolución del vehículo'
             },
             Spawn = {
                 land = {

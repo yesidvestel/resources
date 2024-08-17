@@ -1,5 +1,5 @@
 Config = {
-    MenuKey = 'U',
+    MenuKey = 'F11',
     Framework = 'qb', -- 'qb', 'oldqb', 'esx', 'oldesx'
     Sql = 'oxmysql',
     EnableMileageSystem = true, -- Enable mileage system

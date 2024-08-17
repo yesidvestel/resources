@@ -73,7 +73,7 @@ Config.Blip = { -- https://docs.fivem.net/docs/game-references/blips/
   coords = vec3(564.197815, 2753.063721, 42.860840),
   sprite = 463,
   color = 0,
-  scale = 0.7,
+  scale = 0.5,
   name = "Tienda de mascotas"
 }
 

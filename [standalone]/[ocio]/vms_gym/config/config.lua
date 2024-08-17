@@ -205,7 +205,7 @@ Config.StatisticsMenu = {
 
 Config.Blip = { -- https://docs.fivem.net/docs/game-references/blips/
     ["Sprite"] = 311,
-    ["Scale"] = 0.85,
+    ["Scale"] = 0.05,
     ["Color"] = 46,
     ["Display"] = 4
 }

@@ -104,28 +104,28 @@ Config.Blips = {
         Show = true,
         Sprite = 366,
         Color = 47,
-        Scale = 0.7,
+        Scale = 0.5,
         Name = "Clothing Store",
     },
     ["barber"] = {
         Show = true,
         Sprite = 71,
         Color = 0,
-        Scale = 0.7,
+        Scale = 0.5,
         Name = "Barber",
     },
     ["tattoo"] = {
         Show = true,
         Sprite = 75,
         Color = 4,
-        Scale = 0.7,
+        Scale = 0.5,
         Name = "Tattoo Shop",
     },
     ["surgeon"] = {
         Show = true,
         Sprite = 102,
         Color = 4,
-        Scale = 0.7,
+        Scale = 0.5,
         Name = "Plastic Surgeon",
     }
 }

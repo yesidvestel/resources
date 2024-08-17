@@ -28,7 +28,7 @@ Config.Blips = {
     Blips = true,
     PaintBall = {
 		Sprite = 160,
-		Scale = 0.7,
+		Scale = 0.5,
 		Colour = 1,
     }
 }
