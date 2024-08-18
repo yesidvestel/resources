@@ -120,14 +120,14 @@ Config.Blips = {
         Color = 4,
         Scale = 0.5,
         Name = "Tattoo Shop",
-    },
-    ["surgeon"] = {
+    }
+    /*["surgeon"] = {
         Show = true,
         Sprite = 102,
         Color = 4,
         Scale = 0.5,
         Name = "Plastic Surgeon",
-    }
+    }*/
 }
 
 Config.TargetConfig = {
@@ -152,13 +152,13 @@ Config.TargetConfig = {
         label = "Open Tattoo Shop",
         distance = 3
     },
-    ["surgeon"] = {
+    /*["surgeon"] = {
         model = "s_m_m_doctor_01",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
         icon = "fas fa-scalpel",
         label = "Open Surgeon",
         distance = 3
-    },
+    },*/
     ["clothingroom"] = {
         model = "mp_g_m_pros_01",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
@@ -542,7 +542,7 @@ Config.Stores = {
             vector3(-298.23013305664, 6199.2451171875, 31.49),
             vector3(-294.1501159668, 6203.2700195312, 31.49)
         }
-    },
+    }/*
     {
         type = "surgeon",
         coords = vector4(298.78, -572.81, 43.26, 114.27),
@@ -555,7 +555,7 @@ Config.Stores = {
             vector3(293.56317138672, -572.60675048828, 43.26),
             vector3(296.28656005859, -570.330078125, 43.26)
         }
-    }
+    }*/
 }
 
 
@@ -576,7 +576,7 @@ Config.ClothingRooms = {
             vector3(454.35513305664, -988.46459960938, 30.69),
             vector3(460.4231262207, -987.94573974609, 30.69)
         }
-    },]]--
+    },
 	{
         job = "ambulance",
         coords = vector4(325.17, -582.74, 43.32, 352.69),
@@ -589,7 +589,7 @@ Config.ClothingRooms = {
             vector3(328.54, -582.11, 43.32),
             vector3(328.62, -584.54, 43.32),
         }
-    },
+    },]]--
 	{
         job = "mechanic",
         coords = vector4(-343.41, -123.54, 39.01, 198.11),
@@ -844,7 +844,7 @@ Config.Outfits = {
             }
         }
     },
-    ["ambulance"] = {
+    /*["ambulance"] = {
         ["Male"] = {
             {
                 name = "T-Shirt",
@@ -963,7 +963,7 @@ Config.Outfits = {
                 grades = {3, 4},
             }
         }
-    },
+    },*/
 	["mechanic"] = {
         ["Male"] = {
             {

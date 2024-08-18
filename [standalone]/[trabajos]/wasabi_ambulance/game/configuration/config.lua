@@ -285,7 +285,7 @@ Config.MythicHospital = false       -- If you use that old injury script by myth
 Config.AdvancedParking = false      -- If you use AdvancedParking (Deletes vehicles with their exports)
 Config.FuelSystem = false           -- 'legacy' (LegacyFuel) / 'ox' (ox_fuel) / 'default'
 
-Config.jobMenu = 'F5'               -- Default job menu key
+Config.jobMenu = 'F6'               -- Default job menu key
 Config.billingSystem = false        -- Current options: 'esx' (For esx_billing) / 'qb' (For qbcore users) 'okok' (For okokBilling) / 'pefcl' (For NPWD billing system) (Easy to add more in editable client - SET TO false IF UNDESIRED) or of course false to disable
 Config.targetSystem = true          -- Target system for targetting players, medbags, and stretcher(If disabled with replace with menus/3D text) (Compatible out of the box with qTarget, qb-target, and ox_target)
 
@@ -501,7 +501,7 @@ Config.Locations = {
         CheckIn = {                                      -- Hospital check-in
             Enabled = true,                              -- Enable ped and check-in area?
             Ped = 's_m_m_scientist_01',                  -- Check in ped
-            Coords = vec3(304.47, -591.25, 43.27), -- Coords of ped
+            Coords = vec3(304.47, -591.25, 44.19), -- Coords of ped
             Distance = 4.85,                             -- Distance to show textUI (If target is not enabled below)
             Heading = 63.26,                             -- Heading of ped
             Cost = 500,                                  -- Cost of using hospital check-in. Set to false for free
@@ -514,7 +514,7 @@ Config.Locations = {
             Target = {
                 enabled = true,                          -- Enable Target? (Can be customized in wasabi_bridge/customize/cl_customize.lua the target system)
                 label = 'Check In',
-                coords = vec3(304.47, -591.25, 43.27),
+                coords = vec3(304.47, -591.25, 44.19),
                 heading = 63.26,
                 distance = 5.0,
                 width = 2.0,
@@ -602,17 +602,22 @@ Config.Locations = {
                         clothing = {
                             -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
                             -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 15, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 58, texture = 0 }, -- Shirt
+                            { component = 3,  drawable = 15, texture = 0 }, -- Torso
                             { component = 4,  drawable = 35, texture = 0 }, -- Pants
                             { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 15, texture = 0 }, -- Arms
+                            { component = 8,  drawable = 58, texture = 0 }, -- Shirt
+                            
                         },
                         props = {
                             -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
                             -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
 
                             --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                            { component = 0, drawable = 2, texture = 0 }, -- Hats
+                            { component = 1, drawable = 1, texture = 0 }, -- Glasses
+                            { component = 2, drawable = 3, texture = 0 }, -- Ears
+                            { component = 6, drawable = 1, texture = 0 }, -- Watches
+                            { component = 7, drawable = 2, texture = 0 }  -- Bracelets
                         }
                     },
                     female = {
