@@ -78,4 +78,4 @@ RegisterCommand('testinput', function()
     end
 	
 end)
-RegisterKeyMapping('testinput', 'Open invoice', 'keyboard', 'F5')
+RegisterKeyMapping('testinput', 'Open invoice', 'keyboard', 'F9')
