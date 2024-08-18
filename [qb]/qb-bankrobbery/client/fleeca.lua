@@ -266,7 +266,14 @@ RegisterNetEvent('electronickit:UseElectronickit', function()
                             end
                             if copsCalled or not Config.SmallBanks[closestBank]["alarm"] then return end
                             local camId = Config.SmallBanks[closestBank]["camId"] 
-							exports['ps-dispatch']:FleecaBankRobbery(camId)
+                            local coords = GetEntityCoords(PlayerPedId())
+							TriggerServerEvent("SendAlert:police", {
+                                coords = GetEntityCoords(PlayerPedId()),
+                                title = 'Robo fleca',
+                                type = 'GENERAL',
+                                message = 'Robo banco fleca',
+                                job = 'police',
+                            })
                             copsCalled = true
                             SetTimeout(60000 * Config.OutlawCooldown, function() copsCalled = false end)
                         end, function() -- Cancel

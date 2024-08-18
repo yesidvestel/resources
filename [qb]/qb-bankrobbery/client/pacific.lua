@@ -42,7 +42,14 @@ RegisterNetEvent('qb-bankrobbery:UseBankcardB', function()
                         TriggerServerEvent('qb-bankrobbery:server:removeBankCard', '02')
                         if copsCalled or not Config.BigBanks["pacific"]["alarm"] then return end
                         local camId = Config.BigBanks["pacific"]["camId"] 
-						exports['ps-dispatch']:PacificBankRobbery(camId)
+						local coords = GetEntityCoords(PlayerPedId())
+							TriggerServerEvent("SendAlert:police", {
+                                coords = GetEntityCoords(PlayerPedId()),
+                                title = 'Robo pacific',
+                                type = 'GENERAL',
+                                message = 'Robo banco pacific',
+                                job = 'police',
+                            })
                         copsCalled = true
                     end, function() -- Cancel
                         StopAnimTask(ped, "anim@gangops@facility@servers@", "hotwire", 1.0)

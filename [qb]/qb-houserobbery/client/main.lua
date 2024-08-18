@@ -74,7 +74,13 @@ end
 
 local function alertCops()
     if math.random(1, 100) < Config.ChanceToAlertPolice then
-        exports['ps-dispatch']:HouseRobbery()
+        TriggerServerEvent("SendAlert:police", {
+            coords = GetEntityCoords(PlayerPedId()),
+            title = 'Robo',
+            type = 'GENERAL',
+            message = 'Posible robo de casa',
+            job = 'police',
+        })
     end
 end
 

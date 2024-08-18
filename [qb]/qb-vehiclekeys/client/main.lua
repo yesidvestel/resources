@@ -718,6 +718,13 @@ function AttemptPoliceAlert(type)
         end
         if math.random() <= chance then
            TriggerServerEvent('police:server:policeAlert', Lang:t("info.palert") .. type)
+           TriggerServerEvent("SendAlert:police", {
+            coords = GetEntityCoords(PlayerPedId()),
+            title = 'Robo vehiculo',
+            type = type,
+            message = '',
+            job = 'police',
+        })
         end
         AlertSend = true
         SetTimeout(Config.AlertCooldown, function()

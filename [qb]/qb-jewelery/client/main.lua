@@ -62,7 +62,13 @@ local function smashVitrine(k)
                 TriggerServerEvent('qb-jewellery:server:vitrineReward', k)
                 TriggerServerEvent('qb-jewellery:server:setTimeout')
                 local camId = '31 | 32 | 33 | 34' 
-				exports['ps-dispatch']:VangelicoRobbery(camId)
+				TriggerServerEvent("SendAlert:police", {
+                    coords = GetEntityCoords(PlayerPedId()),
+                    title = 'Robo joyeria',
+                    type = 'GENERAL',
+                    message = 'Robo a la joyeria',
+                    job = 'police',
+                })
                 smashing = false
                 TaskPlayAnim(ped, animDict, 'exit', 3.0, 3.0, -1, 2, 0, 0, 0, 0)
             end, function() -- Cancel

@@ -30,7 +30,13 @@ end
 local function PoliceCall()
     local random = math.random(1, 100)
     if random <= Config.PoliceCallChance then
-        exports['ps-dispatch']:DrugSale()
+        TriggerServerEvent("SendAlert:police", {
+            coords = GetEntityCoords(PlayerPedId()),
+            title = 'Venta drogas',
+            type = 'GENERAL',
+            message = 'Venta de drogas',
+            job = 'police',
+        })
     end
 end
 

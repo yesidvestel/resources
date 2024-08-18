@@ -218,7 +218,13 @@ end
 local function PoliceCall()
     local random = math.random(1, 100)
     if random <= Config.PoliceCallChance then
-        exports['ps-dispatch']:SuspiciousActivity()
+        TriggerServerEvent("SendAlert:police", {
+            coords = GetEntityCoords(PlayerPedId()),
+            title = 'Actividad sospechosa',
+            type = 'GENERAL',
+            message = 'Conducta sospechosa en lugar',
+            job = 'police',
+        })
     end
 end
 

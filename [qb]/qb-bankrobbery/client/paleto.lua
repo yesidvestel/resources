@@ -40,7 +40,13 @@ RegisterNetEvent('qb-bankrobbery:UseBankcardA', function()
                         Config.DoorlockAction(4, false)
                         if copsCalled or not Config.BigBanks["paleto"]["alarm"] then return end
                         local camId = Config.BigBanks["paleto"]["camId"] 
-						exports['ps-dispatch']:PaletoBankRobbery(camId)
+						TriggerServerEvent("SendAlert:police", {
+                            coords = GetEntityCoords(PlayerPedId()),
+                            title = 'Robo pacific',
+                            type = 'GENERAL',
+                            message = 'Robo banco paleto',
+                            job = 'police',
+                        })
                         copsCalled = true
                     end, function() -- Cancel
                         StopAnimTask(ped, "anim@gangops@facility@servers@", "hotwire", 1.0)
