@@ -285,7 +285,7 @@ Config.MythicHospital = false       -- If you use that old injury script by myth
 Config.AdvancedParking = false      -- If you use AdvancedParking (Deletes vehicles with their exports)
 Config.FuelSystem = false           -- 'legacy' (LegacyFuel) / 'ox' (ox_fuel) / 'default'
 
-Config.jobMenu = 'F6'               -- Default job menu key
+Config.jobMenu = 'F3'               -- Default job menu key
 Config.billingSystem = false        -- Current options: 'esx' (For esx_billing) / 'qb' (For qbcore users) 'okok' (For okokBilling) / 'pefcl' (For NPWD billing system) (Easy to add more in editable client - SET TO false IF UNDESIRED) or of course false to disable
 Config.targetSystem = true          -- Target system for targetting players, medbags, and stretcher(If disabled with replace with menus/3D text) (Compatible out of the box with qTarget, qb-target, and ox_target)
 

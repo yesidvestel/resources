@@ -192,7 +192,7 @@ Config.BossMenu = function(jobName)
 end
 
 Config.StatisticCommand = '+statistics'
-Config.StatisticKey = 'I'
+Config.StatisticKey = 'O'
 Config.StatisticDescription = 'Open statistics menu'
 
 Config.StatisticsMenu = {
