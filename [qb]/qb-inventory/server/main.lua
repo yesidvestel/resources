@@ -560,6 +560,27 @@ local function SetupShopItems(shopItems)
 	return items
 end
 
+---masterjob
+exports("GetStash", function(stashId)
+	return Stashes[stashId] or {
+		items = GetStashItems(stashId)
+	}
+end)
+
+exports('GetStashItems', GetStashItems)
+
+RegisterServerEvent('qb-inventory:server:SaveStashItems', function(stashId, items)
+    MySQL.insert('INSERT INTO stashitems (stash, items) VALUES (@stash, @items) ON DUPLICATE KEY UPDATE items = @items', {
+        ['@stash'] = stashId,
+        ['@items'] = json.encode(items)
+    })
+
+	if Stashes[stashId] then
+		Stashes[stashId].items = items
+	end
+end)
+---
+
 ---Get items in a stash
 ----@param stashId string The id of the stash to get
 ----@return table items

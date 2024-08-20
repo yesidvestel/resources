@@ -141,39 +141,69 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
         TriggerClientEvent('QBCore:Player:SetPlayerData', self.PlayerData.source, self.PlayerData)
     end
 
-    function self.Functions.SetJob(job, grade)
-        job = job:lower()
-        grade = grade or '0'
-        if not QBCore.Shared.Jobs[job] then return false end
-        self.PlayerData.job = {
-            name = job,
-            label = QBCore.Shared.Jobs[job].label,
-            onduty = QBCore.Shared.Jobs[job].defaultDuty,
-            type = QBCore.Shared.Jobs[job].type or 'none',
-            grade = {
-                name = 'No Grades',
-                level = 0,
-                payment = 30,
-                isboss = false
-            }
-        }
-        local gradeKey = tostring(grade)
-        local jobGradeInfo = QBCore.Shared.Jobs[job].grades[gradeKey]
-        if jobGradeInfo then
-            self.PlayerData.job.grade.name = jobGradeInfo.name
-            self.PlayerData.job.grade.level = tonumber(gradeKey)
-            self.PlayerData.job.grade.payment = jobGradeInfo.payment
-            self.PlayerData.job.grade.isboss = jobGradeInfo.isboss or false
-            self.PlayerData.job.isboss = jobGradeInfo.isboss or false
-        end
-
-        if not self.Offline then
+    function self.Functions.SetJob(job, grade, fromMJ)
+        local job = job:lower()
+        local grade = tostring(grade) or '0'
+    
+        if QBCore.Shared.Jobs[job] ~= nil then
+            if not fromMJ and GetResourceState('origen_masterjob') == 'started' then
+                local BusN = exports["origen_masterjob"]:GetBusiness(self.PlayerData.job.name)
+                if BusN then
+                    BusN.Functions.RemovePlayer(self.PlayerData.citizenid, true)
+                    TriggerClientEvent("origen_masterjob:client:OnBusinessUpdate", self.PlayerData.source, false)
+                end
+            end
+            self.PlayerData.job.name = job
+            self.PlayerData.job.label = QBCore.Shared.Jobs[job].label
+            self.PlayerData.job.onduty = QBCore.Shared.Jobs[job].defaultDuty
+    
+            if QBCore.Shared.Jobs[job].grades[grade] then
+                local jobgrade = QBCore.Shared.Jobs[job].grades[grade]
+                self.PlayerData.job.grade = {}
+                self.PlayerData.job.grade.name = jobgrade.name
+                self.PlayerData.job.grade.level = tonumber(grade)
+                self.PlayerData.job.payment = jobgrade.payment ~= nil and jobgrade.payment or 30
+                self.PlayerData.job.isboss = jobgrade.isboss ~= nil and jobgrade.isboss or false
+            else
+                return false
+            end
+    
             self.Functions.UpdatePlayerData()
-            TriggerEvent('QBCore:Server:OnJobUpdate', self.PlayerData.source, self.PlayerData.job)
-            TriggerClientEvent('QBCore:Client:OnJobUpdate', self.PlayerData.source, self.PlayerData.job)
+            TriggerClientEvent("QBCore:Client:OnJobUpdate", self.PlayerData.source, self.PlayerData.job)
+            return true
+        elseif GetResourceState('origen_masterjob') == 'started' then
+            local BusN = exports["origen_masterjob"]:GetBusiness(job)
+            if BusN then
+                local jobgrade = BusN.Functions.GetGrade(grade)
+    
+                if not jobgrade then
+                    return false
+                end
+    
+                self.PlayerData.job.name = job
+                self.PlayerData.job.label = BusN.Data.label
+                self.PlayerData.job.onduty = false
+    
+    
+                self.PlayerData.job.grade = {}
+                self.PlayerData.job.grade.name = jobgrade.label or "Sin grado"
+                self.PlayerData.job.grade.level = grade
+    
+                self.PlayerData.job.payment = jobgrade.pay or 30
+                self.PlayerData.job.isboss = jobgrade.boss or false
+    
+                self.Functions.UpdatePlayerData()
+                TriggerClientEvent("QBCore:Client:OnJobUpdate", self.PlayerData.source, self.PlayerData.job)
+    
+                if not fromMJ then
+                    BusN.Functions.AddPlayer(self.PlayerData.citizenid, self.PlayerData.charinfo.firstname .. " " .. self.PlayerData.charinfo.lastname, tostring(grade), true)
+                end
+    
+                return true
+            end
         end
-
-        return true
+    
+        return false
     end
 
     function self.Functions.SetGang(gang, grade)

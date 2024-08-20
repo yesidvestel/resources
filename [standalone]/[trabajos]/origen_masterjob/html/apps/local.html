@@ -1,0 +1,582 @@
+<div class="app local">
+
+    <div class="bg-gangs" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#871449eb, #0e0085d4);
+    /* background: url(./img/2uBE0h8.png); */
+"></div>
+<div class="bg-gangs" style="
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: radial-gradient(#120048eb, #85002b91);
+background: url(./img/2uBE0h8.png);opacity: 0.8;background-size: cover;"></div>
+    <img src="./img/dTH5rCn.png" style="
+
+position: absolute;
+    bottom: 0;
+    right: 0;
+    mix-blend-mode: soft-light;
+    /* opacity: 0.4; */
+    width: 100%;
+
+">
+    <div class="back-section animate__animated text-white animate__faster">
+        <div class="d-flex align-items-center w-100 h-100 ps-2 pe-2">
+            <i class="fas fa-chevron-left"></i> 
+            <div translate="back">
+                Back
+            </div>
+        </div>
+    </div>
+    <div class="app-container local-creator">
+        <div class="pasos uno activa">
+            <div>
+                <h1 class="title-creator anim-letters" animation="fadeInUp" translates-anim="create_buss">Create Your Business</h1>
+                <p class="p-creator animate__animated scale-in-2 animate__delay-1s animate__faster" animation="zoomIn" translate="create_buss_desc1">Welcome to the business creation wizard!In this process, we will configure the essential aspects of your new business empire    .
+                    </br>To start, choose a name for your business, then configure the ranges and their permits.
+                </p>
+            </div>
+            <div class="row animate__animated scale-in-2 animate__delay-2s">
+                <div class="col-12">
+                    <div class="title-local-container">
+
+                        <input type="text" class="input w-100 input-local-title" translate="your_buss_name" placeholder="Enter your business name">
+                    </div>
+                </div>
+                <div class="col-12">
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="dark-block">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="bankgothic" translate="grades">Grades</h4>
+                                    <small class="rangos-dispo" translate="grades_desc">(10 AVAILABLE RANKS)</small>
+                                </div>
+                                <div class="rangos-list">
+                                    <div class="rangos-creados">
+
+                                    </div>
+                                    <div class="rango nuevo" onclick="localFunctions.modalAddRango(1)">
+                                        <div class="icon">
+                                            <i class="lni lni-plus"></i>
+                                        </div>
+                                        <div class="rango-name" translate="new_rang">
+                                            New range
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="dark-block">
+                                <h4 class="bankgothic" translate="permissions">Permissions</h4>
+                                <div class="zona-permisos">
+
+                                </div>
+
+                            </div>
+                            <div class="button-continuar first">
+                                <button class="btn-action continuar" paso="dos" ><div translate="continue">Continue</div><i class="lni lni-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pasos dos">
+            <h1 class="title-creator anim-letters" animation="fadeInUp" translates-anim="create_sale">Create your point of sale</h1>
+            <div class="d-flex">
+                <img src="./img/xHMGawd.png" id="img-paso2" class="img-fluid animate__animated animate__fadeInLeft animate__delay-1s">
+                <div class="w-100 animate__animated animate__fadeInRight animate__delay-2s">
+                    <div class="dark-block p-5" id="bloque-derecha">
+                        <h2 class="display-6 animate__animated animate__fadeInRight animate__delay-2s" translate="npc_pos">Position the NPC</h2>
+                        <p class="text-grande" translate="npc_pos_des">
+                            When you click on 
+                            <b>Continue</b>
+                            , The menu will close and you can choose the position of the NPC that will have the store of your business. 
+                            </br></br>
+                            Then, you can completely customize your appearance so you can customize it with the appearance that best suits your needs.
+                            </br>
+                            <b>Remember to position him behind a counter!</b>
+                        </p>
+                        
+                        <div class="button-continuar d-flex justify-content-center">
+                            <button class="btn-action poner-npc animate__animated animate__fadeInRight animate__delay-3s" paso="tres"><div translate="continue">Continue</div> <i class="lni lni-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="pasos tres">
+            <h1 class="title-creator anim-letters" animation="fadeInUp" translates-anim="buss_created">Your business has been created</h1>
+            <p class="p-creator animate__animated scale-in-2 animate__delay-1s animate__faster text-center p-5" animation="zoomIn" translate="buss_created_desc">
+                !! Congratulations!!Your business has been created successfully. </br></br> Click to finish to access all the management of your business, where you can start hiring staff,</br>Acquire and manage items and much more.
+            </p>
+            <div class="button-continuar d-flex justify-content-center">
+                <button class="btn-action finalizar-local animate__animated animate__zoomIn animate__delay-3s" paso="tres"><div translate="finish">Finish </div><i class="lni lni-chevron-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="app-container local-home">
+        <div class="scale-in">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex justify-content-start local-top-text" >
+                    <div translate="level">LEVEL</div> <span class="local-level ms-3">0</span>
+                </div>
+
+                <div class="local-title">
+                    <div class="title animate__animated animate__fadeInUp anim_titulo" style="animation-delay: 0.2s">Charging...</div>
+                    <div class="progress-bar nivel animate__animated animate__fadeInUp anim_titulo" style="animation-delay: 0.4s">
+                        <div class="progress-bar-fill"></div>
+                        <div class="next-level">Level 9</div>
+                    </div>
+                </div>
+                <div class="local-level-container" style="width:37vh;display: flex;justify-content: flex-end;">
+
+                    <div class="btn-action fichar accesible" status="off"><i class="fa-solid fa-arrow-right-to-bracket"></i> <span class="fichar-label">Sign entrance</span></div>
+                </div>
+
+            </div>
+            <div class="row mt-5">
+                <div class="col-8">
+                    <div class="row mb-4 info-row">
+                        <div class="col-4" style="border-right: .1vh solid #ffffff1f;">
+                            <div class="local-stat">
+                                
+
+                                <h4>
+                                    <img src="./img/dKM79FK.png">
+                                    <div class="text" translate="in_serv">In service</div>
+                                </h4>
+                                <div class="data en-servicio">15.235$</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="local-stat">
+                                <div class="local-border"></div>
+
+                                <h4><img src="./img/THUN1Rs.png" >
+                                    <div class="text" translate="employees">Employees</div>
+
+                                    </h4>
+                                <div class="data n-empleados">6</div>
+                            </div>
+                        </div>
+                        <div class="col-4" style="border-left: .1vh solid #ffffff1f;">
+                            <div class="local-stat">
+                                <div class="local-border"></div>
+
+                                <h4><img src="./img/7XVfMA7.png">
+                                    <div class="text" translate="capital">Capital</div>
+                                    
+                                </h4>
+                                <div class="data capital">-</div>
+                                <div class="transfer-menu">
+                                    <div class="button-transfer btn-sound ingresar" translate="deposit"><i class="fa-solid fa-arrow-down"></i>Deposit</div>
+                                    <div class="button-transfer btn-sound retirar" translate="withdrawn">Withdraw <i class="fa-solid fa-arrow-up"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="row">
+
+                                <div class="col-4">
+
+                                    <div class="dark-block w-100 members">
+                                        <div class="title-3" translate="log_mang">Labor registration</div>
+                                        <div class="members-list registro-laboral list-fade">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="dark-block block-radio">
+                                        <div class="title-3" translate="statics">Statistics</div>
+                                        <div class="local-estadisticas">
+                                            <div>
+                                                <canvas id="grafica-business"></canvas>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="right-buttons d-flex">
+                        <div class="secondary-box navigate btn-load-articles" app="local-articles" style="width:92%">
+                            <i class="lni lni-shopping-basket"></i>
+                            <div translate="articles">ARTICLES</div>
+                        </div>
+
+                        <div class="secondary-box navigate"  id="documentos"  app="local-reports">
+                            <i class="lni lni-empty-file"></i>
+                            <div translate="document">Document</div>
+                        </div>
+                        <div class="secondary-box navigate" app="local-settings">
+                            <i class="lni lni-cogs"></i>
+                            <div translate="settings">Settings</div>
+                        </div>
+                    </div>
+                    <div class="zona-apertura clickable">
+                        <div class="abierto">
+                            <div class="cabecera-abierto">
+                                <h4 class="gap-2"><i class="fa-solid fa-fw fa-store"></i> <div translate="open_publ">OPEN TO THE PUBLIC</div></h4>
+                                <!-- <div class="llamar-tendero">
+                                    <i class="fa-solid fa-phone"></i> LLAMAR TENDERO
+                                </div> -->
+                                <!-- <img src="./img/open.svg" style="width:3vh;"> -->
+                            </div>
+                            <div class="zona-servicio">
+                                <div class="ms-1" translate="emp_serv">Employees in service</div>
+                                <div class="employees-list">
+
+
+
+                                </div>
+                            </div>
+                            <div class="footer-abierto gap-2">
+                                <div class="btn-zona-apertura reapertura">
+                                    <i class="fa-solid fa-bullhorn"></i><span translate="re_an_open" style="line-height: 0.5vh;">REANNOUNCE OPENING</span>
+                                </div>
+                                <div class="btn-zona-apertura cerrar-negocio">
+                                    <i class="fa-solid fa-shop-lock"></i><span translate="close_shop" style="line-height: 0.5vh;">Close business</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cerrado"><i class="fa-solid fa-shop" style="font-size: 10vh;"></i>
+                            <div translate="open_buss">Open business</div>
+                                                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="app-container local-reports">
+        <div class="scale-in">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="section-title">
+                    <div translate="document">Document</div>
+                </h1>
+                <div class="btn-action" onclick="localFunctions.newReport()" translate="new_doc">
+                    New document
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <div class="dark-block h-max">
+                        <div class="title-3" translate="docs_list">Documents list</div>
+                        <div class="row m-titles search-box">
+                            <div class="col-10 p-0">
+                                <input
+                                    translate="docs_list_inp"
+                                    type="text"
+                                    placeholder="Search for documents..."
+                                    class="search-input w-100 input-search-citizen"
+                                />
+                            </div>
+                            <div class="col-2 p-0">
+                                <div
+                                    class="btn btn-search btn-search-citizen w-100"
+                                >
+                                    <i
+                                        class="fas fa-search"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-list report-list list-fade">
+                            <div class="citizen-item m-titles text-muted">
+                                <div class="citizen-name text-center" translate="err_doc">
+                                    There are no available documents
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="dark-block h-max">
+                        <div class="m-titles">
+                            <div class="title-3" translate="doc_cont">Document content</div>
+                            <div class="citizen-scroll citizen-ficha">
+                                <div class="d-flex w-100 align-content-start justify-content-around flex-wrap" style="height: 73vh">
+                                    <h1 translate="doc_select_desc">
+                                        Select a document to load your
+                                        information
+                                    </h1>
+                                    <img src="./img/webp/document.webp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-container local-settings">
+        <div class="scale-in">
+            <div class="d-flex align-items-center justify-content-between">
+                <h1 class="section-title">
+                    <div translate="buss_sett">Business settings</div>
+                </h1>
+                <div class="d-flex">
+
+                    <div class="setting-container">
+                        <div class="setting-title" translate="buss_name">
+                           Business name
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="local-title">
+
+                            </div>
+                            <div class="btn btn-action pt-0 pb-0" id="changelocalLabel" onclick="localFunctions.modallocalLabel()" translate="change">Change</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <div class="button-settings tab-navigate active" tab="miembros">
+                        <div class="d-flex align-items-center">
+                            <img src="./img/Bll9eqd.png" class="button-image p-3">
+                            <div class="button-title" translate="emp_mang_desc">Employee and points management</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div class="button-settings tab-navigate" tab="rangos">
+                        <div class="d-flex align-items-center">
+                            <img src="./img/Bll9eqd.png" class="button-image p-3">
+                            <div class="button-title" translate="ranking_man">Ranking management</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 mt-4">
+                    <div class="setting-tabs">
+                        <div class="tab active miembros">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="dark-block w-100 members padding">
+                                        <div class="title-3" translate="employees">EMPLOYEES</div>
+                                        <div class="members-list">
+
+                                        </div>
+                                        <div class="bottom-bar">
+                                            <small class="text-muted num-empleados" translate="total_employees" style="text-transform: uppercase;">Total employees: 8</small>
+                                            <button class="btn btn-action" onclick="localFunctions.modalNewMember()"><i class="fas fa-plus" aria-hidden="true"></i> <div translate="add_menber">Add member</div></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+
+                                    <div class="dark-block padding zona-puntos">
+                                        <div class="title-3" translate="buus_points">
+                                            Business points
+                                        </div>
+                                        <div class="lista-puntos">
+
+                                        </div>
+                                        <div class="bottom-bar">
+                                            <small class="text-muted total-territories"></small>
+                                            <button class="btn btn-action" onclick="localFunctions.modalAddPoints()"><i class="fas fa-plus" aria-hidden="true"></i> <div translate="add_point">Add point</div></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab rangos">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="dark-block">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="bankgothic" translate="grades">Grades</h4>
+                                            <small class="rangos-dispo" translate="grades_desc">(10 RANKS AVAILABLE)</small>
+                                        </div>
+                                        <div class="rangos-list">
+                                            <div class="rangos-creados">
+
+                                            </div>
+                                            <div class="rango nuevo" onclick="localFunctions.modalAddRango(0)">
+                                                <div class="icon">
+                                                    <i class="lni lni-plus"></i>
+                                                </div>
+                                                <div class="rango-name" translate="new_grade">
+                                                   New grade
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="dark-block">
+                                        <h4 class="bankgothic" translate="permissions">Permits</h4>
+
+                                        <div class="zona-permisos">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="app-container local-articles">
+        <div class="scale-in">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="section-title" translate="articles_header">
+                    <div>Acquisition and management of articles</div>
+                </h1>
+                <button class="btn btn-action gestion-articulos" translate="mang_art_btn">Manage items for sale</button>
+            </div>
+            <div class="row mt-4">
+                <div class="col-5">
+                    <div class="dark-block">
+                        <div class="title-3" translate="aval_items">Available items</div>
+                        <div class="dark-content shop-articulos">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="dark-block overflow-hidden">
+                        <div class="title-3" translate="cart">Basket</div>
+                        <div class="dark-content carrito">
+
+                        </div>
+                        <div class="carrito-footer">
+                            <div class="carrito-total">total: <span id="total-carrito">0</span>$</div>
+                            <div class="btn-comprar-carrito" translate="buy_all">BUY ALL</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="dark-block">
+                        <div class="title-3" translate="shop">Store</div>
+                        <div class="dark-content items-almacen">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-container local-vehicles">
+        <div class="scale-in">
+            <h1 class="section-title" translate="buss_veh">
+                <div>Business vehicles</div>
+            </h1>
+            <div class="row mt-4">
+                <div class="col-8">
+                    <div class="slider-container">
+                        <div class="swiper slider-vehiculos">
+                            <div class="swiper-wrapper">
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 ps-5">
+                    <div class="dark-block w-100 vehicles">
+                        <div class="title-3" translate="aval_veh">Available vehicles</div>
+                        <div class="vehicles-list">
+                            <div class="item-flex-box justify-content-between">
+                                <img src="./img/oZrHoyt.png" class="icon">
+                                <div class="item-flex-box-data w-100">
+                                    <div class="title">
+                                        Zentorno
+                                    </div>
+
+                                    <div class="description badge-acent">
+                                        1234AQB
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="informe-view w-100 h-100">
+        <div
+            class="d-flex align-items-center justify-content-center scale-in h-100"
+        >
+            <img src="" />
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    //Recorre cada letra del contenido de la clase .anim-letters y las introduce una a una en un <span> pero añadiendo un animation-delay de 0.1s más por cada letra
+    $(".anim-letters").each(async function () {
+        const $this = $(this);
+        const key = $this.attr("translates-anim");
+        if (!or.lang) or.lang = await or.langs()
+        if (or.lang[key]) {
+            $this.text(or.lang[key]);  
+        }
+        const classAnim = $(this).attr('animation');
+        $this.html(
+            $this
+                .text()
+                .replace(/([^\x00-\x80]|\w)/g, "<div style='display:inline-block;' class='letter animate__faster animate__animated animate__"+classAnim+"'>$&</div>")
+        );
+        $this.find(".letter").each(function (i) {
+            $(this).css("animation-delay", 0.1 * i + "s");
+        });
+    });
+
+
+
+
+
+</script>

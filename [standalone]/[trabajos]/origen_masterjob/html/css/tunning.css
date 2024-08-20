@@ -1,0 +1,210 @@
+.tunning {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 50vh;
+    right: 0.5vh;
+    top: 7.0vh;
+    bottom: 0.5vh;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    border-bottom-left-radius: 0.5vh ;
+    border-bottom-right-radius: 0.5vh ;
+    background: #00120fdd;
+    overflow: hidden;
+	display: flex; 
+    flex-direction: column; 
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.tunning .header {
+    display: flex;
+    width: 100%;
+    background-color: rgb(255 255 255);
+    padding: 0.5vh 0.5vh 0 0.5vh;
+    height: 4.5vh;
+    justify-content: center; 
+    align-items: center;     
+    z-index: 2;
+}
+
+.tunning .header .home {
+    margin-right: 2vh;
+    display: flex;
+    width: 10.5vh;
+    height: 3vh;
+    background: linear-gradient(13deg, #feffff, #0f0f0f80);
+	border: 1px solid rgb(249 249 249 / 9%);
+    border-radius: 0.5vh;
+    overflow: hidden;
+}
+
+.tunning .header .home:hover {
+    background: linear-gradient(13deg, #4260cc, #03ffddc9);;
+
+}
+.tunning .header .home p {
+    justify-content: center; 
+    align-items: center;  
+    font-size: 2vh;
+    margin-left: 3vh;
+}
+
+
+.tunning .header .accept {
+    margin-left: 2vh;
+    display: flex;
+    width: 10.5vh;
+    height: 3vh;
+    background: linear-gradient(13deg, #feffff, #0f0f0f80);
+	border: 1px solid rgb(249 249 249 / 9%);
+    border-radius: 0.5vh;
+    overflow: hidden;
+}
+
+.tunning .header .accept:hover {
+    background: linear-gradient(13deg, #4260cc, #03ffddc9);;
+
+}
+
+.tunning .header .accept p {
+    font-size: 2vh;
+    margin-left: 2.7vh;
+}
+
+.tunning .header p {
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive !important;
+}
+
+.tunning .modify-cont {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+	margin: 1.25vh;
+
+}
+.tunning .modify-cont .modify {
+	text-align: center;
+	border-radius: 5px;
+	padding: 0 0.5vh;
+	text-shadow: 0 0 10px rgb(255 255 255 / 62%);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin-bottom: 1vh;
+	font-size: 2.3vh;
+	font-family: 'Bebas Neue', cursive !important;
+	background: linear-gradient(13deg, #2f4181, #23d9c080);
+	border: 1px solid rgb(249 249 249 / 9%);
+	letter-spacing: 2px;
+	line-height: 3vh;
+}
+.tunning .modify-cont .modify:hover {
+	background: linear-gradient(13deg, #334ba2, #23d9c1db);
+}
+
+.input-cont {
+    color: black;
+    text-align: center;
+    height: 5vh;
+    border-radius: 5px;
+    padding: 0 0.5vh;
+    text-shadow: 0 0 10px rgb(255 255 255 / 62%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 1vh;
+    font-size: 2.3vh;
+    font-family: 'Bebas Neue', cursive !important;
+    background: #f3f3f3da;
+    border: 1px solid rgb(249 249 249 / 9%);
+    letter-spacing: 2px;
+    line-height: 3vh;
+    position: relative;
+  }
+  .input-cont input {
+    width: 3vh;
+    margin: 0 auto;
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .input-cont i {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .input-cont i.fa-arrow-left {
+    cursor: pointer;
+    color: #000;
+    left:0.5vh;
+  }
+  .input-cont i.fa-arrow-left:hover {
+    color: #0033a1;
+  }
+
+
+  
+  
+  .input-cont i.fa-arrow-right {
+    right: 0.5vh;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .input-cont i.fa-arrow-right:hover {
+    color: #0033a1;
+  }
+  
+  .input-cont input {
+    width: 3vh;
+    margin: 0 auto;
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+  }
+  
+
+  .camtouch {
+    position: absolute;
+    display: flex;
+    top: 10vh;
+    right: 51vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    background: linear-gradient(13deg, #2f4181, #23d9c080);
+	border: 1px solid rgb(249 249 249 / 9%);
+    border-radius: 0.5vh;
+    overflow: hidden;
+  }
+
+  .camtouch:hover {
+    background: linear-gradient(13deg, #4260cc, #03ffddc9);
+  }
+
+  .camtouch i.fa-camera-rotate {
+    margin:0.8vh;
+    text-align: center;
+    justify-content: center; 
+    width: 90%;
+    height: 90%;
+  }
+
+.colorp {
+    position: relative;
+}
+
+.colorp .head {
+    width: 90%;
+    margin-left: 2vh;
+    margin-bottom: 1vh;
+    margin-right: 2vh;
+    background-color: transparent;
+}
