@@ -501,11 +501,9 @@ Config.Locations = {
         CheckIn = {                                      -- Hospital check-in
             Enabled = true,                              -- Enable ped and check-in area?
             Ped = 's_m_m_scientist_01',                  -- Check in ped
-<<<<<<< Updated upstream
+---- Updated upstream
             Coords = vec3(304.47, -591.25, 42.15), -- Coords of ped
-=======
-            Coords = vec3(304.47, -591.25, 41.30), -- Coords of ped
->>>>>>> Stashed changes
+---- Stashed changes
             Distance = 4.85,                             -- Distance to show textUI (If target is not enabled below)
             Heading = 63.26,                             -- Heading of ped
             Cost = 500,                                  -- Cost of using hospital check-in. Set to false for free
@@ -518,11 +516,9 @@ Config.Locations = {
             Target = {
                 enabled = true,                          -- Enable Target? (Can be customized in wasabi_bridge/customize/cl_customize.lua the target system)
                 label = 'Check In',
-<<<<<<< Updated upstream
+--- Updated upstream
                 coords = vec3(304.47, -591.25, 42.15),
-=======
-                coords = vec3(304.47, -591.25, 41.30),
->>>>>>> Stashed changes
+--- Stashed changes
                 heading = 63.26,
                 distance = 5.0,
                 width = 2.0,
