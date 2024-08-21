@@ -17,14 +17,14 @@
 --- @param Important, add a webhook here, otherwise the images won't work.
 
 -- Mandatory webhook or Fivemanage token [https://www.fivemanage.com] (full use)
-Config.Webhook = '873Db6hJDfbYrbpiXT2zenyGPaUXT2Jo'
+Config.Webhook = 'n1uyPYAkUXVyaKW8V8w2j7Ayu6scR5OQ'
 
-Config.TwitterWebhook = ''
-Config.InstagramWebhook = ''
-Config.YellowPagesWebhook = ''
-Config.NewsWebhook = ''
-Config.DarkWebBuy = ''
-Config.BankWebhook = '' -- You can modify on qs-smartphone/server/custom/misc/bank.lua
+Config.TwitterWebhook = 'https://discord.com/api/webhooks/1275600747765174312/pX7hu4g6X2BxYBgvWiyIqT6g_Rog1iE1m3v-7QycQny2VE-LIb3dL5xMWNTliryXmDyI'
+Config.InstagramWebhook = 'https://discord.com/api/webhooks/1275600882334961725/xCLjO4iZQvtq2iT_zVBpzqUenW3XLDUP9Eka_RGYJwlbJMwQWPdtzRfYHeFHfEReYR15'
+Config.YellowPagesWebhook = 'https://discord.com/api/webhooks/1275601816352063499/LsjtR5qy2TpQBP9YBclC-zHL5ip5yhlnaHm_UpKrorNZtfli0P0NXtSLw3ktD4QemTpn'
+Config.NewsWebhook = 'https://discord.com/api/webhooks/1275601185088208937/uhO2kdH7STla9rDkH4p6bkWF3MGnc6a_3CdXQWoIWJBa-HiqjNQIVnmiLzffLPHmLXhm'
+Config.DarkWebBuy = 'https://discord.com/api/webhooks/1275601197960794163/eORify00O8HliDfR2tWA_M45C9TLdW7iiB4554EmmUJhEXyi5SDxoqwXkbDObxZCUMen'
+Config.BankWebhook = 'https://discord.com/api/webhooks/1275601488978378802/VaMZCHf4IUxdP0SHxo5oTGbMlEKU0eLe2OAOS0jkVp8poYLAr0timKYVni4sy9NuQg76' -- You can modify on qs-smartphone/server/custom/misc/bank.lua
 
 
 --      _       _     _   _

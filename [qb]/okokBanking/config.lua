@@ -2,7 +2,7 @@ Config, Locales = {}, {}
 
 Config.Locale = 'es' -- en / pt / gr / fr / de
 
-Config.okokNotify = false -- true = okokNotify | false = QBCore Notify
+Config.okokNotify = true -- true = okokNotify | false = QBCore Notify
 
 Config.okokTextUI = false -- true = okokTextUI | false = QBCore DrawText
 

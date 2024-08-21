@@ -6,7 +6,7 @@
 --░░░██║░░░██║░░██║██║░░██║██║░╚███║██████╔╝███████╗██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║██████╔╝
 --░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
 
-Config.Language = 'en' -- Default 'en', 'es, 'de' and 'pt' but you have more translations in html.
+Config.Language = 'es' -- Default 'en', 'es, 'de' and 'pt' but you have more translations in html.
 
 Config.Languages = {
     ['es'] = {

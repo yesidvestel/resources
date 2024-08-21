@@ -246,10 +246,9 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
     end
 
     function self.Functions.SetJobDuty(onDuty)
-        self.PlayerData.job.onduty = not not onDuty
-        TriggerEvent('QBCore:Server:OnJobUpdate', self.PlayerData.source, self.PlayerData.job)
-        TriggerClientEvent('QBCore:Client:OnJobUpdate', self.PlayerData.source, self.PlayerData.job)
-        self.Functions.UpdatePlayerData()
+        self.Functions.ChangeIban = function(iban)
+            self.PlayerData.charinfo.account = iban
+            self.Functions.UpdatePlayerData()
     end
 
     function self.Functions.SetPlayerData(key, val)
