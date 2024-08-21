@@ -150,7 +150,7 @@ end)
 AddEventHandler('wasabi_boombox:playMenu', function(data)
     local musicId = 'id_'..data.id
     if data.type == 'play' then
-        local keyboard = lib.inputDialog('Play Music', {'Youtube URL','Distance (Max 40)', 'Volume (1-100)'})
+        local keyboard = lib.inputDialog('Reproductor de música', {'Youtube URL','Distancia (Max 40)', 'Volumen (1-100)'})
         if keyboard then
             if keyboard[1] and tonumber(keyboard[2]) and tonumber(keyboard[2]) <= 40 and tonumber(keyboard[3]) and tonumber(keyboard[3]) <= 100 then
                 TriggerServerEvent("wasabi_boombox:soundStatus", "play", musicId, { position = activeRadios[data.id].pos, link = keyboard[1], volume = keyboard[3]/100, distance = keyboard[2] })
