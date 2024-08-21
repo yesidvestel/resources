@@ -126,10 +126,11 @@ QBShared.Items = {
     weapon_petrolcan             = { name = 'weapon_petrolcan', label = 'Petrol Can', weight = 1000, type = 'weapon', ammotype = 'AMMO_PETROLCAN', image = 'weapon_petrolcan.png', unique = true, useable = false, description = 'A robust liquid container made from pressed steel' },
     weapon_fireextinguisher      = { name = 'weapon_fireextinguisher', label = 'Fire Extinguisher', weight = 1000, type = 'weapon', ammotype = nil, image = 'weapon_fireextinguisher.png', unique = true, useable = false, description = 'A portable device that discharges a jet of water, foam, gas, or other material to extinguish a fire' },
     weapon_hazardcan             = { name = 'weapon_hazardcan', label = 'Hazardous Jerry Can', weight = 1000, type = 'weapon', ammotype = 'AMMO_PETROLCAN', image = 'weapon_hazardcan.png', unique = true, useable = true, description = 'Weapon Hazardcan' },
-mdtcitation   = { name = 'mdtcitation', label = 'Citation', weight = 1000, type = 'item', image = 'citation.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Citación de un oficial de policía.!'},
-casino_goldchip  = { name = 'casino_goldchip', label = 'Casino Chip', weight = 0, type = 'item', image = 'casino_goldchip.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Diamond Casino Chip'},
-casino_member  = { name = 'casino_member', label = 'Casino Membership', weight = 500, type = 'item', image = 'memvip.png', unique = true, useable = false, shouldClose = false,  combinable = nil,  description = 'Diamond Casino Member Card'},
-casino_vip = { name = 'casino_vip', label = 'V.I.P Membership', weight = 500, type = 'item', image = 'memoro.png', unique = true, useable = false, shouldClose = false, combinable = nil,  description = 'Diamond Casino V.I.P Card'},
+    mdtcitation                  = { name = 'mdtcitation', label = 'Citation', weight = 1000, type = 'item', image = 'citation.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Citación de un oficial de policía.!'},
+    casino_goldchip              = { name = 'casino_goldchip', label = 'Casino Chip', weight = 0, type = 'item', image = 'casino_goldchip.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Diamond Casino Chip'},
+    casino_member                = { name = 'casino_member', label = 'Casino Membership', weight = 500, type = 'item', image = 'memvip.png', unique = true, useable = false, shouldClose = false,  combinable = nil,  description = 'Diamond Casino Member Card'},
+    casino_vip                   = { name = 'casino_vip', label = 'V.I.P Membership', weight = 500, type = 'item', image = 'memoro.png', unique = true, useable = false, shouldClose = false, combinable = nil,  description = 'Diamond Casino V.I.P Card'},
+    
     -- Weapon Attachments
     clip_attachment              = { name = 'clip_attachment', label = 'Clip', weight = 1000, type = 'item', image = 'clip_attachment.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A clip for a weapon' },
     drum_attachment              = { name = 'drum_attachment', label = 'Drum', weight = 1000, type = 'item', image = 'drum_attachment.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A drum for a weapon' },
@@ -228,10 +229,10 @@ casino_vip = { name = 'casino_vip', label = 'V.I.P Membership', weight = 500, ty
     bank_card                    = { name = 'bank_card', label = 'Bank Card', weight = 0, type = 'item', image = 'bank_card.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Used to access ATM' },
     security_card_01             = { name = 'security_card_01', label = 'Security Card A', weight = 0, type = 'item', image = 'security_card_01.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A security card... I wonder what it goes to' },
     security_card_02             = { name = 'security_card_02', label = 'Security Card B', weight = 0, type = 'item', image = 'security_card_02.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A security card... I wonder what it goes to' },
-methkey       = { name = 'methkey',      label = 'methkey',      weight = 0,     type = 'item',      image = 'house_key_hamil2.png',    unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Meth Lab Access key!'},
-weedkey       = { name = 'weedkey',      label = 'weedkey',      weight = 0,     type = 'item',      image = 'house_key_hamil5.png',    unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Weed Lab Access key!'},
-mwkey          = { name = 'mwkey',        label = 'mwkey',        weight = 0,     type = 'item',      image = 'house_key_hamil4.png',      unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Laundrette Access key!'},
-cokekey       = { name = 'cokekey',      label = 'cokekey',      weight = 0,     type = 'item',      image = 'house_key_hamil1.png',    unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Coke Lab Access key!'},
+    methkey       = { name = 'methkey',      label = 'methkey',      weight = 0,     type = 'item',      image = 'house_key_hamil2.png',    unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Meth Lab Access key!'},
+    weedkey       = { name = 'weedkey',      label = 'weedkey',      weight = 0,     type = 'item',      image = 'house_key_hamil5.png',    unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Weed Lab Access key!'},
+    mwkey          = { name = 'mwkey',        label = 'mwkey',        weight = 0,     type = 'item',      image = 'house_key_hamil4.png',      unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Laundrette Access key!'},
+    cokekey       = { name = 'cokekey',      label = 'cokekey',      weight = 0,     type = 'item',      image = 'house_key_hamil1.png',    unique = true,      useable = true,     shouldClose = false,      combinable = nil,     description = 'Coke Lab Access key!'},
 -- drugs
 
     -- Eat ITEMS
@@ -255,9 +256,10 @@ cokekey       = { name = 'cokekey',      label = 'cokekey',      weight = 0,    
     oxy                          = { name = 'oxy', label = 'Prescription Oxy', weight = 0, type = 'item', image = 'oxy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'The Label Has Been Ripped Off' },
     meth                         = { name = 'meth', label = 'Meth', weight = 100, type = 'item', image = 'meth_baggy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A baggie of Meth' },
     rolling_paper                = { name = 'rolling_paper', label = 'Rolling Paper', weight = 0, type = 'item', image = 'rolling_paper.png', unique = false, useable = false, shouldClose = true, combinable = { accept = { 'weed_whitewidow', 'weed_skunk', 'weed_purplehaze', 'weed_ogkush', 'weed_amnesia', 'weed_ak47' }, reward = 'joint', anim = { dict = 'anim@amb@business@weed@weed_inspecting_high_dry@', lib = 'weed_inspecting_high_base_inspector', text = 'Rolling joint', timeOut = 5000, } }, description = 'Paper made specifically for encasing and smoking tobacco or cannabis.' },
-coke_brick     = {name= 'coke_brick',     label= 'Coke Brick',     weight= 2000,      type= 'item',      image= 'coke_brick.png',     unique= true,      useable= false,      shouldClose= true,     combinable= nil,     description= 'Heavy package of cocaine, mostly used for deals and takes a lot of space'},
-weed_brick     = {name= 'weed_brick',     label= 'Weed Brick',     weight= 1000,      type= 'item',      image= 'weed_brick.png',     unique= false,     useable= false,      shouldClose= true,     combinable= nil,     description= '1KG Weed Brick to sell to large customers.'},
-meth_package   = {name= 'meth_package',   label= 'Meth Package',   weight= 1000,      type= 'item',      image= 'meth_package.png',   unique= false,     useable= false,      shouldClose= true,     combinable= nil,     description= 'Large package of Meth'},
+    coke_brick                   = {name= 'coke_brick',     label= 'Coke Brick',     weight= 2000,      type= 'item',      image= 'coke_brick.png',     unique= true,      useable= false,      shouldClose= true,     combinable= nil,     description= 'Heavy package of cocaine, mostly used for deals and takes a lot of space'},
+    weed_brick                   = {name= 'weed_brick',     label= 'Weed Brick',     weight= 1000,      type= 'item',      image= 'weed_brick.png',     unique= false,     useable= false,      shouldClose= true,     combinable= nil,     description= '1KG Weed Brick to sell to large customers.'},
+    meth_package                 = {name= 'meth_package',   label= 'Meth Package',   weight= 1000,      type= 'item',      image= 'meth_package.png',   unique= false,     useable= false,      shouldClose= true,     combinable= nil,     description= 'Large package of Meth'},
+
     -- Seed And Weed
     weed_whitewidow              = { name = 'weed_whitewidow', label = 'White Widow 2g', weight = 200, type = 'item', image = 'weed_baggy.png', unique = false, useable = true, shouldClose = false, combinable = nil, description = 'A weed bag with 2g White Widow' },
     weed_skunk                   = { name = 'weed_skunk', label = 'Skunk 2g', weight = 200, type = 'item', image = 'weed_baggy.png', unique = false, useable = true, shouldClose = false, combinable = nil, description = 'A weed bag with 2g Skunk' },
@@ -383,55 +385,60 @@ meth_package   = {name= 'meth_package',   label= 'Meth Package',   weight= 1000,
     newscam                      = { name = 'newscam', label = 'News Camera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
     newsmic                      = { name = 'newsmic', label = 'News Microphone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
     newsbmic                     = { name = 'newsbmic', label = 'Boom Microphone', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
--- Vanilla Unicorn Job
-v_shots_pack = { name = 'v_shots_pack', label = 'Shots Pack', weight = 1600, type = 'item', image = 'v-shots-pack.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Pack of 8 Shots. 2 of Each Flavour' },
-shot_absinthe       = { name = 'shot_absinthe', label = 'Absinthe Shot', weight = 200, type = 'item', image = 'shot-absinthe.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Absinthe.' },
-shot_snakebite      = { name = 'shot_snakebite', label = 'Snakebite Shot', weight = 200, type = 'item', image = 'shot-snakebite.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Snake Bite.' },
-shot_redsnapper   = { name = 'shot_redsnapper', label = 'RedSnapper Shot', weight = 200, type = 'item', image = 'shot-redsnapper.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Red Snapper.' },
-shot_fireball      = { name = 'shot_fireball', label = 'Fireball Shot', weight = 200, type = 'item', image = 'shot-frieball.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Fireball.' },
-vodka_crate      = { name = 'vodka_crate', label = 'Vodka Crate', weight = 2000, type = 'item', image = 'vodka-crate.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Crate of 10 Vodka Bottles' },
-whiskey_box      = { name = 'whiskey_box', label = 'Whiskey Box', weight = 1600, type = 'item', image = 'whiskey-box.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Box of 6 Whiskey Bottles' },
-beer_crate          = { name = 'beer_crate', label = 'Beer Crate', weight = 1800, type = 'item', image = 'beer-crate.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Crate of 12 Beers' },
+    
+    -- Vanilla Unicorn Job
+    v_shots_pack                 = { name = 'v_shots_pack', label = 'Shots Pack', weight = 1600, type = 'item', image = 'v-shots-pack.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Pack of 8 Shots. 2 of Each Flavour' },
+    shot_absinthe                = { name = 'shot_absinthe', label = 'Absinthe Shot', weight = 200, type = 'item', image = 'shot-absinthe.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Absinthe.' },
+    shot_snakebite               = { name = 'shot_snakebite', label = 'Snakebite Shot', weight = 200, type = 'item', image = 'shot-snakebite.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Snake Bite.' },
+    shot_redsnapper              = { name = 'shot_redsnapper', label = 'RedSnapper Shot', weight = 200, type = 'item', image = 'shot-redsnapper.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Red Snapper.' },
+    shot_fireball                = { name = 'shot_fireball', label = 'Fireball Shot', weight = 200, type = 'item', image = 'shot-frieball.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Shot of Fireball.' },
+    vodka_crate                  = { name = 'vodka_crate', label = 'Vodka Crate', weight = 2000, type = 'item', image = 'vodka-crate.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Crate of 10 Vodka Bottles' },
+    whiskey_box                  = { name = 'whiskey_box', label = 'Whiskey Box', weight = 1600, type = 'item', image = 'whiskey-box.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Box of 6 Whiskey Bottles' },
+    beer_crate                   = { name = 'beer_crate', label = 'Beer Crate', weight = 1800, type = 'item', image = 'beer-crate.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Crate of 12 Beers' },
     fruit_box                    = { name = 'fruit_box', label = 'Fruit Box', weight = 2000, type = 'item', image = 'fruit-box.png', unique = false,     useable = true,     shouldClose = true,    combinable = nil,   description = 'A Crate of 20 Fruit Mixes for Drinks' },
-fruit_mix          = { name = 'fruit_mix', label = 'Fruit Mix', weight = 100, type = 'item', image = 'fruit-mix.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Mix of Fruits' },
-tequila          = { name = 'tequila', label = 'Tequila', weight = 600, type = 'item', image = 'tequila.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Good Time' },
-tequila_crate         = { name = 'tequila_crate', label = 'Tequila Crate', weight = 3000, type = 'item', image = 'tequila-crate.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Crate of 8 Tequila Bottles' },
-v_sugar_syrup         = { name = 'v_sugar_syrup', label = 'Sugar Syrup', weight = 100, type = 'item', image = 'v-sugar-syrup.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'syrup for making cocktails' },
-v_margarita         = { name = 'v_margarita', label = 'Margarita', weight = 100, type = 'item', image = 'v-margarita.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Margarita Cocktail' },
-v_espressomartini     = { name = 'v_espressomartini', label = 'Espresso Martini', weight = 100, type = 'item', image = 'v-espressomartini.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'An Espresso Martini Cocktail' },
-v_manhattan         = { name = 'v_manhattan', label = 'Manhattan', weight = 100, type = 'item', image = 'v-manhattan.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Manhattan Cocktail' },
-v_oldfasioned         = { name = 'v_oldfashioned', label = 'Old Fashioned', weight = 100, type = 'item', image = 'v-oldfashioned.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Old Fashioned Cocktail' },
-v_bitter           = { name = 'v_bitter', label = 'Bitter', weight = 100, type = 'item', image = 'v-bitter.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Bitter For Making Cocktails' },
-v_sparkles           = { name = 'v_sparkles', label = 'Sparkles', weight = 100, type = 'item', image = 'v-sparkles.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Sparkles Cocktail' },
-v_unicorn           = { name = 'v_unicorn', label = 'Unicorn', weight = 100, type = 'item', image = 'v-unicorn.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Unicorn Cocktail'},
-v_dancerz           = { name = 'v_dancerz', label = 'Dancerz', weight = 100, type = 'item', image = 'v-dancerz.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Dancerz Cocktail' },
-v_hulk               = { name = 'v_hulk', label = 'Hulk', weight = 100, type = 'item', image = 'v-hulk.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Hulk Cocktail' },
-v_class           = { name = 'v_class', label = 'Class', weight = 100, type = 'item', image = 'v-class.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Class Non-Alcoholic Cocktail' },
--- snacks 
-twerks_candy  = {name = 'twerks_candy',     label = 'Twerks', weight = 100, type = 'item', image = 'twerks_candy.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Some delicious candy'},
-snikkel_candy  = {name = 'snikkel_candy',   label = 'Snikkel', weight = 100, type = 'item', image = 'snikkel_candy.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Some delicious candy'},
-crisps   = {name = 'crisps',   label = 'Phat Chips', weight = 100, type = 'item', image = 'crisps.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Crispy crisps'},
-egochaser      = {name = 'egochaser',   label = 'Ego Chaser', weight = 100, type = 'item', image = 'egochaser.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Chocolate bar'},
-nachos   = {name = 'nachos',   label = 'Nacho Chips', weight = 100, type = 'item', image = 'nachos.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Salty Crisps'},
--- beverages
-water_bottle  = {name = 'water_bottle',     label = 'Bottle of Water', weight = 500, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
-coffee   = {name = 'coffee',     label = 'Coffee', weight = 200, type = 'item', image = 'coffee.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Pump 4 Caffeine'},
-ecola    = {name = 'ecola',     label = 'ECola', weight = 500, type = 'item', image = 'cola.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
-ecoladiet   = {name = 'ecoladiet',     label = 'ECola Diet', weight = 500, type = 'item', image = 'ecoladiet.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
-sprunk     = {name = 'sprunk',     label = 'Sprunk', weight = 500, type = 'item', image = 'sprunk.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
-sprunklight  = {name = 'sprunklight',     label = 'Sprunk Light', weight = 500, type = 'item', image = 'sprunklight.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   'description = For all the thirsty out there'},
-grape   = {name = 'grape', label = 'Grape', weight = 100, type = 'item', image = 'grape.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Mmmmh yummie, grapes', created = nil, decay = 28.0},
-wine   = {name = 'wine', label = 'Wine', weight = 300, type = 'item', image = 'wine.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Some good wine to drink on a fine evening', created = nil, decay = 28.0},
-wine6   = {name = 'wine6', label = 'Wine 6PK', weight = 1800, type = 'item', image = 'box.png',     unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Six pack of fresh wine', created = nil, decay = 28.0},
-wine12   = {name = 'wine12', label = 'Wine 12PK', weight = 3600, type = 'item', image = 'shipping-crate.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Large Case of 12 fresh wine', created = nil, decay = 28.0},
-wine24   = {name = 'wine24', label = 'Wine 24PK', weight = 7200, type = 'item', image = 'pallet-of-boxes.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Heavy box of 24 fresh wine', created = nil, decay = 28.0},
-grapejuice  = {name = 'grapejuice', label = 'Grape Juice', weight = 200, type = 'item', image = 'grapejuice.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Grape juice is said to be healthy', created = nil, decay = 28.0},
-grapejuice6  = {name = 'grapejuice6', label = 'Grape Juice 6PK', weight = 1800, type = 'item', image = 'box.png',         unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Case of six bottles of grape juice', created = nil, decay = 28.0},
-grapejuice12  = {name = 'grapejuice12', label = 'Grape Juice 12PK', weight = 3600, type = 'item', image = 'shipping-crate', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Long case of 12 bottles of grape juice', created = nil, decay = 28.0},
-grapejuice24  = {name = 'grapejuice24', label = 'Grape Juice 24PK', weight = 7200, type = 'item', image = 'pallet-of-boxes.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Crate of 24 bottles of grape juice', created = nil, decay = 28.0},
---Laptop
-trackerdisabler  = { name = 'trackerdisabler', label = 'Tracker Disabler', weight = 100, type = 'item', image = 'tracker.png', unique = true, useable = true,shouldClose = true, combinable = nil, description = 'What is this?' },
-vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.png',unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Hmm', },
+    fruit_mix                    = { name = 'fruit_mix', label = 'Fruit Mix', weight = 100, type = 'item', image = 'fruit-mix.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Mix of Fruits' },
+    tequila                      = { name = 'tequila', label = 'Tequila', weight = 600, type = 'item', image = 'tequila.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Good Time' },
+    tequila_crate                = { name = 'tequila_crate', label = 'Tequila Crate', weight = 3000, type = 'item', image = 'tequila-crate.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Crate of 8 Tequila Bottles' },
+    v_sugar_syrup                = { name = 'v_sugar_syrup', label = 'Sugar Syrup', weight = 100, type = 'item', image = 'v-sugar-syrup.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'syrup for making cocktails' },
+    v_margarita                  = { name = 'v_margarita', label = 'Margarita', weight = 100, type = 'item', image = 'v-margarita.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Margarita Cocktail' },
+    v_espressomartini            = { name = 'v_espressomartini', label = 'Espresso Martini', weight = 100, type = 'item', image = 'v-espressomartini.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'An Espresso Martini Cocktail' },
+    v_manhattan                  = { name = 'v_manhattan', label = 'Manhattan', weight = 100, type = 'item', image = 'v-manhattan.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Manhattan Cocktail' },
+    v_oldfasioned                = { name = 'v_oldfashioned', label = 'Old Fashioned', weight = 100, type = 'item', image = 'v-oldfashioned.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Old Fashioned Cocktail' },
+    v_bitter                     = { name = 'v_bitter', label = 'Bitter', weight = 100, type = 'item', image = 'v-bitter.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Bitter For Making Cocktails' },
+    v_sparkles                   = { name = 'v_sparkles', label = 'Sparkles', weight = 100, type = 'item', image = 'v-sparkles.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Sparkles Cocktail' },
+    v_unicorn                    = { name = 'v_unicorn', label = 'Unicorn', weight = 100, type = 'item', image = 'v-unicorn.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Unicorn Cocktail'},
+    v_dancerz                    = { name = 'v_dancerz', label = 'Dancerz', weight = 100, type = 'item', image = 'v-dancerz.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Dancerz Cocktail' },
+    v_hulk                       = { name = 'v_hulk', label = 'Hulk', weight = 100, type = 'item', image = 'v-hulk.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Hulk Cocktail' },
+    v_class                      = { name = 'v_class', label = 'Class', weight = 100, type = 'item', image = 'v-class.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Class Non-Alcoholic Cocktail' },
+   
+    -- snacks 
+    twerks_candy                 = {name = 'twerks_candy',     label = 'Twerks', weight = 100, type = 'item', image = 'twerks_candy.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Some delicious candy'},
+    snikkel_candy                = {name = 'snikkel_candy',   label = 'Snikkel', weight = 100, type = 'item', image = 'snikkel_candy.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Some delicious candy'},
+    crisps                       = {name = 'crisps',   label = 'Phat Chips', weight = 100, type = 'item', image = 'crisps.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Crispy crisps'},
+    egochaser                    = {name = 'egochaser',   label = 'Ego Chaser', weight = 100, type = 'item', image = 'egochaser.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Chocolate bar'},
+    nachos                       = {name = 'nachos',   label = 'Nacho Chips', weight = 100, type = 'item', image = 'nachos.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Salty Crisps'},
+    
+    -- beverages
+    water_bottle                 = {name = 'water_bottle',     label = 'Bottle of Water', weight = 500, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
+    coffee                       = {name = 'coffee',     label = 'Coffee', weight = 200, type = 'item', image = 'coffee.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'Pump 4 Caffeine'},
+    ecola                        = {name = 'ecola',     label = 'ECola', weight = 500, type = 'item', image = 'cola.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
+    ecoladiet                    = {name = 'ecoladiet',     label = 'ECola Diet', weight = 500, type = 'item', image = 'ecoladiet.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
+    sprunk                       = {name = 'sprunk',     label = 'Sprunk', weight = 500, type = 'item', image = 'sprunk.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   description = 'For all the thirsty out there'},
+    sprunklight                  = {name = 'sprunklight',     label = 'Sprunk Light', weight = 500, type = 'item', image = 'sprunklight.png', unique = false, useable = true, shouldClose = true,   combinable = nil,   'description = For all the thirsty out there'},
+    grape                        = {name = 'grape', label = 'Grape', weight = 100, type = 'item', image = 'grape.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Mmmmh yummie, grapes', created = nil, decay = 28.0},
+    wine                         = {name = 'wine', label = 'Wine', weight = 300, type = 'item', image = 'wine.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Some good wine to drink on a fine evening', created = nil, decay = 28.0},
+    wine6                        = {name = 'wine6', label = 'Wine 6PK', weight = 1800, type = 'item', image = 'box.png',     unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Six pack of fresh wine', created = nil, decay = 28.0},
+    wine12                       = {name = 'wine12', label = 'Wine 12PK', weight = 3600, type = 'item', image = 'shipping-crate.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Large Case of 12 fresh wine', created = nil, decay = 28.0},
+    wine24                       = {name = 'wine24', label = 'Wine 24PK', weight = 7200, type = 'item', image = 'pallet-of-boxes.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Heavy box of 24 fresh wine', created = nil, decay = 28.0},
+    grapejuice                   = {name = 'grapejuice', label = 'Grape Juice', weight = 200, type = 'item', image = 'grapejuice.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Grape juice is said to be healthy', created = nil, decay = 28.0},
+    grapejuice6                  = {name = 'grapejuice6', label = 'Grape Juice 6PK', weight = 1800, type = 'item', image = 'box.png',         unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Case of six bottles of grape juice', created = nil, decay = 28.0},
+    grapejuice12                 = {name = 'grapejuice12', label = 'Grape Juice 12PK', weight = 3600, type = 'item', image = 'shipping-crate', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Long case of 12 bottles of grape juice', created = nil, decay = 28.0},
+    grapejuice24                 = {name = 'grapejuice24', label = 'Grape Juice 24PK', weight = 7200, type = 'item', image = 'pallet-of-boxes.png', unique = false, useable = true, shouldClose = false,   combinable = nil,   description = 'Crate of 24 bottles of grape juice', created = nil, decay = 28.0},
+    
+    --Laptop
+    trackerdisabler              = { name = 'trackerdisabler', label = 'Tracker Disabler', weight = 100, type = 'item', image = 'tracker.png', unique = true, useable = true,shouldClose = true, combinable = nil, description = 'What is this?' },
+    vpn                          = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.png',unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Hmm', },
+    
     --drc drugs
     coke_box                     = { name = 'coke_box', label = 'BoxwithCoke', weight = 2000, type = 'item', image = 'coke_box.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Becarefulnottospillitontheground' },
     trowel                       = { name = 'trowel', label = 'Trowel', weight = 250, type = 'item', image = 'trowel.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'PerfectforyourgardenorforCocaplant' },
@@ -485,13 +492,16 @@ vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.
     heroin                       = { name = 'heroin', label = 'Heroin', weight = 30, type = 'item', image = 'heroin.png', unique = false, useable = true, shouldClose = false, combinable = nil, description = 'Exploreanewuniverse!' },
     crack                        = { name = 'crack', label = 'Crack', weight = 30, type = 'item', image = 'crack.png', unique = false, useable = true, shouldClose = false, combinable = nil, description = 'Exploreanewuniverse!' },
     baking_soda                  = { name = 'baking_soda', label = 'BakingSoda', weight = 30, type = 'item', image = 'baking_soda.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'BakingBad!' },
---pets
+
+    --pets
 	petfood 					 = { name = 'petfood', label = 'Pet Food', weight = 500, type = 'item', image = 'petfood.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Food' },
 	tennisball 					 = { name = 'tennisball', label = 'Tennis Ball', weight = 500, type = 'item', image = 'tennisball.png', unique = false, useable = true, shouldClose = false, combinable = nil, description = 'Food' },
--- bodycam
+
+    -- bodycam
     bodycam                      = { name = 'bodycam', label = 'Bodycam', weight = 500, type = 'item', image = 'bodycam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Bodycam for authorized personnel only'},
     dashcam                      = { name = 'dashcam', label = 'Dashcam', weight = 500, type = 'item', image = 'dashcam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Dashcam for authorized vehicle only'},
--- UwuU Cafe Items
+
+    -- UwuU Cafe Items
     shiny_wasabi                 	= { name = 'shiny_wasabi',            		label = 'Shiny wasabi',             		weight = 150,         type = 'item',         image = 'shiny_wasabi.png',             		unique = false,     useable = true,     shouldClose = false,   combinable = nil, description = ''},
     onion                        	= { name = 'onion',                       	label = 'Onion',             				weight = 150,         type = 'item',         image = 'onion.png',             				unique = false,     useable = true,     shouldClose = false,   combinable = nil, description = ''},
     chicken_thighs               	= { name = 'chicken_thighs',             	label = 'Chicken thighs',             		weight = 150,         type = 'item',         image = 'chicken_thighs.png',             		unique = false,     useable = true,     shouldClose = false,   combinable = nil, description = ''},
@@ -570,6 +580,7 @@ vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.
 	cash                         	= { name = 'cash', label = 'Cash', weight = 0, type = 'item', image = 'cash.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Cash'  },
     creditcard                      = { name = 'creditcard', label = 'creditcard', weight = 0, type = 'item', image = 'creditcard.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Tarjeta de debito'  },
 	remotecontrol 					= { name = 'remotecontrol', label = 'Remote control', weight = 10, type = 'item', image = 'remotecontrol.png', unique = false, useable = true, shouldClose = true, combinable = nil,description = 'Oh, will you watch tv?' },
+    
     -- CLOTHES PETS
     rose                            = { name = 'rose',label = 'Rose', weight = 0,type = 'item',image = 'rose.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = 'Rose for pet'},
     controller                      = { name = 'controller',label = 'Controller',weight = 0,type = 'item',image = 'controller.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
@@ -607,6 +618,7 @@ vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.
     tinyhat8                        = { name = 'tinyhat8',label = 'Tiny Hat',weight = 0,type = 'item',image = 'tinyhat8.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     tinyhat9                        = { name = 'tinyhat9',label = 'Tiny Hat',weight = 0,type = 'item',image = 'tinyhat9.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     tinyhat10                       = { name = 'tinyhat10',label = 'Tiny Hat',weight = 0,type = 'item',image = 'tinyhat10.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
+    
     -- New Clothes (Update v1.5)
     beewings                        = { name = 'beewings',label = 'Bee Wings',weight = 0,type = 'item',image = 'beewings.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     batmanvest                      = { name = 'batmanvest',label = 'Batman Vest',weight = 0,type = 'item',image = 'batmanvest.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
@@ -626,6 +638,7 @@ vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.
     brownshoes                      = { name = 'brownshoes',label = 'Brown Shoes',weight = 0,type = 'item',image = 'brownshoes.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     fairyvest                       = { name = 'fairyvest',label = 'Fairy Vest',weight = 0,type = 'item',image = 'fairyvest.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     k9vest                          = { name = 'k9vest',label = 'K9 Vest',weight = 0,type = 'item',image = 'k9vest.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
+    
     -- MEDICAL SUPPLIES
     treatmentkit                    = { name = 'treatmentkit',label = 'Pet Treatment Kit',weight = 0,type = 'item',image = 'treatmentkit.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     revivekit                       = { name = 'revivekit',label = 'Pet Revive Kit',weight = 0,type = 'item',image = 'revivekit.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
@@ -637,10 +650,12 @@ vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.
     petbed                          = { name = 'petbed',label = 'Pet Bed',weight = 0,type = 'item',image = 'petbed.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     petbed2                         = { name = 'petbed2',label = 'Pet Bed',weight = 0,type = 'item',image = 'petbed2.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = ''},
     nametag                         = { name = 'nametag',label = 'Name Tag',weight = 0,type = 'item',image = 'nametag.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = 'Rename your pet'},
+    
     -- Leashes (Update v1.5)
     leash                           = { name = 'leash',label = 'Pet Leash',weight = 0,type = 'item',image = 'leash.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = 'Handle your pet'},
     leash2                          = { name = 'leash2',label = 'Pet Leash',weight = 0,type = 'item',image = 'leash2.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = 'Handle your pet'},
     leash3                          = { name = 'leash3',label = 'Pet Leash',weight = 0,type = 'item',image = 'leash3.png',unique = false,useable = true,shouldClose = false,combinable = nil,description = 'Handle your pet'},
+    
     -- advance ambulance
     medbag                          = { name = 'medbag',        label = 'Medical Bag',    weight = 2500, type = 'item', image = 'medbag.png',     unique = false, useable = true,  shouldClose = true, combinable = nil,   description = 'A bag of medic tools' },
     tweezers                        = { name = 'tweezers',      label = 'Tweezers',       weight = 50,   type = 'item', image = 'tweezers.png',   unique = false, useable = true,  shouldClose = true, combinable = nil,   description = 'For picking out bullets' },
@@ -656,8 +671,10 @@ vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.
     perc5                           = { name = 'perc5',         label = 'Percocet 5MG',   weight = 2,    type = 'item', image = 'perc5.png',      unique = false, useable = true,  shouldClose = true, combinable = true,  description = 'A controlled substance to control pain' },
     vic10                           = { name = 'vic10',         label = 'Vicodin 10MG',   weight = 2,    type = 'item', image = 'vic10.png',      unique = false, useable = true,  shouldClose = true, combinable = true,  description = 'A controlled substance to control pain' },
     vic5                            = { name = 'vic5',          label = 'Vicodin 5MG',    weight = 2,    type = 'item', image = 'vic5.png',       unique = false, useable = true,  shouldClose = true, combinable = true,  description = 'A controlled substance to control pain' },
+    
     -- masterjob
     business_cad                    = { name = "business_cad",   label = "Business tablet",  weight = 0,      type = "item",     image = "tablet.png",  unique = true,    useable = true,  shouldClose = false,   combinable = nil,   description = "Your personal tablet with all the information of the San Andreas business"},
+    
     -- qs smartphone
     classic_phone 			 	 = { name = 'classic_phone', 			  	label = 'Classic Phone', 			weight = 700, 		type = 'item', 		image = 'classic_phone.png', 		unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = 'They say that Quasar Smartphone is the same as an iPhone, what do you think?'},
     black_phone 			 	 = { name = 'black_phone', 			  	    label = 'Black Phone', 			    weight = 700, 		type = 'item', 		image = 'black_phone.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = 'They say that Quasar Smartphone is the same as an iPhone, what do you think?'},
@@ -684,4 +701,6 @@ vpn  = { name = 'vpn', label = 'VPN', weight = 100, type = 'item', image = 'vpn.
     phone_hack 			 	     = { name = 'phone_hack', 			  	    label = 'Phone Hack', 			    weight = 300, 		type = 'item', 		image = 'phone_hack.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = 'With this chip, you can access hidden areas of Discord.'},
     phone_module 			 	 = { name = 'phone_module', 			  	    label = 'Phone Module', 			weight = 300, 		type = 'item', 		image = 'phone_module.png', 		unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = 'It seems that we can fix a wet phone with this module, interesting.'},
 
+    -- Boombox
+    boombox                      = { name = 'boombox', label = 'boombox', weight = 1000, type = 'item', image = 'boombox.png', unique = true, useable = true, shouldClose = false, description = 'Escucha música donde quieras' },
 }
