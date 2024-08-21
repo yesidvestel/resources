@@ -2172,7 +2172,6 @@ RegisterNetEvent('inventory:server:SetInventoryData', function(fromInventory, to
                 AddItem(src, itemData.name, fromAmount, toSlot, itemData.info)
                 TriggerClientEvent('qb-shops:client:UpdateShop', src, QBCore.Shared.SplitStr(shopType, "_")[2], itemData, fromAmount)
                 QBCore.Functions.Notify(src, itemInfo["label"] .. " bought!", "success")
-                exports['ps-mdt']:CreateWeaponInfo(serial, imageurl, notes, owner, weapClass, weapModel)
                 TriggerEvent("qb-log:server:CreateLog", "shops", "Shop item bought", "green", "**"..GetPlayerName(src) .. "** bought a " .. itemInfo["label"] .. " for $"..price)
             elseif bankBalance >= price then
                 Player.Functions.RemoveMoney("bank", price, "itemshop-bought-item")
@@ -2189,7 +2188,6 @@ RegisterNetEvent('inventory:server:SetInventoryData', function(fromInventory, to
                 AddItem(src, itemData.name, fromAmount, toSlot, itemData.info)
                 TriggerClientEvent('qb-shops:client:UpdateShop', src, QBCore.Shared.SplitStr(shopType, "_")[2], itemData, fromAmount)
                 QBCore.Functions.Notify(src, itemInfo["label"] .. " bought!", "success")
-				exports['ps-mdt']:CreateWeaponInfo(serial, imageurl, notes, owner, weapClass, weapModel)
                 TriggerEvent("qb-log:server:CreateLog", "shops", "Shop item bought", "green", "**"..GetPlayerName(src) .. "** bought a " .. itemInfo["label"] .. " for $"..price)
             else
                 QBCore.Functions.Notify(src, "You don't have enough cash..", "error")

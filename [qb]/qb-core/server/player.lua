@@ -252,6 +252,11 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
         self.Functions.UpdatePlayerData()
     end
 
+    function self.Functions.ChangeIban(iban)
+        self.PlayerData.charinfo.account = iban
+        self.Functions.UpdatePlayerData()
+    end
+
     function self.Functions.SetPlayerData(key, val)
         if not key or type(key) ~= 'string' then return end
         self.PlayerData[key] = val

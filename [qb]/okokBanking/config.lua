@@ -8,15 +8,15 @@ Config.okokTextUI = false -- true = okokTextUI | false = QBCore DrawText
 
 Config.UseOkOkBankingSounds = false -- true = Uses Sounds | false = No sounds
 
-Config.UseTargetOnAtm = true -- Using qb-target and not TextUI to access to the atms
+Config.UseTargetOnAtm = false -- Using qb-target and not TextUI to access to the atms
 
-Config.UseTargetOnBank = true -- Using qb-target or q-target and not TextUI to access to the bank
+Config.UseTargetOnBank = false -- Using qb-target or q-target and not TextUI to access to the bank
 
 Config.TargetBankDistance = 1.5 -- Distance to target a bank from qb-target ( To change the distance to ATM check line 61)
 
 Config.DebugTargetZones = false -- Set to true only if you need to check the position of a zone
 
-Config.UseCashAsItem = false -- Set to true if you have cash as item on qb-core
+Config.UseCashAsItem = true -- Set to true if you have cash as item on qb-core
 
 Config.IBANPrefix = "OK" -- IBAN prefix
 
@@ -36,7 +36,7 @@ Config.UseQBManagement = false -- If true it will use the management_funds table
 
 Config.UseQBBanking = true -- Useful for latest QBCore versions
 
-Config.RequireCreditCardForATM = false -- Set to true if you would like players to access the ATM with a card item | If false there is no item requirement
+Config.RequireCreditCardForATM = true -- Set to true if you would like players to access the ATM with a card item | If false there is no item requirement
 
 Config.CreditCardItem = "creditcard" -- Required item to access the ATM
 

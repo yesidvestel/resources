@@ -322,7 +322,6 @@ end)
 RegisterServerEvent("okokBanking:SetIBAN")
 AddEventHandler("okokBanking:SetIBAN", function(iban)
 	local xPlayer = QBCore.Functions.GetPlayer(source)
-
 	xPlayer.Functions.ChangeIban(iban)
 end)
 
