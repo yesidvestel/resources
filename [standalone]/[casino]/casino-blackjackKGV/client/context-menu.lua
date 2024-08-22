@@ -1,20 +1,20 @@
 RegisterNetEvent('casino:context:hit&stand', function() 
     exports['qb-menu']:openMenu({
         {
-            header = "Diamond Casino Blackjack",
+            header = "Blackjack en el Casino Diamante",
             isMenuHeader = true,
         },
         {
-            header = "Hit", 
-            txt = "Draw another card",
+            header = "Pedir", 
+            txt = "Tomar otra carta",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 1
             }
         },
         {
-            header = "Stand", 
-            txt = "Be a pussy",
+            header = "Plantarse", 
+            txt = "Sé un gallina",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 2
@@ -26,28 +26,28 @@ end)
 RegisterNetEvent('casino:context:hit&doubledown', function() 
     exports['qb-menu']:openMenu({
         {
-            header = "Diamond Casino Blackjack",
+            header = "Blackjack en el Casino Diamante",
             isMenuHeader = true,
         },
         {
-            header = "Hit", 
-            txt = "Draw another card",
+            header = "Pedir", 
+            txt = "Tomar otra carta",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 1
             }
         },
         {
-            header = "Stand", 
-            txt = "Be a pussy",
+            header = "Plantarse", 
+            txt = "Sé un gallina",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 2
             }
         },
         {
-            header = "Double Down", 
-            txt = "Double your initial bet",
+            header = "Doble Apuesta", 
+            txt = "Duplica tu apuesta inicial",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 3
@@ -59,28 +59,28 @@ end)
 RegisterNetEvent('casino:context:hit&split', function()
     exports['qb-menu']:openMenu({
         {
-            header = "Diamond Casino Blackjack",
+            header = "Blackjack en el Casino Diamante",
             isMenuHeader = true,
         },
         {
-            header = "Hit", 
-            txt = "Draw another card",
+            header = "Pedir", 
+            txt = "Tomar otra carta",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 1
             }
         },
         {
-            header = "Stand", 
-            txt = "Be a pussy",
+            header = "Plantarse", 
+            txt = "Sé un gallina",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 2
             }
         },
         {
-            header = "Split", 
-            txt = "Split",
+            header = "Dividir", 
+            txt = "Dividir",
             params = {
                 event = "doj:client:blackjackMenu",
                 args = 4

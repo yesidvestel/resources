@@ -1,5 +1,5 @@
 Config = {}
-Config.Locale = 'en'
+Config.Locale = 'es'
 QBCore = exports['qb-core']:GetCoreObject()
 
 -- YOUR MAIN SETUPS

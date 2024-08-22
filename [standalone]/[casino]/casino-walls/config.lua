@@ -15,9 +15,9 @@ Config.AnimatedWallWin = 'CASINO_WIN_PL'
 -- CASINO_WIN_PL    - Falling Confetti 
 
 Config.SendWelcomeMail = false -- Sends a email to players phone on entering casino
-Config.WelcomeMailsender = "The Diamond Casino & Resort"
-Config.WelcomeMailsubject ="Welcome!"
-Config.WelcomeMailmessage = "Welcome to The Diamond Casino & Resort, We are Open 24/7 & only accept Electronic Transactions"
+Config.WelcomeMailsender = "El Casino y Resort Diamante";
+Config.WelcomeMailsubject = "¡Bienvenido!";
+Config.WelcomeMailmessage = "Bienvenido a El Casino y Resort Diamante. Estamos abiertos las 24 horas, los 7 días de la semana, y solo aceptamos transacciones electrónicas.";
 
 Config.payment = "bank" -- or "cash" -- Payment player will recieve by selling casino chips
 

@@ -1,0 +1,58 @@
+Locales['es'] = {
+    -- notificaciones
+    ['chair_occupied'] = 'Este asiento está ocupado.',
+    ['no_react'] = 'No respondiste a tiempo a la solicitud del crupier, has retirado tu mano.',
+    ['no_bet_input'] = 'No has establecido un valor de apuesta.',
+    ['not_enough_chips'] = 'No tienes suficientes fichas.',
+    ['not_enough_chips_next'] = 'No tienes suficientes fichas para apostar en el Pair Plus, porque no tendrías suficientes fichas para jugar.',
+    ['not_enough_chips_third'] = 'No puedes poner esa cantidad de fichas porque no tendrías suficientes para jugar tu mano.',
+    ['not_enough_chips_toplay'] = '¡No tienes suficientes fichas para jugar!',
+    ['already_betted'] = 'Ya has apostado.',
+    ['lose'] = '¡Perdiste!',
+    -- notificaciones formateadas
+    ['dealer_not_qual'] = 'Empate.\nEl crupier no calificó para el juego.\nRecibiste %s fichas de vuelta.',
+    ['dealer_not_qual_ante'] = 'Empate.\nEl crupier no calificó para el juego.\nRecibiste %s fichas de vuelta. (Multiplicador de Ante: x%s)',
+    ['player_won_ante'] = '¡Tu mano ganó!\nRecibiste %s fichas. (Multiplicador de Ante: x%s)',
+    ['player_won'] = '¡Tu mano ganó!\nRecibiste %s fichas.',
+    ['pair_won'] = '¡Ganaste %s fichas con tu apuesta Pair Plus! (Multiplicador de Pair: x%s)',
+    -- hud
+    -- ['current_bet_input'] = 'APUESTA:',
+    -- ['current_player_chips'] = 'FICHAS:',
+    -- ['table_min_max'] = 'MÍN/MÁX:',
+    -- ['remaining_time'] = 'TIEMPO:',
+    -- esquina superior izquierda
+    ['waiting_for_players'] = 'Esperando a los jugadores...',
+    ['clearing_table'] = 'Limpiando la mesa...</br>El próximo juego comenzará pronto.',
+    ['dealer_showing_hand'] = 'El crupier está mostrando su mano.',
+    ['players_showing_hands'] = 'Revelando las manos de los jugadores...',
+    ['dealing_cards'] = 'Repartiendo cartas a los jugadores...',
+    -- entradas
+    ['fold_cards'] = 'Retirarse',
+    ['play_cards'] = 'Jugar',
+    -- ['leave_game'] = 'Salir del juego',
+    -- ['raise_bet'] = 'Aumentar apuesta',
+    -- ['reduce_bet'] = 'Reducir apuesta',
+    -- ['custom_bet'] = 'Apuesta personalizada',
+    -- ['place_bet'] = 'Hacer apuesta',
+    ['place_pair_bet'] = 'Hacer apuesta Pair Plus',
+    -- gtao ui
+    -- ['tcp'] = '<C>[Aquiver]</C> ~b~Three Card Poker',
+    -- ['sit_down_table'] = '~h~<C>Jugar</C> ~b~Three Card Poker',
+    -- ['description'] = 'Descripción del Juego',
+    -- ['desc_1'] = 'TCP_DIS1', -- esto es la configuración predeterminada de Rockstar, cambiará automáticamente si estás usando otro idioma como el alemán, etc.
+    -- ['desc_2'] = 'TCP_DIS2',
+    -- ['desc_3'] = 'TCP_DIS3',
+    -- ['description_info'] = '¿Cómo funciona el juego?',
+    -- ['rule_1'] = 'TCP_RULE_1',
+    -- ['rule_2'] = 'TCP_RULE_2',
+    -- ['rule_3'] = 'TCP_RULE_3',
+    -- ['rule_4'] = 'TCP_RULE_4',
+    -- ['rule_5'] = 'TCP_RULE_5',
+    -- ['rule_header_1'] = 'TCP_RULE_1T',
+    -- ['rule_header_2'] = 'TCP_RULE_2T',
+    -- ['rule_header_3'] = 'TCP_RULE_3T',
+    -- ['rule_header_4'] = 'TCP_RULE_4T',
+    -- ['rule_header_5'] = 'TCP_RULE_5T',
+    -- ['rules'] = 'Reglas del Juego',
+    -- ['rules_info'] = 'Reglas del juego o cualquier cosa que debas saber.'
+}

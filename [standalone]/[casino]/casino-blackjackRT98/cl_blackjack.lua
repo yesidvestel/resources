@@ -324,20 +324,20 @@ end)
 RegisterNetEvent('doj:client:hit&standMenu', function() 
     exports['qb-menu']:openMenu({
         {
-            header = "The Diamond Casino & Resort Blackjack",
+            header = "Blackjack del Casino y Resort Diamante",
             isMenuHeader = true,
         },
         {
-            header = "Hit", 
-            txt = "Draw another card",
+            header = "Pedir", 
+            txt = "Tomar otra carta",
             params = {
                 event = "doj:client:hit&standActions",
                 args = 1
             }
         },
         {
-            header = "Stand", 
-            txt = "Be a pussy",
+            header = "Plantarse", 
+            txt = "Sé un gallina",
             params = {
                 event = "doj:client:hit&standActions",
                 args = 2

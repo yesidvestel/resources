@@ -75,8 +75,8 @@ RegisterNetEvent('qb-log:server:CreateLog', function(name, title, color, message
                 },
                 ['description'] = message,
                 ['author'] = {
-                    ['name'] = 'QBCore Logs',
-                    ['icon_url'] = 'https://raw.githubusercontent.com/GhzGarage/qb-media-kit/main/Display%20Pictures/Logo%20-%20Display%20Picture%20-%20Stylized%20-%20Red.png',
+                    ['name'] = 'Comuna Latín Vice Logs',
+                    ['icon_url'] = 'https://cdn.discordapp.com/attachments/1269570531707850836/1271582922792636479/Black__Blue_Sci-fi_Technology_Game_Streaming_Facebook_Video_2.png?ex=66c7af61&is=66c65de1&hm=8a343f27c5f9a84b7a26efd91f5b3d5c8db22f27f69b27cf2aa6ba7bf2d2958d&',
                 },
                 ['image'] = imageUrl and imageUrl ~= '' and { ['url'] = imageUrl } or nil,
             }
