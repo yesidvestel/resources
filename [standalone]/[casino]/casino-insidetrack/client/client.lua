@@ -21,7 +21,7 @@ CreateThread(function()
             if Config.HorseBetPrompt == 'walk-up' then 
                 TriggerEvent('doj:casinoinsideTrackHeader') 
             elseif Config.HorseBetPrompt == 'peek' then
-                text = '<b>The Diamond Casino & Resort Inside Track</b>'
+                text = '<b>Información privilegiada sobre el Diamond Casino & Resort</b>'
 				exports['qb-core']:DrawText(text)
                 exports['qb-target']:AddCircleZone("Betting", vector3(956.121,70.185,70.433), 1.0, {
                     name="Betting",
@@ -49,18 +49,18 @@ end)
 RegisterNetEvent('doj:casinoinsideTrackHeader', function()
     exports['qb-menu']:showHeader({
         {
-            header = "The Diamond Casino & Resort Inside Track",
+            header = "Inside Track del Casino y Resort Diamante",
             isMenuHeader = true,
         },
         {
-            header = "Start Horse Betting", 
-            txt = "100 casino chips",
+            header = "Comenzar Apuesta de Caballos", 
+            txt = "100 fichas de casino",
             params = {
                 event = "QBCore:client:openInsideTrack",
             }
         },
         {
-            header = "Cancel",
+            header = "Cancelar",
 			txt = "",
 			params = {
                 event = "doj:casinoinsideTrackHeader"
@@ -115,16 +115,14 @@ end
 RegisterNetEvent('QBCore:client:closeBetsNotEnough')
 AddEventHandler('QBCore:client:closeBetsNotEnough', function()
     closeHorseBets()
-    QBCore.Functions.Notify("Bets Closed! You dont have enough Casino Chips...", "error", 3500)
+    QBCore.Functions.Notify("¡Apuestas cerradas! No tienes suficientes fichas de casino...", "error", 3500)
 end)
 
 RegisterNetEvent('QBCore:client:closeBetsZeroChips')
 AddEventHandler('QBCore:client:closeBetsZeroChips', function()
     closeHorseBets()
-    QBCore.Functions.Notify("Bets Closed! You dont have any Casino Chips...", "error", 3500)
+    QBCore.Functions.Notify("¡Apuestas cerradas! No tienes ninguna ficha de casino...", "error", 3500)
 end)
-
-
 
 RegisterNetEvent('QBCore:client:openInsideTrack')
 AddEventHandler('QBCore:client:openInsideTrack', function()

@@ -16,25 +16,25 @@ if Config.LimitedSpins then
 end
 
 RegisterNetEvent('luckywheel:getwheel', function()
-	local src = source
+    local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-	if Config.LimitedSpins == true then 
-		local result = exports.oxmysql:scalarSync('SELECT luckywheel_spins FROM players where citizenid= ?', {Player.PlayerData.citizenid})
-		if result == '0' then
-			TriggerEvent("luckywheel:startwheel", Player, src)
-		else
-			TriggerClientEvent('QBCore:Notify', src, "You have already had a spin on the wheel today", "error")
-		end
-	elseif Config.LimitedSpins == false then
-		if Player.PlayerData.money["bank"] >= Config.startingPrice then
-			Player.Functions.RemoveMoney("bank", tonumber(Config.startingPrice), "lucky-wheel")
-			TriggerEvent("luckywheel:startwheel", Player, src)
-		else
-			-- return TriggerClientEvent('QBCore:Notify', src, "You have enough in the bank to spin", "error")
-			TriggerClientEvent('QBCore:Notify', src, "You have enough in the bank to spin", "error")
-		end
-	end
+    if Config.LimitedSpins == true then 
+        local result = exports.oxmysql:scalarSync('SELECT luckywheel_spins FROM players where citizenid= ?', {Player.PlayerData.citizenid})
+        if result == '0' then
+            TriggerEvent("luckywheel:startwheel", Player, src)
+        else
+            TriggerClientEvent('QBCore:Notify', src, "Ya has girado la rueda hoy", "error")
+        end
+    elseif Config.LimitedSpins == false then
+        if Player.PlayerData.money["bank"] >= Config.startingPrice then
+            Player.Functions.RemoveMoney("bank", tonumber(Config.startingPrice), "lucky-wheel")
+            TriggerEvent("luckywheel:startwheel", Player, src)
+        else
+            TriggerClientEvent('QBCore:Notify', src, "No tienes suficiente dinero en el banco para girar", "error")
+        end
+    end
 end)
+
 
 RegisterNetEvent('luckywheel:startwheel', function(Player, source)
 	local src = source
@@ -60,27 +60,27 @@ RegisterNetEvent('luckywheel:startwheel', function(Player, source)
 end)
 
 RegisterNetEvent('luckywheel:give', function(source, price)
-	local Player = QBCore.Functions.GetPlayer(source)
-	isRoll = false
-	if price.type == 'car' then
-		TriggerClientEvent("dojLuckywheel:winCar", source)
-		TriggerClientEvent("chCasinoWall:bigWin", source)
-	elseif price.type == 'item' then
-		TriggerClientEvent("chCasinoWall:bigWin", source)
-		Player.Functions.AddItem(price.name, price.count, slot) 
-		TriggerClientEvent('QBCore:Notify', source, "Congratulations! You won "..price.count.." "..price.name.."!", 'success')
-		TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[price.name], "add",price.count )
-	elseif price.type == 'money' then
-		TriggerClientEvent("chCasinoWall:bigWin", source)
-		Player.Functions.AddMoney('bank', tonumber(price.count), 'banking-quick-depo')
-		TriggerClientEvent('QBCore:Notify', source, "Congratulations! You won $"..price.count, 'success')
-	elseif price.type == 'weapon' then
-		TriggerClientEvent("chCasinoWall:bigWin", source)
-		Player.Functions.AddItem(price.name, 1, slot)
-		TriggerClientEvent('QBCore:Notify', source, "Congratulations! You won a Pistol!", 'success')
-		TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[price.name], "add",1)
-	end
-	TriggerClientEvent("luckywheel:rollFinished", -1)
+    local Player = QBCore.Functions.GetPlayer(source)
+    isRoll = false
+    if price.type == 'car' then
+        TriggerClientEvent("dojLuckywheel:winCar", source)
+        TriggerClientEvent("chCasinoWall:bigWin", source)
+    elseif price.type == 'item' then
+        TriggerClientEvent("chCasinoWall:bigWin", source)
+        Player.Functions.AddItem(price.name, price.count, slot) 
+        TriggerClientEvent('QBCore:Notify', source, "¡Felicidades! Ganaste "..price.count.." "..price.name.."!", 'success')
+        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[price.name], "add", price.count)
+    elseif price.type == 'money' then
+        TriggerClientEvent("chCasinoWall:bigWin", source)
+        Player.Functions.AddMoney('bank', tonumber(price.count), 'banking-quick-depo')
+        TriggerClientEvent('QBCore:Notify', source, "¡Felicidades! Ganaste $"..price.count, 'success')
+    elseif price.type == 'weapon' then
+        TriggerClientEvent("chCasinoWall:bigWin", source)
+        Player.Functions.AddItem(price.name, 1, slot)
+        TriggerClientEvent('QBCore:Notify', source, "¡Felicidades! Ganaste una Pistola!", 'success')
+        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[price.name], "add", 1)
+    end
+    TriggerClientEvent("luckywheel:rollFinished", -1)
 end)
 
 RegisterNetEvent('luckywheel:stoproll', function()
@@ -103,7 +103,7 @@ RegisterNetEvent('luckywheel:server:setVehicleOwner', function()
 		Config.VehiclePlateText,
 		0
 	})
-	TriggerClientEvent('QBCore:Notify', src, "YOU WON THE SHOW CAR! congratulations!", 'success')
+	TriggerClientEvent('QBCore:Notify', src, "¡GANASTE EL AUTO DE EXHIBICIÓN! ¡Felicidades!", 'success')
 end)
 
 

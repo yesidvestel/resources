@@ -72,7 +72,7 @@ RegisterNetEvent('server_remote:rulett:taskSitDown',function(rulettIndex, chairD
 
     if aktivRulettek[rulettIndex] ~= nil then
         if aktivRulettek[rulettIndex].chairsUsed[chairId] ~= nil then
-            return TriggerClientEvent('QBCore:Notify', source, 'This chair is occupied.','error')
+            return TriggerClientEvent('QBCore:Notify', source, 'Esta silla está ocupada.','error')
         else
             TriggerClientEvent('client_callback:rulett:taskSitDown', source, rulettIndex, chairData)
         end
@@ -97,7 +97,7 @@ RegisterNetEvent('casino:taskStartRoulette',function(rulettIndex, chairId)
         aktivRulettek[rulettIndex].chairsUsed[chairId] = source
         TriggerClientEvent('client:casino:openRulett', source, rulettIndex)
     else
-        TriggerClientEvent('QBCore:Notify', source, 'This chair is occupied.','error')
+        TriggerClientEvent('QBCore:Notify', source, 'Esta silla está ocupada.','error')
     end
 end)
 
@@ -258,7 +258,7 @@ function CheckWinners(bets, WinningBetIndex)
         local chairId = getPlayerTableSeat(targetSrc)
         if chairId ~= nil then
             TriggerClientEvent('client:rulett:playLossAnim', targetSrc, chairId)
-            TriggerClientEvent('QBCore:Notify', targetSrc, 'You Lost... Better luck next time', "error")
+            TriggerClientEvent('QBCore:Notify', targetSrc, 'Perdiste... Mejor suerte la próxima vez.', "error")
         end
     end
 
@@ -281,7 +281,7 @@ RegisterNetEvent('casino:taskBetRulett',function(rulettIndex, betId, betAmount)
     local src = source
     if aktivRulettek[rulettIndex] ~= nil then
         if aktivRulettek[rulettIndex].statusz then
-            return TriggerClientEvent('QBCore:Notify', src, 'The game started, you can not bet at the moment.', "error")
+            return TriggerClientEvent('QBCore:Notify', src, 'El juego ha comenzado, no se puede apostar en este momento.', "error")
         end
         local chipsAmount = getPlayerChips(src)
         if chipsAmount ~= nil then
@@ -314,13 +314,13 @@ RegisterNetEvent('casino:taskBetRulett',function(rulettIndex, betId, betAmount)
                     TriggerClientEvent('client:rulett:playBetAnim', src, chairId)
                 end
             else
-                TriggerClientEvent('QBCore:Notify', src, 'You do not have enough Casino chips to place bet.', "error")
+                TriggerClientEvent('QBCore:Notify', src, 'No tienes suficientes fichas de casino para realizar una apuesta.', "error")
             end
         else
-            TriggerClientEvent('QBCore:Notify', src, 'You dont have any caino chips', 'error')
+            TriggerClientEvent('QBCore:Notify', src, 'No tienes ninguna ficha de casino', 'error')
         end
     else 
-        TriggerClientEvent('QBCore:Notify', src, 'error', 'An error occurred on a non-existent roulette table server side?')
+        TriggerClientEvent('QBCore:Notify', src, 'error', '¿Se produjo un error en el servidor de una mesa de ruleta inexistente?')
     end
 end)
 
