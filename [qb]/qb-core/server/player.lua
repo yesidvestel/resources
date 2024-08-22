@@ -465,6 +465,11 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
         TriggerEvent('QBCore:Server:PlayerLoaded', self)
         self.Functions.UpdatePlayerData()
     end
+
+    function self.Functions.SetPhoneNumber(number) 
+        self.PlayerData.charinfo.phone = number 
+        self.Functions.UpdatePlayerData() 
+    end
 end
 
 -- Add a new function to the Functions table of the player class

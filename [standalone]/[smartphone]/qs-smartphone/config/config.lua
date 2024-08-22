@@ -183,7 +183,7 @@ Config.VoiceScriptName = 'pma-voice'
     'okokBanking'    IBAN of okokBanking
 ]]
 
-Config.BankSystem = 'id'
+Config.BankSystem = 'okokBanking'
 
 --██████╗░██╗██╗░░░░░██╗░░░░░██╗███╗░░██╗░██████╗░
 --██╔══██╗██║██║░░░░░██║░░░░░██║████╗░██║██╔════╝░

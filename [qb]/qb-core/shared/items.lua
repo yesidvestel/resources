@@ -578,6 +578,7 @@ QBShared.Items = {
     ice                          	= { name = 'ice',                       		label = 'Ice',             					weight = 150,         type = 'item',         image = 'ice.png',             				unique = false,     useable = true,     shouldClose = false,   combinable = nil, description = ''},
 	brewed_coffee                   = { name = 'brewed_coffee',                	label = 'Brewed Coffee',             		weight = 150,         type = 'item',         image = 'brewed_coffee.png',             		unique = false,     useable = true,     shouldClose = false,   combinable = nil, description = ''},
 	cash                         	= { name = 'cash', label = 'Cash', weight = 0, type = 'item', image = 'cash.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Cash'  },
+    sim_card                        = { name = 'sim_card', label = 'sim card', weight = 0, type = 'item', image = 'sim_card.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'sim card'  },
     creditcard                      = { name = 'creditcard', label = 'creditcard', weight = 0, type = 'item', image = 'creditcard.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Tarjeta de debito'  },
 	remotecontrol 					= { name = 'remotecontrol', label = 'Remote control', weight = 10, type = 'item', image = 'remotecontrol.png', unique = false, useable = true, shouldClose = true, combinable = nil,description = 'Oh, will you watch tv?' },
     

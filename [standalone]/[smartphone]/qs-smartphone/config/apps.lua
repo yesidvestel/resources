@@ -860,7 +860,7 @@ Config.StoreApps = {
             }
         }
     }, ]]
-    --[[ ['rentel'] = { -- Rental DLC.
+    ['rentel'] = { -- Rental DLC.
         custom = false,
         app = "rentel",
         color = "img/apps/rentel.png",
@@ -886,7 +886,7 @@ Config.StoreApps = {
                 textcolor = 'white'
             }
         }
-    }, ]]
+    },
     ['racing'] = { -- Racing DLC.
         custom = false,
         app = 'racing',
@@ -915,7 +915,7 @@ Config.StoreApps = {
         }
     },
 
-    --[[ ["sellix"] = { -- Sellix DLC.
+    ["sellix"] = { -- Sellix DLC.
         custom = false,
         app = "sellix",
         color = "img/apps/sellix.png",
@@ -941,9 +941,9 @@ Config.StoreApps = {
                 textcolor = 'black'
             }
         }
-    }, ]]
+    },
 
-    --[[ ["crypto"] = {
+    ["crypto"] = {
         custom = false,
         app = "crypto",
         color = "img/apps/crypto.png",
@@ -969,5 +969,5 @@ Config.StoreApps = {
                 textcolor = 'white'
             }
         }
-    }, ]]
+    },
 }
