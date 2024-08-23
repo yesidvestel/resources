@@ -202,7 +202,7 @@ Config.BankSystem = 'okokBanking'
     'codem-billing'    Works on ESX and QBCore (https://codem.tebex.io/package/5920201)
 ]]
 
-Config.billingSystem = 'default'
+Config.billingSystem = 'okokBilling'
 
 --[[
     ESX                     = 'esx_billing:payBill'
@@ -214,7 +214,7 @@ Config.billingSystem = 'default'
     False if you are not using one
 ]]
 
-Config.billingpayBillEvent = 'esx_billing:payBill'
+Config.billingpayBillEvent = 'nothing'
 
 
 --░██████╗░░█████╗░██████╗░░█████╗░░██████╗░███████╗░██████╗
