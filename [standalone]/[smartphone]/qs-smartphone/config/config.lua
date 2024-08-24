@@ -740,11 +740,11 @@ Config.ResetPassword = {
     spawnNPC = true,
     spots = {
         {
-            coords = vec3(-1524.32, -409.3, 35.6),
+            coords = vec3(-626.22, -277.51, 35.58),
             money = 500,
             text = '[E] - Telephone Technician',
             ped = {
-                h = 230.65,
+                h = 118.6,
                 model = `hc_hacker`
             },
             blip = {

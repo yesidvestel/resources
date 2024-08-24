@@ -1132,3 +1132,17 @@ function discordWebhook(data)
 
 	PerformHttpRequest(Webhook, function(err, text, headers) end, 'POST', json.encode({username = Config.BotName, embeds = information}), {['Content-Type'] = 'application/json'})
 end
+
+RegisterServerEvent(Config.EventPrefix..":PayInvoice")
+AddEventHandler(Config.EventPrefix..":PayInvoice", function(invoiceID)
+    MySQLfetchAll('SELECT * FROM '..Config.DatabaseTable..' WHERE id = @id', {
+        ['@id'] = invoiceID,
+    }, function(invoice)
+        local xReceiver = ESX.GetPlayerFromIdentifier(invoice[1]["receiver_identifier"])
+        if(invoice[1]["society"] == "" or invoice[1]["society"] == nil or string.gsub(invoice[1]["society"], "%s+", "") == "") then
+            playerPayInvoice(invoice[1], cb)
+        else
+            societyPayInvoice(invoice[1], cb)
+        end    
+    end)
+end)
