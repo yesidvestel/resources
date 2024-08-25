@@ -8,13 +8,13 @@ Config.OnlyUnpaidSocietyInvoices = false
 
 Config.EventPrefix = 'okokBilling'
 
-Config.Locale = 'en'
+Config.Locale = 'es'
 
 Config.DatabaseTable = 'okokbilling'
 
 Config.ReferencePrefix = 'OK'
 
-Config.OpenMenuKey = 168 -- Default 168 (F7)
+Config.OpenMenuKey = 167 -- Default 168 (F7)
 
 Config.OpenMenuCommand = 'invoices' -- Command to open the menu
 

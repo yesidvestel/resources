@@ -17,10 +17,10 @@ Config.Elevators = {
                 width = 5,
                 length = 4
             },
-            groups = {-- Job locks
+                        /*groups = {-- Job locks
                 'police',
                 'ambulance'
-            },
+            },*/
         },
         [2] = {
             coords = vec3(316.6, -577.48, 43.28), -- Coords, if you're new; last number is heading
@@ -30,10 +30,6 @@ Config.Elevators = {
             target = { -- Target length/width
                 width = 5,
                 length = 4
-            },
-            groups = {-- Job locks
-                'police',
-                'ambulance'
             },
         },
         [3] = {

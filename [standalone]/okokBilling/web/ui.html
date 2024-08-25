@@ -14,7 +14,7 @@
 					<span class="close-button" id="closeSelectionMenu"><i class="fas fa-times"></i></span>
 					<div class="row h-100">
 						<div class="col-md-12 section">
-							<span class="text-center page-title">Billing Menu</span>
+							<span class="text-center page-title">Menú de facturación</span>
 							<hr>
 							<div id="normalMenu">
 								<div class="row" id="menu"></div>
@@ -30,7 +30,7 @@
 				<div class="card-body loading_card-body d-flex justify-content-center flex-column align-items-center">
 					<span class="load"></span>
 					<br>
-					<div class="ldata-txt">Loading Data...</div>
+					<div class="ldata-txt">Cargando datos...</div>
 				</div>
 			</div>
 		</div>
@@ -41,21 +41,21 @@
 					<span class="close-button" id="closeInvoicesMenu"><i class="fas fa-times"></i></span>
 					<div class="row h-100">
 						<div class="col-md-12 section">
-							<span class="text-center page-title">My Invoices</span>
+							<span class="text-center page-title">Mis facturas</span>
 							<hr>
 							<table id="invoicesTable">
 								<thead>
 									<tr>
 										<th class="text-center">#</th>
-										<th class="text-center">Status</th>
-										<th class="text-center">Author</th>
-										<th class="text-center">Amount</th>
-										<th class="text-center">Actions</th>
+										<th class="text-center">Estado</th>
+										<th class="text-center">Autor</th>
+										<th class="text-center">Cantidad</th>
+										<th class="text-center">Acciones</th>
 									</tr>
 								</thead>
 								<tbody id="invoicesTableData"></tbody>
 							</table>
-							<button type="button" class="btn btn-blue" id="view_invoice_payall" data-bs-dismiss="modal">PAY ALL (812.600€)</button>
+							<button type="button" class="btn btn-blue" id="view_invoice_payall" data-bs-dismiss="modal">PAGA TODO (893.860USD)</button>
 						</div>
 					</div>
 				</div>
@@ -68,7 +68,7 @@
 					<span class="close-button" id="closeSocietyInvoicesMenu"><i class="fas fa-times"></i></span>
 					<div class="row h-100">
 						<div class="col-md-12 section">
-							<span class="text-center page-title">Society Invoices</span>
+							<span class="text-center page-title">Facturas de la empresa</span>
 							<hr>
 							<div class="pendingdiv">
 								Pending: <span id="totalpending_value">0</span>€</span>
@@ -77,10 +77,10 @@
 								<thead>
 									<tr>
 										<th class="text-center">#</th>
-										<th class="text-center">Status</th>
-										<th class="text-center">Author</th>
-										<th class="text-center">Amount</th>
-										<th class="text-center">Actions</th>
+										<th class="text-center">Estado</th>
+										<th class="text-center">Autor</th>
+										<th class="text-center">Cantidad</th>
+										<th class="text-center">Acciones</th>
 									</tr>
 								</thead>
 								<tbody id="societyInvoicesTableData">
@@ -98,16 +98,16 @@
 					<span class="close-button" id="closeCityInvoicesMenu"><i class="fas fa-times"></i></span>
 					<div class="row h-100">
 						<div class="col-md-12 section">
-							<span class="text-center page-title">City Invoices</span>
+							<span class="text-center page-title">Facturas de la ciudad</span>
 							<hr>
 							<table id="courtTable">
 								<thead>
 									<tr>
 										<th class="text-center">#</th>
-										<th class="text-center">Status</th>
-										<th class="text-center">Author</th>
-										<th class="text-center">Amount</th>
-										<th class="text-center">Actions</th>
+										<th class="text-center">Estado</th>
+										<th class="text-center">Autor</th>
+										<th class="text-center">Cantidad</th>
+										<th class="text-center">Acciones</th>
 									</tr>
 								</thead>
 								<tbody id="courtTableData">
@@ -126,7 +126,7 @@
 					<span class="close-button" id="closeCreateInvoiceMenu"><i class="fas fa-times"></i></span>
 					<div class="row h-100">
 						<div class="col-md-12 section">
-							<span class="text-center page-title">Create Invoice</span>
+							<span class="text-center page-title">Crear factura</span>
 							<hr>
 							<div id="invoiceNormal">
 								<div id="createinvoice_options">
@@ -159,7 +159,7 @@
 								</div>
 							</div>
 							<div class="d-flex justify-content-center mt-3">
-								<button type="button" class="btn btn-blue w-100" disabled id="createinvoice">CREATE</button>
+								<button type="button" class="btn btn-blue w-100" disabled id="createinvoice">CREAR</button>
 							</div>
 						</div>
 					</div>
@@ -173,19 +173,19 @@
 					<span class="close-button" id="closePayReferenceMenu"><i class="fas fa-times"></i></span>
 					<div class="row h-100">
 						<div class="col-md-12 section">
-							<span class="text-center page-title">Pay Reference</span>
+							<span class="text-center page-title">Referencia de pago</span>
 							<hr>
 							<div class="d-flex">
 								<input type="text" id="payreference_search" class="form-control me-1" placeholder="Reference ID">
 								<button type="button" onclick="checkReference()" class="btn btn-blue ms-1" id="payreference_lookup"><i class="fa-solid fa-magnifying-glass"></i> LOOKUP</button>
 							</div>
 							<hr class="mt-3">
-							<div class="text-center payreference_receiver">Receiver</div>
-							<div class="text-center mt-1 w-100 payreference_noinfo" id="payreference_receiver">No Info Available</div>
-							<div class="text-center payreference_amount">Amount</div>
-							<div class="text-center mt-1 w-100 payreference_noinfo" id="payreference_amount">No Info Available</div>
+							<div class="text-center payreference_receiver">Receptor</div>
+							<div class="text-center mt-1 w-100 payreference_noinfo" id="payreference_receiver">No hay información disponible</div>
+							<div class="text-center payreference_amount">Cantidad</div>
+							<div class="text-center mt-1 w-100 payreference_noinfo" id="payreference_amount">No hay información disponible</div>
 							<div class="d-flex justify-content-center mt-3">
-								<button type="button" class="btn btn-blue w-100" id="payreference" disabled>PAY</button>
+								<button type="button" class="btn btn-blue w-100" id="payreference" disabled>PAGAR</button>
 							</div>
 						</div>
 					</div>
@@ -199,17 +199,17 @@
 					<span class="close-button" id="closePoliceMenu"><i class="fas fa-times"></i></span>
 					<div class="row h-100">
 						<div class="col-md-12 section">
-							<span class="text-center page-title">Inspect Citizen</span>
+							<span class="text-center page-title">Inspeccionar ciudadano</span>
 							<hr>
 							<div class="d-flex">
 								<input type="number" id="police_search" class="form-control me-1" placeholder="Player ID" onkeyup="checkIfEmpty()">
 								<button type="button" onclick="lookcitizen()" class="btn btn-blue ms-1" id="police_lookup"><i class="fa-solid fa-magnifying-glass"></i> LOOKUP</button>
 							</div>
 							<hr class="mt-3">
-							<div class="text-center police_unpaidinvoices">Unpaid Invoices</div>
-							<div class="text-center mt-1 w-100 police_noinfo" id="police_unpaidinvoices">No Info Available</div>
-							<div class="text-center police_unpaidamount">Unpaid Amount</div>
-							<div class="text-center mt-1 w-100 police_noinfo" id="police_unpaidamount">No Info Available</div>
+							<div class="text-center police_unpaidinvoices">Facturas sin pagar</div>
+							<div class="text-center mt-1 w-100 police_noinfo" id="police_unpaidinvoices">No hay información disponible</div>
+							<div class="text-center police_unpaidamount">Importe no pagado</div>
+							<div class="text-center mt-1 w-100 police_noinfo" id="police_unpaidamount">No hay información disponible</div>
 						</div>
 					</div>
 				</div>
@@ -220,31 +220,31 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-body">
-						<div class="view_invoice_title">Invoice #<span id="paid_view_invoice_number">372</span></div>
+						<div class="view_invoice_title">Factura #<span id="paid_view_invoice_number">372</span></div>
 						<div class="badge bg-success view_invoice_status"><i class="fas fa-check-circle"></i> PAID</div>
-						<div class="view_invoice_sdtf mt-m07">Reference ID: <span id="paid_view_invoice_id">OK5D72W3E7</span></div>
-						<div class="view_invoice_sdtf mt-2">Sent: <span id="paid_view_invoice_sent">26-06-2022 02:17:35</span></div>
-						<div class="view_invoice_sdtf">Due: <span id="paid_view_invoice_due">30-06-2022 02:17:35</span></div>
-						<div class="view_invoice_sdtf mt-3">To: <span id="paid_view_invoice_to">Arthur James</span></div>
-						<div class="view_invoice_sdtf">From: <span id="paid_view_invoice_from">Tommy Champion</span></div>
+						<div class="view_invoice_sdtf mt-m07">Referencia ID: <span id="paid_view_invoice_id">OK5D72W3E7</span></div>
+						<div class="view_invoice_sdtf mt-2">Enviado: <span id="paid_view_invoice_sent">26-06-2022 02:17:35</span></div>
+						<div class="view_invoice_sdtf">Pendiente: <span id="paid_view_invoice_due">30-06-2022 02:17:35</span></div>
+						<div class="view_invoice_sdtf mt-3">A: <span id="paid_view_invoice_to">Arthur James</span></div>
+						<div class="view_invoice_sdtf">De: <span id="paid_view_invoice_from">Tommy Champion</span></div>
 						<hr>
 						<div class="d-flex justify-content-between">
-							<span id="paid_view_invoice_item">Prohibited parking</span> <span id="paid_view_invoice_item_price">385 €</span>
+							<span id="paid_view_invoice_item">Estacionamiento prohibido</span> <span id="paid_view_invoice_item_price">385 USD</span>
 						</div>
 						<hr>
 						<div class="d-flex justify-content-between">
-							<span class="subtotal">Subtotal</span> <span id="paid_view_invoice_subtotal_price">385 €</span>
+							<span class="subtotal">Subtotal</span> <span id="paid_view_invoice_subtotal_price">385 USD</span>
 						</div>
 						<div class="d-flex justify-content-between">
-							<span class="vat">VAT (<span id="paid_view_invoice_vat_percentage">23</span>%)</span> <span id="paid_view_invoice_vat_price">115 €</span>
+							<span class="vat">VAT (<span id="paid_view_invoice_vat_percentage">23</span>%)</span> <span id="paid_view_invoice_vat_price">115 USD</span>
 						</div>
 						<div class="d-flex justify-content-between mt-3">
-							<span class="total">TOTAL</span> <span id="paid_view_invoice_total_price">500 €</span>
+							<span class="total">TOTAL</span> <span id="paid_view_invoice_total_price">500 USD</span>
 						</div>
 						<div class="d-flex justify-content-center mt-3">
-							<span class="view_invoice_paid">PAID ON: <span id="paid_view_invoice_paid_date">27-06-2022 02:18:15</span></span>
+							<span class="view_invoice_paid">PAGADO EL: <span id="paid_view_invoice_paid_date">27-06-2022 02:18:15</span></span>
 						</div>
-						<div id="paid_view_invoice_note" class="notes-window mt-3">Notes: You should pay more attention next time</div>
+						<div id="paid_view_invoice_note" class="notes-window mt-3">Notas: Deberías prestar más atención la próxima vez.</div>
 					</div>
 				</div>
 			</div>
@@ -254,31 +254,31 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-body">
-						<div class="view_invoice_title">Invoice #<span id="unpaid_view_invoice_number">372</span></div>
+						<div class="view_invoice_title">Factura #<span id="unpaid_view_invoice_number">372</span></div>
 						<div class="badge bg-danger view_invoice_status"><i class="fas fa-times-circle"></i> UNPAID</div>
-						<div class="view_invoice_sdtf mt-m07">Reference ID: <span id="unpaid_view_invoice_id">OK5D72W3E7</span></div>
-						<div class="view_invoice_sdtf">Sent: <span id="unpaid_view_invoice_sent">26-06-2022 02:17:35</span></div>
-						<div class="view_invoice_sdtf">Due: <span id="unpaid_view_invoice_due">30-06-2022 02:17:35</span></div>
-						<div class="view_invoice_sdtf mt-3">To: <span id="unpaid_view_invoice_to">Tommy Champion</span></div>
-						<div class="view_invoice_sdtf">From: <span id="unpaid_view_invoice_from">Los Santos Police Department</span></div>
+						<div class="view_invoice_sdtf mt-m07">Referencia ID: <span id="unpaid_view_invoice_id">OK5D72W3E7</span></div>
+						<div class="view_invoice_sdtf">Enviado: <span id="unpaid_view_invoice_sent">26-06-2022 02:17:35</span></div>
+						<div class="view_invoice_sdtf">Pendiente: <span id="unpaid_view_invoice_due">30-06-2022 02:17:35</span></div>
+						<div class="view_invoice_sdtf mt-3">A: <span id="unpaid_view_invoice_to">Tommy Champion</span></div>
+						<div class="view_invoice_sdtf">De: <span id="unpaid_view_invoice_from">Los Santos Police Department</span></div>
 						<hr>
 						<div class="d-flex justify-content-between">
-							<span id="unpaid_view_invoice_item">Prohibited parking</span> <span id="unpaid_view_invoice_item_price">385 €</span>
+							<span id="unpaid_view_invoice_item">Estacionamiento prohibido</span> <span id="unpaid_view_invoice_item_price">385 USD</span>
 						</div>
 						<hr>
 						<div class="d-flex justify-content-between">
-							<span class="subtotal">Subtotal</span> <span id="unpaid_view_invoice_subtotal_price">385 €</span>
+							<span class="subtotal">Subtotal</span> <span id="unpaid_view_invoice_subtotal_price">385 USD</span>
 						</div>
 						<div class="d-flex justify-content-between">
-							<span class="vat">VAT (<span id="unpaid_view_invoice_vat_percentage">23</span>%)</span> <span id="unpaid_view_invoice_vat_price">115 €</span>
+							<span class="vat">VAT (<span id="unpaid_view_invoice_vat_percentage">23</span>%)</span> <span id="unpaid_view_invoice_vat_price">115 USD</span>
 						</div>
 						<div class="d-flex justify-content-between mt-3">
-							<span class="total">TOTAL</span> <span id="unpaid_view_invoice_total_price">500 €</span>
+							<span class="total">TOTAL</span> <span id="unpaid_view_invoice_total_price">500 USD</span>
 						</div>
 						<div class="d-flex justify-content-center mt-3" id="pay_button">
-							<button type="button" class="btn btn-blue w-100" id="unpaid_view_invoice_pay" data-bs-dismiss="modal">PAY</button>
+							<button type="button" class="btn btn-blue w-100" id="unpaid_view_invoice_pay" data-bs-dismiss="modal">PAGAR</button>
 						</div>
-						<div id="unpaid_view_invoice_note" class="notes-window mt-3">Notes: You should pay more attention next time</div>
+						<div id="unpaid_view_invoice_note" class="notes-window mt-3">Notas: Deberías prestar más atención la próxima vez.</div>
 					</div>
 				</div>
 			</div>
@@ -288,31 +288,31 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-body">
-						<div class="view_invoice_title">Invoice #<span id="view_invoice_id">372</span></div>
+						<div class="view_invoice_title">Factura #<span id="view_invoice_id">372</span></div>
 						<div class="badge bg-danger view_invoice_status"><i class="fas fa-times-circle"></i> UNPAID</div>
-						<div class="view_invoice_sdtf mt-m07">Reference ID: <span id="view_invoice_sent">OK5D72W3E7</span></div>
-						<div class="view_invoice_sdtf">Sent: <span id="view_invoice_sent">26-06-2022 02:17:35</span></div>
-						<div class="view_invoice_sdtf">Due: <span id="view_invoice_due">30-06-2022 02:17:35</span></div>
-						<div class="view_invoice_sdtf mt-3">To: <span id="view_invoice_to">Tommy Champion</span></div>
-						<div class="view_invoice_sdtf">From: <span id="view_invoice_from">Los Santos Police Department</span></div>
+						<div class="view_invoice_sdtf mt-m07">Referencia ID: <span id="view_invoice_sent">OK5D72W3E7</span></div>
+						<div class="view_invoice_sdtf">Enviado: <span id="view_invoice_sent">26-06-2022 02:17:35</span></div>
+						<div class="view_invoice_sdtf">Pendiente: <span id="view_invoice_due">30-06-2022 02:17:35</span></div>
+						<div class="view_invoice_sdtf mt-3">A: <span id="view_invoice_to">Tommy Champion</span></div>
+						<div class="view_invoice_sdtf">De: <span id="view_invoice_from">Departamento de policía</span></div>
 						<hr>
 						<div class="d-flex justify-content-between">
-							<span id="view_invoice_item">Prohibited parking</span> <span id="view_invoice_item_price">385 €</span>
+							<span id="view_invoice_item">Estacionamiento prohibido</span> <span id="view_invoice_item_price">385 USD</span>
 						</div>
 						<hr>
 						<div class="d-flex justify-content-between">
-							<span class="subtotal">Subtotal</span> <span id="view_invoice_subtotal_price">385 €</span>
+							<span class="subtotal">Subtotal</span> <span id="view_invoice_subtotal_price">385 USD</span>
 						</div>
 						<div class="d-flex justify-content-between">
-							<span class="vat">VAT (<span id="view_invoice_vat_percentage">23</span>%)</span> <span id="view_invoice_vat_price">115 €</span>
+							<span class="vat">VAT (<span id="view_invoice_vat_percentage">23</span>%)</span> <span id="view_invoice_vat_price">115 USD</span>
 						</div>
 						<div class="d-flex justify-content-between mt-3">
-							<span class="total">TOTAL</span> <span id="view_invoice_total_price">500 €</span>
+							<span class="total">TOTAL</span> <span id="view_invoice_total_price">500 USD</span>
 						</div>
 						<div class="d-flex justify-content-center mt-3">
-							<button type="button" class="btn btn-red w-100" id="view_invoice_cancel" data-bs-dismiss="modal">CANCEL</button>
+							<button type="button" class="btn btn-red w-100" id="view_invoice_cancel" data-bs-dismiss="modal">CANCELAR</button>
 						</div>
-						<div class="notes-window mt-3">Notes: You should pay more attention next time</div>
+						<div class="notes-window mt-3">Notas: Deberías prestar más atención la próxima vez.</div>
 					</div>
 				</div>
 			</div>
