@@ -9,7 +9,7 @@ ui_page 'html/meter.html'
 
 shared_scripts {
     '@qb-core/shared/locale.lua',
-    'locales/en.lua',
+    'locales/es.lua',
     'locales/*.lua',
     'config.lua',
 }

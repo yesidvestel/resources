@@ -11,7 +11,7 @@ shared_script {
     '@PolyZone/ComboZone.lua',
     'config.lua',
     '@qb-core/shared/locale.lua',
-    'locales/en.lua',
+    'locales/es.lua',
     'locales/*.lua'
 }
 

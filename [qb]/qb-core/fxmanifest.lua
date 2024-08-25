@@ -8,7 +8,7 @@ version '1.2.6'
 shared_scripts {
     'config.lua',
     'shared/locale.lua',
-    'locale/en.lua',
+    'locale/es.lua',
     'locale/*.lua',
     'shared/main.lua',
     'shared/items.lua',

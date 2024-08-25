@@ -213,10 +213,10 @@ window.addEventListener('message', function(event) {
 
 				if(!p2p){
 					$('#invoicesFirstMenu').html(`
-						<button type="button" class="btn btn-blue w-100 ci-option">JOB</button>
+						<button type="button" class="btn btn-blue w-100 ci-option">TRABAJO</button>
 					`);
 					$('#invoicesSecondMenu').html(`
-						<button type="button" id="openBillsListInvoice" class="btn btn-odark w-100 ci-option">JOB</button>
+						<button type="button" id="openBillsListInvoice" class="btn btn-odark w-100 ci-option">TRABAJO</button>
 					`);
 				}
 			}
@@ -269,19 +269,19 @@ window.addEventListener('message', function(event) {
 			break;
 		case 'reference':
 			var invoice = event.data.refInvoice;
-			if(invoice[0] != undefined && ["ref_id"] != undefined && invoice[0]["status"] == "unpaid"){
-				$('#payreference_receiver').html(invoice[0]["receiver_name"])
-				$('#payreference_amount').html(invoice[0]["invoice_value"])
+			if (invoice[0] != undefined && ["ref_id"] != undefined && invoice[0]["status"] == "unpaid") {
+				$('#payreference_receiver').html(invoice[0]["receiver_name"]);
+				$('#payreference_amount').html(invoice[0]["invoice_value"]);
 				$('#payreference').prop('disabled', false);
 				$('#payreference_receiver').removeClass("payreference_noinfo");
 				$('#payreference_amount').removeClass("payreference_noinfo");
-			}else{
-				$('#payreference_receiver').html("No Info Available")
-				$('#payreference_amount').html("No Info Available")
+			} else {
+				$('#payreference_receiver').html("Información No Disponible");
+				$('#payreference_amount').html("Información No Disponible");
 				$('#payreference').prop('disabled', true);
 				$('#payreference_receiver').addClass("payreference_noinfo");
 				$('#payreference_amount').addClass("payreference_noinfo");
-			}
+			}			
 			break;
 		case 'close_all':
 			selectedWindow = '';
@@ -326,10 +326,10 @@ window.addEventListener('message', function(event) {
 
 				if(!p2p){
 					$('#invoicesFirstMenu').html(`
-						<button type="button" class="btn btn-blue w-100 ci-option">JOB</button>
+						<button type="button" class="btn btn-blue w-100 ci-option">TRABAJO</button>
 					`);
 					$('#invoicesSecondMenu').html(`
-						<button type="button" id="openBillsListInvoice" class="btn btn-odark w-100 ci-option">JOB</button>
+						<button type="button" id="openBillsListInvoice" class="btn btn-odark w-100 ci-option">TRABAJO</button>
 					`);
 				}
 			}
@@ -424,7 +424,7 @@ function renderMyInvoices(type){
 		$('#view_invoice_payall').hide();
 	}
 	else{
-		$('#view_invoice_payall').html(`PAY ALL (${total}€)`);
+		$('#view_invoice_payall').html(`PAGAR TODO (${total}USD)`);
 	}
 
 	if(total <= 0){
@@ -782,8 +782,8 @@ $('#view_invoice_payall').click(function(){
 })
 
 $('#payreference').click(function (){
-	$('#payreference_receiver').html("No Info Available")
-	$('#payreference_amount').html("No Info Available")
+	$('#payreference_receiver').html("Información No Disponible")
+	$('#payreference_amount').html("Información No Disponible")
 	$('#payreference').prop('disabled', true);
 	$('#payreference_receiver').addClass("payreference_noinfo");
 	$('#payreference_amount').addClass("payreference_noinfo");
@@ -850,11 +850,11 @@ function renderDetails(id) {
 
 	if(selectedWindow == 'all_invoices' || selectedWindow == "society_invoices"){
 		$('#unpaid_view_invoice_pay').prop('disabled', false);
-		$(`#unpaid_view_invoice_pay`).html(`CANCEL</button>`);
+		$(`#unpaid_view_invoice_pay`).html(`CANCELAR</button>`);
 		$('#unpaid_view_invoice_pay').addClass("btn-red");
 	} else {
 		$('#unpaid_view_invoice_pay').prop('disabled', false);
-		$('#unpaid_view_invoice_pay').html(`PAY</button>`);
+		$('#unpaid_view_invoice_pay').html(`PAGAR</button>`);
 		$('#unpaid_view_invoice_pay').removeClass("btn-red");
 	}
 	
@@ -930,8 +930,8 @@ function renderCitizen(resp){
 		$('#police_unpaidinvoices').removeClass("police_noinfo");
 		$('#police_unpaidamount').removeClass("police_noinfo");
 	} else {
-		$('#police_unpaidinvoices').html('No Info Available');
-		$('#police_unpaidamount').html('No Info Available');
+		$('#police_unpaidinvoices').html('Información No Disponible');
+		$('#police_unpaidamount').html('Información No Disponible');
 		$('#police_unpaidinvoices').addClass("police_noinfo");
 		$('#police_unpaidamount').addClass("police_noinfo");
 	}

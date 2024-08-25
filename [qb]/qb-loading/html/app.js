@@ -14,8 +14,8 @@ const load = Vue.createApp({
       CarouselText4: 'Para obtener soporte adicional, únase a nuestra comunidad en discord.gg/qbcore',
       CarouselSubText4: 'Foto capturada por: Robinerino#1312',
 
-      DownloadTitle: 'Downloading QBCore Server',
-      DownloadDesc: "Espera mientras comenzamos a descargar todos los recursos/activos necesarios para jugar en COMUNA RP Server. \n\nUna vez que la descarga haya finalizado exitosamente, se lo colocará en el servidor y esta pantalla desaparecerá. Por favor, no dejes ni apagues tu PC. ",
+      DownloadTitle: '¡Bienvenid@!',
+      DownloadDesc: "Espera mientras comenzamos a descargar todos los recursos/activos necesarios para jugar en Comuna Latín Vice RP. \n\nUna vez que la descarga haya finalizado exitosamente, se lo colocará en el servidor y esta pantalla desaparecerá. Por favor, no dejes ni apagues tu PC. ",
 
       SettingsTitle: 'Ajustes',
       AudioTrackDesc1: 'Cuando está desactivado, se detendrá la reproducción de la pista de audio actual.',
