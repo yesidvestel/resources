@@ -12,8 +12,8 @@ Config.AFK = {
         ['admin'] = true,
         ['god'] = true
     },
-    secondsUntilKick = 600, -- AFK Kick Time Limit (in seconds)
-    kickInCharMenu = true      -- Set to true if you want to kick players for being AFK even when they are in the character menu.
+    secondsUntilKick = 1200, -- AFK Kick Time Limit (in seconds)
+    kickInCharMenu = false      -- Set to true if you want to kick players for being AFK even when they are in the character menu.
 }
 
 Config.HandsUp = {
