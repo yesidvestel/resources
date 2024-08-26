@@ -153,7 +153,7 @@ Config.GPSBlips = {
     },
     settings = {
         color = 3,
-        scale = 0.5,
+        scale = 0.75,
         short = false,
         category = 7
     }
