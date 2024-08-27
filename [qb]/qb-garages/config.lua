@@ -254,7 +254,7 @@ Config.Garages = {
         type = 'depot',
         category = Config.VehicleClass['car']
     },
-   --[[ ballas = {
+    /*  ballas = {
         label = 'Ballas',
         takeVehicle = vector3(87.51, -1969.1, 20.75),
         spawnPoint = {
@@ -524,6 +524,6 @@ Config.Garages = {
         blipColor = 2,
         type = 'public',
         category = Config.VehicleClass['rig']
-    },
+    },*/
 	
 }
