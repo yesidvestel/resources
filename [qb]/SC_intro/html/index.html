@@ -40,31 +40,27 @@
                         </div>
                     </div>
 
-                    <div class="sub-boxes">
+                    <!-- <div class="sub-boxes">
                         <div class="sub-box">
                             <div class="sub-box-icon"><img src="./assets/img/teamspeak.svg" alt=""></div>
                             <div class="subb-box">
                                 <div class="subb-header" @click="copyLink('left')">Haga clic para copiar</div>
-                                <div class="subb-footer">{{ copy.left.text }}</div>
                             </div>
                         </div>
 
                         <div class="sub-box" style="margin-bottom: -3px;">
                             <div class="sub-box-icon"><img src="./assets/img/discord.svg" alt=""></div>
                             <div class="subb-box">
-                                <div class="subb-header" @click="copyLink('middle')">Haga clic para copiar</div>
-                                <div class="subb-footer">{{ copy.middle.text }}</div>
-                            </div>
+                                <div class="subb-header" @click="copyLink('middle')">Haga clic para copiar</div>                            </div>
                         </div>
 
                         <div class="sub-box">
                             <div class="sub-box-icon"><img src="./assets/img/web.svg" alt=""></div>
                             <div class="subb-box">
                                 <div class="subb-header" @click="copyLink('right')">Haga clic para copiar</div>
-                                <div class="subb-footer">{{ copy.right.text }}</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="controls-music-box">
                         <div class="controls-box">
@@ -72,7 +68,7 @@
                                 <div class="music-icon"><img src="./assets/img/audio.svg" alt=""></div>
                                 <div class="music-on" id="onmusic" @click="startMusic()">Encendido</div>
                                 <div class="music-on active-on" id="offmusic" @click="stopMusic()">Apagado</div>
-                                <div class="music-volume"><span style="color: #000000;">Volumen</span> {{ (musicVolume * 100).toFixed(0) }}%</div>
+                                <div class="music-volume"><span style="color: #000000;">VOLUMEN</span> {{ (musicVolume * 100).toFixed(0) }}%</div>
                             </div>
 
                             <div class="invisible-box">

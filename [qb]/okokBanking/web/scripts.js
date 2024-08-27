@@ -15,7 +15,7 @@ window.addEventListener('message', function(event) {
 					<div class="d-flex justify-content-center flex-column align-items-center">
 						<span class="load"></span>
 						<br>
-						<div class="ldata-txt">Loading Data...</div>
+						<div class="ldata-txt">Cargando datos...</div>
 					</div>
 				`);
 				$("#menu").fadeIn();
@@ -46,17 +46,17 @@ window.addEventListener('message', function(event) {
 							<hr>
 							<span class="sidebar-title">Personal</span>
 							<div id="sidebar"></div>
-							<p class="sidebar-item mt-auto logout"><i class="fas fa-sign-out-alt"></i></i> <span class="ms-1">Logout</span></p>
+							<p class="sidebar-item mt-auto logout"><i class="fas fa-sign-out-alt"></i> <span class="ms-1">Cerrar sesión</span></p>
 						</div>
 						<div class="col-md-10 tab-s">
 							<div class="d-flex justify-content-between align-items-center">
-								<span class="selected-page"><span id="page-title">Overview</span></span>
+								<span class="selected-page"><span id="page-title">Resumen</span></span>
 								<div>
 									<span class="username align-middle">
 										<span id="playerName"></span> <span id="avatar">${avatar}</span>
 									</span>
 									<div class="wallet-div">
-										<span>Wallet: <span id="wallet_money"></span> EUR</span>
+										<span>Monedero: <span id="wallet_money"></span> USD</span>
 									</div>
 								</div>
 							</div>
@@ -91,17 +91,17 @@ window.addEventListener('message', function(event) {
 			$('#page-title').html('Transactions');
 
 			if (event.data.isInSociety){
-				society = `<span class="sidebar-title mt-5">Society</span>
-						   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-						   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>`;
+				society = `<span class="sidebar-title mt-5">Sociedad</span>
+						   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+						   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>`;
 			} else {
 				society = '';
 			}
 
 			$('#sidebar').html(`
-				<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-				<p class="sidebar-item selected" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>
-				<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Settings</span></p>
+				<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+				<p class="sidebar-item selected" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>
+				<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Configuración</span></p>
 				${society}
 			`);
 
@@ -122,9 +122,9 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-download"></i></span></td>';
 					data = `<td class="align-middle fw500">
 								From <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Received</div>
+								<div class="mtm3125">Recibido</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} EUR</td>`;
+					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} USD</td>`;
 				// Sent
 				} else if (db.type == 'transfer' && db.sender_identifier == event.data.identifier) {
 					var name = db.receiver_name;
@@ -134,10 +134,10 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-upload"></i></span></td>';
 					data = `<td class="align-middle fw500">
 								To <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Sent</div>
+								<div class="mtm3125">Enviado</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} EUR</td>`;
-				// Deposited
+					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} USD</td>`;
+				// Depositado
 				} else if (db.type == 'deposit') {
 					var name = db.receiver_name;
 					if (name.length > 15){
@@ -146,10 +146,10 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-download"></i></span></td>';
 					data = `<td class="align-middle fw500">
 								Into <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Deposited</div>
+								<div class="mtm3125">Depositado</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} EUR</td>`;
-				// Withdrawn
+					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} USD</td>`;
+				// Retirado
 				} else if (db.type == 'withdraw') {
 					var name = db.sender_name;
 					if (name.length > 15){
@@ -158,9 +158,9 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-upload"></i></span></td>';
 					data = `<td class="align-middle fw500">
 								From <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Withdrawn</div>
+								<div class="mtm3125">Retirado</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} EUR</td>`;
+					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} USD</td>`;
 				}
 
 				row += `
@@ -180,7 +180,7 @@ window.addEventListener('message', function(event) {
 					<div class="col col-md-3 pr05">
 						<div class="card stats-title">
 							<div class="card-body text-center">
-								<h6 class="card-title">TRANSACTIONS</h6>
+								<h6 class="card-title">TRANSACCIONES</h6>
 								<p class="card-text fw125" id="totalInvoices">${numOfTransactions}</p>
 							</div>
 						</div>
@@ -188,7 +188,7 @@ window.addEventListener('message', function(event) {
 					<div class="col col-md-3 pr05 pl05">
 						<div class="card stats-title">
 							<div class="card-body text-center">
-								<h6 class="card-title">INCOME</h6>
+								<h6 class="card-title">INGRESOS</h6>
 								<p class="card-text fw125" id="totalIncome">${event.data.graph_values[7].toLocaleString()}€</p>
 							</div>
 						</div>
@@ -196,7 +196,7 @@ window.addEventListener('message', function(event) {
 					<div class="col col-md-3 pr05 pl05">
 						<div class="card stats-title">
 							<div class="card-body text-center">
-								<h6 class="card-title">OUTCOME</h6>
+								<h6 class="card-title">EGRESOS</h6>
 								<p class="card-text fw125" id="unpaidInvoices">${event.data.graph_values[8].toLocaleString()}€</p>
 							</div>
 						</div>
@@ -204,7 +204,7 @@ window.addEventListener('message', function(event) {
 					<div class="col col-md-3 pl05">
 						<div class="card stats-title">
 							<div class="card-body text-center">
-								<h6 class="card-title">EARNINGS</h6>
+								<h6 class="card-title">GANANCIAS</h6>
 								<p class="card-text fw125" id="awaitedIncome">${event.data.graph_values[9].toLocaleString()}€</p>
 							</div>
 						</div>
@@ -234,17 +234,17 @@ window.addEventListener('message', function(event) {
 			$('#page-title').html('Transactions');
 
 			if (event.data.isInSociety){
-				society = `<span class="sidebar-title mt-5">Society</span>
-						   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-						   <p class="sidebar-item selected" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>`;
+				society = `<span class="sidebar-title mt-5">Sociedad</span>
+						   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+						   <p class="sidebar-item selected" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>`;
 			} else {
 				society = '';
 			}
 
 			$('#sidebar').html(`
-				<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-				<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>
-				<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Settings</span></p>
+				<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+				<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>
+				<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Configuración</span></p>
 				${society}
 			`);
 
@@ -265,9 +265,9 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-download"></i></span></td>';
 					data = `<td class="align-middle transactions-name-div">
 								From <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Received</div>
+								<div class="mtm3125">Recibido</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} EUR</td>`;
+					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} USD</td>`;
 				// Sent
 				} else if (db.type == 'transfer' && db.sender_identifier == event.data.identifier) {
 					var name = db.receiver_name;
@@ -277,10 +277,10 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-upload"></i></span></td>';
 					data = `<td class="align-middle transactions-name-div">
 								To <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Sent</div>
+								<div class="mtm3125">Enviado</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} EUR</td>`;
-				// Deposited
+					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} USD</td>`;
+				// Depositado
 				} else if (db.type == 'deposit') {
 					var name = db.receiver_name;
 					if (name.length > 15){
@@ -289,10 +289,10 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-download"></i></span></td>';
 					data = `<td class="align-middle transactions-name-div">
 								Into <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Deposited</div>
+								<div class="mtm3125">Depositado</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} EUR</td>`;
-				// Withdrawn
+					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} USD</td>`;
+				// Retirado
 				} else if (db.type == 'withdraw') {
 					var name = db.sender_name;
 					if (name.length > 15){
@@ -301,9 +301,9 @@ window.addEventListener('message', function(event) {
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-upload"></i></span></td>';
 					data = `<td class="align-middle transactions-name-div">
 								From <span class="transactions-name">${name}</span>
-								<div class="mtm3125">Withdrawn</div>
+								<div class="mtm3125">Retirado</div>
 							</td>`;
-					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} EUR</td>`;
+					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} USD</td>`;
 				}
 
 				row += `
@@ -320,43 +320,43 @@ window.addEventListener('message', function(event) {
 
 			$('#page_info').html(`
 				<div class="row mb-3">
-					<div class="col col-md-3 pr05">
-						<div class="card stats-title">
-							<div class="card-body text-center">
-								<h6 class="card-title">TRANSACTIONS</h6>
-								<p class="card-text fw125" id="totalInvoices">${numOfTransactions}</p>
-							</div>
-						</div>
-					</div>
-					<div class="col col-md-3 pr05 pl05">
-						<div class="card stats-title">
-							<div class="card-body text-center">
-								<h6 class="card-title">INCOME</h6>
-								<p class="card-text fw125" id="totalIncome">${event.data.graph_values[7].toLocaleString()}€</p>
-							</div>
-						</div>
-					</div>
-					<div class="col col-md-3 pr05 pl05">
-						<div class="card stats-title">
-							<div class="card-body text-center">
-								<h6 class="card-title">OUTCOME</h6>
-								<p class="card-text fw125" id="unpaidInvoices">${event.data.graph_values[8].toLocaleString()}€</p>
-							</div>
-						</div>
-					</div>
-					<div class="col col-md-3 pl05">
-						<div class="card stats-title">
-							<div class="card-body text-center">
-								<h6 class="card-title">EARNINGS</h6>
-								<p class="card-text fw125" id="awaitedIncome">${event.data.graph_values[9].toLocaleString()}€</p>
-							</div>
+				<div class="col col-md-3 pr05">
+					<div class="card stats-title">
+						<div class="card-body text-center">
+							<h6 class="card-title">TRANSACCIONES</h6>
+							<p class="card-text fw125" id="totalInvoices">${numOfTransactions}</p>
 						</div>
 					</div>
 				</div>
-				<table id="transactionsTable">
-					<tbody id="transactionsData">
-					</tbody>
-				</table>
+				<div class="col col-md-3 pr05 pl05">
+					<div class="card stats-title">
+						<div class="card-body text-center">
+							<h6 class="card-title">INGRESOS</h6>
+							<p class="card-text fw125" id="totalIncome">${event.data.graph_values[7].toLocaleString()}$</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md-3 pr05 pl05">
+					<div class="card stats-title">
+						<div class="card-body text-center">
+							<h6 class="card-title">EGRESOS</h6>
+							<p class="card-text fw125" id="unpaidInvoices">${event.data.graph_values[8].toLocaleString()}$</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md-3 pl05">
+					<div class="card stats-title">
+						<div class="card-body text-center">
+							<h6 class="card-title">GANANCIAS</h6>
+							<p class="card-text fw125" id="awaitedIncome">${event.data.graph_values[9].toLocaleString()}$</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<table id="transactionsTable">
+				<tbody id="transactionsData">
+				</tbody>
+			</table>
 			`);
 
 			$('#transactionsData').html(row);
@@ -705,7 +705,7 @@ function overview_page_function(event) {
 								</div>
 							</div>
 							<hr>
-							<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;"><span class="fff">Balance:</span> <span id="playerBankMoney"></span> EUR</p>
+							<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;"><span class="fff">Balance:</span> <span id="playerBankMoney"></span> USD</p>
 							<p class="card-text text-center ccard-fs"><span class="fff">IBAN:</span> <span id="playerIBAN"></span></p>
 						</div>
 					</div>
@@ -745,7 +745,7 @@ function overview_page_function(event) {
 
 			var db = event.data.db[i];
 
-			// Received
+			// Recibido
 			if (db.type == 'transfer' && db.receiver_identifier == event.data.identifier) {
 				var name = db.sender_name;
 				if (name.length > 15){
@@ -754,10 +754,10 @@ function overview_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-download"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							From <span class="lastT-name">${name}</span>
-							<div class="mtm3125">Received</div>
+							<div class="mtm3125">Recibido</div>
 						</td>`;
-				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} EUR</span></td>`;
-			// Sent
+				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} USD</span></td>`;
+			// Enviado
 			} else if (db.type == 'transfer' && db.sender_identifier == event.data.identifier) {
 				var name = db.receiver_name;
 				if (name.length > 15){
@@ -766,10 +766,10 @@ function overview_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-upload"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							To <span class="lastT-name">${name}</span>
-							<div class="mtm3125">Sent</div>
+							<div class="mtm3125">Enviado</div>
 						</td>`;
-				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} EUR</span></td>`;
-			// Deposited
+				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} USD</span></td>`;
+			// Depositado
 			} else if (db.type == 'deposit') {
 				var name = db.receiver_name;
 				if (name.length > 15){
@@ -778,10 +778,10 @@ function overview_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-download"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							Into <span class="lastT-name">${name}</span>
-							<div class="mtm3125">Deposited</div>
+							<div class="mtm3125">Depositado</div>
 						</td>`;
-				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} EUR</span></td>`;
-			// Withdrawn
+				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} USD</span></td>`;
+			// Retirado
 			} else if (db.type == 'withdraw') {
 				var name = db.sender_name;
 				if (name.length > 15){
@@ -790,9 +790,9 @@ function overview_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-upload"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							From <span class="transactions-name">${name}</span>
-							<div class="mtm3125">Withdrawn</div>
+							<div class="mtm3125">Retirado</div>
 						</td>`;
-				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} EUR</span></td>`;
+				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} USD</span></td>`;
 			}
 
 			row += `
@@ -969,7 +969,7 @@ function society_page_function(event) {
 								</div>
 							</div>
 							<hr>
-							<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;""><span class="fff">Balance:</span> <span id="playerBankMoney"></span> EUR</p>
+							<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;""><span class="fff">Balance:</span> <span id="playerBankMoney"></span> USD</p>
 							<p class="card-text text-center ccard-fs"><span class="fff">IBAN:</span> <span id="playerIBAN"></span></p>
 						</div>
 					</div>
@@ -1008,7 +1008,7 @@ function society_page_function(event) {
 
 			var db = event.data.db[i];
 
-			// Received
+			// Recibido
 			if (db.type == 'transfer' && db.receiver_identifier == event.data.identifier) {
 				var name = db.sender_name;
 				if (name.length > 15){
@@ -1017,10 +1017,10 @@ function society_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-download"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							From <span class="lastT-name">${name}</span>
-							<div class="mtm3125">Received</div>
+							<div class="mtm3125">Recibido</div>
 						</td>`;
-				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} EUR</span></td>`;
-			// Sent
+				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} USD</span></td>`;
+			// Enviado
 			} else if (db.type == 'transfer' && db.sender_identifier == event.data.identifier) {
 				var name = db.receiver_name;
 				if (name.length > 15){
@@ -1029,10 +1029,10 @@ function society_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-upload"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							To <span class="lastT-name">${name}</span>
-							<div class="mtm3125">Sent</div>
+							<div class="mtm3125">Enviado</div>
 						</td>`;
-				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} EUR</span></td>`;
-			// Deposited
+				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} USD</span></td>`;
+			// Depositado
 			} else if (db.type == 'deposit') {
 				var name = db.receiver_name;
 				if (name.length > 15){
@@ -1041,10 +1041,10 @@ function society_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-download"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							Into <span class="lastT-name">${name}</span>
-							<div class="mtm3125">Deposited</div>
+							<div class="mtm3125">Depositado</div>
 						</td>`;
-				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} EUR</span></td>`;
-			// Withdrawn
+				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} USD</span></td>`;
+			// Retirado
 			} else if (db.type == 'withdraw') {
 				var name = db.sender_name;
 				if (name.length > 15){
@@ -1053,9 +1053,9 @@ function society_page_function(event) {
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-upload"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
 							From <span class="transactions-name">${name}</span>
-							<div class="mtm3125">Withdrawn</div>
+							<div class="mtm3125">Retirado</div>
 						</td>`;
-				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} EUR</span></td>`;
+				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} USD</span></td>`;
 			}
 
 			row += `
@@ -1162,17 +1162,17 @@ function settings_page_function(event) {
 	$('#page-title').html('Settings');
 
 	if (event.data.isInSociety){
-		society = `<span class="sidebar-title mt-5">Society</span>
-				   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-				   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>`;
+		society = `<span class="sidebar-title mt-5">Sociedad</span>
+				   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+				   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>`;
 	} else {
 		society = '';
 	}
 
 	$('#sidebar').html(`
-		<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-		<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>
-		<p class="sidebar-item mt-2 selected" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Settings</span></p>
+			       <p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+				   <p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>
+				   <p class="sidebar-item mt-2 selected" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Configuración</span></p>
 		${society}
 	`);
 
@@ -1180,66 +1180,32 @@ function settings_page_function(event) {
 
 	$('#page_info').html(`
 		<div class="col-md-12 d-flex flex-grow-1 flex-column h-100 settings-col">
-			<div class="card d-flex flex-column flex-grow-1 settings-card">
-				<div class="card-header card-o-header text-center">
-					<span class="card-o-title">
-						<span>Account IBAN</span>
-					</span>
-				</div>
-				<div class="card-body settings-card_body flex-grow-1">
-					<div>
-						<div class="row">
-							<div class="col col-md-6 d-flex justify-content-center">
-								<div class="card w-100 h-100 changeiban-card">
-									<div class="card-body text-center">
-										<span class="fs15 fff">Change IBAN</span>
-										<input type="text" maxlength="${event.data.ibanCharNum}" id="new_iban" class="form-control text-center" placeholder="New IBAN" onkeyup="checkIfEmptySettings()">
-										<button type="button" id="change_iban" class="btn btn-blue" disabled><i class="fas fa-paper-plane"></i> Submit</button>
-									</div>
-								</div>
-							</div>
-							<div class="col col-md-6 d-flex align-items-center">
-								<div class="card w-100 h-100 d-flex justify-content-center settings_info-card">
-									<div class="card-body text-center fs1125">
-										<span>The IBAN has a change cost of ${event.data.ibanCost}€</span>
-										<hr class="fff">
-										<span>The IBAN always have the prefix "${event.data.ibanPrefix}"</span>
-										<hr class="fff">
-										<span>The maximum number of characters is ${event.data.ibanCharNum}</span>
-									</div>
+		<div class="card d-flex flex-column flex-grow-1 settings-card">
+			<div class="card-header card-o-header text-center">
+				<span class="card-o-title">
+					<span>IBAN de la cuenta</span>
+				</span>
+			</div>
+			<div class="card-body settings-card_body flex-grow-1">
+				<div>
+					<div class="row">
+						<div class="col col-md-6 d-flex justify-content-center">
+							<div class="card w-100 h-100 changeiban-card">
+								<div class="card-body text-center">
+									<span class="fs15 fff">Cambiar IBAN</span>
+									<input type="text" maxlength="${event.data.ibanCharNum}" id="new_iban" class="form-control text-center" placeholder="Nuevo IBAN" onkeyup="checkIfEmptySettings()">
+									<button type="button" id="change_iban" class="btn btn-blue" disabled><i class="fas fa-paper-plane"></i> Enviar</button>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card d-flex flex-column flex-grow-1 settings2-card">
-				<div class="card-header card-o-header text-center">
-					<span class="card-o-title">
-						<span>PIN Code</span>
-					</span>
-				</div>
-				<div class="card-body flex-grow-1 settings-card_body">
-					<div>
-						<div class="row">
-							<div class="col col-md-6 d-flex justify-content-center">
-								<div class="card w-100 h-100 changepin-card">
-									<div class="card-body text-center">
-										<span class="fs15 fff">Change PIN</span>
-										<input type="password" maxlength="4" id="new_pin" class="form-control text-center" placeholder="New PIN" onkeyup="checkIfEmptySettings()">
-										<button type="button" id="change_pin" class="btn btn-blue" disabled><i class="fas fa-paper-plane"></i> Submit</button>
-									</div>
-								</div>
-							</div>
-							<div class="col col-md-6 d-flex align-items-center">
-								<div class="card w-100 h-100 d-flex justify-content-center settings_info-card">
-									<div class="card-body text-center fs1125">
-										<span>The PIN has a change cost of ${event.data.pinCost}€</span>
-										<hr class="fff">
-										<span>The maximum number of characters is ${event.data.pinCharNum}</span>
-										<hr class="fff">
-										<span>You can only use numbers</span>
-									</div>
+						<div class="col col-md-6 d-flex align-items-center">
+							<div class="card w-100 h-100 d-flex justify-content-center settings_info-card">
+								<div class="card-body text-center fs1125">
+									<span>Cambiar el IBAN tiene un costo de ${event.data.ibanCost}$</span>
+									<hr class="fff">
+									<span>El IBAN siempre tiene el prefijo "${event.data.ibanPrefix}"</span>
+									<hr class="fff">
+									<span>El número máximo de caracteres es ${event.data.ibanCharNum}</span>
 								</div>
 							</div>
 						</div>
@@ -1247,6 +1213,40 @@ function settings_page_function(event) {
 				</div>
 			</div>
 		</div>
+		<div class="card d-flex flex-column flex-grow-1 settings2-card">
+			<div class="card-header card-o-header text-center">
+				<span class="card-o-title">
+					<span>Código PIN</span>
+				</span>
+			</div>
+			<div class="card-body flex-grow-1 settings-card_body">
+				<div>
+					<div class="row">
+						<div class="col col-md-6 d-flex justify-content-center">
+							<div class="card w-100 h-100 changepin-card">
+								<div class="card-body text-center">
+									<span class="fs15 fff">Cambiar PIN</span>
+									<input type="password" maxlength="4" id="new_pin" class="form-control text-center" placeholder="Nuevo PIN" onkeyup="checkIfEmptySettings()">
+									<button type="button" id="change_pin" class="btn btn-blue" disabled><i class="fas fa-paper-plane"></i> Enviar</button>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-6 d-flex align-items-center">
+							<div class="card w-100 h-100 d-flex justify-content-center settings_info-card">
+								<div class="card-body text-center fs1125">
+									<span>Cambiar el PIN tiene un costo de ${event.data.pinCost}$</span>
+									<hr class="fff">
+									<span>El número máximo de caracteres es ${event.data.pinCharNum}</span>
+									<hr class="fff">
+									<span>Solo puedes usar números</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	`);
 
 	selectedWindow = "settings";
@@ -1259,7 +1259,7 @@ function logout_page() {
 			<div class="d-flex justify-content-center flex-column align-items-center">
 				<span class="load"></span>
 				<br>
-				<div class="ldata-txt">Logging out...</div>
+				<div class="ldata-txt">Cerrando sesión...</div>
 			</div>
 		`);
 		$("#menu").fadeIn();

@@ -294,7 +294,7 @@ Config.RemoveStatsValues = {
 
 Config.Gyms = {
     [1] = {
-        business = true,
+        business = false,
         ownerJob = 'police',
         jobMenuPos = vector3(-1195.35, -1577.57, 4.5),
         menuGrades = nil, -- nil: any player with this job | string: 'boss' | table: {'boss', 'manager'}
@@ -425,9 +425,9 @@ Config.Gyms = {
         },
     },
     [2] = {
-        business = nil,
+        business = true,
         ownerJob = nil,
-        jobMenuPos = vector3(-1254.26, -354.04, 36.96),
+        jobMenuPos = vector3(258.22, -271.73, 53.96),
         menuGrades = nil, -- nil: any player with this job | string: 'boss' | table: {'boss', 'manager'}
         bossMenuGrades = 'boss', -- string: 'boss' or table: {'boss', 'manager'}
         blipCoords = vector(-1255.8, -354.21, 35.96),
@@ -444,57 +444,44 @@ Config.Gyms = {
             {
                 name = 'treadmill',
                 activityCoord = vector4(-1257.63, -366.56, 36.12, 207.75),
-                position = vector3(-1258.33, -365.23, 36.96),
+                position = vector3(236.52, -261.64, 60.07),
                 removeStamina = 1,
                 addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
             },
             {
                 name = 'treadmill',
                 activityCoord = vector4(-1259.15, -367.3, 36.11, 207.75),
-                position = vector3(-1259.76, -366.11, 36.96),
+                position = vector3(239.15, -257.49, 60.07),
                 removeStamina = 1,
                 addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
             },
             {
                 name = 'treadmill',
                 activityCoord = vector4(-1260.75, -368.02, 36.11, 207.75),
-                position = vector3(-1261.32, -366.99, 36.96),
+                position = vector3(242.2, -255.59, 60.07),
                 removeStamina = 1,
                 addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
             },
             {
                 name = 'treadmill',
                 activityCoord = vector4(-1262.14, -368.9, 36.11, 207.75),
-                position = vector3(-1262.67, -367.88, 36.96),
-                removeStamina = 1,
-                addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
-            },
-            {
-                name = 'treadmill',
-                activityCoord = vector4(-1263.46, -369.66, 36.11, 207.75),
-                position = vector3(-1264.11, -368.58, 36.96),
-                removeStamina = 1,
-                addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
-            },
-            {
-                name = 'treadmill',
-                activityCoord = vector4(-1264.84, -370.34, 36.11, 210.35),
-                position = vector3(-1265.42, -369.34, 36.96),
+                position = vector3(246.44, -255.35, 60.07),
                 removeStamina = 1,
                 addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
             },
 
+
             {
                 name = 'push-up',
                 activityCoord = vector4(-1263.23, -363.06, 35.99, 281.81),
-                position = vector3(-1263.24, -363.07, 36.99),
+                position = vector3(241.31, -261.73, 59.92),
                 removeStamina = 3,
                 addSkill = {skill = "strenght", value = 1}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
             },
             {
                 name = 'push-up',
                 activityCoord = vector4(-1262.22, -359.14, 35.99, 225.7),
-                position = vector3(-1262.35, -359.08, 36.99),
+                position = vector3(242.32, -266.97, 59.92),
                 removeStamina = 3,
                 addSkill = {skill = "strenght", value = 1}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
             },
@@ -503,7 +490,7 @@ Config.Gyms = {
                 prop = {name = 'prop_barbell_01', attachBone = 28422, placement = {-0.24, 0.0, -0.03, 0.0, -50.0, 0.0}},
                 prop2 = {name = 'prop_barbell_01', attachBone = 60309, placement = {0.05, 0.0, 0.0, 0.0, -90.0, 120.0}},
                 activityCoord = vector4(-1261.55, -353.61, 35.96, 293.97),
-                position = vector3(-1261.55, -353.61, 36.96),
+                position = vector3(253.04, -269.03, 59.92),
                 removeStamina = 4,
                 addSkill = {skill = "strenght", value = {1, 2}}, -- this value is divided by 10 - this means that setting {1, 2} it will be 0.1, 0.2
             },
@@ -512,18 +499,25 @@ Config.Gyms = {
                 prop = {name = 'prop_barbell_01', attachBone = 28422, placement = {-0.24, 0.0, -0.03, 0.0, -50.0, 0.0}},
                 prop2 = {name = 'prop_barbell_01', attachBone = 60309, placement = {0.05, 0.0, 0.0, 0.0, -90.0, 120.0}},
                 activityCoord = vector4(-1268.76, -357.8, 35.96, 298.89),
-                position = vector3(-1268.7, -357.75, 36.96),
+                position = vector3(237.64, -268.72, 59.92),
                 removeStamina = 4,
                 addSkill = {skill = "strenght", value = {1, 2}}, -- this value is divided by 10 - this means that setting {1, 2} it will be 0.1, 0.2
             },
             {
-                name = 'dumbbells',
-                prop = {name = 'prop_barbell_01', attachBone = 28422, placement = {-0.24, 0.0, -0.03, 0.0, -50.0, 0.0}},
-                prop2 = {name = 'prop_barbell_01', attachBone = 60309, placement = {0.05, 0.0, 0.0, 0.0, -90.0, 120.0}},
-                activityCoord = vector4(-1266.69, -356.9, 35.96, 118.72),
-                position = vector3(-1266.69, -356.9, 36.96),
-                removeStamina = 4,
-                addSkill = {skill = "strenght", value = {1, 2}}, -- this value is divided by 10 - this means that setting {1, 2} it will be 0.1, 0.2
+                name = 'bench',
+                prop = {name = 'prop_barbell_60kg', attachBone = 28422, placement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}},
+                activityCoord = vector4(-1200.64, -1562.11, 3.10, 125.29),
+                position = vector3(243.13, -262.22, 59.92),
+                removeStamina = 8,
+                addSkill = {skill = "strenght", value = {2, 4}}, -- this value is divided by 10 - this means that setting {2, 4} it will be 0.2, 0.4
+            },
+            {
+                name = 'bench',
+                prop = {name = 'prop_barbell_60kg', attachBone = 28422, placement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}},
+                activityCoord = vector4(-1207.11, -1560.81, 3.10, 212.49),
+                position = vector3(247.66, -263.61, 59.92),
+                removeStamina = 8,
+                addSkill = {skill = "strenght", value = {2, 4}}, -- this value is divided by 10 - this means that setting {2, 4} it will be 0.2, 0.4
             },
         },
     },

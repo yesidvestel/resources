@@ -53,6 +53,7 @@ body {
 
     width: auto;
     height: auto;
+    padding: 10px;
 }
 
 
@@ -250,7 +251,7 @@ body {
 
 .loading-line, .volume-line {
     position: relative;
-
+    
     width: 100%;
     height: 12px;
 
