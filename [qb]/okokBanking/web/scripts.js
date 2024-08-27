@@ -121,7 +121,7 @@ window.addEventListener('message', function(event) {
 					}
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-download"></i></span></td>';
 					data = `<td class="align-middle fw500">
-								From <span class="transactions-name">${name}</span>
+								De <span class="transactions-name">${name}</span>
 								<div class="mtm3125">Recibido</div>
 							</td>`;
 					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} USD</td>`;
@@ -157,7 +157,7 @@ window.addEventListener('message', function(event) {
 					}
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-upload"></i></span></td>';
 					data = `<td class="align-middle fw500">
-								From <span class="transactions-name">${name}</span>
+								De <span class="transactions-name">${name}</span>
 								<div class="mtm3125">Retirado</div>
 							</td>`;
 					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} USD</td>`;
@@ -189,7 +189,7 @@ window.addEventListener('message', function(event) {
 						<div class="card stats-title">
 							<div class="card-body text-center">
 								<h6 class="card-title">INGRESOS</h6>
-								<p class="card-text fw125" id="totalIncome">${event.data.graph_values[7].toLocaleString()}€</p>
+								<p class="card-text fw125" id="totalIncome">${event.data.graph_values[7].toLocaleString()}$</p>
 							</div>
 						</div>
 					</div>
@@ -197,7 +197,7 @@ window.addEventListener('message', function(event) {
 						<div class="card stats-title">
 							<div class="card-body text-center">
 								<h6 class="card-title">EGRESOS</h6>
-								<p class="card-text fw125" id="unpaidInvoices">${event.data.graph_values[8].toLocaleString()}€</p>
+								<p class="card-text fw125" id="unpaidInvoices">${event.data.graph_values[8].toLocaleString()}$</p>
 							</div>
 						</div>
 					</div>
@@ -205,7 +205,7 @@ window.addEventListener('message', function(event) {
 						<div class="card stats-title">
 							<div class="card-body text-center">
 								<h6 class="card-title">GANANCIAS</h6>
-								<p class="card-text fw125" id="awaitedIncome">${event.data.graph_values[9].toLocaleString()}€</p>
+								<p class="card-text fw125" id="awaitedIncome">${event.data.graph_values[9].toLocaleString()}$</p>
 							</div>
 						</div>
 					</div>
@@ -264,7 +264,7 @@ window.addEventListener('message', function(event) {
 					}
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-download"></i></span></td>';
 					data = `<td class="align-middle transactions-name-div">
-								From <span class="transactions-name">${name}</span>
+								De <span class="transactions-name">${name}</span>
 								<div class="mtm3125">Recibido</div>
 							</td>`;
 					amount = `<td class="align-middle fw500 transactions-received text-center">+ ${db.value.toLocaleString()} USD</td>`;
@@ -300,7 +300,7 @@ window.addEventListener('message', function(event) {
 					}
 					icon = '<td class="align-middle"><span class="transactions-action"><i class="bi bi-upload"></i></span></td>';
 					data = `<td class="align-middle transactions-name-div">
-								From <span class="transactions-name">${name}</span>
+								De <span class="transactions-name">${name}</span>
 								<div class="mtm3125">Retirado</div>
 							</td>`;
 					amount = `<td class="align-middle fw500 text-center">- ${db.value.toLocaleString()} USD</td>`;
@@ -632,20 +632,20 @@ function overview_page_function(event) {
 		if (event.data.isInSociety){
 			society = `<span class="sidebar-title mt-5">Society</span>
 					   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-					   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>`;
+					   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>`;
 		} else {
 			society = '';
 		}
 
 		$('#sidebar').html(`
 			<p class="sidebar-item mt-2 selected" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-			<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>
+			<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>
 			<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Settings</span></p>
 			${society}
 		`);
 
 		if(event.data.RequireCC) {
-			informations = `<span class="card-o-title">Informations<span class="badge bg-primary viewall-badge buy_new_card" data-bs-toggle="modal" data-bs-target="#buycc_modal"><i class="fa-solid fa-plus"></i> NEW</span></span>`;
+			informations = `<span class="card-o-title">Informations<span class="badge bg-primary viewall-badge buy_new_card" data-bs-toggle="modal" data-bs-target="#buycc_modal"><i class="fa-solid fa-plus"></i> Nuevo</span></span>`;
 		} else {
 			informations = `<span class="card-o-title">Informations</span>`;
 		}
@@ -654,79 +654,79 @@ function overview_page_function(event) {
 
 		$('#page_info').html(`
 			<div class="col-md-7 chart-main">
-				<div class="card chart-card text-center">
-					<div class="card-header card-o-header">
-						<span class="card-o-title">Statistics</span>
-					</div>
-					<div class="card-body chart-card-body">
-						<div class="chart-div">
-							<canvas id="myChart"></canvas>
-						</div>
-					</div>
+						<div class="card chart-card text-center">
+			<div class="card-header card-o-header">
+				<span class="card-o-title">Estadísticas</span>
+			</div>
+			<div class="card-body chart-card-body">
+				<div class="chart-div">
+					<canvas id="myChart"></canvas>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="card last-t-card">
-							<div class="card-header card-o-header text-center">
-								<span class="card-o-title">Last Transactions<span class="badge bg-primary viewall-badge" id="view_all_transactions"><i class="fas fa-eye"></i> VIEW ALL</span></span>
-							</div>
-							<div class="card-body" id="last-t-body">
-								<table id="lastTransactionsTable">
-									<tbody id="lastTransactionsData">
-									</tbody>
-								</table>
-							</div>
-						</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card last-t-card">
+					<div class="card-header card-o-header text-center">
+						<span class="card-o-title">Últimas Transacciones<span class="badge bg-primary viewall-badge" id="view_all_transactions"><i class="fas fa-eye"></i> VER TODO</span></span>
+					</div>
+					<div class="card-body" id="last-t-body">
+						<table id="lastTransactionsTable">
+							<tbody id="lastTransactionsData">
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-5">
-				<div class="col-md-12">
-					<div class="card ccard-card">
-						<div class="card-header card-o-header text-center">
-							${informations}
-						</div>
-						<div class="card-body ccard-body">
-							<div class="card creditcard-classic_card d-flex align-items-center">
-								<div class="card-body creditcard-classic_card-body">
-									<span class="d-flex justify-content-between"><span><img src="img/visa_white.svg" class="w20p"><span class="ccard-name">okokBank Classic</span></span><span><i class="fas fa-wifi"></i></span></span>
-									<div class="mt38p">
-										<div class="d-flex align-items-center">
-											<span class="ccard-status">Status</span>
-										</div>
-										<div class="d-flex justify-content-between align-items-center">
-											<span class="ccard-active">ACTIVE</span>
-											<div class="d-flex align-items-center ccard-valid">
-												<span class="ccard-thru">VALID THRU</span>
-												<span class="ccard-exp">08/25</span>
-											</div>
+		</div>
+		</div>
+		<div class="col-md-5">
+			<div class="col-md-12">
+				<div class="card ccard-card">
+					<div class="card-header card-o-header text-center">
+						${informations}
+					</div>
+					<div class="card-body ccard-body">
+						<div class="card creditcard-classic_card d-flex align-items-center">
+							<div class="card-body creditcard-classic_card-body">
+								<span class="d-flex justify-content-between"><span><img src="img/visa_white.svg" class="w20p"><span class="ccard-name">okokBank Classic</span></span><span><i class="fas fa-wifi"></i></span></span>
+								<div class="mt38p">
+									<div class="d-flex align-items-center">
+										<span class="ccard-status">Estado</span>
+									</div>
+									<div class="d-flex justify-content-between align-items-center">
+										<span class="ccard-active">ACTIVO</span>
+										<div class="d-flex align-items-center ccard-valid">
+											<span class="ccard-thru">VÁLIDO HASTA</span>
+											<span class="ccard-exp">08/25</span>
 										</div>
 									</div>
 								</div>
 							</div>
-							<hr>
-							<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;"><span class="fff">Balance:</span> <span id="playerBankMoney"></span> USD</p>
-							<p class="card-text text-center ccard-fs"><span class="fff">IBAN:</span> <span id="playerIBAN"></span></p>
 						</div>
+						<hr>
+						<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;"><span class="fff">Saldo:</span> <span id="playerBankMoney"></span> USD</p>
+						<p class="card-text text-center ccard-fs"><span class="fff">IBAN:</span> <span id="playerIBAN"></span></p>
 					</div>
-					<div class="card text-center h-100 actions-card">
-						<div class="card-header card-o-header">
-							<span class="card-o-title">Actions</span>
+				</div>
+				<div class="card text-center h-100 actions-card">
+					<div class="card-header card-o-header">
+						<span class="card-o-title">Acciones</span>
+					</div>
+					<div class="card-body actions-card_body">
+						<div class="d-flex justify-content-center">
+							<button type="button" id="depositMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#depositModal"><i class="bi bi-upload"></i> Depósito</button>
 						</div>
-						<div class="card-body actions-card_body">
-							<div class="d-flex justify-content-center">
-								<button type="button" id="depositMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#depositModal"><i class="bi bi-upload"></i> Deposit</button>
-							</div>
-							<div class="d-flex justify-content-center mt4375">
-								<button type="button" id="withdrawMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#withdrawModal"><i class="bi bi-download"></i> Withdraw</button>
-							</div>
-							<div class="d-flex justify-content-center mt4375">
-								<button type="button" id="transferMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#transferModal"><i class="fas fa-exchange-alt"></i> Transfer</button>
-							</div>
+						<div class="d-flex justify-content-center mt4375">
+							<button type="button" id="withdrawMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#withdrawModal"><i class="bi bi-download"></i> Retirar</button>
+						</div>
+						<div class="d-flex justify-content-center mt4375">
+							<button type="button" id="transferMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#transferModal"><i class="fas fa-exchange-alt"></i> Transferir</button>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		`);
 
 		$("#playerName").html(event.data.playerName);
@@ -753,7 +753,7 @@ function overview_page_function(event) {
 				}
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-download"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
-							From <span class="lastT-name">${name}</span>
+							De <span class="lastT-name">${name}</span>
 							<div class="mtm3125">Recibido</div>
 						</td>`;
 				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} USD</span></td>`;
@@ -789,7 +789,7 @@ function overview_page_function(event) {
 				}
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-upload"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
-							From <span class="transactions-name">${name}</span>
+							De <span class="transactions-name">${name}</span>
 							<div class="mtm3125">Retirado</div>
 						</td>`;
 				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} USD</span></td>`;
@@ -901,15 +901,15 @@ function society_page_function(event) {
 
 		if (event.data.isInSociety){
 			society = `<span class="sidebar-title mt-5">Society</span>
-					   <p class="sidebar-item mt-2 selected" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-					   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>`;
+					   <p class="sidebar-item mt-2 selected" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+					   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>`;
 		} else {
 			society = '';
 		}
 
 		$('#sidebar').html(`
-			<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
-			<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transactions</span></p>
+			<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
+			<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>
 			<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Settings</span></p>
 			${society}
 		`);
@@ -918,79 +918,79 @@ function society_page_function(event) {
 
 		$('#page_info').html(`
 			<div class="col-md-7 chart-main">
-				<div class="card chart-card text-center">
-					<div class="card-header card-o-header">
-						<span class="card-o-title">Statistics</span>
-					</div>
-					<div class="card-body chart-card-body">
-						<div class="chart-div">
-							<canvas id="myChart"></canvas>
-						</div>
+			<div class="card chart-card text-center">
+				<div class="card-header card-o-header">
+					<span class="card-o-title">Estadísticas</span>
+				</div>
+				<div class="card-body chart-card-body">
+					<div class="chart-div">
+						<canvas id="myChart"></canvas>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="card last-t-card">
-							<div class="card-header card-o-header text-center">
-								<span class="card-o-title">Last Transactions<span class="badge bg-primary viewall-badge" id="view_all_transactions_society"><i class="fas fa-eye"></i> VIEW ALL</span></span>
-							</div>
-							<div class="card-body" id="last-t-body">
-								<table id="lastTransactionsTable">
-									<tbody id="lastTransactionsData">
-									</tbody>
-								</table>
-							</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card last-t-card">
+						<div class="card-header card-o-header text-center">
+							<span class="card-o-title">Últimas Transacciones<span class="badge bg-primary viewall-badge" id="view_all_transactions_society"><i class="fas fa-eye"></i> VER TODO</span></span>
+						</div>
+						<div class="card-body" id="last-t-body">
+							<table id="lastTransactionsTable">
+								<tbody id="lastTransactionsData">
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-5">
-				<div class="col-md-12">
-					<div class="card ccard-card">
-						<div class="card-header card-o-header text-center">
-							<span class="card-o-title">Informations</span>
-						</div>
-						<div class="card-body ccard-body">
-							<div class="card creditcard-classic_card d-flex align-items-center">
-								<div class="card-body creditcard-classic_card-body">
-									<span class="d-flex justify-content-between"><span><img src="img/visa_white.svg" class="w20p"><span class="ccard-name">okokBank Classic</span></span><span><i class="fas fa-wifi"></i></span></span>
-									<div class="mt38p">
-										<div class="d-flex align-items-center">
-											<span class="ccard-status">Status</span>
-										</div>
-										<div class="d-flex justify-content-between align-items-center">
-											<span class="ccard-active">ACTIVE</span>
-											<div class="d-flex align-items-center ccard-valid">
-												<span class="ccard-thru">VALID THRU</span>
-												<span class="ccard-exp">08/25</span>
-											</div>
+		</div>
+		<div class="col-md-5">
+			<div class="col-md-12">
+				<div class="card ccard-card">
+					<div class="card-header card-o-header text-center">
+						<span class="card-o-title">Información</span>
+					</div>
+					<div class="card-body ccard-body">
+						<div class="card creditcard-classic_card d-flex align-items-center">
+							<div class="card-body creditcard-classic_card-body">
+								<span class="d-flex justify-content-between"><span><img src="img/visa_white.svg" class="w20p"><span class="ccard-name">okokBank Classic</span></span><span><i class="fas fa-wifi"></i></span></span>
+								<div class="mt38p">
+									<div class="d-flex align-items-center">
+										<span class="ccard-status">Estado</span>
+									</div>
+									<div class="d-flex justify-content-between align-items-center">
+										<span class="ccard-active">ACTIVO</span>
+										<div class="d-flex align-items-center ccard-valid">
+											<span class="ccard-thru">VÁLIDO HASTA</span>
+											<span class="ccard-exp">08/25</span>
 										</div>
 									</div>
 								</div>
 							</div>
-							<hr>
-							<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;""><span class="fff">Balance:</span> <span id="playerBankMoney"></span> USD</p>
-							<p class="card-text text-center ccard-fs"><span class="fff">IBAN:</span> <span id="playerIBAN"></span></p>
 						</div>
+						<hr>
+						<p class="card-text text-center ccard-fs" style="margin-bottom: 1.1rem;"><span class="fff">Saldo:</span> <span id="playerBankMoney"></span> USD</p>
+						<p class="card-text text-center ccard-fs"><span class="fff">IBAN:</span> <span id="playerIBAN"></span></p>
 					</div>
-					<div class="card text-center h-100 actions-card">
-						<div class="card-header card-o-header">
-							<span class="card-o-title">Actions</span>
+				</div>
+				<div class="card text-center h-100 actions-card">
+					<div class="card-header card-o-header">
+						<span class="card-o-title">Acciones</span>
+					</div>
+					<div class="card-body actions-card_body">
+						<div class="d-flex justify-content-center">
+							<button type="button" id="depositMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#depositModal"><i class="bi bi-upload"></i> Depósito</button>
 						</div>
-						<div class="card-body actions-card_body">
-							<div class="d-flex justify-content-center">
-								<button type="button" id="depositMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#depositModal"><i class="bi bi-upload"></i> Deposit</button>
-							</div>
-							<div class="d-flex justify-content-center mt4375">
-								<button type="button" id="withdrawMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#withdrawModal"><i class="bi bi-download"></i> Withdraw</button>
-							</div>
-							<div class="d-flex justify-content-center mt4375">
-								<button type="button" id="transferMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#transferModal"><i class="fas fa-exchange-alt"></i> Transfer</button>
-							</div>
+						<div class="d-flex justify-content-center mt4375">
+							<button type="button" id="withdrawMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#withdrawModal"><i class="bi bi-download"></i> Retirar</button>
+						</div>
+						<div class="d-flex justify-content-center mt4375">
+							<button type="button" id="transferMoneyModal" class="btn btn-blue flex-grow-1" data-bs-toggle="modal" data-bs-target="#transferModal"><i class="fas fa-exchange-alt"></i> Transferir</button>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		`);
 
 		$("#playerBankMoney").html(event.data.societyInfo.value.toLocaleString());
@@ -1016,7 +1016,7 @@ function society_page_function(event) {
 				}
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-download"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
-							From <span class="lastT-name">${name}</span>
+							De <span class="lastT-name">${name}</span>
 							<div class="mtm3125">Recibido</div>
 						</td>`;
 				amount = `<td class="align-middle fw500 lastT-received"><span class="floatr">+ ${db.value.toLocaleString()} USD</span></td>`;
@@ -1052,7 +1052,7 @@ function society_page_function(event) {
 				}
 				icon = '<td class="align-middle"><span class="lastT-action"><i class="bi bi-upload"></i></span></td>';
 				data = `<td class="align-middle lastT-name-div">
-							From <span class="transactions-name">${name}</span>
+							De <span class="transactions-name">${name}</span>
 							<div class="mtm3125">Retirado</div>
 						</td>`;
 				amount = `<td class="align-middle fw500"><span class="floatr">- ${db.value.toLocaleString()} USD</span></td>`;
