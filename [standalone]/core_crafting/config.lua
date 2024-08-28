@@ -1,8 +1,8 @@
 Config = {
 
-BlipSprite = 237,
+/*BlipSprite = 237,
 BlipColor = 26,
-BlipText = 'Crafteo',
+BlipText = 'Crafteo',*/
 
 
 CraftingStopWithDistance = false, -- Crafting will stop when not near workbench
@@ -21,12 +21,12 @@ Categories = {
 		Label = 'Armas',
 		Image = 'WEAPON_APPISTOL',
 		Jobs = {}
-	},
-	['medical'] = {
+	}
+	/*['medical'] = {
 		Label = 'Primeros auxilios',
 		Image = 'bandage',
 		Jobs = {}
-	}
+	}*/
 },
 
 PermanentItems = { -- Items that dont get removed when crafting
@@ -35,7 +35,7 @@ PermanentItems = { -- Items that dont get removed when crafting
 
 Recipes = { -- Enter Item name and then the speed value! The higher the value the more torque
 
-	['bandage'] = {
+	/*['bandage'] = {
 		Level = 0, -- From what level this item will be craftable
 		Category = 'medical', -- The category item will be put in
 		isGun = false, -- Specify if this is a gun so it will be added to the loadout
@@ -49,7 +49,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 			['clothe'] = 2, -- item name and count, adding items that dont exist in database will crash the script
 			['wood'] = 1
 		}
-	}, 
+	}, */
 
 	['weapon_appistol'] = {
 		Level = 2, -- From what level this item will be craftable

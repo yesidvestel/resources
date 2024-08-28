@@ -631,23 +631,23 @@ function overview_page_function(event) {
 
 		if (event.data.isInSociety){
 			society = `<span class="sidebar-title mt-5">Society</span>
-					   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
+					   <p class="sidebar-item mt-2" id="society_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
 					   <p class="sidebar-item" id="society_transactions"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>`;
 		} else {
 			society = '';
 		}
 
 		$('#sidebar').html(`
-			<p class="sidebar-item mt-2 selected" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Overview</span></p>
+			<p class="sidebar-item mt-2 selected" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
 			<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>
-			<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Settings</span></p>
+			<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Ajustes</span></p>
 			${society}
 		`);
 
 		if(event.data.RequireCC) {
-			informations = `<span class="card-o-title">Informations<span class="badge bg-primary viewall-badge buy_new_card" data-bs-toggle="modal" data-bs-target="#buycc_modal"><i class="fa-solid fa-plus"></i> Nuevo</span></span>`;
+			informations = `<span class="card-o-title">Información<span class="badge bg-primary viewall-badge buy_new_card" data-bs-toggle="modal" data-bs-target="#buycc_modal"><i class="fa-solid fa-plus"></i> Nuevo</span></span>`;
 		} else {
-			informations = `<span class="card-o-title">Informations</span>`;
+			informations = `<span class="card-o-title">Información</span>`;
 		}
 
 		$('#page_info').addClass('row');
@@ -910,7 +910,7 @@ function society_page_function(event) {
 		$('#sidebar').html(`
 			<p class="sidebar-item mt-2" id="overview_page"><i class="bi bi-grid-1x2-fill"></i> <span class="ms-1">Resumen</span></p>
 			<p class="sidebar-item" id="transactions_page"><i class="fas fa-exchange-alt"></i> <span class="ms-1">Transacciones</span></p>
-			<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Settings</span></p>
+			<p class="sidebar-item mt-2" id="settings_page"><i class="fas fa-cog"></i> <span class="ms-1">Ajustes</span></p>
 			${society}
 		`);
 

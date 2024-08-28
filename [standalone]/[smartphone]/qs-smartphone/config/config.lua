@@ -742,7 +742,7 @@ Config.ResetPassword = {
         {
             coords = vec3(-626.22, -277.51, 35.58),
             money = 500,
-            text = '[E] - Telephone Technician',
+            text = '[E] - Técnico telefónico',
             ped = {
                 h = 118.6,
                 model = `hc_hacker`

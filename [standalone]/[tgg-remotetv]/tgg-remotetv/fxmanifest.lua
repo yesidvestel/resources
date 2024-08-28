@@ -57,4 +57,6 @@ escrow_ignore {
 
 lua54 'yes'
 
-dependency "generic_texture_renderer_gfx"
+data_file 'DLC_ITYP_REQUEST' 'stream/remotecontrol.ytyp'
+
+dependency "tgg-remotecontrol-prop/stream/generic_texture_renderer_gfx"

@@ -18,7 +18,7 @@ Config.FrameworkCore = 'qb-core' -- es_extended
 Config.UsableItem = false
 
 Config.CommandDescription = 'Open the remote control menu.' -- The command description.
-Config.Keybind = 'F2'                                       -- The keybind to open the TV menu.
+Config.Keybind = 'F5'                                       -- The keybind to open the TV menu.
 
 Config.DistanceToTv = 10.0                                  -- How far you can be from the TV to interact with it(suggested default is - 10.0).
 

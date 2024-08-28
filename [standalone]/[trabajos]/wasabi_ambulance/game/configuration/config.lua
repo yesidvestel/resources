@@ -502,7 +502,7 @@ Config.Locations = {
             Enabled = true,                              -- Enable ped and check-in area?
             Ped = 's_m_m_scientist_01',                  -- Check in ped
 ---- Updated upstream
-            Coords = vec3(304.47, -591.25, 42.15), -- Coords of ped
+            Coords = vec3(304.47, -591.25, 43.20), -- Coords of ped
 ---- Stashed changes
             Distance = 4.85,                             -- Distance to show textUI (If target is not enabled below)
             Heading = 63.26,                             -- Heading of ped

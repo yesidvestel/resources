@@ -15,11 +15,11 @@ Config = Config or {}
 --Config.OpenKey = Keys["HOME"]
 
 Config.OpenKey = Keys["F10"]
-Config.OpenKey1 = Keys["HOME"]
+Config.OpenKey1 = Keys["F5"]
 
 
 -- Max Server Players
-Config.MaxPlayers = GetConvarInt('sv_maxclients', 128) -- It returnes 64 if it cant find the Convar Int
+Config.MaxPlayers = GetConvarInt('sv_maxclients', 48) -- It returnes 64 if it cant find the Convar Int
 
 -- Minimum Police for Actions
 Config.IllegalActions = {
@@ -44,7 +44,7 @@ Config.IllegalActions = {
         busy = false,
     },
     ["casinorob"] = {
-        minimum = 1,
+        minimum = 4,
         busy = false,
     },
     ["subrob"] = {
