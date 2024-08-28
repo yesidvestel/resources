@@ -35,5 +35,5 @@ files {
 
 dependencies {
     'qb-core',
-    'qb-spawn'
+    'majestic-spawnselector'
 }

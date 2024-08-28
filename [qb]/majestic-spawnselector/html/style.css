@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: FontsFree-Net-DINPro-1;
+    src: url(fonts/FontsFree-Net-DINPro-1.ttf);
+}
+
+body {
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background-image: url(files/map.png);
+    font-family: FontsFree-Net-DINPro-1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 9%;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 1px;
+}
+
+#MDTop {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#MDTLine {
+    width: 100%;
+    height: 0.3%;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) top right / 50% 50% no-repeat;
+}
+
+#MDTLine2 {
+    width: 12%;
+    height: 0.3%;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #00e1ff;
+    box-shadow: #00e1ff00 0px 54px 55px, #00e1ff 0px -12px 30px, #00e1ff 0px 4px 6px, #00e1ff 0px 12px 13px, #00e1ff 0px -3px 5px;
+    border-radius: 4px;
+}
+
+#MDBottomLeft {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    bottom: 5%;
+    left: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#MDBottomLeft:hover {
+    transform: scale(1.05);
+}
+
+#MDBLInside {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.153);
+    background: rgba(0, 225, 255, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1px 17px;
+    padding-left: 14px;
+}
+
+.MDBLDiv {
+    width: 30%;
+    height: 49%;
+    position: relative;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#MDMarkerDiv {
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    gap: 10px;
+    z-index: calc();
+}
+
+.MDMDLeftSide {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.MDMDLeftSide:hover .MDMDLDDiv1 {
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(134deg, rgba(0, 169, 255, 0.31) 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDLeftSide:hover .MDMDLDDiv2 {
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(124deg, #00e1ff 14.38%, #00e1ff 34.32%, #00e1ff 50.36%, #00e1ff 63.65%, #00e1ff 99.97%);
+    box-shadow: 0px 4px 4px 0px #00e1ff;
+    color: white;
+}
+
+.MDMDLeftSide:hover .MDMDLDDiv3 {
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(134deg, #00e1ff 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDLDDiv1 {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    left: 15%;
+    transform: rotate(-45deg);
+    border-radius: 3px;
+    background: linear-gradient(134deg, rgba(255, 255, 255, 0.25) 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDLDDiv2 {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    left: 15%;
+    right: 0;
+    margin: auto;
+    transform: rotate(135deg);
+    border-radius: 3px;
+    background: linear-gradient(134deg, #FFF 14%, #B0B0B0 34.06%, #B0B0B0 50.21%, #B0B0B0 63.59%, #FFF 100.14%);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.MDMDLDDiv3 {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    right: 0;
+    transform: rotate(135deg);
+    border-radius: 3px;
+    background: linear-gradient(134deg, rgba(255, 255, 255, 0.25) 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDRightSide {
+    width: 65%;
+    height: 60%;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    clip-path: polygon(75% 0%, 84% 50%, 75% 100%, 0% 100%, 10% 49%, 0% 0%);
+    border-radius: 3px;
+    background: linear-gradient(124deg, #00e1ff 14.38%, #00e1ff 34.32%, #00e1ff 50.36%, #00e1ff 63.65%, #00e1ff 99.97%);
+    box-shadow: 0px 4px 4px 0px #00e1ff;
+}
+
+#MDBottomCenter {
+    width: 25%; 
+    height: 15%;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+
+#MDBCRadial {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFF, #B0B0B0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#MDBCRadial:hover {
+    background: linear-gradient(135deg, #00e1ff, #00dfbd);
+    transform: scale(1.1);
+}
+
+#MDBottomCenterH4 {
+    color: #FFF;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+#MDBottomCenterH4:hover {
+    border-bottom: 2px solid #00e1ff;
+}
