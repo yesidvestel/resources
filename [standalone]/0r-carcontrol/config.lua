@@ -10,7 +10,7 @@ Keys = {
 }
 
 Config = {
-    MenuxKey = keys["["],
+    MenuxKey = keys["8"],
     Framework = 'qb', -- 'qb', 'oldqb', 'esx', 'oldesx'
     Sql = 'oxmysql',
     EnableMileageSystem = true, -- Enable mileage system

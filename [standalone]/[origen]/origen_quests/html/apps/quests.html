@@ -1,0 +1,70 @@
+<div class="app-container admin-quests">
+    <div class="scale-in">
+        <div class="d-flex justify-content-between app-title">
+            <h1>
+                <div translate="QuestsManagement">Quests Management</div>
+            </h1>
+            <div class="d-flex">
+                <div
+                    class="btn-action add-location me-2"
+                    onClick="npcFunctions.loadModalLocation()">
+                    <i class="fas fa-plus"></i>
+                    <span translate="AddLocation">Add Location</span>
+                </div>
+                <div
+                    class="btn-action add-mision"
+                    onClick="npcFunctions.loadModalMision()">
+                    <i class="fas fa-plus"></i>
+                    <span translate="AddMission">Add Mission</span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin:1.3vw !important;">
+            <div class="col-6">
+                <div class="bg-box h-max mt-3">
+                    <h5 class="title-1" translate="LocationsList">Locations List</h5>
+                    <div
+                        class="search-bar d-flex align-items-center justify-content-center mt-3">
+                        <i class="fa-solid fa-magnifying-glass ms-2"></i>
+                        <input
+                            type="text"
+                            class="search-input-ubicaciones"
+                            placeholder="Search..."
+                            onkeyup="Search('ubicaciones')" />
+                    </div>
+                    <div class="scroll-npc info-box" 
+                        style="margin-top: 1.5vh !important">
+                        <ul class="list-group lista-ubicaciones">
+                            <li class="list-group-item">
+                                <i translate="NoLocationsAdded">No locations added</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bg-box h-max mt-3">
+                    <h5 class="title-1" translate="MissionsList">Missions List</h5>
+                    <div
+                        class="search-bar d-flex align-items-center justify-content-center mt-3">
+                        <i class="fa-solid fa-magnifying-glass ms-2"></i>
+                        <input
+                            type="text"
+                            class="search-input-misiones"
+                            placeholder="Search..."
+                            onkeyup="Search('misiones')" />
+                    </div>
+                    <div class="scroll-npc info-box" 
+                        style="margin-top: 1.5vh !important"
+                        id="misiones">
+                        <ul class="list-group lista-misiones">
+                            <li class="list-group-item">
+                                <i translate="NoMissionsAdded">No missions added</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
