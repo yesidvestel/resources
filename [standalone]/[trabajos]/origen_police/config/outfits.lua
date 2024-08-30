@@ -6,7 +6,7 @@ Config.Outfits = {
                 outfitData = {
                     ["pants"] = {item = 110, texture = 2}, -- Pants
                     ["arms"] = {item = 17, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 40, texture = 0}, -- T Shirt
+                    ["t-shirt"] = {item = 58, texture = 0}, -- T Shirt
                     ["vest"] = {item = 0, texture = 0}, -- Body Vest
                     ["torso2"] = {item = 143, texture = 0}, -- Jacket
                     ["shoes"] = {item = 129, texture = 0}, -- Shoes
@@ -44,7 +44,7 @@ Config.Outfits = {
                 outfitData = {
                     ["pants"] = {item = 110, texture = 2}, -- Pants
                     ["arms"] = {item = 24, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 40, texture = 0}, -- T Shirt
+                    ["t-shirt"] = {item = 58, texture = 0}, -- T Shirt
                     ["vest"] = {item = 0, texture = 0}, -- Body Vest
                     ["torso2"] = {item = 113, texture = 0}, -- Jacket
                     ["shoes"] = {item = 129, texture = 0}, -- Shoes
@@ -80,16 +80,16 @@ Config.Outfits = {
             {
                 name = "SWAT",
                 outfitData = {
-                    ["pants"] = {item = 130, texture = 1}, -- Pants
+                    ["pants"] = {item = 179, texture = 0}, -- Pants
                     ["arms"] = {item = 172, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 15, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 15, texture = 2}, -- Body Vest
-                    ["torso2"] = {item = 336, texture = 3}, -- Jacket
-                    ["shoes"] = {item = 24, texture = 0}, -- Shoes
+                    ["vest"] = {item = 15, texture = 0}, -- Body Vest
+                    ["torso2"] = {item = 262, texture = 5}, -- Jacket
+                    ["shoes"] = {item = 33, texture = 0}, -- Shoes
                     ["accessory"] = {item = 133, texture = 0}, -- Neck Accessory
                     ["hat"] = {item = 150, texture = 0}, -- Hat
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["mask"] = {item = 52, texture = 0} -- Mask
+                    ["mask"] = {item = 0, texture = 0} -- Mask
                 },
                 job = {"police"},
                 grades = {3, 4},
