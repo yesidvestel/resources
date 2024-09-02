@@ -58,7 +58,7 @@ end
 
 -- Discord logging function
 local function sendToDiscord(name, message, color)
-    local discordWebhook = "https://discord.com/api/webhooks/1275951226223198309/hTNdECV7Lg0QwOdtHWJfRDe8FBXNJ-4AEmBovUsj3MELsMKvIWQgugaUfbEesJE5w_YN" -- Replace with your Discord webhook URL
+    local discordWebhook = "https://canary.discord.com/api/webhooks/1255278139291209831/rmq4wlFMeMTEHiU1fnQ08jWhHdrJ5e4wJ7ETkBOuzm1I82w2Qi_-u57NUIO1rjUNUY_D" -- Replace with your Discord webhook URL
     
     local embeds = {
         {
@@ -67,7 +67,7 @@ local function sendToDiscord(name, message, color)
             ["color"] = color,
             ["description"] = message,
             ["footer"] = {
-                ["text"] = "Comuna Latín Vice Logs",
+                ["text"] = "Pappu MultiCharacter Logs",
             },
             ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%SZ") -- Adding timestamp in ISO 8601 format
         }
@@ -264,24 +264,18 @@ QBCore.Functions.CreateCallback("pappu-multicharacter:server:GetNumberOfCharacte
 end)
 
 QBCore.Functions.CreateCallback("pappu-multicharacter:server:setupCharacters", function(source, cb)
-    local license, license2 = GetPlayerIdentifierByType(source, 'license'), GetPlayerIdentifierByType(source, 'license2')
+    local license, license2 = GetPlayerIdentifierByType(src, 'license'), GetPlayerIdentifierByType(src, 'license2')
     local plyChars = {}
-    
-    if license then
-        MySQL.query('SELECT * FROM players WHERE license = ? or license = ?', {license, license2}, function(result)
-            for i = 1, (#result), 1 do
-                result[i].charinfo = json.decode(result[i].charinfo)
-                result[i].money = json.decode(result[i].money)
-                result[i].job = json.decode(result[i].job)
-                plyChars[#plyChars+1] = result[i]
-            end
-            cb(plyChars)
-        end)
-    else
-        cb(nil)
-    end
+    MySQL.query('SELECT * FROM players WHERE license = ? or license = ?', {license, license2}, function(result)
+        for i = 1, (#result), 1 do
+            result[i].charinfo = json.decode(result[i].charinfo)
+            result[i].money = json.decode(result[i].money)
+            result[i].job = json.decode(result[i].job)
+            plyChars[#plyChars+1] = result[i]
+        end
+        cb(plyChars)
+    end)
 end)
-
 
 QBCore.Functions.CreateCallback("pappu-multicharacter:server:getSkin", function(_, cb, cid)
     local result = MySQL.query.await('SELECT * FROM playerskins WHERE citizenid = ? AND active = ?', {cid, 1})
