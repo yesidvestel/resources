@@ -1129,3 +1129,24 @@ end)
             },
         distance = 1.0
     })
+
+    exports('MenuGarage', MenuGarage) 
+    exports('enterVehicle', enterVehicle)
+ 
+    -- reemplace this function
+    local function CheckPlayers(vehicle, garage)
+        for i = -1, 5, 1 do
+            local seat = GetPedInVehicleSeat(vehicle, i)
+            if seat then
+                TaskLeaveVehicle(seat, vehicle, 0)
+                if garage then
+                    if not garage.takeVehicle then garage.takeVehicle = GetEntityCoords((PlayerPedId())) end
+    
+                    SetEntityCoords(seat, garage.takeVehicle.x, garage.takeVehicle.y, garage.takeVehicle.z)
+                end
+            end
+        end
+        SetVehicleDoorsLocked(vehicle)
+        Wait(1500)
+        QBCore.Functions.DeleteVehicle(vehicle)
+    end

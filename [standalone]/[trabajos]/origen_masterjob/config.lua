@@ -8,7 +8,7 @@ Config.KeyMenu = 'F7' -- Key to open the menu
 
 Config.fixQS = true -- fix qs metadata
 
-Config.Phone = "default" -- default, qs-smartphone, lb-phone
+Config.Phone = "qs-smartphone" -- default, qs-smartphone, lb-phone
 
 -- Added compatibility for OrigenNotify
 Config.OrigenNotify = false -- Enable CustomNotify as well:)

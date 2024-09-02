@@ -28,7 +28,7 @@ p { margin: 0 !important; }
     --color-primary-inventory-bg: radial-gradient(90% 90% at 45% 45%, rgba(10, 15, 20, 0.9), rgba(15, 20, 25, 0.9));
     --color-primary: rgba(8, 8, 8, 0.9);
     --color-secondary: rgba(18, 18, 18, 0.9);
-    --color-accent: rgb(85, 233, 171);
+    --color-accent: #00FFFF;
 }
 
 .fas.fa-lock {
@@ -94,8 +94,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .item-slot-name1 > p {
-    color: #31d4a9; 
-    text-shadow: 0 0 1vh #31d4a9 !important;
+    color: #00FFFF; 
+    text-shadow: 0 0 1vh #00FFFF !important;
     text-align: right;
     font-size: 1.25vh;
     font-weight: 400;
@@ -122,14 +122,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .pro {
-    background: rgba(154, 255, 216, 0.9) !important;
+    background: #00FFFF !important;
     height: 6px;
     max-width: 100%;
     transition: width 1s, background-color 1s;
 }
 
 .pro1 {
-    background: rgba(154, 255, 216, 0.9) !important;
+    background: #00FFFF !important;
     height: 6px;
     max-width: 100%;
     transition: width 1s, background-color 1s;
@@ -266,8 +266,8 @@ body {
 .player-inventory > .item-slot > .item-slot-key > p {
     position: absolute; 
     font-weight: 400; 
-    color: #31d4a9; 
-    text-shadow: 0 0 1vh #31d4a9 !important;
+    color: #00FFFF; 
+    text-shadow: 0 0 1vh #00FFFF !important;
     padding: .1vh; 
     width: 2.15vh;
     text-align: center; 
@@ -281,8 +281,8 @@ body {
 /* .player-inventory-first > .item-slot > .item-slot-key > p {
     position: absolute; 
     font-weight: 400; 
-    color: #31d4a9; 
-    text-shadow: 0 0 1vh #31d4a9 !important;
+    color: #00FFFF; 
+    text-shadow: 0 0 1vh #00FFFF !important;
     border-radius: 5px;
     background-color: rgba(49, 212, 169, 0.1) !important;
     border: 1px solid rgba(55, 55, 55, 1);
@@ -399,7 +399,7 @@ body {
 
 .item-slot:hover {
     background: rgba(46, 195, 161, 0.2) !important;
-    border: #2bae8f 2px solid !important;
+    border: #00FFFF 2px solid !important;
     border-radius: 10px;
 }
 
@@ -634,7 +634,7 @@ body {
 
 .ui-draggable-dragging {
     background: rgba(46, 195, 161, 0.2);
-    border: #2bae8f 2px solid;
+    border: #00FFFF 2px solid;
 }
 
 .player-inv-info {
@@ -783,7 +783,7 @@ body {
 
 .item-shit-option:hover{
     cursor: pointer;
-    background: #2bae8f;
+    background: #00FFFF;
 }
 
 .item-shit-option > * {
@@ -858,11 +858,11 @@ body {
     width: 10vh;
     height: 11vh;
     background-color: rgba(49, 212, 169, 0.6);
-    box-shadow: 0 0 1vh #31d4a9;
-	border-left: 2px solid #31d4a9;
-    border-right: 2px solid #31d4a9;
-    border-top: 2px solid #31d4a9;
-    border-bottom: 17px solid #31d4a9;
+    box-shadow: 0 0 1vh #00FFFF;
+	border-left: 2px solid #00FFFF;
+    border-right: 2px solid #00FFFF;
+    border-top: 2px solid #00FFFF;
+    border-bottom: 17px solid #00FFFF;
 }
 
 #itembox-action {
@@ -997,8 +997,8 @@ body {
     font-family: 'Oswald', sans-serif !important;
     position: absolute; 
     font-weight: 400; 
-    color: #31d4a9; 
-    text-shadow: 0 0 1vh #31d4a9 !important;
+    color: #00FFFF; 
+    text-shadow: 0 0 1vh #00FFFF !important;
     border-radius: 5px;
     background-color: rgba(49, 212, 169, 0.1) !important;
     border: 1px solid rgba(55, 55, 55, 1);
@@ -1540,10 +1540,10 @@ body {
 	top: 50.5%;
 	text-align: center;
 	font-size: 23px;
-	color: #31d4a9;
+	color: #00FFFF;
 	background-color: rgba(49, 212, 169, 0.3);
-    box-shadow: 0 0 1vh #31d4a9;
-	border: 1px solid #31d4a9;
+    box-shadow: 0 0 1vh #00FFFF;
+	border: 1px solid #00FFFF;
 } */
 
 /* Pockets */
@@ -1619,17 +1619,17 @@ body {
 }
 
 #item-use:hover{ 
-    background: #2bae8f !important;
+    background: #00FFFF !important;
 }
 
 #item-give:hover{
-    background: #2bae8f !important;
+    background: #00FFFF !important;
 }
 
 
 /* Item Amount Slider */
 #item-split:hover {
-    background: #2bae8f !important;
+    background: #00FFFF !important;
 }
 
 
