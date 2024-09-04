@@ -1,7 +1,7 @@
 -- Author : Morow
 -- Github : https://github.com/Morow73
 
-_G.language = "en" -- change translation, 'en' or 'fr'
+_G.language = "es" -- change translation, 'en' or 'fr'
 _G.translation = {}
 
 if IsDuplicityVersion() then

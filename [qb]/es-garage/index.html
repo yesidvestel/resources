@@ -16,10 +16,10 @@
 
     <div class="header" ref="header">
       <svg width="118.625rem" height="18.75rem" viewBox="0 0 1898 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <text transform="translate(643 82)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="20" font-weight="500" letter-spacing="0em"><tspan x="0" y="22">INFORMATION ABOUT&#10;</tspan><tspan x="0" y="52">YOUR GARAGE</tspan></text>
-        <text transform="translate(1111 82)" fill="white" fill-opacity="0.22" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="0" y="15.4">TOTAL CARS</tspan></text>
+        <text transform="translate(643 82)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="20" font-weight="500" letter-spacing="0em"><tspan x="0" y="22">INFORMACIÓN SOBRE&#10;</tspan><tspan x="0" y="52">TU GARAJE</tspan></text>
+        <text transform="translate(1111 82)" fill="white" fill-opacity="0.22" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="0" y="15.4">TOTAL DE COCHES</tspan></text>
         <text transform="translate(1111 97)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="36" letter-spacing="0em"><tspan x="39.7188" y="39.6">{{car.length}}</tspan></text>
-        <text transform="translate(874 83)" fill="white" fill-opacity="0.22" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="0.238281" y="11.9">CARS ON THE STREET</tspan></text>
+        <text transform="translate(874 83)" fill="white" fill-opacity="0.22" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="0.238281" y="11.9">COCHES EN LA CALLE</tspan></text>
         <text transform="translate(894 97)" fill="#0055FF" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="36" letter-spafcing="0em"><tspan x="91.7617" y="39.6">{{impound}}</tspan></text>
         <g filter="url(#filter0_bd_392_1520)">
         <rect x="1409" y="75" width="374" height="86" rx="5" fill="url(#paint0_linear_392_1520)" fill-opacity="0.2" shape-rendering="crispEdges"/>
@@ -74,12 +74,12 @@
         <stop offset="1" stop-color="#151515" stop-opacity="0"/>
         </radialGradient>
         <linearGradient id="paint4_linear_392_1520" x1="611.5" y1="86" x2="611.5" y2="142" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#6100FF"/>
+        <stop stop-color="#00FFFF"/>
         <stop offset="1" stop-color="#0094FF"/>
         </linearGradient>
         </defs>
         </svg>
-        <input v-model="searchQuery" type="text" placeholder="SEARTH CAR">
+        <input v-model="searchQuery" type="text" placeholder="BUSCAR COCHE">
     </div>
 
     <div class="bar">
@@ -96,7 +96,7 @@
             <p class="title">{{ vehicle.title }}</p>
           </div>
           <div class="favorite">
-            <span class="icon">⭐</span> ADD TO FAVORITES
+            <span class="icon">⭐</span> AGREGAR A FAVORITOS
           </div>
           <img :src="`./assets/car/${vehicle.model}.png`" :alt="vehicle.vehicle" class="car-image" />
         </div>
@@ -108,13 +108,13 @@
         <g filter="url(#filter0_bd_392_1540)">
         <g clip-path="url(#clip0_392_1540)">
         <rect x="497" y="91" width="425" height="382" rx="15" transform="rotate(90 497 91)" fill="url(#paint0_linear_392_1540)" fill-opacity="0.2" shape-rendering="crispEdges"/>
-        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="149" y="144.508">INFORMATION ABOUT YOUR CAR:</tspan></text>
-        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="205.34">NAME:</tspan></text>
+        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="149" y="144.508">INFORMACIÓN SOBRE SU COCHE:</tspan></text>
+        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="205.34">NOMBRE:</tspan></text>
         <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="400" y="201.34">{{select.name}}</tspan></text>
-        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="233.34">NUBMER PLATE:</tspan></text>
+        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="233.34">MATRÍCULA:</tspan></text>
         <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="400" y="233.34">{{select.plate}}</tspan></text>
-        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="265.34">CAR ID:</tspan></text>
-        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="297.34">THE CAR IS LOCATED:</tspan></text>
+        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="265.34">COCHE ID:</tspan></text>
+        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="149" y="297.34">EL COCHE SE ENCUENTRA:</tspan></text>
         <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="400" y="265.34">{{select.id}}</tspan></text>
         <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="405" y="297.34">{{select.located}}</tspan></text>
         </g>
@@ -141,19 +141,19 @@
         <stop offset="1" stop-opacity="0.15"/>
         </linearGradient>
         <linearGradient id="paint1_linear_392_1540" x1="404" y1="367" x2="404" y2="619" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#6100FF"/>
+        <stop stop-color="#00FFFF"/>
         <stop offset="1" stop-color="#0094FF"/>
         </linearGradient>
         <linearGradient id="paint2_linear_392_1540" x1="238.5" y1="408" x2="238.5" y2="494" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#6100FF"/>
+        <stop stop-color="#00FFFF"/>
         <stop offset="1" stop-color="#0094FF"/>
         </linearGradient>
         <linearGradient id="paint3_linear_392_1540" x1="340" y1="441" x2="340" y2="628" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#6100FF"/>
+        <stop stop-color="#00FFFF"/>
         <stop offset="1" stop-color="#0094FF"/>
         </linearGradient>
         <linearGradient id="paint4_linear_392_1540" x1="256" y1="482" x2="256" y2="586" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#6100FF"/>
+        <stop stop-color="#00FFFF"/>
         <stop offset="1" stop-color="#0094FF"/>
         </linearGradient>
         <radialGradient id="paint5_radial_392_1540" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(709.5 282) rotate(-135.634) scale(379.292 295.219)">
@@ -178,17 +178,17 @@
     <div class="button">
       <svg width="23.875rem" height="13.75rem" viewBox="0 0 382 220" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect @click="spawn" y="105" width="382" height="88" rx="8" fill="url(#paint0_linear_471_1800)"/>
-        <text @click="spawn" fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="118.889" y="156.84">USE THIS VEHICLE</tspan></text>
+        <text @click="spawn" fill="white" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="118.889" y="156.84">UTILICE ESTE VEHÍCULO</tspan></text>
         <rect @click="parked" width="382" height="88" rx="8" fill="url(#paint1_linear_471_1800)" fill-opacity="0.1"/>
         <text @click="parked" v-if="select.state === 0" fill="white" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em">
-          <tspan x="70.4609" y="51.84">PARK THE CAR IN THE GARAGE</tspan>
+          <tspan x="70.4609" y="51.84">APARCAR EL COCHE EN EL GARAJE</tspan>
         </text>
         <text text-anchor="middle" v-else fill="white" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Rajdhani" font-size="20" font-weight="600" letter-spacing="0em">
-          <tspan x="195.4609" y="51.84">VEHICLE REMAINS PARKED</tspan>
+          <tspan x="195.4609" y="51.84">EL VEHÍCULO PERMANECE ESTACIONADO</tspan>
         </text>
         <defs>
         <linearGradient id="paint0_linear_471_1800" x1="28.8983" y1="156.333" x2="286.667" y2="147.327" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#6100FF"/>
+        <stop stop-color="#00FFFF"/>
         <stop offset="1" stop-color="#8000FF"/>
         </linearGradient>
         <linearGradient id="paint1_linear_471_1800" x1="28.8983" y1="51.3333" x2="286.667" y2="42.3274" gradientUnits="userSpaceOnUse">

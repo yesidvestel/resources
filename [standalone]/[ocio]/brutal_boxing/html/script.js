@@ -194,7 +194,7 @@ function RefreshBoxingMenu(){
         document.getElementById("player_btn"+i).remove()
       }
       $("#player_container"+i).append(`
-      <button class="basic_btn px-3 mt-3" id="player_btn${i}" onclick="Join(id)">JOIN</button>
+      <button class="basic_btn px-3 mt-3" id="player_btn${i}" onclick="Join(id)">UNIRSE</button>
       `)
     }
 
@@ -268,7 +268,7 @@ function ShowPlayerDetails(k){
   }
   else{
     $("#player_container"+number).append(`
-    <button class="basic_btn px-3 mt-3" id="player_btn${number}" disabled onclick="Join(id)">JOIN</button>
+    <button class="basic_btn px-3 mt-3" id="player_btn${number}" disabled onclick="Join(id)">UNIRSE</button>
     `)
   }
 }
@@ -300,15 +300,15 @@ function Leave(id){
 function StartButtonCheck(){
   if(Areatable.player1.id != null && Areatable.player2.id != null && PlayerInGame){
     document.getElementById("start_btn").disabled = false
-    document.getElementById("start_btn").innerHTML = "START"
+    document.getElementById("start_btn").innerHTML = "INICIAR"
   }
   else if(PlayerInGame == false && Areatable.player1.id != null && Areatable.player2.id != null){
     document.getElementById("start_btn").disabled = true
-    document.getElementById("start_btn").innerHTML = "FULL"
+    document.getElementById("start_btn").innerHTML = "LLENO"
   }
   else{
     document.getElementById("start_btn").disabled = true
-    document.getElementById("start_btn").innerHTML = "START"
+    document.getElementById("start_btn").innerHTML = "INICIAR"
   }
 }
 
