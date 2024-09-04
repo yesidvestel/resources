@@ -504,8 +504,8 @@ Config.Booth = {
 --██████╦╝██║░░██║░░░██║░░░░░░██║░░░███████╗██║░░██║░░░██║░░░
 --╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░
 
-Config.EnableBattery = true -- Do you want to enable the battery?
-Config.HousingCharge = true -- Phone charger inside the houses?
+Config.EnableBattery = false -- Do you want to enable the battery?
+Config.HousingCharge = false -- Phone charger inside the houses?
 
 -- Only load battery information when a player enters the server: playerLoaded, !! Don't restart the live resource because it will break. !!
 Config.BatteryPersistData = true   -- Persist data on battery.json

@@ -89,20 +89,28 @@ $(function(){
     $(".container .box").mouseout(function(){         
       $(this).css('transform',"matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)");
     });
-})
 
-function btnClick(action){
-    if (action === 'custom-1') {
-        window.location.href = "https://comunalatinvicerp.netlify.app/#shop";
-    } else if (action === 'custom-2') {
-        window.location.href = "https://forms.gle/gJ1477bBaVMd5H449";
-    } else {
-        $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action }));
+    // Function to handle window close
+    function closeWindow() {
+        $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action: 'close' }));
     }
-}
 
-$(window).on("keydown", function ({ originalEvent: { key } }) {
-	if (key == "Escape") {
-        $.post(`https://${GetParentResourceName()}/action`);
-	}
-})
+    // Handle ESC key press to close the window
+    $(window).on("keydown", function ({ originalEvent: { key } }) {
+        if (key === "Escape") {
+            closeWindow();
+        }
+    });
+
+    // Update btnClick to include close functionality
+    function btnClick(action){
+        if (action === 'custom-1') {
+            window.location.href = "https://comunalatinvicerp.netlify.app/#shop";
+        } else if (action === 'custom-2') {
+            window.location.href = "https://forms.gle/gJ1477bBaVMd5H449";
+        } else {
+            $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action }));
+        }
+    }
+});
+
