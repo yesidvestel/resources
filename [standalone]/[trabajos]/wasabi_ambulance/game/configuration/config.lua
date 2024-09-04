@@ -502,7 +502,7 @@ Config.Locations = {
             Enabled = true,                              -- Enable ped and check-in area?
             Ped = 's_m_m_scientist_01',                  -- Check in ped
 ---- Updated upstream
-            Coords = vec3(304.47, -591.25, 43.20), -- Coords of ped
+            Coords = vec3(304.82, -591.71, 43.27), -- Coords of ped
 ---- Stashed changes
             Distance = 4.85,                             -- Distance to show textUI (If target is not enabled below)
             Heading = 63.26,                             -- Heading of ped
@@ -517,7 +517,7 @@ Config.Locations = {
                 enabled = true,                          -- Enable Target? (Can be customized in wasabi_bridge/customize/cl_customize.lua the target system)
                 label = 'Check In',
 --- Updated upstream
-                coords = vec3(304.47, -591.25, 42.15),
+                coords = vec3(305.0, -591.36, 43.27),
 --- Stashed changes
                 heading = 63.26,
                 distance = 5.0,

@@ -305,7 +305,7 @@ end
 --░░╚██╔╝░╚██╔╝░███████╗░░░██║░░░  ██║░░░░░██║░░██║╚█████╔╝██║░╚███║███████╗
 --░░░╚═╝░░░╚═╝░░╚══════╝░░░╚═╝░░░  ╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝
 
-Config.WetPhone = false                  -- Being in the water, the phone will break and will give you the same item but with the prefix "wet_".
+Config.WetPhone = true                  -- Being in the water, the phone will break and will give you the same item but with the prefix "wet_".
 Config.RepairWetPhone = 'phone_module'   -- With said item, we can repair the wet phone.
 Config.RepairWetPhoneNpc = true          -- Be able to repair your phone with the NPC Telephone Technician.
 Config.RepairWetPhoneNpcPrice = 100      -- Price to repair a wet phone in the Technician.

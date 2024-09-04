@@ -198,14 +198,14 @@ async function getBase64Image(src, removeImageBackGround, callback, outputFormat
         if(tempUrl == translations["default_image"]){
             
         
-            $('#char-'+char.cid).html('<div class="character-div"><div class="user"> <img src="'+tempUrl +'" alt="'+char.cid +'photo" /></div><span id="slot-name">'+char.charinfo.firstname+' '+char.charinfo.lastname+'<span id="cid">' + char.citizenid + '</span></span><div class="user3"><img  src="' + translations["default_right_image"] + '" alt="plus" /></div></div>  <div class="btns" style=""> <div class="character-btn" id="select" style="display: block;"><p id="select-text"><i "="">'+translations["select"]+'</i></p></div> </div>');
+            $('#char-'+char.cid).html('<div class="character-div"><div class="user"> <img src="'+tempUrl +'" alt="'+char.cid +'photo" /></div><span id="slot-name">'+char.charinfo.firstname+' '+char.charinfo.lastname+'<span id="cid">' + char.citizenid + '</span></span><div class="user3"><img  src="' + translations["default_right_image"] + '" alt="" /></div></div>  <div class="btns" style=""> <div class="character-btn" id="select" style="display: block;"><p id="select-text"><i "="">'+translations["select"]+'</i></p></div> </div>');
             $('#char-'+char.cid).data('cData', char)
             $('#char-'+char.cid).data('cid', char.cid)
         }else{
             
             getBase64Image(tempUrl, true, function(dataUrl) {
                 tempUrl = dataUrl
-            $('#char-'+char.cid).html('<div class="character-div"><div class="user"> <img src="'+tempUrl +'" alt="'+char.cid +'photo" /></div><span id="slot-name">'+char.charinfo.firstname+' '+char.charinfo.lastname+'<span id="cid">' + char.citizenid + '</span></span><div class="user3"><img  src="' + translations["default_right_image"] + '" alt="plus" /></div></div>  <div class="btns" style=""> <div class="character-btn" id="select" style="display: block;"><p id="select-text"><i "="">'+translations["select"]+'</i></p></div> </div>');
+            $('#char-'+char.cid).html('<div class="character-div"><div class="user"> <img src="'+tempUrl +'" alt="'+char.cid +'photo" /></div><span id="slot-name">'+char.charinfo.firstname+' '+char.charinfo.lastname+'<span id="cid">' + char.citizenid + '</span></span><div class="user3"><img  src="' + translations["default_right_image"] + '" alt="" /></div></div>  <div class="btns" style=""> <div class="character-btn" id="select" style="display: block;"><p id="select-text"><i "="">'+translations["select"]+'</i></p></div> </div>');
             $('#char-'+char.cid).data('cData', char)
             $('#char-'+char.cid).data('cid', char.cid)}
             )
