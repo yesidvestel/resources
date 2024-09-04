@@ -1,5 +1,5 @@
 local ESX = nil
-local QBCore = nil 
+local QBCore = nil
 local FrameworkFound = nil
 local nuiOpen = false
 local modelCreated = {}
@@ -23,6 +23,8 @@ LoadFramework = function()
         end
     elseif Config.Framework == 'standalone' then
         FrameworkFound = 'standalone'
+    else
+        print('[Ricky-VinewoodSign] Error: Framework configuration not recognized.')
     end
 end
 
@@ -41,18 +43,20 @@ AddEventHandler('ricky-vinewood:openNui', function(text, color)
     })
     SendNUIMessage({
         type = "OPEN",
-        text = text,
-        color = color
+        text = text or '',
+        color = color or ''
     })
 end)
 
-RegisterNUICallback('saveText', function(data)
+RegisterNUICallback('saveText', function(data, cb)
     TriggerServerEvent('ricky-vinewood:saveText', data)
+    cb('ok')
 end)
 
-RegisterNUICallback('close', function(data)
+RegisterNUICallback('close', function(data, cb)
     nuiOpen = false
     SetNuiFocus(false, false)
+    cb('ok')
 end)
 
 RegisterNetEvent('ricky-vinewood:saveText')
@@ -61,15 +65,15 @@ AddEventHandler('ricky-vinewood:saveText', function(data)
     if nuiOpen then 
         SendNUIMessage({
             type = "UPDATE",
-            text = data[1],
-            color = data[2]
+            text = data[1] or '',
+            color = data[2] or ''
         })
     end
 end)
 
 AddEventHandler('onResourceStop', function(resource)
     if resource == GetCurrentResourceName() then
-        for k, v in pairs(modelCreated) do
+        for _, v in ipairs(modelCreated) do
             DeleteEntity(v)
         end
     end
@@ -85,32 +89,30 @@ hexToRgb = function(hex)
 end
 
 UpdateMap = function(data)
-    for k, v in pairs(modelCreated) do
+    for _, v in ipairs(modelCreated) do
         DeleteEntity(v)
     end
     modelCreated = {}
-    if not data then return end
+    if not data or not data[1] then return end
     local completeText = data[1]
-    if not completeText then return end
-    for i=1, #completeText, 1 do 
-        if i > 8 then 
-            return 
-        end
-        local string = completeText:sub(i, i)
-        local model = string
-        local coords = Config.Coords[i].coordinate
-        local heading = Config.Coords[i].heading
-        model = model
-        if model ~= " " then
-            RequestModel(model)
-            while not HasModelLoaded(model) do
-                Wait(1)
-            end
+    for i = 1, math.min(#completeText, 8) do 
+        local char = completeText:sub(i, i)
+        local model = char
+        local coord = Config.Coords[i]
+        if coord then
+            local coords = coord.coordinate
+            local heading = coord.heading
+            if model ~= " " then
+                RequestModel(model)
+                while not HasModelLoaded(model) do
+                    Wait(1)
+                end
 
-            local obj = CreateObject(model, coords, false, false, false)
-            SetEntityHeading(obj, heading)
-            table.insert(modelCreated, obj)
-            SetColorModel(model, "techdevontop", hexToRgb(data[2]))
+                local obj = CreateObject(model, coords, false, false, false)
+                SetEntityHeading(obj, heading)
+                table.insert(modelCreated, obj)
+                SetColorModel(model, "techdevontop", hexToRgb(data[2]))
+            end
         end
     end
 end
@@ -120,8 +122,7 @@ SetColorModel = function(model, textureName, colorRgb)
     local txn = 'txn_vinewood_sign'
     local dict = CreateRuntimeTxd(txd)
     local texture = CreateRuntimeTexture(dict, txn, 4, 4)
-    local resolution = GetTextureResolution(txd, txn)
-    if(colorRgb.r == 255 and colorRgb.g == 255 and colorRgb.b == 255) then
+    if colorRgb.r == 255 and colorRgb.g == 255 and colorRgb.b == 255 then
         RemoveReplaceTexture("mainTexture", textureName)
     else
         SetRuntimeTexturePixel(texture, 0, 0, colorRgb.r, colorRgb.g, colorRgb.b, 255)

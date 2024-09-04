@@ -1,5 +1,5 @@
 local ESX = nil
-local QBCore = nil 
+local QBCore = nil
 local FrameworkFound = nil
 
 LoadFramework = function()
@@ -21,9 +21,11 @@ LoadFramework = function()
         end
     elseif Config.Framework == 'standalone' then
         FrameworkFound = 'standalone'
+    else
+        print('[Ricky-VinewoodSign] Error: Framework configuration not recognized.')
     end
 
-    print('[Ricky-VinewoodSign] Framework found: ' .. FrameworkFound)
+    print('[Ricky-VinewoodSign] Framework found: ' .. (FrameworkFound or 'none'))
 end
 
 AddEventHandler('onResourceStart', function(resourceName)
@@ -35,22 +37,27 @@ end)
 Authorized = function(source)
     if FrameworkFound == 'esx' then 
         local xPlayer = ESX.GetPlayerFromId(source)
-        for k, v in pairs(Config.AuthorizedGroups.group) do 
-            if xPlayer.getGroup() == v then 
-                return true
+        if xPlayer then
+            for _, v in pairs(Config.AuthorizedGroups.group) do 
+                if xPlayer.getGroup() == v then 
+                    return true
+                end
             end
         end
     elseif FrameworkFound == 'qbcore' then
-        for k, v in pairs(Config.AuthorizedGroups.group) do 
+        for _, v in pairs(Config.AuthorizedGroups.group) do 
             if QBCore.Functions.HasPermission(source, v) then 
                 return true
             end
         end
     elseif FrameworkFound == 'standalone' then
-        for k, v in pairs(Config.AuthorizedGroups.identifier) do 
-            for k, v2 in pairs(GetPlayerIdentifiers(source)) do 
-                if v2 == v then 
-                    return true
+        for _, v in pairs(Config.AuthorizedGroups.identifier) do 
+            local identifiers = GetPlayerIdentifiers(source)
+            if identifiers then
+                for _, v2 in pairs(identifiers) do 
+                    if v2 == v then 
+                        return true
+                    end
                 end
             end
         end
@@ -60,27 +67,41 @@ end
 
 GetFileData = function()
     local file = LoadResourceFile(GetCurrentResourceName(), Config.FileName)
-    file = json.decode(file)
-    return file
+    if file then
+        local data = json.decode(file)
+        if type(data) == 'table' then
+            return data
+        else
+            print('[Ricky-VinewoodSign] Error: JSON decoding failed or data is not a table.')
+        end
+    else
+        print('[Ricky-VinewoodSign] Error: Could not load file ' .. Config.FileName)
+    end
+    return {}
 end
 
 RegisterCommand(Config.Command, function(source, args, rawCommand)
-    if not Authorized(source) then return 
+    if not Authorized(source) then return end
+    local fileData = GetFileData()
+    if next(fileData) then
+        TriggerClientEvent('ricky-vinewood:openNui', source, fileData[1] or '', fileData[2] or '')
     end
-    TriggerClientEvent('ricky-vinewood:openNui', source, GetFileData()[1], GetFileData()[2])
 end)
 
 RegisterServerEvent('ricky-vinewood:saveText')
 AddEventHandler('ricky-vinewood:saveText', function(data)
     if not Authorized(source) then return end
-    local newText = data.text 
-    local newColor = data.color
-    local file = LoadResourceFile(GetCurrentResourceName(), Config.FileName)
-    file = json.decode(file)
-    file[1] = newText
-    file[2] = newColor
-    SaveResourceFile(GetCurrentResourceName(), Config.FileName, json.encode(file, {indent = true}), -1)
-    TriggerClientEvent('ricky-vinewood:saveText', -1, file)
+    local newText = data.text or ''
+    local newColor = data.color or ''
+    local fileData = GetFileData()
+    fileData[1] = newText
+    fileData[2] = newColor
+    local success = SaveResourceFile(GetCurrentResourceName(), Config.FileName, json.encode(fileData, {indent = true}), -1)
+    if success then
+        TriggerClientEvent('ricky-vinewood:saveText', -1, fileData)
+    else
+        print('[Ricky-VinewoodSign] Error: Could not save data to file ' .. Config.FileName)
+    end
 end)
 
 RegisterServerEvent('ricky-vinewood:loadText')
