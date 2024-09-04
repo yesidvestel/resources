@@ -1,10 +1,9 @@
 local ESX = nil
-local QBCore = nil
+local QBCore = nil 
 local FrameworkFound = nil
 local nuiOpen = false
 local modelCreated = {}
 
--- Función para cargar el framework
 LoadFramework = function()
     if Config.Framework == 'esx' then 
         ESX = exports['es_extended']:getSharedObject()
@@ -27,13 +26,11 @@ LoadFramework = function()
     end
 end
 
--- Crear hilo para inicializar el framework y cargar datos
 Citizen.CreateThread(function()
     LoadFramework()
     TriggerServerEvent('ricky-vinewood:loadText')
 end)
 
--- Evento para abrir el NUI
 RegisterNetEvent('ricky-vinewood:openNui')
 AddEventHandler('ricky-vinewood:openNui', function(text, color)
     nuiOpen = true
@@ -44,45 +41,40 @@ AddEventHandler('ricky-vinewood:openNui', function(text, color)
     })
     SendNUIMessage({
         type = "OPEN",
-        text = text or "",
-        color = color or "#FFFFFF"
+        text = text,
+        color = color
     })
 end)
 
--- Callback para guardar texto
 RegisterNUICallback('saveText', function(data)
     TriggerServerEvent('ricky-vinewood:saveText', data)
 end)
 
--- Callback para cerrar el NUI
 RegisterNUICallback('close', function(data)
     nuiOpen = false
     SetNuiFocus(false, false)
 end)
 
--- Evento para actualizar el texto
 RegisterNetEvent('ricky-vinewood:saveText')
 AddEventHandler('ricky-vinewood:saveText', function(data)
     UpdateMap(data)
     if nuiOpen then 
         SendNUIMessage({
             type = "UPDATE",
-            text = data[1] or "",
-            color = data[2] or "#FFFFFF"
+            text = data[1],
+            color = data[2]
         })
     end
 end)
 
--- Evento para eliminar modelos cuando se detiene el recurso
 AddEventHandler('onResourceStop', function(resource)
     if resource == GetCurrentResourceName() then
-        for _, v in pairs(modelCreated) do
+        for k, v in pairs(modelCreated) do
             DeleteEntity(v)
         end
     end
 end)
 
--- Convertir hex a RGB
 hexToRgb = function(hex)
     hex = hex:gsub("#","")
     return {
@@ -92,15 +84,15 @@ hexToRgb = function(hex)
     }
 end
 
--- Actualizar el mapa con nuevos modelos
 UpdateMap = function(data)
-    for _, v in pairs(modelCreated) do
+    for k, v in pairs(modelCreated) do
         DeleteEntity(v)
     end
     modelCreated = {}
-    if not data or not data[1] then return end
+    if not data then return end
     local completeText = data[1]
-    for i = 1, #completeText do 
+    if not completeText then return end
+    for i=1, #completeText, 1 do 
         if i > 8 then 
             return 
         end
@@ -108,6 +100,7 @@ UpdateMap = function(data)
         local model = string
         local coords = Config.Coords[i].coordinate
         local heading = Config.Coords[i].heading
+        model = model
         if model ~= " " then
             RequestModel(model)
             while not HasModelLoaded(model) do
@@ -117,17 +110,12 @@ UpdateMap = function(data)
             local obj = CreateObject(model, coords, false, false, false)
             SetEntityHeading(obj, heading)
             table.insert(modelCreated, obj)
-            SetColorModel(model, "techdevontop", hexToRgb(data[2] or "#FFFFFF"))
+            SetColorModel(model, "techdevontop", hexToRgb(data[2]))
         end
     end
 end
 
--- Establecer el color del modelo
 SetColorModel = function(model, textureName, colorRgb)
-    if not colorRgb or not colorRgb.r or not colorRgb.g or not colorRgb.b then
-        print("[ERROR] colorRgb no válido.")
-        return
-    end
     local txd = 'txd_vinewood_sign'
     local txn = 'txn_vinewood_sign'
     local dict = CreateRuntimeTxd(txd)

@@ -1,8 +1,7 @@
 local ESX = nil
-local QBCore = nil
+local QBCore = nil 
 local FrameworkFound = nil
 
--- Función para cargar el framework
 LoadFramework = function()
     if Config.Framework == 'esx' then 
         ESX = exports['es_extended']:getSharedObject()
@@ -24,45 +23,32 @@ LoadFramework = function()
         FrameworkFound = 'standalone'
     end
 
-    print('[Ricky-VinewoodSign] Framework found: ' .. tostring(FrameworkFound))
+    print('[Ricky-VinewoodSign] Framework found: ' .. FrameworkFound)
 end
 
--- Evento para cargar el framework cuando se inicia el recurso
 AddEventHandler('onResourceStart', function(resourceName)
     if resourceName == GetCurrentResourceName() then 
         LoadFramework()
     end
 end)
 
--- Función para verificar autorización
 Authorized = function(source)
     if FrameworkFound == 'esx' then 
-        if not ESX then
-            print("[ERROR] ESX no inicializado.")
-            return false
-        end
         local xPlayer = ESX.GetPlayerFromId(source)
-        if not xPlayer then
-            return false
-        end
-        for _, v in pairs(Config.AuthorizedGroups.group) do 
+        for k, v in pairs(Config.AuthorizedGroups.group) do 
             if xPlayer.getGroup() == v then 
                 return true
             end
         end
     elseif FrameworkFound == 'qbcore' then
-        if not QBCore then
-            print("[ERROR] QBCore no inicializado.")
-            return false
-        end
-        for _, v in pairs(Config.AuthorizedGroups.group) do 
+        for k, v in pairs(Config.AuthorizedGroups.group) do 
             if QBCore.Functions.HasPermission(source, v) then 
                 return true
             end
         end
     elseif FrameworkFound == 'standalone' then
-        for _, v in pairs(Config.AuthorizedGroups.identifier) do 
-            for _, v2 in pairs(GetPlayerIdentifiers(source)) do 
+        for k, v in pairs(Config.AuthorizedGroups.identifier) do 
+            for k, v2 in pairs(GetPlayerIdentifiers(source)) do 
                 if v2 == v then 
                     return true
                 end
@@ -72,44 +58,31 @@ Authorized = function(source)
     return false
 end
 
--- Función para obtener datos del archivo JSON
 GetFileData = function()
     local file = LoadResourceFile(GetCurrentResourceName(), Config.FileName)
-    if file then
-        file = json.decode(file)
-        if file then
-            return file
-        else
-            print("[ERROR] Error al decodificar JSON.")
-        end
-    else
-        print("[ERROR] Error al cargar el archivo.")
-    end
-    return {}
+    file = json.decode(file)
+    return file
 end
 
--- Comando para abrir el menú
 RegisterCommand(Config.Command, function(source, args, rawCommand)
-    if not Authorized(source) then return end
-    local fileData = GetFileData()
-    TriggerClientEvent('ricky-vinewood:openNui', source, fileData[1] or "", fileData[2] or "")
+    if not Authorized(source) then return 
+    end
+    TriggerClientEvent('ricky-vinewood:openNui', source, GetFileData()[1], GetFileData()[2])
 end)
 
--- Evento para guardar el texto
 RegisterServerEvent('ricky-vinewood:saveText')
 AddEventHandler('ricky-vinewood:saveText', function(data)
     if not Authorized(source) then return end
-    local newText = data.text or ""
-    local newColor = data.color or "#FFFFFF"
+    local newText = data.text 
+    local newColor = data.color
     local file = LoadResourceFile(GetCurrentResourceName(), Config.FileName)
-    file = json.decode(file) or {}
+    file = json.decode(file)
     file[1] = newText
     file[2] = newColor
     SaveResourceFile(GetCurrentResourceName(), Config.FileName, json.encode(file, {indent = true}), -1)
     TriggerClientEvent('ricky-vinewood:saveText', -1, file)
 end)
 
--- Evento para cargar el texto
 RegisterServerEvent('ricky-vinewood:loadText')
 AddEventHandler('ricky-vinewood:loadText', function()
     TriggerClientEvent('ricky-vinewood:saveText', source, GetFileData())
