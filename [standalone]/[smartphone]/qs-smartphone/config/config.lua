@@ -308,7 +308,7 @@ end
 Config.WetPhone = true                  -- Being in the water, the phone will break and will give you the same item but with the prefix "wet_".
 Config.RepairWetPhone = 'phone_module'   -- With said item, we can repair the wet phone.
 Config.RepairWetPhoneNpc = true          -- Be able to repair your phone with the NPC Telephone Technician.
-Config.RepairWetPhoneNpcPrice = 100      -- Price to repair a wet phone in the Technician.
+Config.RepairWetPhoneNpcPrice = 500      -- Price to repair a wet phone in the Technician.
 Config.RepairWetPhoneNpcAccount = 'bank' -- Choose here the account to pay the technician for repairing the wet phone.
 
 
@@ -504,8 +504,8 @@ Config.Booth = {
 --██████╦╝██║░░██║░░░██║░░░░░░██║░░░███████╗██║░░██║░░░██║░░░
 --╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░
 
-Config.EnableBattery = false -- Do you want to enable the battery?
-Config.HousingCharge = false -- Phone charger inside the houses?
+Config.EnableBattery = true -- Do you want to enable the battery?
+Config.HousingCharge = true -- Phone charger inside the houses?
 
 -- Only load battery information when a player enters the server: playerLoaded, !! Don't restart the live resource because it will break. !!
 Config.BatteryPersistData = true   -- Persist data on battery.json
@@ -597,7 +597,7 @@ Config.PowerbankSpeed = 1.0                       -- Charging speed of the item 
 --░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░╚══╝╚══════╝░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝
 
 -- You can check signal in clien-side using: exports['qs-smartphone']:CheckSignal()
-Config.Signal = false      -- If you want to enable this system, use true.
+Config.Signal = true      -- If you want to enable this system, use true.
 Config.visibleZone = false -- Leave this false whenever you are going to use the server, it is only for zone testing.
 
 --[[

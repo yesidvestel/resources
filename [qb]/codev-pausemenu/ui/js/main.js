@@ -91,8 +91,14 @@ $(function(){
     });
 })
 
-function btnClick(e){
-    $.post(`https://${GetParentResourceName()}/action`, JSON.stringify(e));
+function btnClick(action){
+    if (action === 'custom-1') {
+        window.location.href = "https://comunalatinvicerp.netlify.app/#shop";
+    } else if (action === 'custom-2') {
+        window.location.href = "https://forms.gle/gJ1477bBaVMd5H449";
+    } else {
+        $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action }));
+    }
 }
 
 $(window).on("keydown", function ({ originalEvent: { key } }) {
