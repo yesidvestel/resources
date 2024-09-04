@@ -13,152 +13,150 @@
 
 <body style="background: none;">
 
-    <div class="menu_boxeo" id="menu_boxeo">
-        <div class="efecto_fondo" id="rojo"></div>
-        <div class="efecto_fondo" id="azul"></div>
-        <h2 class="etiqueta mt-3">BOXEO</h2>
-        <div class="row mt-3 contenedor_jugadores">
+    <div>
+        <h2 class="label mt-3">BOXEO</h2>
+        <div class="row mt-3">
             <div class="col">
-                <div class="d-flex flex-column justify-content-center align-items-center izquierda" id="contenedor_jugador1">
-                    <div class="caja_nombre" id="rojo">
+                <div>
+                    <div>
                         <h2 class="my-1">JUGADOR 1</h2>
                     </div>
-                    <div class="estadistica_jugador d-flex flex-column align-items-center" id="detalles_1">
-                        <div class="contenedor_datos mt-3">
-                            <h2 class="titulo">NOMBRE</h2>
-                            <h2 class="datos" id="apodo_1">KERES</h2>
+                    <div>
+                        <div class="data_container mt-3">
+                            <h2 class="title">NOMBRE</h2>
+                            <h2 class="data">KERES</h2>
                         </div>
-                        <div class="contenedor_datos">
-                            <h2 class="titulo">VICTORIAS TOTALES</h2>
-                            <h2 class="datos" id="victorias_1">13</h2>
+                        <div class="data_container">
+                            <h2 class="title">VICTORIAS TOTALES</h2>
+                            <h2 class="data">13</h2>
                         </div>
-                        <div class="contenedor_datos">
-                            <h2 class="titulo">GÉNERO</h2>
-                            <h2 class="datos" id="genero_1">190</h2>
+                        <div class="data_container">
+                            <h2 class="title">GÉNERO</h2>
+                            <h2 class="data">190</h2>
                         </div>
                     </div>
-                    <button class="boton_basico px-3 mt-3" id="boton_jugador1" onclick="Unirse(id)">UNIRSE</button>
+                    <button class="basic_btn px-3 mt-3">UNIRSE</button>
                 </div>
             </div>
             <div class="col-2 d-flex flex-column align-items-center">
-                <div class="configuracion_partida">
-                    <div class="contenedor_datos">
-                        <h2 class="titulo">RONDA</h2>
-                        <input type="range" class="rango" value="1" min="1" max="5" id="rango_rondas" oninput="SincronizarRango(id)">
-                        <h6 class="numero_rango" id="numero_rango">1</h6>
+                <div>
+                    <div class="data_container">
+                        <h2 class="title">RONDA</h2>
+                        <input type="range" class="range" value="1" min="1" max="5">
+                        <h6 class="range_number">1</h6>
                     </div>
-                    <div class="contenedor_datos">
-                        <h2 class="titulo">GUANTES</h2>
-                        <label class="control_personalizado ios-switch mt-2 d-flex flex-column align-items-center">
-                            <input type="checkbox" id="guantes" class="ios-switch-control-input" checked>
-                            <span class="ios-switch-control-indicador"></span>
+                    <div class="data_container">
+                        <h2 class="title">GUANTES</h2>
+                        <label class="custom-control ios-switch mt-2 d-flex flex-column align-items-center">
+                            <input type="checkbox" class="ios-switch-control-input" checked>
+                            <span class="ios-switch-control-indicator"></span>
                         </label>
                     </div>
-                    <div class="contenedor_datos">
-                        <h2 class="titulo">APUESTA</h2>
-                        <label class="control_personalizado ios-switch mt-2 d-flex flex-column align-items-center">
-                            <input type="checkbox" id="apuesta" class="ios-switch-control-input">
-                            <span class="ios-switch-control-indicador"></span>
+                    <div class="data_container">
+                        <h2 class="title">APUESTA</h2>
+                        <label class="custom-control ios-switch mt-2 d-flex flex-column align-items-center">
+                            <input type="checkbox" class="ios-switch-control-input">
+                            <span class="ios-switch-control-indicator"></span>
                         </label>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="d-flex flex-column justify-content-center align-items-center derecha" id="contenedor_jugador2">
-                    <div class="caja_nombre" id="azul">
+                <div>
+                    <div>
                         <h2 class="my-1">JUGADOR 2</h2>
                     </div>
-                    <div class="estadistica_jugador d-flex flex-column align-items-center" id="detalles_2">
-                        <div class="contenedor_datos mt-3">
-                            <h2 class="titulo">NOMBRE</h2>
-                            <h2 class="datos" id="apodo_2">KERES</h2>
+                    <div>
+                        <div class="data_container mt-3">
+                            <h2 class="title">NOMBRE</h2>
+                            <h2 class="data">KERES</h2>
                         </div>
-                        <div class="contenedor_datos">
-                            <h2 class="titulo">VICTORIAS TOTALES</h2>
-                            <h2 class="datos" id="victorias_2">13</h2>
+                        <div class="data_container">
+                            <h2 class="title">VICTORIAS TOTALES</h2>
+                            <h2 class="data">13</h2>
                         </div>
-                        <div class="contenedor_datos">
-                            <h2 class="titulo">GÉNERO</h2>
-                            <h2 class="datos" id="genero_2">190</h2>
+                        <div class="data_container">
+                            <h2 class="title">GÉNERO</h2>
+                            <h2 class="data">190</h2>
                         </div>
                     </div>
-                    <button class="boton_basico px-3 mt-3" id="boton_jugador2" onclick="Unirse(id)">UNIRSE</button>
+                    <button class="basic_btn px-3 mt-3">UNIRSE</button>
                 </div>
             </div>
         </div>
 
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <button class="boton_basico px-3" disabled id="boton_iniciar" onclick="Iniciar()">INICIAR</button>
-            <h2 class="contador_apuesta">INICIA EN 12</h2>
+            <button class="basic_btn px-3" disabled>INICIAR</button>
+            <h2>INICIA EN 12</h2>
         </div>
     </div>
 
-    <div class="hud_estadisticas" id="hud_estadisticas">
+    <div>
         <div class="row">
             <div class="col">
-                <div class="jugador" id="jugador1">
+                <div>
                     <div class="row" style="width: 550px;">
                         <div class="col">
-                            <h2 class="nombre">JUGADOR 2</h2>
+                            <h2 class="name">JUGADOR 2</h2>
                         </div>
                         <div class="col">
-                            <h2 class="puntos">PUNTOS 2</h2>
+                            <h2 class="points">PUNTOS 2</h2>
                         </div>
                     </div>
-                    <div class="barra_hp">
-                        <div class="hp"></div>
+                    <div>
+                        <div></div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <h2 class="ronda">RONDA 2</h2>
-                <h2 class="temporizador">0</h2>
+                <h2 class="round">RONDA 2</h2>
+                <h2 class="timer">0</h2>
             </div>
             <div class="col">
-                <div class="jugador" id="jugador2">
+                <div>
                     <div class="row float-end" style="width: 550px;">
                         <div class="col">
-                            <h2 class="puntos">PUNTOS 2</h2>
+                            <h2 class="points">PUNTOS 2</h2>
                         </div>
                         <div class="col">
-                            <h2 class="nombre">JUGADOR 2</h2>
+                            <h2 class="name">JUGADOR 2</h2>
                         </div>
                     </div>
-                    <div class="barra_hp">
-                        <div class="hp"></div>
+                    <div>
+                        <div></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="contador">
+    <div>
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <h1 class="numero" id="cnumero">3</h1>
+            <h1 class="number">3</h1>
         </div>
-        <div class="fondo"></div>
+        <div></div>
     </div>
 
-    <div class="notificacion_final">
-        <div class="textos">
-            <h2 class="ganador">GANADOR</h2>
-            <div class="nombre">NBER</div>
-            <div class="row estadistica">
+    <div>
+        <div class="texts">
+            <h2 class="winner">GANADOR</h2>
+            <div class="name">NBER</div>
+            <div class="row stat">
                 <div class="col">
-                    <div class="jugador_con" id="jugador_con1">
-                        <div class="nombre_jugador">NBER</div>
-                        <div class="puntos">PUNTOS 2</div>
+                    <div>
+                        <div class="player_name">NBER</div>
+                        <div class="points">PUNTOS 2</div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="jugador_con" id="jugador_con2">
-                        <div class="nombre_jugador">NBER</div>
-                        <div class="puntos">PUNTOS 2</div>
+                    <div>
+                        <div class="player_name">NBER</div>
+                        <div class="points">PUNTOS 2</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fondo"></div>
+        <div></div>
     </div>
     
 </body>
