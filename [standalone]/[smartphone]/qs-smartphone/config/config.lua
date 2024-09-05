@@ -305,9 +305,9 @@ end
 --░░╚██╔╝░╚██╔╝░███████╗░░░██║░░░  ██║░░░░░██║░░██║╚█████╔╝██║░╚███║███████╗
 --░░░╚═╝░░░╚═╝░░╚══════╝░░░╚═╝░░░  ╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝
 
-Config.WetPhone = true                  -- Being in the water, the phone will break and will give you the same item but with the prefix "wet_".
+Config.WetPhone = false                  -- Being in the water, the phone will break and will give you the same item but with the prefix "wet_".
 Config.RepairWetPhone = 'phone_module'   -- With said item, we can repair the wet phone.
-Config.RepairWetPhoneNpc = true          -- Be able to repair your phone with the NPC Telephone Technician.
+Config.RepairWetPhoneNpc = false          -- Be able to repair your phone with the NPC Telephone Technician.
 Config.RepairWetPhoneNpcPrice = 500      -- Price to repair a wet phone in the Technician.
 Config.RepairWetPhoneNpcAccount = 'bank' -- Choose here the account to pay the technician for repairing the wet phone.
 
@@ -747,12 +747,12 @@ Config.ResetPassword = {
                 h = 118.6,
                 model = `hc_hacker`
             },
-            blip = {
+            /*blip = {
                 name = 'Telephone technician',
                 sprite = 89,
                 color = 1,
                 scale = 0.7
-            }
+            }*/
         },
 
         --[[ {
