@@ -1,11 +1,11 @@
 Config = {
     Framework = "qb", -- esx / qb
 
-    CustomActionMain = function() -- Event of the big button
+    CustomActionMain = function() 
         print("Custom action main")
     end,
 
-    CustomActionSecondary = function() -- Event of the small at the bottom left button
+    CustomActionSecondary = function()
         print("Custom action secondary")
     end,
 }

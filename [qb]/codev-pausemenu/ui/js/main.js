@@ -64,17 +64,15 @@ $(function() {
         $(this).css('transform', "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)");
     });
 
-    // Function to handle window close
     function closeWindow() {
         $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action: 'close' }));
     }
 
-    // Handle ESC key press to close the window or hide iframe
     $(window).on("keydown", function({ originalEvent: { key } }) {
         const iframe = document.getElementById('menu-iframe');
         if (key === "Escape" && iframe.style.display === 'block') {
             iframe.style.display = 'none';
-            iframe.src = ''; // Limpia el contenido del iframe
+            iframe.src = ''; 
         } else if (key === "Escape") {
             closeWindow();
         }
@@ -90,6 +88,12 @@ function btnClick(action) {
     } else if (action === 'custom-2') {
         iframe.src = "https://forms.gle/gJ1477bBaVMd5H449";
         iframe.style.display = 'block';
+    } else if (action === 'exit') {
+        $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action: 'exit' }));
+    } else if (action === 'map') {
+        $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action: 'map' }));
+    } else if (action === 'settings') {
+        $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action: 'settings' }));
     } else {
         $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({ action }));
     }

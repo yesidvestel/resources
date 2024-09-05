@@ -7,9 +7,9 @@ const app = new Vue({
     searchQuery:'',
     ui:false,
     features: [
-      { label: 'Speed', value: 70 },
-      { label: 'Fuel', value: 40 },
-      { label: 'Durability', value: 60 },
+      { label: 'Velocidad', value: 70 },
+      { label: 'Combustible', value: 40 },
+      { label: 'Durabilidad', value: 60 },
     ],
     select:{
       name: 'Albany Hern', plate :'TEST2', id : 1, located : 'TEST', state : 0
@@ -38,9 +38,9 @@ const app = new Vue({
       }
       $.post(`https://${GetParentResourceName()}/VehicleInfo`, JSON.stringify({data:item}), function(data){
         app.features = [
-          { label: 'Speed', value: Math.floor(data.speed) },
-          { label: 'Fuel', value: Math.floor(data.fuel) },
-          { label: 'Durability', value: Math.floor(data.traction) },
+          { label: 'Velocidad', value: Math.floor(data.speed) },
+          { label: 'Combustible', value: Math.floor(data.fuel) },
+          { label: 'Durabilidad', value: Math.floor(data.traction) },
         ];
       });
     },

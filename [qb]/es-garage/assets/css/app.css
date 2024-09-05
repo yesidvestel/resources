@@ -96,7 +96,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.8125rem;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255);
   z-index: 99999999;
 }
 .header > input ::-moz-placeholder {

@@ -185,7 +185,7 @@ main .container .text-wrapper .subtitle {
 }
 main .container .text-wrapper .title {
   color: #00FFFF;
-  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.63);
   font-size: 20px;
   font-weight: 700;
 }

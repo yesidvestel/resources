@@ -14,29 +14,29 @@ CreateThread(function()
         if open then
             SetPauseMenuActive(false)
         end
-
         Wait(1)
     end
 end)
 
-RegisterNuiCallback('action', function(action)
-	if action == 'settings' then
-		ActivateFrontendMenu(GetHashKey('FE_MENU_VERSION_LANDING_MENU'), 0, -1)
-	elseif action == 'map' then
-		ActivateFrontendMenu(GetHashKey('FE_MENU_VERSION_MP_PAUSE'), 0, -1)
+RegisterNUICallback('action', function(data, cb)
+    local action = data.action
+    
+    if action == 'settings' then
+        ActivateFrontendMenu(GetHashKey('FE_MENU_VERSION_LANDING_MENU'), 0, -1)
+    elseif action == 'map' then
+        ActivateFrontendMenu(GetHashKey('FE_MENU_VERSION_MP_PAUSE'), 0, -1)
     elseif action == 'exit' then
         TriggerServerEvent("codev-pausemenu:exit")
     elseif action == 'custom-1' then
         Config.CustomActionMain()
     elseif action == 'custom-2' then
         Config.CustomActionSecondary()
-	end
+    end
 
     SendNUIMessage({
         action = 'close'
     })
-
-	SetNuiFocus(false, false)
+    SetNuiFocus(false, false)
 	open = false
 end)
 
