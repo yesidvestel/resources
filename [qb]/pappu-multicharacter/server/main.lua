@@ -181,18 +181,18 @@ RegisterNetEvent('pappu-multicharacter:server:createCharacter', function(data)
             Wait(10)
         until hasDonePreloading[src]
         local fivemname = GetPlayerName(src)
-        sendToDiscord("Character Created", string.format("Citizen ID: %s\nFirst Name: %s\nLast Name: %s\nFiveM Name: %s", newData.cid, data.firstname, data.lastname, fivemname), 3066993)
+        sendToDiscord("Personaje creado", string.format("Identificación ciudadana: %s\nNombre de pila: %s\nApellido: %s\nFiveM Nombre: %s", newData.cid, data.firstname, data.lastname, fivemname), 3066993)
         if GetResourceState('qb-apartments') == 'started' and Apartments.Starting then
             local randbucket = (GetPlayerPed(src) .. math.random(1,999))
             SetPlayerRoutingBucket(src, randbucket)
-            print('^2[qb-core]^7 '..GetPlayerName(src)..' has successfully loaded!')
+            print('^2[qb-core]^7 '..GetPlayerName(src)..' ¡Se ha cargado correctamente!')
             QBCore.Commands.Refresh(src)
             loadHouseData(src)
             TriggerClientEvent("pappu-multicharacter:client:closeNUI", src)
             TriggerClientEvent('apartments:client:setupSpawnUI', src, newData)
             GiveStarterItems(src)
         else
-            print('^2[qb-core]^7 '..GetPlayerName(src)..' has successfully loaded!')
+            print('^2[qb-core]^7 '..GetPlayerName(src)..' ¡Se ha cargado correctamente!')
             QBCore.Commands.Refresh(src)
             loadHouseData(src)
             TriggerClientEvent("pappu-multicharacter:client:closeNUIdefault", src)
@@ -205,8 +205,8 @@ RegisterNetEvent('pappu-multicharacter:server:deleteCharacter', function(citizen
     local src = source
     QBCore.Player.DeleteCharacter(src, citizenid)
     local fivemname = GetPlayerName(src)
-    sendToDiscord("Character Deleted", string.format("Citizen ID: %s\nFiveM Name: %s", citizenid, fivemname), 15158332)
-    TriggerClientEvent('QBCore:Notify', src, "Character deleted!" , "success")
+    sendToDiscord("Personaje eliminado", string.format("Identificación ciudadana: %s\nFiveM Nombre: %s", citizenid, fivemname), 15158332)
+    TriggerClientEvent('QBCore:Notify', src, "Personaje eliminado" , "success")
 end)
 
 -- Callbacks

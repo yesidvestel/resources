@@ -328,7 +328,7 @@ QBCore.Commands.Add('report', Lang:t('info.admin_report'), { { name = 'message',
     local msg = table.concat(args, ' ')
     local Player = QBCore.Functions.GetPlayer(source)
     TriggerClientEvent('qb-admin:client:SendReport', -1, GetPlayerName(src), src, msg)
-    TriggerEvent('qb-log:server:CreateLog', 'report', 'Report', 'green', '**' .. GetPlayerName(source) .. '** (CitizenID: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. source .. ') **Report:** ' .. msg, false)
+    TriggerEvent('qb-log:server:CreateLog', 'report', 'Report', 'green', '**' .. GetPlayerName(source) .. '** (Identificación ciudadana: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. source .. ') **Informe:** ' .. msg, false)
 end)
 
 QBCore.Commands.Add('staffchat', Lang:t('commands.staffchat_message'), { { name = 'message', help = 'Message' } }, true, function(source, args)

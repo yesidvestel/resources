@@ -169,14 +169,14 @@ if Framework == "ESX" then
     RegisterNetEvent("wasabi_boombox:DiscordKnows")
     AddEventHandler("wasabi_boombox:DiscordKnows", function(link)
         local xPlayer = ESX.GetPlayerFromId(source)
-        SongConfirmed(16448250, "Play Song Log", "Player Name: **"..xPlayer.getName().."**\n Player Identifier: **"..xPlayer.getIdentifier().."**\n Song Link: **"..link.."**\n Date: "..os.date("** Time: %H:%M Date: %d.%m.%y **").."", "Made by Andistyler")
+        SongConfirmed(16448250, "Reproducir registro de canciones", "Nombre del jugador: **"..xPlayer.getName().."**\n Identificador del jugador:**"..xPlayer.getIdentifier().."**\n Enlace de la canción: **"..link.."**\n Fecha: "..os.date("** Tiempo: %H:%M Fecha: %d.%m.%y **").."", "Comuna Latín Vice RP - Logs")
     end)
 elseif Framework == "qb" then
     RegisterNetEvent("wasabi_boombox:DiscordKnows")
     AddEventHandler("wasabi_boombox:DiscordKnows", function(link)
         local Player = QBCore.Functions.GetPlayer(source)
         local CitizenId = Player.PlayerData.citizenid
-        SongConfirmed(16448250, "Play Song Log", "Player Name: **"..GetPlayerName(source).."**\n  Player CitizenID: " .. CitizenId .."**\n Song Link: **"..link.."**\n Date: "..os.date("** Time: %H:%M Date: %d.%m.%y **").."", "Made by Andistyler")
+        SongConfirmed(16448250, "Reproducir registro de canciones", "Nombre del jugador: **"..GetPlayerName(source).."**\n  Jugador CitizenID:" .. CitizenId .."**\n Enlace de la canción: **"..link.."**\n Fecha: "..os.date("** Tiempo: %H:%M Fecha: %d.%m.%y **").."", "Comuna Latín Vice RP - Logs")
     end)
 end
 

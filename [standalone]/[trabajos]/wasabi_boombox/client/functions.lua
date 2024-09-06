@@ -17,7 +17,7 @@ hasBoomBox = function(radio)
     CreateThread(function()
         if Config.InstructionNotification then
             lib.notify({
-                title = 'Instructions',
+                title = 'Instrucciones',
                 description = 'Presiona E para soltar el boombox',
                 type = 'success'
             })
