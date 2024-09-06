@@ -227,8 +227,8 @@ RegisterNUICallback("testDrive", function(data, cb)
         local step = 0
         local start = GetGameTimer() / 1000
         while not condt_finish and (GetGameTimer() / 1000 - start < lastOpenedGallery.testDrive.seconds and DoesEntityExist(spawnedVehicle) and not IsEntityDead(PlayerPedId())) do
-            if #(GetEntityCoords(PlayerPedId()) - lastOpenedGallery.testDrive.startCoords.xyz) > lastOpenedGallery.testDrive.range then
-                SetPedCoordsKeepVehicle(PlayerPedId(), lastOpenedGallery.testDrive.startCoords.w)
+            if #(GetEntityCoords(PlayerPedId()) - lastOpenedGallery.testDrive.startCoords) > lastOpenedGallery.testDrive.range then
+                SetPedCoordsKeepVehicle(PlayerPedId(), lastOpenedGallery.testDrive.startCoords)
             end
             if GetVehiclePedIsIn(PlayerPedId(), false) == 0 and DoesEntityExist(spawnedVehicle) then
                 if 5 - step ~= 0 then

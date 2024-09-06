@@ -329,12 +329,12 @@ Config.Vehicles         = {
 
 Config.Shops            = {
     {
-        name                 = "Concesionario",
+        name                 = "Gallery",
         vehicles             = Config.Vehicles,
         type                 = "car", -- > car | boat | helicopter
         job                  = false, -- > false or job name
         isMoneyAnItem        = {
-            status = false,
+            status = true,
             -- Item name if status is true
             item = "money"
         },
@@ -358,20 +358,20 @@ Config.Shops            = {
             percentageOfRentalFee = 10,
         },
         customPlate          = {
-            active = false,
+            active = true,
             price = 2000
         },
         coords               = vector3(-56.403923797607, -1096.7048095703, 25.5),
-        camCoords            = vector3(-47.7892, -1093.5864, 26.4224),
+        camCoords            = vector3(-38.0, -1059.0, -42.5),
         camRotation          = vector3(190.0, 180.0, 5.00),
         distance             = 2.0,
-        carSpawnCoords       = vector4(-45.7515, -1100.3845, 26.4224, 7.5665),
+        carSpawnCoords       = vector4(-37.279121, -1064.109863, -44.359741, -10.0),
         deliveryCoords       = vector4(-48.906772613525, -1077.6535644531, 26.81402015686, 66.28524017334),
         deliveryGarage       = "pillboxgarage", -- if u need, the QB Framework player_vehicles table needs it.
         compareCoords        = {
             selectedVehicleCoords = vector4(-35.5, -1064.109863, -44.359741, 0.0),
             selectedCam = {
-                coords = vector3(-47.7892, -1093.5864, 26.4224),
+                coords = vector3(-38.0, -1059.0, -42.5),
                 rotation = vector3(190.0, 180.0, 5.00),
             },
             comparedVehicleCoords = vector4(-45.758240, -1055.221924, -44.359741, 270.0),
@@ -386,14 +386,14 @@ Config.Shops            = {
         testDrive            = {
             active      = true,                                                     -- if you want to allow a test drive
             seconds     = 30,
-            startCoords = vector4(-58.7214, -1108.7333, 25.9793, 73.1715),
-            range       = 10000,
+            startCoords = vector3(-54.5, -1107.6, 26.5),
+            range       = 400,
         },
         discount             = {
             active = true,
             -- Makes a certain percentage discount on existing prices (1-100)
             percentage = 10
         },
-        textType = "ox", -- > "drawtext" | "ox" | "qb"
+        textType             = "ox", -- > "drawtext" | "ox" | "qb"
     },
 }
