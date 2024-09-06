@@ -36,11 +36,11 @@ server_scripts {
     "server/threads.lua"
 }
 
-ui_page "ui/index.html"
+ui_page "ui/build/index.html"
 
 files {
     "locales/**/*",
-    "ui/index.html",
+    "ui/build/index.html",
     "ui/build/**/*"
 }
 
