@@ -309,7 +309,7 @@ body {
 .container .middle-right-container .priceVehicle {
     width:100%;
     text-align: right;
-    color:#FC1259;
+    color:#00FFFF;
     font-size:2em;
     font-style: italic;
     font-family: 'Teko', sans-serif;
@@ -628,7 +628,7 @@ input[type="button"]
 
 .theme-container button.active {
     border-radius: 100px;
-    color: rgb(252, 18, 89);
+    color: #00FFFF;
     font-size: 1em;
 }
 
@@ -688,7 +688,7 @@ input[type="button"]
 }
 
 .sold-out-text{
-     color: rgb(252, 18, 89);
+     color: #00FFFF;
      font-family: 'Teko', sans-serif !important;
      font-size: 1em;
      width: 100%;
@@ -770,7 +770,6 @@ input[type="button"]
     border-radius: 100px;
     padding: 5px 10px;
     color:white;
-    border: 1px solid #FC1259;
 }
 
 .img-fluid{

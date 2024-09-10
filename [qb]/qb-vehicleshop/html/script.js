@@ -18,7 +18,7 @@ window.addEventListener('message', function(event) {
 
         isEnableTestDrive = event.data.testDrive;
 
-        document.getElementById("top-menu").innerHTML = '<a href="#all" onclick="menuVehicle(event)" value="all" class="selected">all</a>';       
+        document.getElementById("top-menu").innerHTML = '<a href="#all" onclick="menuVehicle(event)" value="all" class="selected">Todo</a>';       
 
         for(var [key,value] of Object.entries(data.data)){   
 
@@ -58,7 +58,7 @@ window.addEventListener('message', function(event) {
         
         $('#messagePopup').append(`
 
-        <span>You bought: ` + data.vehicleName + ` for ` + data.value/1000 + `</span>    
+        <span>Usted compró: ` + data.vehicleName + ` por ` + data.value/1000 + `</span>    
         
         `)
         
@@ -96,7 +96,7 @@ window.addEventListener('message', function(event) {
                     </div>     
 
                     <div class="column spacebetween info">
-                        <span class="title">Handling</span>
+                        <span class="title">Manejo</span>
                         <div class="bar">
                             <span class="percent" style="width:`+Math.ceil(10*handlingVehicle.traction*1.6)+`%"></span>
                         </div>
@@ -104,7 +104,7 @@ window.addEventListener('message', function(event) {
                     </div>
 
                     <div class="column spacebetween info">
-                        <span class="title">Top Speed</span>
+                        <span class="title">Velocidad máxima</span>
                         <div class="bar">
                             <span class="percent" style="width:`+Math.ceil(handlingVehicle.maxSpeed*1.4)+`%"></span>
                         </div>
@@ -112,27 +112,27 @@ window.addEventListener('message', function(event) {
                     </div>
 
                     <div class="column spacebetween info">
-                        <span class="title">Acceleration</span>
+                        <span class="title">Aceleración</span>
                         <div class="bar">
                             <span class="percent" style="width:`+Math.ceil(100*handlingVehicle.acceleration)+`%"></span>
                         </div>
                     </div>
 
                     <div class="column spacebetween info">
-                        <span class="title">Breaking</span>
+                        <span class="title">Rotura</span>
                         <div class="bar">
                             <span class="percent" style="width:`+Math.ceil(100*handlingVehicle.breaking)+`%"></span>
                         </div>
                     </div>         
 
                     <div class="row" id="actionButton">
-                        <a class="buyButton" style=" color:#FC1259;" onclick="openModalMenu()"> Buy </a>
+                        <a class="buyButton" style=" color:#00FFFF;" onclick="openModalMenu()"> Comprar </a>
                     </div>
                 `);
 
                 if (isEnableTestDrive) {
                     $('#actionButton').append(`
-                        <a class="tdButtton" onclick="testDrive()"> Test Drive </a>
+                        <a class="tdButtton" onclick="testDrive()"> Prueba de conducción </a>
                     `);
                 }
     }
@@ -184,11 +184,11 @@ function openModalMenu(){
     $('#closemenu').append(`
         <div class="background-circle"></div>
         <div class="modal-content">
-            <p class="title">Purchase confirmation:</p>
-            <p class="vehicle">Vehicle</p>         
+            <p class="title">Confirmación de compra:</p>
+            <p class="vehicle">Vehículo</p>         
 
-            <p>Brand: <span class="brand">`+vehicleSelected.brand+`</span></p>
-            <p>Model: <span class="model">`+vehicleSelected.modelcar+`</span></p>
+            <p>Marca: <span class="brand">`+vehicleSelected.brand+`</span></p>
+            <p>Modelo: <span class="model">`+vehicleSelected.modelcar+`</span></p>
         </div>
 
         <div class="modal-footer">
@@ -198,11 +198,11 @@ function openModalMenu(){
             </div>
             <div class="modal-buttons">     
                 <div>
-                    <span>Buy</span>
+                    <span>Comprar</span>
                     <button id="money" class="modal-money button" onclick="buyVehicle('confirm')" >$</button>
                 </div>
                 <div>
-                    <span>Cancel</span>
+                    <span>Cancelar</span>
                     <button href="#!" id="card" class="modal-money button" onclick="buyVehicle('cancel')">X</button>
                 </div>
             </div>
@@ -361,7 +361,7 @@ $(document).on('mousedown', ".item-cars", function(event){
 
 
                 if (dataCar[7].outerText < 1) {
-                    document.getElementById("buttonbuy").innerHTML = '<span class="sold-out-text">Sold OUT</span>';
+                    document.getElementById("buttonbuy").innerHTML = '<span class="sold-out-text">AGOTADO</span>';
                 }
             }
         break;
@@ -393,7 +393,7 @@ $(document).on('mousedown', ".item-cars", function(event){
                             <span id="model">`+ data[i].model +`</span>
                             <span id="category">`+ data[i].category +`</span>
                         </div> 
-                        <div class="soldOut">SOLD OUT</div>                 
+                        <div class="soldOut">AGOTADO</div>                 
                         <div class="img-fluid" style="background-image: url(../imgs/` + modelUper.toUpperCase() +`.png);"> <span class="exibeName">`+ data[i].name +`</span></div>
                     </div>
                 </div>`);

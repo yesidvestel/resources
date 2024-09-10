@@ -300,8 +300,8 @@ Config.Gyms = {
         menuGrades = nil, -- nil: any player with this job | string: 'boss' | table: {'boss', 'manager'}
         bossMenuGrades = 'boss', -- string: 'boss' or table: {'boss', 'manager'}
         blipCoords = vector3(-1203.47, -1564.67, 4.02),
-        blipName = 'Gym Plaza',
-        requiredMembership = 'plaza_gym', -- false or name of membership like: 'plaza_gym'
+        blipName = false,
+        requiredMembership = false, -- false or name of membership like: 'plaza_gym'
         memberships = {
             {days = 1, price = 1000},
             {days = 7, price = 5500},
@@ -425,14 +425,14 @@ Config.Gyms = {
         },
     },
     [2] = {
-        business = true,
+        business = false,
         ownerJob = nil,
         jobMenuPos = vector3(258.22, -271.73, 53.96),
         menuGrades = nil, -- nil: any player with this job | string: 'boss' | table: {'boss', 'manager'}
         bossMenuGrades = 'boss', -- string: 'boss' or table: {'boss', 'manager'}
         blipCoords = vector(-1255.8, -354.21, 35.96),
         blipName = 'Pump & Run GYM',
-        requiredMembership = 'pump_and_run', -- false or name of membership like: 'pump_and_run'
+        requiredMembership = false, -- false or name of membership like: 'pump_and_run'
         memberships = {
             {days = 1, price = 1000},
             {days = 7, price = 5500},
@@ -443,7 +443,7 @@ Config.Gyms = {
         points = {
             {
                 name = 'treadmill',
-                activityCoord = vector4(-1257.63, -366.56, 36.12, 207.75),
+                activityCoord = vector4(236.5, -261.65, 60.07, 70.47),
                 position = vector3(236.52, -261.64, 60.07),
                 removeStamina = 1,
                 addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
@@ -469,8 +469,6 @@ Config.Gyms = {
                 removeStamina = 1,
                 addSkill = {skill = "condition", value = {4, 5}}, -- this value is divided by 10 - this means that setting 1 it will be 0.1
             },
-
-
             {
                 name = 'push-up',
                 activityCoord = vector4(-1263.23, -363.06, 35.99, 281.81),

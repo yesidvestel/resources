@@ -49,3 +49,15 @@ AddEventHandler('qb-vehicleshop.CheckMoneyForVeh', function(veh, price, name, ve
         TriggerClientEvent("qb-vehicleshop.notify", source, 'error', 'Not Enough Money')
     end
 end)
+
+RegisterServerEvent('qb-vehicleshop.spawnExhibitionVehicles')
+AddEventHandler('qb-vehicleshop.spawnExhibitionVehicles', function()
+    local src = source
+    TriggerClientEvent('qb-vehicleshop.spawnExhibitionVehicles', src)
+end)
+
+AddEventHandler('onResourceStart', function(resourceName)
+    if GetCurrentResourceName() == resourceName then
+        TriggerClientEvent('qb-vehicleshop.spawnExhibitionVehicles', -1)
+    end
+end)

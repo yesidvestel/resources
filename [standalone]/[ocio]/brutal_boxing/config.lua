@@ -53,14 +53,14 @@ Config = {
     
     -- Notify function EDITABLE >> cl_utils.lua
     Notify = { 
-        [1] = {"Boxing", "You're already joined!", 5000, "error"},
-        [2] = {"Boxing", "The opponent has left the party.", 5000, "info"},
-        [3] = {"Boxing", "You already bet!", 5000, "error"},
-        [4] = {"Boxing", "You have made a successful bet: <b>", 5000, "success"},
-        [5] = {"Boxing", "You got back the bet amount:", 5000, "info"},
-        [6] = {"Boxing", "You do not have enough money.", 5000, "error"},
-        [7] = {"Boxing", "You got:", 5000, "success"},
-        [8] = {"Boxing", "You didn't win.", 5000, "error"},
+        [1] = {"Boxing", "¡Ya estás unido!", 5000, "error"},
+        [2] = {"Boxing", "El oponente ha dejado la fiesta.", 5000, "info"},
+        [3] = {"Boxing", "¡Ya apostaste!", 5000, "error"},
+        [4] = {"Boxing", "Has realizado una apuesta exitosa: <b>", 5000, "success"},
+        [5] = {"Boxing", "Recuperaste el importe de la apuesta:", 5000, "info"},
+        [6] = {"Boxing", "No tienes suficiente dinero.", 5000, "error"},
+        [7] = {"Boxing", "Tienes:", 5000, "success"},
+        [8] = {"Boxing", "No ganaste.", 5000, "error"},
     }
 }
 

@@ -502,10 +502,10 @@ Config.Locations = {
             Enabled = true,                              -- Enable ped and check-in area?
             Ped = 's_m_m_scientist_01',                  -- Check in ped
         ---- Updated upstream
-            Coords = vec3(304.79, -591.28, 43.27), -- Coords of ped
+            Coords = vec3(304.79, -591.28, 42.26), -- Coords of ped
         ---- Stashed changes
             Distance = 4.85,                             -- Distance to show textUI (If target is not enabled below)
-            Heading = 63.26,                             -- Heading of ped
+            Heading = 330.26,                             -- Heading of ped
             Cost = 500,                                  -- Cost of using hospital check-in. Set to false for free
             Duration = 15 * seconds,                     -- Time it takes to spend in hospital bed
             MaxOnDuty = 3,                               -- If this amount or less you can use, otherwise it will tell you that EMS is avaliable(Set to false to always enable check-in)
@@ -530,17 +530,17 @@ Config.Locations = {
             RespawnNoBedLocation = { coords = vec3(316.66, -581.3, 43.28), heading = 339.02 }, -- Coords and heading of where to spawn player if DisableHospitalBeds is set to true or beds are full
             HospitalBeds = {
                 --              { coords = vec3(332.62, -587.17, 42.84+0.3), heading = 160.0 },
-                { coords = vec3(317.67, -585.37, 42.84 + 0.3), heading = 160.0 },
-                { coords = vec3(319.41, -581.04, 42.84 + 0.3), heading = 340.0 },
-                { coords = vec3(314.47, -584.2, 42.84 + 0.3),  heading = 160.0 },
-                { coords = vec3(313.93, -579.04, 42.84 + 0.3), heading = 340.0 },
-                { coords = vec3(311.06, -582.96, 42.84 + 0.3), heading = 160.0 },
-                { coords = vec3(307.72, -581.75, 42.84 + 0.3), heading = 160.0 },
-                { coords = vec3(309.35, -577.38, 42.84 + 0.3), heading = 340.0 },
-                { coords = vec3(361.36, -581.3, 42.83 + 0.3),  heading = 250.0 },
-                { coords = vec3(359.54, -586.23, 42.84 + 0.3), heading = 250.0 },
-                { coords = vec3(354.44, -600.19, 42.85 + 0.3), heading = 250.0 },
-                { coords = vec3(324.26, -582.8, 42.84 + 0.3),  heading = 340.0 },
+                { coords = vec3(318.04, -572.2, 48.12 + 0.3), heading = 160.0 },
+                { coords = vec3(316.8, -566.48, 49.12 + 0.3), heading = 340.0 },
+                { coords = vec3(323.35, -568.81, 49.12 + 0.3),  heading = 160.0 },
+                -- { coords = vec3(313.93, -579.04, 42.84 + 0.3), heading = 340.0 },
+                -- { coords = vec3(311.06, -582.96, 42.84 + 0.3), heading = 160.0 },
+                -- { coords = vec3(307.72, -581.75, 42.84 + 0.3), heading = 160.0 },
+                -- { coords = vec3(309.35, -577.38, 42.84 + 0.3), heading = 340.0 },
+                -- { coords = vec3(361.36, -581.3, 42.83 + 0.3),  heading = 250.0 },
+                -- { coords = vec3(359.54, -586.23, 42.84 + 0.3), heading = 250.0 },
+                -- { coords = vec3(354.44, -600.19, 42.85 + 0.3), heading = 250.0 },
+                -- { coords = vec3(324.26, -582.8, 42.84 + 0.3),  heading = 340.0 },
                 -- Stock qb-ambulance hospital bed coords:
                 --                { coords = vec3(353.1, -584.6, 43.11), heading = 152.08 },
                 --                { coords = vec3(356.79, -585.86, 43.11), heading = 152.08 },
@@ -562,7 +562,7 @@ Config.Locations = {
             Range = 1.5,                        -- Range away from coords you can use.
             Uniforms = {                        -- Uniform choices
                 [1] = {                         -- Order it will display
-                    label = 'Medic',            -- Name of outfit that will display in menu
+                    label = 'Medico',            -- Name of outfit that will display in menu
                     minGrade = 0,               -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {                    -- Male variation
                         clothing = {
@@ -599,67 +599,67 @@ Config.Locations = {
                         }
                     }
                 },
-                [2] = {
-                    label = 'Doctor',
-                    minGrade = 1, -- Min grade level that can access? Set to 0 or false for everyone to use
-                    male = {
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 3,  drawable = 15, texture = 0 }, -- Torso
-                            { component = 4,  drawable = 35, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 8,  drawable = 58, texture = 0 }, -- Shirt
+                -- [2] = {
+                --     label = 'Doctor',
+                --     minGrade = 1, -- Min grade level that can access? Set to 0 or false for everyone to use
+                --     male = {
+                --         clothing = {
+                --             -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                --             -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                --             { component = 3,  drawable = 15, texture = 0 }, -- Torso
+                --             { component = 4,  drawable = 35, texture = 0 }, -- Pants
+                --             { component = 6,  drawable = 24, texture = 0 }, -- Shoes
+                --             { component = 8,  drawable = 58, texture = 0 }, -- Shirt
                             
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+                --         },
+                --         props = {
+                --             -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                --             -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
 
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                            { component = 0, drawable = 2, texture = 0 }, -- Hats
-                            { component = 1, drawable = 1, texture = 0 }, -- Glasses
-                            { component = 2, drawable = 3, texture = 0 }, -- Ears
-                            { component = 6, drawable = 1, texture = 0 }, -- Watches
-                            { component = 7, drawable = 2, texture = 0 }  -- Bracelets
-                        }
-                    },
-                    female = {
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 15, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 58, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 35, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 15, texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+                --             --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                --             { component = 0, drawable = 2, texture = 0 }, -- Hats
+                --             { component = 1, drawable = 1, texture = 0 }, -- Glasses
+                --             { component = 2, drawable = 3, texture = 0 }, -- Ears
+                --             { component = 6, drawable = 1, texture = 0 }, -- Watches
+                --             { component = 7, drawable = 2, texture = 0 }  -- Bracelets
+                --         }
+                --     },
+                --     female = {
+                --         clothing = {
+                --             -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                --             -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                --             { component = 11, drawable = 15, texture = 0 }, -- Torso
+                --             { component = 8,  drawable = 58, texture = 0 }, -- Shirt
+                --             { component = 4,  drawable = 35, texture = 0 }, -- Pants
+                --             { component = 6,  drawable = 24, texture = 0 }, -- Shoes
+                --             { component = 3,  drawable = 15, texture = 0 }, -- Arms
+                --         },
+                --         props = {
+                --             -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                --             -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
 
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    }
-                },
+                --             --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                --         }
+                --     }
+                -- },
             }
         },
 
         MedicalSupplies = {                                                     -- EMS Shop for supplies
             Enabled = true,                                                     -- If set to false, rest of this table do not matter
             Ped = 's_m_m_doctor_01',                                            -- Ped to target
-            Coords = vec3(306.63, -601.44, 43.28 - 0.95),                       -- Coords of ped/target
+            Coords = vec3(336.94, -579.19, 37.40),                       -- Coords of ped/target
             Heading = 337.64,                                                   -- Heading of ped
             Supplies = {                                                        -- Supplies
-                { item = 'medbag',     label = 'Medical Bag',   price = 1000 }, -- Pretty self explanatory, price may be set to 'false' to make free
-                { item = 'medikit',    label = 'First-Aid Kit', price = 250 },
-                { item = 'morphine30', label = 'Morphine 30MG', price = 100 },
-                { item = 'morphine15', label = 'Morphine 15MG', price = 45 },
-                { item = 'perc30',     label = 'Percocet 30MG', price = 60 },
-                { item = 'perc10',     label = 'Percocet 10MG', price = 40 },
-                { item = 'perc5',      label = 'Percocet 5MG',  price = 30 },
-                { item = 'vic10',      label = 'Vicodin 10MG',  price = 30 },
-                { item = 'vic5',       label = 'Vicodin 5MG',   price = 15 },
+                { item = 'medbag',     label = 'Bolsa Médica',       price = 1000 }, -- Bastante autoexplicativo, el precio puede ser 'false' para hacerlo gratuito
+                { item = 'medikit',    label = 'Botiquín de Primeros Auxilios', price = 250 },
+                { item = 'morphine30', label = 'Morfina 30MG',       price = 100 },
+                { item = 'morphine15', label = 'Morfina 15MG',       price = 45 },
+                { item = 'perc30',     label = 'Percocet 30MG',      price = 60 },
+                { item = 'perc10',     label = 'Percocet 10MG',      price = 40 },
+                { item = 'perc5',      label = 'Percocet 5MG',       price = 30 },
+                { item = 'vic10',      label = 'Vicodin 10MG',       price = 30 },
+                { item = 'vic5',       label = 'Vicodin 5MG',        price = 15 },
             }
         },
 
@@ -684,45 +684,45 @@ Config.Locations = {
             Options = {
                 [0] = {                    -- Job grade as table name
                     ['ambulance'] = {      -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Ambulance',
+                        label = 'Ambulancia',
                         category = 'land', -- Options are 'land' and 'air'
                     },
-                    ['dodgeems'] = {       -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Dodge Charger',
-                        category = 'land', -- Options are 'land' and 'air'
-                    },
+                    -- ['dodgeems'] = {       -- Car/Helicopter/Vehicle Spawn Code/Model Name
+                    --     label = 'Dodge Charger',
+                    --     category = 'land', -- Options are 'land' and 'air'
+                    -- },
                     ['polmav'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Maverick',
+                        label = 'Helicóptero',
                         category = 'air',  -- Options are 'land' and 'air'
                     },
                 },
 
                 [1] = {
                     ['ambulance'] = {      -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Ambulance',
+                        label = 'Ambulancia',
                         category = 'land', -- Options are 'land' and 'air'
                     },
-                    ['dodgeems'] = {       -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Dodge Charger',
-                        category = 'land', -- Options are 'land' and 'air'
-                    },
+                    -- ['dodgeems'] = {       -- Car/Helicopter/Vehicle Spawn Code/Model Name
+                    --     label = 'Dodge Charger',
+                    --     category = 'land', -- Options are 'land' and 'air'
+                    -- },
                     ['polmav'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Maverick',
+                        label = 'Helicóptero',
                         category = 'air',  -- Options are 'land' and 'air'
                     },
                 },
 
                 [2] = {
                     ['ambulance'] = {      -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Ambulance',
+                        label = 'Ambulancia',
                         category = 'land', -- Options are 'land' and 'air'
                     },
-                    ['dodgeems'] = {       -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Dodge Charger',
-                        category = 'land', -- Options are 'land' and 'air'
-                    },
+                    -- ['dodgeems'] = {       -- Car/Helicopter/Vehicle Spawn Code/Model Name
+                    --     label = 'Dodge Charger',
+                    --     category = 'land', -- Options are 'land' and 'air'
+                    -- },
                     ['polmav'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Maverick',
+                        label = 'Helicóptero',
                         category = 'air',  -- Options are 'land' and 'air'
                     },
                 }

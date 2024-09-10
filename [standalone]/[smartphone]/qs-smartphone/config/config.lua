@@ -747,18 +747,17 @@ Config.ResetPassword = {
                 h = 118.6,
                 model = `hc_hacker`
             },
-            /*blip = {
+            blip = {
                 name = 'Telephone technician',
                 sprite = 89,
                 color = 1,
                 scale = 0.7
-            }*/
+            }
         },
-
-        --[[ {
+        {
             coords = vec3(-1500.553833, -432.039551, 35.547974),
             money = 500,
-            text = '[E] - Telephone Technician',
+            text = '[E] - Técnico telefónico',
             ped = {
                 h = 230.65,
                 model = `hc_hacker`
@@ -769,7 +768,7 @@ Config.ResetPassword = {
                 color = 1,
                 scale = 0.7
             }
-        }, ]]
+        },
 
         -- Add more spots here
     },

@@ -20,7 +20,7 @@ Config.Cityhalls = {
         blipData = {
             sprite = 487,
             display = 4,
-            scale = 0.65,
+            scale = 0.5,
             colour = 0,
             title = 'City Services'
         },
@@ -50,7 +50,7 @@ Config.DrivingSchools = {
         blipData = {
             sprite = 225,
             display = 4,
-            scale = 0.65,
+            scale = 0.5,
             colour = 3,
             title = 'Driving School'
         },

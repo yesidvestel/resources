@@ -60,6 +60,26 @@ Customize.Garages = {
     },
     {
         Blips = {
+            Position = vector3(-274.49, -890.11, 31.08),
+            Label = "Car",
+            Sprite = 357,
+            Display = 4,
+            Scale = 0.5,
+            Color = 18,
+        },
+        Npc = {  Hash = "s_m_y_barman_01", Pos = vector3(-281.02, -888.41, 31.32), Heading = 340.67 },
+        Type = 'car', --car, air, sea
+        UIName = 'Public Parking',
+        Camera = {
+            vehSpawn = vector4(-300.14, -883.93, 31.08, 161.81),
+            location = { posX = -305.80, posY = -892.82, posZ = 31.08, rotX = 0.0, rotY = 0.0, rotZ = -32.0, fov = 38.0 },
+        },
+        VehPutPos = vector3(-274.49, -890.11, 31.08),
+        VehSpawnPos = vector4(-300.14, -883.93, 31.08, 161.81),
+    },
+
+    {
+        Blips = {
             Position = vector3(899.83, -57.79, 78.76),
             Label = "Car",
             Sprite = 357,

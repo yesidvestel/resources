@@ -38,7 +38,7 @@ Citizen.CreateThread(function()
                 sleep = false
                 DrawMarker(2, actualShop.x, actualShop.y, actualShop.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.2, 0.1, 255, 0, 0, 155, 0, 0, 0, 1, 0, 0, 0)
                 if dist <= 2.5 then
-                    DrawText3Ds(actualShop.x, actualShop.y, actualShop.z + 0.2, '[~g~E~w~] - Browse Vehicle Shop')
+                    DrawText3Ds(actualShop.x, actualShop.y, actualShop.z + 0.2, '[~g~E~w~] - Explorar tienda de vehículos')
                     if IsControlJustPressed(0, 38) then
                         vehcategory = Config.Shops[i].category
                         cameracoords = Config.Shops[i].cameracoords
@@ -305,7 +305,7 @@ RegisterNUICallback(
                 Citizen.Wait(1)
                 if GetGameTimer() < timeGG+tonumber(1000*Config.TestDriveTime) then
                     local secondsLeft = GetGameTimer() - timeGG
-                    drawTxt('Test Drive Time Remaining: ' .. math.ceil(Config.TestDriveTime - secondsLeft/1000),4,0.5,0.93,0.50,255,255,255,180)
+                    drawTxt('Tiempo restante de prueba de conducción: ' .. math.ceil(Config.TestDriveTime - secondsLeft/1000),4,0.5,0.93,0.50,255,255,255,180)
                 else
                     DeleteEntity(testDriveEntity)
                     SetEntityCoords(PlayerPedId(), lastPlayerCoords)
@@ -431,3 +431,37 @@ AddEventHandler(
         end
     end
 )
+
+-------
+
+function SpawnExhibitionVehicle(model, coords, heading)
+    RequestModel(model)
+    while not HasModelLoaded(model) do
+        Wait(500) -- Esperar hasta que el modelo esté cargado
+    end
+
+    local vehicle = CreateVehicle(model, coords.x, coords.y, coords.z, heading, false, false) -- Crear el vehículo en las coordenadas especificadas
+    SetVehicleOnGroundProperly(vehicle) -- Asegurarse de que el vehículo esté correctamente en el suelo
+    SetEntityInvincible(vehicle, true) -- Hacer que el vehículo sea invulnerable
+    SetVehicleDoorsLocked(vehicle, 2) -- Bloquear las puertas del vehículo
+    FreezeEntityPosition(vehicle, true) -- Congelar el vehículo para que no se mueva
+end
+
+-- Evento que recibe la orden del servidor para spawnear los vehículos de exhibición
+RegisterNetEvent('qb-vehicleshop.spawnExhibitionVehicles')
+AddEventHandler('qb-vehicleshop.spawnExhibitionVehicles', function()
+    -- Llamar a los vehículos definidos en la configuración
+    for _, v in pairs(Config.ExhibitionVehicles) do
+        SpawnExhibitionVehicle(v.model, v.coords, v.heading)
+    end
+end)
+
+-- Cargar vehículos de exhibición al iniciar el cliente
+AddEventHandler('onClientResourceStart', function(resourceName)
+    if GetCurrentResourceName() == resourceName then
+        -- Llamar a la función para spawnear los vehículos al iniciar el cliente
+        for _, v in pairs(Config.ExhibitionVehicles) do
+            SpawnExhibitionVehicle(v.model, v.coords, v.heading)
+        end
+    end
+end)

@@ -2,11 +2,11 @@ Config = Config or {}
 
 Config.MinZOffset = 30
 Config.RamsNeeded = 2
-Config.UnownedBlips = false
+Config.UnownedBlips = true
 
 Config.Houses = {}
 Config.Targets = {}
-Config.StashWeights = { -- Please follow by tiers!
+Config.StashWeights = { 
 	[1] = {
 		maxweight = 1000000,
 		slots = 50,
