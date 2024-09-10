@@ -14,9 +14,9 @@ Config.Command = {
     permission = 'god',
 }
 
-Config.DatabaseStructureCheck = true
+Config.DatabaseStructureCheck = false
 
-Config.CheckVersions = true
+Config.CheckVersions = false
 
 Config.CustomNotify = false
 

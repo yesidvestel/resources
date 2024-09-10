@@ -59,25 +59,6 @@ Config.Outfits = {
                 maps = {"default-gta", "mission-row", "artex-mrpd", "custom"}
             },
             {
-                name = "Trooper Black",
-                outfitData = {
-                    ["pants"] = {item = 24, texture = 0}, -- Pants
-                    ["arms"] = {item = 20, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 58, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 317, texture = 8}, -- Jacket
-                    ["shoes"] = {item = 51, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
-                    ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 58, texture = 3}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["mask"] = {item = 0, texture = 0} -- Mask
-                },
-                job = {"police"},
-                grades = {2, 3, 4},
-                maps = {"default-gta", "mission-row", "artex-mrpd", "custom"}
-            },
-            {
                 name = "SWAT",
                 outfitData = {
                     ["pants"] = {item = 179, texture = 0}, -- Pants
@@ -98,14 +79,14 @@ Config.Outfits = {
         },
         ["Female"] = {
             {
-                name = "Short Sleeve",
+                name = "Manga corta",
                 outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["pants"] = {item = 71, texture = 1}, -- Pants
+                    ["arms"] = {item = 32, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 48, texture = 0}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
+                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
+                    ["torso2"] = {item = 178, texture = 0}, -- Jacket
+                    ["shoes"] = {item = 39, texture = 0}, -- Shoes
                     ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
                     ["bag"] = {item = 0, texture = 0}, -- Bag
                     ["hat"] = {item = 0, texture = 0}, -- Hat
@@ -117,14 +98,14 @@ Config.Outfits = {
                 maps = {"default-gta", "mission-row", "artex-mrpd", "custom"}
             },
             {
-                name = "Trooper Tan",
+                name = "Entrenamiento",
                 outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["pants"] = {item = 71, texture = 0}, -- Pants
+                    ["arms"] = {item = 35, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 3}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
+                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
+                    ["torso2"] = {item = 634, texture = 0}, -- Jacket
+                    ["shoes"] = {item = 39, texture = 0}, -- Shoes
                     ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
                     ["bag"] = {item = 0, texture = 0}, -- Bag
                     ["hat"] = {item = 0, texture = 0}, -- Hat
@@ -136,14 +117,14 @@ Config.Outfits = {
                 maps = {"default-gta", "mission-row", "artex-mrpd", "custom"}
             },
             {
-                name = "Long Sleeve",
+                name = "Manga larga",
                 outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["pants"] = {item = 71, texture = 0}, -- Pants
+                    ["arms"] = {item = 32, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 0}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
+                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
+                    ["torso2"] = {item = 349, texture = 0}, -- Jacket
+                    ["shoes"] = {item = 39, texture = 0}, -- Shoes
                     ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
                     ["bag"] = {item = 0, texture = 0}, -- Bag
                     ["hat"] = {item = 0, texture = 0}, -- Hat
@@ -155,38 +136,19 @@ Config.Outfits = {
                 maps = {"default-gta", "mission-row", "artex-mrpd", "custom"}
             },
             {
-                name = "Trooper Black",
-                outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 8}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
-                    ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 0, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["mask"] = {item = 0, texture = 0} -- Mask
-                },
-                job = {"police"},
-                grades = {2, 3, 4},
-                maps = {"default-gta", "mission-row", "artex-mrpd", "custom"}
-            },
-            {
                 name = "SWAT",
                 outfitData = {
-                    ["pants"] = {item = 135, texture = 1}, -- Pants
-                    ["arms"] = {item = 213, texture = 0}, -- Arms
+                    ["pants"] = {item = 47, texture = 1}, -- Pants
+                    ["arms"] = {item = 32, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 0, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 17, texture = 2}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 8}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 102, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 15, texture = 0}, -- Body Vest
+                    ["torso2"] = {item = 416, texture = 8}, -- Jacket
+                    ["shoes"] = {item = 39, texture = 0}, -- Shoes
+                    ["accessory"] = {item = 101, texture = 0}, -- Neck Accessory
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 149, texture = 0}, -- Hat
+                    ["hat"] = {item = 148, texture = 0}, -- Hat
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["mask"] = {item = 35, texture = 0} -- Mask
+                    ["mask"] = {item = 0, texture = 0} -- Mask
                 },
                 job = {"police"},
                 grades = {3, 4},
