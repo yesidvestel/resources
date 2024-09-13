@@ -15,15 +15,6 @@ Config.Blips = {
         blipname = 'Premium Deluxe Motorsport',
         blipsprite = 326,
         blipcolor = 3,
-<<<<<<< Updated upstream
-        scale = 0.5
-=======
-<<<<<<< HEAD
-        blipscale = 0.2
-=======
-        scale = 0.5
->>>>>>> c68b8e2b532d070dfe40664a61709d55a8996cbe
->>>>>>> Stashed changes
     }
     -- [2] = {
     --     blip = vector3(-773.7, -1495.2, 2.6),
