@@ -4,7 +4,7 @@ Config.DefaultSpawn = vector3(-1037.75, -2737.85, 20.17) -- Default spawn coords
 Config.PedCoords = vector4(-1008.49, -474.51, 50.03, 208.64) -- Create preview ped at these coordinates
 Config.HiddenCoords = vector4(-1001.11, -478.06, 50.03, 24.55) -- Hides your actual ped while you are in selection
 Config.CamCoords = vector4(-1005.53, -480.73, 50.52, 27.44) -- Camera coordinates for character preview screen
-Config.EnableDeleteButton = true -- Define if the player can delete the character or not
+Config.EnableDeleteButton = false -- Define if the player can delete the character or not
 
 Config.DefaultNumberOfCharacters = 1 --  Max 4 // Dont Go More Than 4
 Config.PlayersNumberOfCharacters = { -- Define maximum amount of player characters by rockstar license (you can find this license in your server's database in the player table)

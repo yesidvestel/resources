@@ -5,12 +5,27 @@ QBShared.Jobs = {
 	bus = { label = 'Autobús', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Conductor', payment = 50 } } },
 	judge = { label = 'Honorario', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Juez', payment = 100 } } },
 	lawyer = { label = 'Bufete', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Asociado', payment = 50 } } },
+<<<<<<< Updated upstream
 	reporter = { label = 'Reportero', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Periodista', payment = 50 } } },
+=======
+<<<<<<< HEAD
+	-- reporter = { label = 'Reportero', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Periodista', payment = 50 } } },
+=======
+	reporter = { label = 'Reportero', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Periodista', payment = 50 } } },
+>>>>>>> c68b8e2b532d070dfe40664a61709d55a8996cbe
+>>>>>>> Stashed changes
 	trucker = { label = 'Camionero', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Conductor', payment = 50 } } },
 	tow = { label = 'Grua', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Conductor', payment = 50 } } },
 	garbage = { label = 'Basura', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Recolector', payment = 50 } } },
 	vineyard = { label = 'Viñedo', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Recolector', payment = 50 } } },
 	hotdog = { label = 'Puesto de Hotdog', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Vendedor', payment = 50 } } },
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+	miner = { label = 'Minero', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Minero', payment = 50 } } },
+=======
+>>>>>>> c68b8e2b532d070dfe40664a61709d55a8996cbe
+>>>>>>> Stashed changes
 
 	police = {
 		label = 'Police',

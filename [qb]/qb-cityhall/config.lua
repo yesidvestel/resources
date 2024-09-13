@@ -6,7 +6,6 @@ Config.AvailableJobs = {                                     -- Only used when n
     ['trucker'] = { ['label'] = 'camionero', ['isManaged'] = false },
     ['taxi'] = { ['label'] = 'Taxi', ['isManaged'] = false },
     ['tow'] = { ['label'] = 'Camión de remolque', ['isManaged'] = false },
-    ['reporter'] = { ['label'] = 'Reportero de noticias', ['isManaged'] = false },
     ['garbage'] = { ['label'] = 'Recolector de basura', ['isManaged'] = false },
     ['bus'] = { ['label'] = 'Conductor de autobús', ['isManaged'] = false },
     ['hotdog'] = { ['label'] = 'Puesto de perritos calientes', ['isManaged'] = false },

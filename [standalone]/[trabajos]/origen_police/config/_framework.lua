@@ -2,7 +2,7 @@ Config = {}
 
 Config.Framework = "auto" -- The name of the framework: auto | esx | qbcore | ...
 Config.MySQLSystem = "oxmysql" -- icmysql, oxmysql
-Config.DatabaseStructureCheck = true -- If you want the script to check the tables structure to check if you're missing some columns
+Config.DatabaseStructureCheck = false -- If you want the script to check the tables structure to check if you're missing some columns
 Config.CustomNotify = false -- If you want to use your own notify system set this to true and edit the code in origen_police/custom/client/client.lua
 Config.Language = "es" -- core(take the language of the core configured in the server.cfg) | en | es | fr | it
 Config.autoSetItems = true -- To add items automaticly via exports ['qb-core']:AddItems
@@ -25,7 +25,7 @@ Config.DisplayPlateOnVehicleAlerts = true -- To enable or disable the display of
 Config.ShowCurrentStreet = true -- Show at the top of the screen the current street that the police is in
 Config.ChangeMinimapSize = true -- Allows resizing of the minimap 
 Config.HeatMapAlerts = true -- Enable or disable the heat map alerts in the dispatch
-Config.CheckVersions = true -- Check if there's a new version of the script
+Config.CheckVersions = false -- Check if there's a new version of the script
 
 -- NO TOQUES ARRIBA;
 

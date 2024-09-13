@@ -7,6 +7,6 @@ Config.Items = {
     [2] = { itemName = "sandwich", qty = 5},
 }
 
-Config.Vehicle = "club" -- set spawn name of vehicle that you want to give
+Config.Vehicle = false -- set spawn name of vehicle that you want to give
 
-Config.DefaultGarage = "inicial" -- set garage name that you want to store your vehicle starterpack
+Config.DefaultGarage = false -- set garage name that you want to store your vehicle starterpack
