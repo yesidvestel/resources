@@ -568,11 +568,11 @@ Config.Locations = {
                         clothing = {
                             -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
                             -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 15, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 58, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 35, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 15, texture = 0 }, -- Arms
+                            { component = 11, drawable = 227, texture = 0 }, -- Torso
+                            { component = 8,  drawable = 72, texture = 14 }, -- Shirt
+                            { component = 4,  drawable = 35, texture = 1 }, -- Pants
+                            { component = 6,  drawable = 10, texture = 0 }, -- Shoes
+                            { component = 3,  drawable = 18, texture = 0 }, -- Arms
                         },
                         props = {
                             -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
@@ -585,11 +585,11 @@ Config.Locations = {
                         clothing = {
                             -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
                             -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 15, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 58, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 35, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 15, texture = 0 }, -- Arms
+                            { component = 11, drawable = 192, texture = 0 }, -- Torso
+                            { component = 8,  drawable = 93, texture = 0 }, -- Shirt
+                            { component = 4,  drawable = 6, texture = 0 }, -- Pants
+                            { component = 6,  drawable = 19, texture = 0 }, -- Shoes
+                            { component = 3,  drawable = 14, texture = 0 }, -- Arms
                         },
                         props = {
                             -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
