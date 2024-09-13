@@ -754,21 +754,21 @@ Config.ResetPassword = {
                 scale = 0.7
             }
         },
-        {
-            coords = vec3(-1500.553833, -432.039551, 35.547974),
-            money = 500,
-            text = '[E] - Técnico telefónico',
-            ped = {
-                h = 230.65,
-                model = `hc_hacker`
-            },
-            blip = {
-                name = 'Telephone technician',
-                sprite = 89,
-                color = 1,
-                scale = 0.7
-            }
-        },
+    --     {
+    --         coords = vec3(-1500.553833, -432.039551, 35.547974),
+    --         money = 500,
+    --         text = '[E] - Técnico telefónico',
+    --         ped = {
+    --             h = 230.65,
+    --             model = `hc_hacker`
+    --         },
+    --         blip = {
+    --             name = 'Telephone technician',
+    --             sprite = 89,
+    --             color = 1,
+    --             scale = 0.7
+    --         }
+    --     },
     --     {
     --         coords = vec3(-1500.553833, -432.039551, 35.547974),
     --         money = 500,
@@ -789,7 +789,7 @@ Config.ResetPassword = {
     --     enable = true,                                   -- Habilitar el sistema de UI de texto
     --     colour = { r = 255, g = 255, b = 255, a = 255 }, -- Color del texto UI
     --     position = 'center'                              -- Posición del texto UI
-    -- }
+    }
 }
 
 -- ██████╗ ██╗███████╗██████╗  █████╗ ████████╗ ██████╗██╗  ██╗
