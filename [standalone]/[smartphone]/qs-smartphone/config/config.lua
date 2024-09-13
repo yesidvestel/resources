@@ -747,7 +747,6 @@ Config.ResetPassword = {
                 h = 118.6,
                 model = `hc_hacker`
             },
-<<<<<<< Updated upstream
             blip = {
                 name = 'Telephone technician',
                 sprite = 89,
@@ -763,10 +762,6 @@ Config.ResetPassword = {
                 h = 230.65,
                 model = `hc_hacker`
             },
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
             blip = {
                 name = 'Telephone technician',
                 sprite = 89,
@@ -774,31 +769,27 @@ Config.ResetPassword = {
                 scale = 0.7
             }
         },
-<<<<<<< Updated upstream
-=======
-        {
-            coords = vec3(-1500.553833, -432.039551, 35.547974),
-            money = 500,
-            text = '[E] - Técnico telefónico',
-            ped = {
-                h = 230.65,
-                model = `hc_hacker`
-            },
->>>>>>> c68b8e2b532d070dfe40664a61709d55a8996cbe
-            blip = {
-                name = 'Telephone technician',
-                sprite = 89,
-                color = 1,
-                scale = 0.7
-            }
-        },
-        -- Add more spots here
-    },
-    okokTextUI = {
-        enable = true,                                   -- Habilitar el sistema de UI de texto
-        colour = { r = 255, g = 255, b = 255, a = 255 }, -- Color del texto UI
-        position = 'center'                              -- Posición del texto UI
-    }
+    --     {
+    --         coords = vec3(-1500.553833, -432.039551, 35.547974),
+    --         money = 500,
+    --         text = '[E] - Técnico telefónico',
+    --         ped = {
+    --             h = 230.65,
+    --             model = `hc_hacker`
+    --         },
+    --         blip = {
+    --             name = 'Telephone technician',
+    --             sprite = 89,
+    --             color = 1,
+    --             scale = 0.7
+    --         }
+    --     },
+    -- },
+    -- okokTextUI = {
+    --     enable = true,                                   -- Habilitar el sistema de UI de texto
+    --     colour = { r = 255, g = 255, b = 255, a = 255 }, -- Color del texto UI
+    --     position = 'center'                              -- Posición del texto UI
+    -- }
 }
 
 -- ██████╗ ██╗███████╗██████╗  █████╗ ████████╗ ██████╗██╗  ██╗
