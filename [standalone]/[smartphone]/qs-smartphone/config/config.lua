@@ -792,11 +792,6 @@ Config.ResetPassword = {
                 scale = 0.7
             }
         },
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-
->>>>>>> c68b8e2b532d070dfe40664a61709d55a8996cbe
         -- Add more spots here
     },
     okokTextUI = {
