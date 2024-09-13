@@ -444,13 +444,13 @@ Config.Locations = {
 
         clockInAndOut = {
             enabled = true,                       -- Enable clocking in and out at a set location? (If using ESX you must have a off duty job for Config.ambulanceJob with same grades - example in main _install_first directory)
-            coords = vec3(312.92, -587.78, 38.33), -- Location of where to go on and off duty(If not using target)
+            coords = vec3(315.52, -591.22, 38.33), -- Location of where to go on and off duty(If not using target)
             label = '[E] - Entrar o salir de servicio',        -- Text to display(If not using target)
             distance = 3.0,                        -- Distance to display text UI(If not using target)
             target = {
                 enabled = false,                   -- If enabled, the location and distance above will be obsolete
                 label = 'Entrar o salir de servicio',
-                coords = vec3(312.92, -587.78, 38.33),
+                coords = vec3(315.52, -591.22, 38.33),
                 heading = 337.07,
                 width = 2.0,
                 length = 1.0,
@@ -555,7 +555,7 @@ Config.Locations = {
         },
 
         Cloakroom = {
-            Enabled = true,
+            Enabled = false,
             Coords = vec3(308.97, -586.25, 38.33), -- Coords of cloakroom
             Label = '[E] - Cambiarse de ropa',     -- String of text ui of cloakroom
             HotKey = 38,                        -- Default: 38 (E)

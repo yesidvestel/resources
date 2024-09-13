@@ -75,7 +75,7 @@ shared_scripts {
   "locales/cs.lua",
   "locales/de.lua",
   "locales/en.lua",
-  "locales/es-ES.lua",
+  "locales/es.lua",
   "locales/fr.lua",
   "locales/hu.lua",
   "locales/it.lua",

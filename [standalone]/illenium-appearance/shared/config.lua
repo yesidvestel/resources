@@ -2,10 +2,10 @@ Config = {}
 
 Config.Debug = false
 
-Config.ClothingCost = 100
-Config.BarberCost = 100
-Config.TattooCost = 100
-Config.SurgeonCost = 100
+Config.ClothingCost = 200
+Config.BarberCost = 50
+Config.TattooCost = 200
+Config.SurgeonCost = 200
 
 Config.ChargePerTattoo = true -- Charge players per tattoo. Config.TattooCost will become the cost of 1 tattoo. The cost can be overridden by adding `cost` key in shared/tattoos.lua for specific tattoos
 
@@ -560,7 +560,7 @@ Config.Stores = {
 
 
 Config.ClothingRooms = {
-    --[[{
+    {
         job = "police",
         coords = vector4(454.46, -990.88, 30.69, 348.83),
         size = vector3(4, 4, 4),
@@ -579,7 +579,7 @@ Config.ClothingRooms = {
     },
 	{
         job = "ambulance",
-        coords = vector4(325.17, -582.74, 43.32, 352.69),
+        coords = vector4(310.26, -586.38, 38.33, 281.19),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -589,8 +589,8 @@ Config.ClothingRooms = {
             vector3(328.54, -582.11, 43.32),
             vector3(328.62, -584.54, 43.32),
         }
-    },]]--
-	{
+    },
+	--[[{
         job = "mechanic",
         coords = vector4(-343.41, -123.54, 39.01, 198.11),
         size = vector3(4, 4, 4),
@@ -602,7 +602,7 @@ Config.ClothingRooms = {
 		  	vector2(-341.90328979492, -123.2590560913),
 		  	vector2(-344.25366210938, -122.2692489624)
         }
-    }
+    }]]--
 }
 
 
@@ -844,7 +844,7 @@ Config.Outfits = {
             }
         }
     },
-    /*["ambulance"] = {
+    ["ambulance"] = {
         ["Male"] = {
             {
                 name = "T-Shirt",
@@ -882,7 +882,7 @@ Config.Outfits = {
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
-                grades = {2, 3, 4},
+                grades = {1, 2, 3, 4},
             },
             {
                 name = "Doctor",
@@ -963,7 +963,7 @@ Config.Outfits = {
                 grades = {3, 4},
             }
         }
-    },*/
+    },
 	["mechanic"] = {
         ["Male"] = {
             {
