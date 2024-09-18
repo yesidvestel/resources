@@ -847,26 +847,26 @@ Config.Outfits = {
     ["ambulance"] = {
         ["Male"] = {
             {
-                name = "T-Shirt",
+                name = "Hospital",
                 outfitData = {
-                    ["arms"] = {item = 85, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 129, texture = 0}, -- T-Shirt
-                    ["torso2"] = {item = 250, texture = 0}, -- Jackets
+                    ["arms"] = {item = 18, texture = 0}, -- Arms (Component 3)
+                    ["t-shirt"] = {item = 72, texture = 14}, -- T-Shirt (Component 8)
+                    ["torso2"] = {item = 227, texture = 0}, -- Jackets (Component 11)
+                    ["pants"] = {item = 35, texture = 1}, -- Pants (Component 4)
+                    ["shoes"] = {item = 10, texture = 0}, -- Shoes (Component 6)
                     ["vest"] = {item = 0, texture = 0}, -- Vest
-                    ["decals"] = {item = 58, texture = 0}, -- Decals
-                    ["accessory"] = {item = 127, texture = 0}, -- Neck
+                    ["decals"] = {item = 0, texture = 0}, -- Decals
+                    ["accessory"] = {item = 0, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 96, texture = 0}, -- Pants
-                    ["shoes"] = {item = 54, texture = 0}, -- Shoes
-                    ["mask"] = {item = 121, texture = 0}, -- Mask
-                    ["hat"] = {item = 122, texture = 0}, -- Hat
+                    ["mask"] = {item = 0, texture = 0}, -- Mask
+                    ["hat"] = {item = 0, texture = 0}, -- Hat
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
-                },
+                },   
                 grades = {0, 1, 2, 3, 4},
             },
             {
-                name = "Polo",
+                name = "Patrullar",
                 outfitData = {
                     ["arms"] = {item = 90, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 15, texture = 0}, -- T-Shirt
@@ -906,26 +906,26 @@ Config.Outfits = {
         },
         ["Female"] = {
             {
-                name = "T-Shirt",
+                name = "Hospital",
                 outfitData = {
-                    ["arms"] = {item = 109, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 159, texture = 0}, -- T-Shirt
-                    ["torso2"] = {item = 258, texture = 0}, -- Jackets
+                    ["arms"] = {item = 18, texture = 0}, -- Arms (Component 3)
+                    ["t-shirt"] = {item = 72, texture = 14}, -- T-Shirt (Component 8)
+                    ["torso2"] = {item = 227, texture = 0}, -- Jackets (Component 11)
+                    ["pants"] = {item = 35, texture = 1}, -- Pants (Component 4)
+                    ["shoes"] = {item = 10, texture = 0}, -- Shoes (Component 6)
                     ["vest"] = {item = 0, texture = 0}, -- Vest
-                    ["decals"] = {item = 66, texture = 0}, -- Decals
-                    ["accessory"] = {item = 97, texture = 0}, -- Neck
+                    ["decals"] = {item = 0, texture = 0}, -- Decals
+                    ["accessory"] = {item = 0, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 99, texture = 0}, -- Pants
-                    ["shoes"] = {item = 55, texture = 0}, -- Shoes
-                    ["mask"] = {item = 121, texture = 0}, -- Mask
-                    ["hat"] = {item = 121, texture = 0}, -- Hat
+                    ["mask"] = {item = 0, texture = 0}, -- Mask
+                    ["hat"] = {item = 0, texture = 0}, -- Hat
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
-                },
+                },                
                 grades = {0, 1, 2, 3, 4},
             },
             {
-                name = "Polo",
+                name = "Patrullar",
                 outfitData = {
                     ["arms"] = {item = 105, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 13, texture = 0}, -- T-Shirt
@@ -942,25 +942,6 @@ Config.Outfits = {
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
                 grades = {2, 3, 4},
-            },
-            {
-                name = "Doctor",
-                outfitData = {
-                    ["arms"] = {item = 105, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 39, texture = 3}, -- T-Shirt
-                    ["torso2"] = {item = 7, texture = 1}, -- Jackets
-                    ["vest"] = {item = 0, texture = 0}, -- Vest
-                    ["decals"] = {item = 0, texture = 0}, -- Decals
-                    ["accessory"] = {item = 96, texture = 0}, -- Neck
-                    ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 34, texture = 0}, -- Pants
-                    ["shoes"] = {item = 29, texture = 0}, -- Shoes
-                    ["mask"] = {item = 0, texture = 0}, -- Mask
-                    ["hat"] = {item = -1, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
-                },
-                grades = {3, 4},
             }
         }
     },

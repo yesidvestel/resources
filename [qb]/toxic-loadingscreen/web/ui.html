@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap"
+      id="font"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb27a9ac19.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <title>UI</title>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="liner"></div>
+      <div class="liner2"></div>
+      <div class="liner3"></div>
+      <div class="liner4"></div>
+      <div class="bg-item"></div>
+      <div class="no-game">
+        <div class="social-media"></div>
+        <div class="social-media-text">Nuestras redes</div>
+        <div class="teamspeak-img" o></div>
+        <div class="website-img"></div>
+        <div class="discord-img"></div>
+        <div class="teamspeak-text"></div>
+        <div class="teamspeak-text-t"><a href="https://emflows-organization.gitbook.io/comuna-rp/normativa-general/normativa-general">NORMATIVAS</a></div>
+        <div class="web-text"></div><br>
+        <div class="web-text-t"><a href="https://comunalatinvicerp.netlify.app/">PÁGINA WEB</a></div>
+        <div class="discord-text"></div>
+        <div class="discord-text-t"><a href="https://discord.gg/M6BCbHBW3t">UNETE A <BR>DISCORD</a></div>
+        <div class="staff">
+          <div class="staff-img"></div>
+          <div class="staff-type">DISFRUTA</div>
+          <div class="staff-name">Y DIVIÉRTETE</div>
+        </div>
+        <div class="staff2">
+          <div class="staff-img2"></div>
+          <div class="staff-type">CUMPLE LAS</div>
+          <div class="staff-name">REGLAS</div>
+        </div>
+        <div class="video-img"></div>
+        <div class="video-text">VIDEO JUEGO</div>
+        <div class="video-play">Jugar</div>
+        <div class="sound-img"></div>
+        <div class="sound-text">Volumen</div>
+        <input
+          type="range"
+          onmouseup="mouseUp(this.value)"
+          class="volumeSlider"
+          min="1"
+          max="100"
+          id="volumeSlider"
+        />
+        <div class="load-bar">
+          <div class="load-bar-l">
+            <div class="load-bar-y"></div>
+          </div>
+        </div>
+        <div class="big-name-y">Comuna Latín Vice RP</div>
+        <div class="big-name-x">Bienvenidos</div>
+      </div>
+      <div class="play-game">
+        <iframe
+          style="
+            position: absolute;
+            width: 45vw;
+            margin-top: 6vw;
+            height: 30vw;
+            margin-left: 51vw;
+            border-radius: 1vw;
+          "
+          src="https://gulper.io"
+          frameborder="0"
+        ></iframe>
+        <div class="video-img-2"></div>
+        <div class="video-text-2">VIDEO JUEGO</div>
+        <div class="video-play-2">SALIR</div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+      type="text/javascript"
+    ></script>
+    <audio id="music" src="./music.mp3" autoplay="true" hidden="true" loop="true">
+    <script>
+      var vid = document.getElementById("music");
+      vid.volume = 0.5;
+      // console.log("discord.gg/debux / debux.tebex.io");
+      $(".video-play").on("click", function () {
+        $(".play-game").css("display", "block");
+        $(".no-game").css("display", "none");
+      });
+
+      $(".video-play-2").on("click", function () {
+        $(".play-game").css("display", "none");
+        $(".no-game").css("display", "inline-block");
+      });
+
+      function loadProgress(progress) {
+        $(".load-bar-y").css("width", progress + "%");
+      }
+
+      window.addEventListener("message", function (e) {
+        if (e.data.eventName === "loadProgress") {
+          loadProgress(parseInt(e.data.loadFraction * 100));
+        }
+      });
+      function mouseUp(value) {
+        console.log(value / 100)
+        const obj = document.getElementById("music");
+        obj.volume = value / 100;
+      }
+    </script>
+  </body>
+</html>

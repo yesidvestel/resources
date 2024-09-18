@@ -48,13 +48,13 @@ local player_management = menu1:AddButton({
     description = Lang:t('desc.player_management_desc')
 })
 
---server management
-menu1:AddButton({
-    icon = '🎮',
-    label = Lang:t('menu.server_management'),
-    value = menu3,
-    description = Lang:t('desc.server_management_desc')
-})
+-- --server management
+-- menu1:AddButton({
+--     icon = '🎮',
+--     label = Lang:t('menu.server_management'),
+--     value = menu3,
+--     description = Lang:t('desc.server_management_desc')
+-- })
 
 --vehicle spawner
 menu1:AddButton({
@@ -64,13 +64,13 @@ menu1:AddButton({
     description = Lang:t('desc.vehicles_desc')
 })
 
---dealer list
-local menu1_dealer_list = menu1:AddButton({
-    icon = '💊',
-    label = Lang:t('menu.dealer_list'),
-    value = menu6,
-    description = Lang:t('desc.dealer_desc')
-})
+-- --dealer list
+-- local menu1_dealer_list = menu1:AddButton({
+--     icon = '💊',
+--     label = Lang:t('menu.dealer_list'),
+--     value = menu6,
+--     description = Lang:t('desc.dealer_desc')
+-- })
 
 --developer options
 menu1:AddButton({
@@ -127,13 +127,13 @@ local menu2_admin_display_blips = menu2:AddCheckbox({
     description = Lang:t('desc.blips_desc')
 })
 
---give weapons
-menu2:AddButton({
-    icon = '🎁',
-    label = Lang:t('menu.spawn_weapons'),
-    value = menu15,
-    description = Lang:t('desc.spawn_weapons_desc')
-})
+-- --give weapons
+-- menu2:AddButton({
+--     icon = '🎁',
+--     label = Lang:t('menu.spawn_weapons'),
+--     value = menu15,
+--     description = Lang:t('desc.spawn_weapons_desc')
+-- })
 
 -- Server Options Menu Buttons
 local menu3_server_weather = menu3:AddButton({
@@ -247,12 +247,12 @@ local menu3_server_time = menu3:AddSlider({
 })
 
 -- Vehicle Spawner Menu Buttons
-local menu5_vehicles_spawn = menu5:AddButton({
-    icon = '🚗',
-    label = Lang:t('menu.spawn_vehicle'),
-    value = menu12,
-    description = Lang:t('desc.spawn_vehicle_desc')
-})
+-- local menu5_vehicles_spawn = menu5:AddButton({
+--     icon = '🚗',
+--     label = Lang:t('menu.spawn_vehicle'),
+--     value = menu12,
+--     description = Lang:t('desc.spawn_vehicle_desc')
+-- })
 
 local menu5_vehicles_fix = menu5:AddButton({
     icon = '🔧',
@@ -261,12 +261,12 @@ local menu5_vehicles_fix = menu5:AddButton({
     description = Lang:t('desc.fix_vehicle_desc')
 })
 
-local menu5_vehicles_buy = menu5:AddButton({
-    icon = '💲',
-    label = Lang:t('menu.buy'),
-    value = 'buy',
-    description = Lang:t('desc.buy_desc')
-})
+-- local menu5_vehicles_buy = menu5:AddButton({
+--     icon = '💲',
+--     label = Lang:t('menu.buy'),
+--     value = 'buy',
+--     description = Lang:t('desc.buy_desc')
+-- })
 
 local menu5_vehicles_remove = menu5:AddButton({
     icon = '🗑️',
@@ -275,12 +275,12 @@ local menu5_vehicles_remove = menu5:AddButton({
     description = Lang:t('desc.remove_vehicle_desc')
 })
 
-local menu5_vehicles_max_upgrades = menu5:AddButton({
-    icon = '⚡️',
-    label = Lang:t('menu.max_mods'),
-    value = 'maxmods',
-    description = Lang:t('desc.max_mod_desc')
-})
+-- local menu5_vehicles_max_upgrades = menu5:AddButton({
+--     icon = '⚡️',
+--     label = Lang:t('menu.max_mods'),
+--     value = 'maxmods',
+--     description = Lang:t('desc.max_mod_desc')
+-- })
 
 -- Developer Options Menu Buttons
 local menu7_dev_copy_vec3 = menu7:AddButton({
@@ -891,36 +891,36 @@ local function OpenCarModelsMenu(category)
     end
 end
 
-menu5_vehicles_spawn:On('Select', function(_)
-    menu12:ClearItems()
-    for k, v in pairs(vehicles) do
-        menu12:AddButton({
-            label = QBCore.Shared.FirstToUpper(k),
-            value = v,
-            description = Lang:t('menu.category_name'),
-            select = function(btn)
-                local select = btn.Value
-                OpenCarModelsMenu(select)
-            end
-        })
-    end
-end)
+-- menu5_vehicles_spawn:On('Select', function(_)
+--     menu12:ClearItems()
+--     for k, v in pairs(vehicles) do
+--         menu12:AddButton({
+--             label = QBCore.Shared.FirstToUpper(k),
+--             value = v,
+--             description = Lang:t('menu.category_name'),
+--             select = function(btn)
+--                 local select = btn.Value
+--                 OpenCarModelsMenu(select)
+--             end
+--         })
+--     end
+-- end)
 
 menu5_vehicles_fix:On('Select', function(_)
     TriggerServerEvent('QBCore:CallCommand', 'fix', {})
 end)
 
-menu5_vehicles_buy:On('Select', function(_)
-    TriggerServerEvent('QBCore:CallCommand', 'admincar', {})
-end)
+-- menu5_vehicles_buy:On('Select', function(_)
+--     TriggerServerEvent('QBCore:CallCommand', 'admincar', {})
+-- end)
 
 menu5_vehicles_remove:On('Select', function(_)
     TriggerServerEvent('QBCore:CallCommand', 'dv', {})
 end)
 
-menu5_vehicles_max_upgrades:On('Select', function(_)
-    TriggerServerEvent('QBCore:CallCommand', 'maxmods', {})
-end)
+-- menu5_vehicles_max_upgrades:On('Select', function(_)
+--     TriggerServerEvent('QBCore:CallCommand', 'maxmods', {})
+-- end)
 
 --[[
     Developer Options functions
@@ -1234,19 +1234,19 @@ local function OpenDealerMenu(dealer)
     end
 end
 
-menu1_dealer_list:On('Select', function(_)
-    menu6:ClearItems()
-    QBCore.Functions.TriggerCallback('test:getdealers', function(dealers)
-        for _, v in pairs(dealers) do
-            menu6:AddButton({
-                label = v['name'],
-                value = v,
-                description = Lang:t('menu.dealer_name'),
-                select = function(btn)
-                    local select = btn.Value
-                    OpenDealerMenu(select)
-                end
-            })
-        end
-    end)
-end)
+-- menu1_dealer_list:On('Select', function(_)
+--     menu6:ClearItems()
+--     QBCore.Functions.TriggerCallback('test:getdealers', function(dealers)
+--         for _, v in pairs(dealers) do
+--             menu6:AddButton({
+--                 label = v['name'],
+--                 value = v,
+--                 description = Lang:t('menu.dealer_name'),
+--                 select = function(btn)
+--                     local select = btn.Value
+--                     OpenDealerMenu(select)
+--                 end
+--             })
+--         end
+--     end)
+-- end)

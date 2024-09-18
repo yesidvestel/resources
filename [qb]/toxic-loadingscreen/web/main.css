@@ -1,0 +1,582 @@
+@import url("https://fonts.cdnfonts.com/css/pf-dindisplay-pro");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@font-face {
+  font-family: "TT Lakes Neue Compressed";
+  src: local("./font/TT Lakes Neue Compressed Bold Italic"),
+    local("TT-Lakes-Neue-Compressed-Bold-Italic"),
+    url("./font/TTLakesNeueComp-BoldIt.woff2") format("woff2"),
+    url("./font/TTLakesNeueComp-BoldIt.woff") format("woff"),
+    url("./font/TTLakesNeueComp-BoldIt.ttf") format("truetype");
+  font-weight: 900;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg {
+  background-image: url("./img/bg.png");
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #07090c;
+  overflow: hidden;
+}
+
+.liner {
+  position: absolute;
+  width: 16.5vw;
+  height: 17vw;
+  left: 8.8vw;
+  top: 2vw;
+  background: linear-gradient(180deg, #632dff 0%, #390e81 100%);
+  filter: blur(212.5px);
+  transform: rotate(-44.3deg);
+}
+
+.liner2 {
+  position: absolute;
+  width: 18vw;
+  height: 23vw;
+  right: -8vw;
+  top: -12.5vw;
+  background: linear-gradient(180deg, #632dff 0%, #390e81 100%);
+  filter: blur(112.5px);
+  transform: rotate(17.06deg);
+}
+
+.liner3 {
+  position: absolute;
+  width: 18vw;
+  height: 23vw;
+  left: 50vw;
+  top: 53vw;
+  background: linear-gradient(180deg, #632dff 0%, #390e81 100%);
+  filter: blur(112.5px);
+  transform: rotate(-27.5deg);
+}
+
+.liner4 {
+  position: absolute;
+  /* overflow: hidden; */
+  width: 541px;
+  height: 541px;
+  left: 78vw;
+  top: 41vw;
+  background: rgba(255, 255, 255, 0.19);
+  filter: blur(281px);
+}
+
+.bg-item {
+  position: absolute;
+  background-image: url("./img/bg-item.png");
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-media {
+  position: relative;
+  background-image: url("./img/social.png");
+  width: 38vw;
+  height: 11vw;
+  left: 57.2vw;
+  top: 36vw;
+  display: block;
+  /* background-color: red; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-media-text {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1vw;
+  color: #ffffff;
+  margin-left: 57vw;
+  margin-top: 25vw;
+  transform: rotate(-2.8deg);
+}
+
+.teamspeak-img {
+  position: relative;
+  background-image: url("./img/teamspeak.png");
+  width: 13vw;
+  height: 4vw;
+  margin-left: 58vw;
+  margin-top: 3.5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.website-img {
+  position: relative;
+  background-image: url("./img/website.png");
+  width: 10.4vw;
+  height: 4.5vw;
+  margin-left: 71.8vw;
+  margin-top: -5.25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.discord-img {
+  position: relative;
+  background-image: url("./img/discord.png");
+  width: 10.4vw;
+  height: 4.5vw;
+  margin-left: 83vw;
+  margin-top: -5.25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.teamspeak-text {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  margin-top: -2.8vw;
+  margin-left: 63vw;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(234, 234, 234, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 5px rgba(255, 255, 255, 0.25);
+  transform: rotate(-2.8deg);
+}
+
+.teamspeak-text-t {
+  font-family: "PF DinDisplay Pro", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.95vw;
+  margin-top: -0.1vw;
+  margin-left: 63vw;
+  background: linear-gradient(180deg, #06FFFF 0%, #3736a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 8px rgba(72, 88, 230, 0.22);
+  transform: rotate(-2.8deg);
+}
+
+.web-text {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  margin-top: -2.8vw;
+  margin-left: 76.5vw;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(234, 234, 234, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 5px rgba(255, 255, 255, 0.25);
+  transform: rotate(-2.8deg);
+}
+
+.web-text-t {
+  font-family: "PF DinDisplay Pro", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.75vw;
+  margin-top: -0.1vw;
+  margin-left: 76.5vw;
+  background: linear-gradient(180deg, #ffdab4 0%, #b87b1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 8px rgba(230, 138, 72, 0.22);
+  transform: rotate(-2.8deg);
+}
+
+.discord-text {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  margin-top: -2.8vw;
+  margin-left: 87.6vw;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(234, 234, 234, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 5px rgba(255, 255, 255, 0.25);
+  transform: rotate(-2.8deg);
+}
+
+.discord-text-t {
+  font-family: "PF DinDisplay Pro", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.95vw;
+  margin-top: -0.1vw;
+  margin-left: 87.4vw;
+  background: linear-gradient(180deg, #06FFFF 50%, #3736a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 8px rgba(66, 122, 217, 0.22);
+  transform: rotate(-2.8deg);
+}
+
+.staff {
+  width: 9.95vw;
+  height: 8vw;
+  position: relative;
+  background-image: url("./img/staff.png");
+  margin-left: 56.8vw;
+  margin-top: -15.3vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.staff2 {
+  width: 9.95vw;
+  height: 8vw;
+  position: relative;
+  background-image: url("./img/staff.png");
+  margin-left: 67.8vw;
+  margin-top: -8.5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.staff-img {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 0.4vw;
+  margin-left: 2.65vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.discordapp.com/attachments/955831405064114216/1017816533239603231/TOXIC_LOGO_YENI_-_Kopya.png");
+  transform: rotate(-2.8deg);
+}
+
+.staff-img2 {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 0.4vw;
+  margin-left: 2.65vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.discordapp.com/attachments/955831405064114216/1076738057987956766/logo.png");
+  transform: rotate(-2.8deg);
+}
+
+.staff-type {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: "truetype";
+  font-weight: 400;
+  font-size: 1vw;
+  height: 2vw;
+  width: 5vw;
+  margin-top: 0.3vw;
+  margin-left: 3.3vw;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(234, 234, 234, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 5px rgba(255, 255, 255, 0.25);
+  transform: rotate(-2.8deg);
+}
+
+.staff-name {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.3vw;
+  width: 9.1vw;
+  margin-top: -0.8vw;
+  text-align: center;
+  background: linear-gradient(180deg, #06FFFF 0%, #3736a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 8px rgba(138, 83, 255, 0.22);
+  transform: rotate(-2.8deg);
+}
+
+.no-game {
+  display: inline-block;
+  margin-top: -3vw;
+}
+
+.play-game {
+  display: none;
+}
+
+.video-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -99;
+}
+
+.video-img {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/video.png");
+  width: 3vw;
+  height: 3vw;
+  margin-top: -4.5vw;
+  margin-left: 78.5vw;
+}
+
+.video-text {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 82vw;
+  margin-top: -2.7vw;
+  font-size: 1.15vw;
+  color: #ffffff;
+  transform: rotate(-2.8deg);
+}
+
+.video-play {
+  position: relative;
+  width: 4.9vw;
+  height: 1.5vw;
+  text-align: center;
+  line-height: 1.3vw;
+  margin-left: 87.7vw;
+  margin-top: -1.6vw;
+  background: linear-gradient(180deg, #06FFFF 0%, #3736a1 100%);
+  border-radius: 4px;
+  transform: rotate(-2.8deg);
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.sound-img {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/sound.png");
+  width: 3vw;
+  height: 3vw;
+  margin-top: -5.5vw;
+  margin-left: 78.2vw;
+}
+
+.sound-text {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 81.55vw;
+  margin-top: -3.1vw;
+  font-size: 1.35vw;
+  color: #ffffff;
+  transform: rotate(-2.8deg);
+}
+
+.volumeSlider {
+  position: relative;
+  margin-left: 81.55vw;
+  margin-top: 0.2vw;
+  transform: rotate(-2.8deg);
+  outline: none; /* Remove outline */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 0%;
+  background: linear-gradient(180deg, #632dff 0%, #390e81 100%);
+  transform: rotate(-2.8deg);
+  cursor: pointer;
+}
+
+.volumeSlider::-ms-ticks-after {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.load-bar {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/load-bar.png");
+  width: 35.5vw;
+  height: 4.3vw;
+  margin-top: -9.5vw;
+  margin-left: 56.5vw;
+}
+
+.load-bar-l {
+  display: inline-block;
+  width: 34.7vw;
+  height: 2.01vw;
+  margin-top: 1.12vw;
+  margin-left: 0.5vw;
+  background: rgba(98, 255, 84, 0.07);
+  border-radius: 2vw;
+  transform: rotate(-2.8deg);
+}
+
+.load-bar-y {
+  height: 100%;
+  /* animation: load 30s normal forwards; */
+  width: 30%;
+  background: linear-gradient(180deg, #06FFFF 0%, #3736a1 100%);
+  box-shadow: 0px 0px 100px #06FFFF67,
+    inset 0px 20px 4px #3736a1;
+  border-radius: 2vw;
+}
+
+.big-name-y {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1vw;
+  margin-left: 56vw;
+  margin-top: -10.5vw;
+  color: #ffffff;
+  text-shadow: 0px 4px 5px rgba(255, 255, 255, 0.08);
+  transform: rotate(-2.8deg);
+}
+
+.big-name-x {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.2vw;
+  margin-left: 56vw;
+  margin-top: -1.8vw;
+  background: linear-gradient(180deg, #06FFFF 0%, #3736a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 8px rgba(14, 80, 129, 0.25);
+  transform: rotate(-2.8deg);
+}
+
+.video-img-2 {
+  display: inline-block;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/video.png");
+  width: 3vw;
+  height: 3vw;
+  margin-top: 37.5vw;
+  margin-left: 73.5vw;
+  transform: rotate(2.8deg);
+}
+
+.video-text-2 {
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 77vw;
+  margin-top: -2.7vw;
+  font-size: 1.7vw;
+  color: #ffffff;
+}
+
+.video-play-2 {
+  position: relative;
+  width: 9.3vw;
+  height: 3vw;
+  text-align: center;
+  z-index: 1;
+  z-index: 9999;
+  line-height: 2.6vw;
+  margin-left: 85.3vw;
+  margin-top: -2.4vw;
+  background: linear-gradient(180deg, #06FFFF 0%, #3736a1 100%);
+  border-radius: 4px;
+  font-family: "TT Lakes Neue Compressed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6vw;
+  color: #ffffff;
+}
+
+.video-play:hover {
+  background-color: red;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
