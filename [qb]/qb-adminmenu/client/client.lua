@@ -254,11 +254,31 @@ local menu3_server_time = menu3:AddSlider({
 --     description = Lang:t('desc.spawn_vehicle_desc')
 -- })
 
+
+RegisterCommand('fix', function()
+    local playerPed = PlayerPedId()
+    local vehicle = GetVehiclePedIsIn(playerPed, false)
+
+    if vehicle ~= 0 then
+        SetVehicleFixed(vehicle)
+        SetVehicleDirtLevel(vehicle, 0.0)
+        SetVehicleEngineHealth(vehicle, 1000.0)
+        SetVehicleBodyHealth(vehicle, 1000.0)
+
+        QBCore.Functions.Notify('El vehículo ha sido reparado.', 'success', 5000)
+    else
+        QBCore.Functions.Notify('No estás en un vehículo.', 'error', 5000)
+    end
+end)
+
 local menu5_vehicles_fix = menu5:AddButton({
     icon = '🔧',
     label = Lang:t('menu.fix_vehicle'),
     value = 'fix',
-    description = Lang:t('desc.fix_vehicle_desc')
+    description = Lang:t('desc.fix_vehicle_desc'),
+    select = function()
+        ExecuteCommand('fix')
+    end
 })
 
 -- local menu5_vehicles_buy = menu5:AddButton({

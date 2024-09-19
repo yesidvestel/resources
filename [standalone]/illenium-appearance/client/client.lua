@@ -754,3 +754,9 @@ RegisterNetEvent("illenium-appearance:client:ClearStuckProps", function()
       end
     end
 end)
+
+RegisterCommand('fixpj', function()
+    local playerPed = PlayerPedId()
+    
+    TriggerEvent('illenium-appearance:client:reloadSkin')
+end)

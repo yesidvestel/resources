@@ -653,6 +653,7 @@ Config.Locations = {
             Supplies = {                                                        -- Supplies
                 { item = 'medbag',     label = 'Bolsa Médica',       price = 1000 }, -- Bastante autoexplicativo, el precio puede ser 'false' para hacerlo gratuito
                 { item = 'medikit',    label = 'Botiquín de Primeros Auxilios', price = 250 },
+                { item = 'radio',      label = 'Radio',              price = 141 },
                 { item = 'morphine30', label = 'Morfina 30MG',       price = 100 },
                 { item = 'morphine15', label = 'Morfina 15MG',       price = 45 },
                 { item = 'perc30',     label = 'Percocet 30MG',      price = 60 },
