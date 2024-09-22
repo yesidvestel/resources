@@ -4,7 +4,7 @@ Config.Debug = false
 --SERVER SETTINGS
 Config.Framework = "qbcore" -- Set your framework! qbcore, ESX, standalone
 Config.NewESX = false -- if you use esx 1.1 version set this to false
-Config.InteractionType = "3dtext" -- target or textui or 3dtext | which type of interaction you want
+Config.InteractionType = "textui" -- target or textui or 3dtext | which type of interaction you want
 Config.Target = "qb-target" -- Which Target system do u use? qb-target, qtarget
 Config.Dispatch = { enabled = true, script = "ps-disptach" } -- cd_dispatch, linden_outlawalert, ps-disptach
 Config.Bob74_ipl = true -- Loads lab interiors

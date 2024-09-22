@@ -12,12 +12,16 @@ shared_scripts {
     '@PolyZone/CircleZone.lua',
     '@PolyZone/ComboZone.lua',
     '@qb-core/shared/locale.lua',
-    'locale/es.lua',
+    'locale/en.lua',
     'locale/*.lua',
     'config.lua'
 }
 
-client_script 'client/main.lua'
+client_scripts {
+    'client/main.lua',
+    'client/deliveries.lua',
+}
+
 server_script 'server/main.lua'
 
 file 'json/shops-inventory.json'
