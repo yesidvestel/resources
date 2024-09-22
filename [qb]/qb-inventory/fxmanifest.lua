@@ -3,35 +3,35 @@ game 'gta5'
 lua54 'yes'
 author 'Kakarot'
 description 'Player inventory system providing a variety of features for storing and managing items'
-version '2.0.0'
+version '1.2.4'
 
 shared_scripts {
     '@qb-core/shared/locale.lua',
-    'locales/en.lua',
+    'locales/es.lua',
     'locales/*.lua',
-    'config/*.lua',
-}
-
-client_scripts {
-    'client/main.lua',
-    'client/drops.lua',
-    'client/vehicles.lua',
+    'config.lua',
 }
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    'server/main.lua',
-    'server/functions.lua',
-    'server/commands.lua',
+    'server/main.lua'
 }
 
-ui_page 'html/index.html'
+client_script 'client/main.lua'
+
+ui_page {
+    'html/ui.html'
+}
 
 files {
-    'html/index.html',
-    'html/main.css',
-    'html/app.js',
+    'html/ui.html',
+    'html/css/main.css',
+    'html/js/app.js',
     'html/images/*.png',
+    'html/images/*.jpg',
+    'html/ammo_images/*.png',
+    'html/attachment_images/*.png',
+    'html/*.ttf'
 }
 
 dependency 'qb-weapons'
