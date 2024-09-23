@@ -292,7 +292,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
         if amount < 0 then return end
         if not self.PlayerData.money[moneytype] then return false end
         self.PlayerData.money[moneytype] = self.PlayerData.money[moneytype] + amount
-		if moneytype == 'cash' and reason ~= 'iscash' then
+		--[[if moneytype == 'cash' and reason ~= 'iscash' then
             local item = exports['qb-inventory']:GetItemByName(source,'cash')
             if exports['qb-inventory']:HasItem(source,'cash') then
                 --local slot = exports['qs-inventory']:GetItemBySlot(self.PlayerData.items,item)
@@ -301,7 +301,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
             else
                 exports['qb-inventory']:AddItem(source,'cash',amount,false,'iscash')
             end
-		end
+		end]]
 		if not self.Offline then
 			self.Functions.UpdatePlayerData()
 			if amount > 100000 then
@@ -313,6 +313,10 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
 			TriggerClientEvent('QBCore:Client:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'remove', reason)
 			TriggerEvent('QBCore:Server:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'remove', reason)
 		end
+        -- Added Code (highqez_cashitem)
+        if self and self.PlayerData and self.PlayerData.source then
+            TriggerEvent('highqez_cashitem:server:AddMoney', self.PlayerData.source, moneytype, amount, self.PlayerData.money[moneytype], reason)
+        end
         return true
     end
 
@@ -331,7 +335,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
             end
         end
         self.PlayerData.money[moneytype] = self.PlayerData.money[moneytype] - amount
-		if moneytype == 'cash' and reason ~= 'iscash' then
+		--[[if moneytype == 'cash' and reason ~= 'iscash' then
             local item = exports['qb-inventory']:GetItemByName(source,'cash')
             if exports['qb-inventory']:HasItem(source,'cash') then
                 local totalmoney = self.Functions.GetMoney('cash')
@@ -348,7 +352,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
             else
                 return false
             end
-		end
+		end]]
 		if not self.Offline then
 			self.Functions.UpdatePlayerData()
 			if amount > 100000 then
@@ -363,6 +367,10 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
 			TriggerClientEvent('QBCore:Client:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'remove', reason)
 			TriggerEvent('QBCore:Server:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'remove', reason)
 		end
+        -- Added Code (highqez_cashitem)
+        if self and self.PlayerData and self.PlayerData.source then
+            TriggerEvent('highqez_cashitem:server:RemoveMoney', self.PlayerData.source, moneytype, amount, self.PlayerData.money[moneytype], reason)
+        end
         return true
     end
 
@@ -375,7 +383,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
         if not self.PlayerData.money[moneytype] then return false end
         local difference = amount - self.PlayerData.money[moneytype]
         self.PlayerData.money[moneytype] = amount
-		if moneytype == 'cash' then
+		--[[if moneytype == 'cash' then
             if exports['qb-inventory']:HasItem(source,'cash') then
                 local item = exports['qb-inventory']:GetItemByName(source,'cash')
                 local slot = exports['qb-inventory']:GetItemBySlot(self.PlayerData.items,item)
@@ -386,7 +394,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
                 exports['qb-inventory']:AddItem(source,'cash',amount)
                 difference = amount
             end
-        end
+        end]]
         if not self.Offline then
             self.Functions.UpdatePlayerData()
             TriggerEvent('qb-log:server:CreateLog', 'playermoney', 'SetMoney', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') set, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype] .. ' reason: ' .. reason)
@@ -394,7 +402,10 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
             TriggerClientEvent('QBCore:Client:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'set', reason)
             TriggerEvent('QBCore:Server:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'set', reason)
         end
-
+        -- Added Code (highqez_cashitem)
+        if self and self.PlayerData and self.PlayerData.source then
+            TriggerEvent('highqez_cashitem:server:SetMoney', self.PlayerData.source, moneytype, amount, reason)
+        end
         return true
     end
 
