@@ -4,19 +4,19 @@ QBShared.Gangs = {
     lostmc = {
         label = 'The Lost MC',
         grades = {
-            ['0'] = { name = 'Recruit' },
-            ['1'] = { name = 'Enforcer' },
-            ['2'] = { name = 'Shot Caller' },
-            ['3'] = { name = 'Boss', isboss = true },
+            ['0'] = { name = 'Recluta' },
+            ['1'] = { name = 'Ejecutor' },
+            ['2'] = { name = 'Líder de Grupo' },
+            ['3'] = { name = 'Jefe', isboss = true },
         },
     },
     ballas = {
         label = 'Ballas',
         grades = {
-            ['0'] = { name = 'Recruit' },
-            ['1'] = { name = 'Enforcer' },
-            ['2'] = { name = 'Shot Caller' },
-            ['3'] = { name = 'Boss', isboss = true },
+            ['0'] = { name = 'Recluta' },
+            ['1'] = { name = 'Ejecutor' },
+            ['2'] = { name = 'Líder de Grupo' },
+            ['3'] = { name = 'Jefe', isboss = true },
         },
     },
     vagos = {
@@ -25,34 +25,34 @@ QBShared.Gangs = {
             ['0'] = { name = 'Soldado' },
             ['1'] = { name = 'Cabecilla' },
             ['2'] = { name = 'General' },
-            ['3'] = { name = 'Lider', isboss = true },
+            ['3'] = { name = 'Líder', isboss = true },
         },
     },
     cartel = {
         label = 'Marabunta',
         grades = {
-            ['0'] = { name = 'Recruit' },
-            ['1'] = { name = 'Enforcer' },
+            ['0'] = { name = 'Recluta' },
+            ['1'] = { name = 'Ejecutor' },
             ['2'] = { name = 'OG' },
-            ['3'] = { name = 'Big Boss', isboss = true },
+            ['3'] = { name = 'Gran Jefe', isboss = true },
         },
     },
     families = {
         label = 'Families',
         grades = {
-            ['0'] = { name = 'Recruit' },
-            ['1'] = { name = 'Enforcer' },
-            ['2'] = { name = 'Shot Caller' },
-            ['3'] = { name = 'Boss', isboss = true },
+            ['0'] = { name = 'Recluta' },
+            ['1'] = { name = 'Ejecutor' },
+            ['2'] = { name = 'Líder de Grupo' },
+            ['3'] = { name = 'Jefe', isboss = true },
         },
     },
     triads = {
         label = 'Triads',
         grades = {
-            ['0'] = { name = 'Recruit' },
-            ['1'] = { name = 'Enforcer' },
-            ['2'] = { name = 'Shot Caller' },
-            ['3'] = { name = 'Boss', isboss = true },
+            ['0'] = { name = 'Recluta' },
+            ['1'] = { name = 'Ejecutor' },
+            ['2'] = { name = 'Líder de Grupo' },
+            ['3'] = { name = 'Jefe', isboss = true },
         },
-    }
+    }    
 }

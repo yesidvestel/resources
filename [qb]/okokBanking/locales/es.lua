@@ -18,7 +18,7 @@ Locales['es'] = {
 
     ['pin_no_money'] = {
         title = 'BANKING',
-        text = 'Es necesario tener ${s1}€ para cambiar su PIN',
+        text = 'Es necesario tener ${s1}$ para cambiar su PIN',
         time = 5000,
         type = 'error'
     },
@@ -70,7 +70,7 @@ Locales['es'] = {
 
     ['iban_no_money'] = {
         title = 'BANKING',
-        text = 'Es necesario tener ${s1}€ para cambiar su IBAN',
+        text = 'Es necesario tener ${s1}$ para cambiar su IBAN',
         time = 5000,
         type = 'error'
     },
@@ -80,35 +80,35 @@ Locales['es'] = {
 
     ['deposited'] = {
         title = 'BANKING',
-        text = 'Has depositado ${s1}€',
+        text = 'Has depositado ${s1}$',
         time = 5000,
         type = 'success'
     },
 
     ['withdrawn'] = {
         title = 'BANKING',
-        text = 'Has retirado ${s1}€',
+        text = 'Has retirado ${s1}$',
         time = 5000,
         type = 'success'
     },
 
     ['received_from'] = {
         title = 'BANKING',
-        text = 'Has recibido ${s1}€ de ${s2}',
+        text = 'Has recibido ${s1}$ de ${s2}',
         time = 5000,
         type = 'success'
     },
 
     ['transferred_to'] = {
         title = 'BANKING',
-        text = 'Has transferido ${s1}€ a ${s2}',
+        text = 'Has transferido ${s1}$ a ${s2}',
         time = 5000,
         type = 'success'
     },
 
     ['deposited_to'] = {
         title = 'BANKING',
-        text = 'Has depositado ${s1}€ a ${s2}',
+        text = 'Has depositado ${s1}$ a ${s2}',
         time = 5000,
         type = 'success'
     },
@@ -122,7 +122,7 @@ Locales['es'] = {
 
     ['you_have_withdrawn'] = {
         title = 'BANKING',
-        text = 'Has retirado ${s1}€ de ${s2}',
+        text = 'Has retirado ${s1}$ de ${s2}',
         time = 5000,
         type = 'success'
     },
@@ -188,7 +188,7 @@ Locales['es'] = {
 
     ['bought_cc'] = {
         title = 'BANKING',
-        text = 'Has comprado una tarjeta de crédito por ${s1}€',
+        text = 'Has comprado una tarjeta de crédito por ${s1}$',
         time = 5000,
         type = 'success'
     },

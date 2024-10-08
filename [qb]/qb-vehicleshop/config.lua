@@ -26,15 +26,15 @@ Config.Blips = {
 }
 
 Config.ExhibitionVehicles = {
-    { model = "windsor", coords = vector3(-43.48, -1101.6, 25.42), heading = 90.0 },
-    { model = "t20", coords = vector3(-47.39, -1094.66, 25.42), heading = 90.0 },
-    { model = "zentorno", coords = vector3(-41.35, -1096.15, 25.42), heading = 90.0 },
+    { model = "nissantitan17", coords = vector3(-43.48, -1101.6, 25.42), heading = 90.0 },
+    { model = "fgt", coords = vector3(-47.39, -1094.66, 25.42), heading = 90.0 },
+    { model = "aaq4", coords = vector3(-41.35, -1096.15, 25.42), heading = 90.0 },
 }
 
 
 Config.Shops = {
     [1] = {
-        category = 'pdm', -- Change ["shop"] in qb-core/shared.lua to match this for the vehicles you want
+        category = 'conce', -- Change ["shop"] in qb-core/shared.lua to match this for the vehicles you want
         coords = vector3(-56.49, -1096.58, 26.42), -- For Marker
         spawnvehicle = vector4(978.19, -3001.99, -40.62, 89.5), -- Display Point
         cameracoords = vector3(974.1, -2997.94, -39.00), -- Where To Create Camera
