@@ -579,15 +579,15 @@ Config.ClothingRooms = {
     },]]
 	{
         job = "ambulance",
-        coords = vector4(310.26, -586.38, 38.33, 281.19),
+        coords = vector4(312.89, -587.67, 38.33, 356.13),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
         points = {
-           	vector3(321.07, -581.7, 43.32),
-            vector3(322.0, -579.96, 43.32),
-            vector3(328.54, -582.11, 43.32),
-            vector3(328.62, -584.54, 43.32),
+            vector3(314.26, -587.95, 38.33),
+            vector3(311.76, -586.99, 38.33),
+            vector3(311.04, -587.68, 38.33),
+            vector3(314.46, -588.84, 38.33),
         }
     },
 	--[[{
@@ -868,19 +868,17 @@ Config.Outfits = {
             {
                 name = "Patrullar",
                 outfitData = {
-                    ["arms"] = {item = 90, texture = 0}, -- Arms
-                    ["t-shirt"] = {item = 15, texture = 0}, -- T-Shirt
-                    ["torso2"] = {item = 249, texture = 0}, -- Jackets
-                    ["vest"] = {item = 0, texture = 0}, -- Vest
-                    ["decals"] = {item = 57, texture = 0}, -- Decals
-                    ["accessory"] = {item = 126, texture = 0}, -- Neck
+                    ["pants"] = {item = 133, texture = 0}, -- Pants
+                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
+                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
+                    ["torso2"] = {item = 327, texture = 8}, -- Jacket
+                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
+                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 96, texture = 0}, -- Pants
-                    ["shoes"] = {item = 54, texture = 0}, -- Shoes
-                    ["mask"] = {item = 121, texture = 0}, -- Mask
-                    ["hat"] = {item = 122, texture = 0}, -- Hat
+                    ["hat"] = {item = 0, texture = 0}, -- Hat
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    ["mask"] = {item = 0, texture = 0} -- Mask
                 },
                 grades = {1, 2, 3, 4},
             },
