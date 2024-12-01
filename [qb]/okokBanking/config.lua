@@ -16,7 +16,7 @@ Config.TargetBankDistance = 1.5 -- Distance to target a bank from qb-target ( To
 
 Config.DebugTargetZones = false -- Set to true only if you need to check the position of a zone
 
-Config.UseCashAsItem = false -- Set to true if you have cash as item on qb-core
+Config.UseCashAsItem = true -- Set to true if you have cash as item on qb-core
 
 Config.IBANPrefix = "OK" -- IBAN prefix
 
