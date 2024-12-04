@@ -6,7 +6,7 @@ Config.stash ={
     ["ballas"] = vector3(79.97, -1964.25, 18.04),
     ["vagos"] = vector3(337.08, -2012.87, 22.39),
     ["families"] = vector3(-136.91, -1609.84, 35.03),
-	 ["cartel"] = vector3(1436.73, -1489.58, 66.62),
+	 ["cartel"] = vector3(1436.73, -1489.58, 66.62), --prueba
 }
 Config.armor ={
     ['ballas'] = {
